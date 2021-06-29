@@ -27,8 +27,14 @@
     },
     {
       "title": "ShanSan",
-      "feedUrl": "https://shansan.top/rss2.xml",
+      "feedUrl": "https://shansan.top/rss2",
       "siteUrl": "https://yeshan333.github.io/",
+      "articles": []
+    },
+    {
+      "title": "酷 壳 – CoolShell",
+      "feedUrl": "https://coolshell.cn/feed",
+      "siteUrl": "https://coolshell.cn",
       "articles": []
     }
   ],
