@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-06-30T01:06:41.687Z</id>
+    <id>urn:2021-07-01T01:07:01.002Z</id>
     <title>osmos::feed</title>
-    <updated>2021-06-30T01:06:41.687Z</updated>
+    <updated>2021-07-01T01:07:01.002Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -30,16 +30,6 @@ Caveat: the template works only with YouTube content. You cannot mix textual RSS
 Changed: Default HTML template meta tag adjusted to match convention
 Changed: sources in template data is now ordered by last update timestamp (as opposed to alphabetical)
 Thank you @PiyushLosalka]]></summary>
-        <author>
-            <name>Release notes from osmosfeed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.10.2]]></title>
-        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.10.2</id>
-        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.10.2"/>
-        <updated>2021-06-01T04:39:30.000Z</updated>
-        <summary type="html"><![CDATA[Added: testing and CI/CD workflows]]></summary>
         <author>
             <name>Release notes from osmosfeed</name>
         </author>
