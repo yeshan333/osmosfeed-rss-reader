@@ -3,5 +3,5 @@ sources:
   - href: https://github.com/osmoscraft/osmosfeed/releases.atom # Get new feature announcement via this feed
   - href: https://shansan.top/rss2
   - href: https://coolshell.cn/feed
-  - href: https://draveness.me/feed
+  - href: https://draveness.me/feed.xml
   - href: https://www.kawabangga.com/feed
