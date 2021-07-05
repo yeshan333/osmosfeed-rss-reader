@@ -52,10 +52,10 @@
         {
           "id": "https://www.kawabangga.com/?p=4373",
           "author": "laixintao",
-          "description": "之前在博客介绍了 Linux From Scratch, 最近发现 LFS 已经有新的版本 10.1 了，周末 […]\nContinue reading...\nThe post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n编译LFS的一些经验\n如何杀死一个进程？\n/bin /usr/bin 和 /usr/local/bin 的故事\nSRE&Devops 每周分享 Issue #3\nLinux HotSopt虚拟机GC线程的CPU占用率",
+          "description": "之前在博客介绍了 Linux From Scratch, 最近发现 LFS 已经有新的版本 10.1 了，周末 […]\nContinue reading...\nThe post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n珍藏资料\n编译LFS的一些经验\n如何杀死一个进程？\n/bin /usr/bin 和 /usr/local/bin 的故事\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4373",
           "publishedOn": "2021-07-02T17:09:35.000Z",
-          "wordCount": 2705,
+          "wordCount": 2700,
           "title": "开源软件源码编译指南"
         },
         {

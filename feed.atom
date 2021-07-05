@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-07-04T01:04:32.874Z</id>
+    <id>urn:2021-07-05T01:02:04.472Z</id>
     <title>osmos::feed</title>
-    <updated>2021-07-04T01:04:32.874Z</updated>
+    <updated>2021-07-05T01:02:04.472Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -16,11 +16,11 @@ The post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.
 
 相关文章:
 
+珍藏资料
 编译LFS的一些经验
 如何杀死一个进程？
 /bin /usr/bin 和 /usr/local/bin 的故事
-SRE&Devops 每周分享 Issue #3
-Linux HotSopt虚拟机GC线程的CPU占用率]]></summary>
+SRE&Devops 每周分享 Issue #3]]></summary>
         <author>
             <name>laixintao</name>
         </author>
