@@ -50,12 +50,21 @@
       "siteUrl": "https://www.kawabangga.com",
       "articles": [
         {
+          "id": "https://www.kawabangga.com/?p=4392",
+          "author": "laixintao",
+          "description": "最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]\nContinue reading...\nThe post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n坑爹的部署脚本\n开始用 Ansible 管理机器了\nSRE&Devops 每周分享 Issue #5\nSRE&Devops 每周分享 Issue #3\nGitops 的一些实践经验",
+          "link": "https://www.kawabangga.com/posts/4392",
+          "publishedOn": "2021-07-08T13:49:51.000Z",
+          "wordCount": 487,
+          "title": "警惕复用的陷阱"
+        },
+        {
           "id": "https://www.kawabangga.com/?p=4373",
           "author": "laixintao",
           "description": "之前在博客介绍了 Linux From Scratch, 最近发现 LFS 已经有新的版本 10.1 了，周末 […]\nContinue reading...\nThe post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n珍藏资料\n编译LFS的一些经验\n如何杀死一个进程？\n/bin /usr/bin 和 /usr/local/bin 的故事\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4373",
           "publishedOn": "2021-07-02T17:09:35.000Z",
-          "wordCount": 2698,
+          "wordCount": 2700,
           "title": "开源软件源码编译指南"
         },
         {
@@ -79,10 +88,10 @@
         {
           "id": "https://www.kawabangga.com/?p=4294",
           "author": "laixintao",
-          "description": "我在 Shopee 维护一个 Service Mesh 系统，大部分的 RPC 调用要经过这个系统，这个系统每 […]\nContinue reading...\nThe post 最近的工作感悟 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n2020年的总结\nGitlab自动部署方案（Systemd+nc）\nJ2EE概念介绍\n分布式定时任务的重复执行问题",
+          "description": "我在 Shopee 维护一个 Service Mesh 系统，大部分的 RPC 调用要经过这个系统，这个系统每 […]\nContinue reading...\nThe post 最近的工作感悟 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n2020年的总结\nGitlab自动部署方案（Systemd+nc）\n警惕复用的陷阱\nJ2EE概念介绍",
           "link": "https://www.kawabangga.com/posts/4294",
           "publishedOn": "2021-06-23T17:48:21.000Z",
-          "wordCount": 755,
+          "wordCount": 752,
           "title": "最近的工作感悟"
         },
         {

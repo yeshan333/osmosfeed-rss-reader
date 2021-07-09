@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-07-08T01:03:04.253Z</id>
+    <id>urn:2021-07-09T01:04:30.247Z</id>
     <title>osmos::feed</title>
-    <updated>2021-07-08T01:03:04.253Z</updated>
+    <updated>2021-07-09T01:04:30.247Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[警惕复用的陷阱]]></title>
+        <id>https://www.kawabangga.com/?p=4392</id>
+        <link href="https://www.kawabangga.com/posts/4392"/>
+        <updated>2021-07-08T13:49:51.000Z</updated>
+        <summary type="html"><![CDATA[最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]
+Continue reading...
+The post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.
+
+相关文章:
+
+坑爹的部署脚本
+开始用 Ansible 管理机器了
+SRE&Devops 每周分享 Issue #5
+SRE&Devops 每周分享 Issue #3
+Gitops 的一些实践经验]]></summary>
+        <author>
+            <name>laixintao</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[开源软件源码编译指南]]></title>
         <id>https://www.kawabangga.com/?p=4373</id>
@@ -87,8 +107,8 @@ The post 最近的工作感悟 first appeared on 卡瓦邦噶！.
 Join Shopee & Work with Me!
 2020年的总结
 Gitlab自动部署方案（Systemd+nc）
-J2EE概念介绍
-分布式定时任务的重复执行问题]]></summary>
+警惕复用的陷阱
+J2EE概念介绍]]></summary>
         <author>
             <name>laixintao</name>
         </author>
