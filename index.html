@@ -52,6 +52,37 @@ SRE&amp;Devops 每周分享 Issue #3</span>
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Redis 容器化技术选型，K8S 并非唯一</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/07/02/Redis-%E5%AE%B9%E5%99%A8%E5%8C%96%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8BK8S-%E5%B9%B6%E9%9D%9E%E5%94%AF%E4%B8%80/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>本文根据我在〖deeplus直播第247期〗线上分享演讲内容整理而成。
+今天将分享的内容分为以下4个方面：
+一、缘起
+二、介绍多样的容器化技术
+三、Redis介绍
+四、Redis容器化方案的对比
+一、缘起
+首先我们先聊一下为什么今天我会分享这个主题。我和朋友一起组织了一个 Redis技术交流群，到现在已经经营了6年左右的时间，其中某一天在群里有一个小伙伴就抛出来一个问题：
+
+他问大家线上的Redis有没有使用Docker安装？Docker使用Host的网络模式、磁盘使用本地挂载模式这种方案怎么样？这里的话我们暂时先不说这个方案如何，因为在今天的分享之后，我相信大家对于这个方案应该会有一个更清晰的认识和评价。
+二、介绍多样的容器化技术
+1、chroot和jails
+在容器化技术方面，其实历史很久远了。虽然我们现在用的容器化技术，或者说 k8s，还有云原生的概念是近几年才火起来的，但是实际上就容器化技术的发展来说，其实是很早的了。比如说最早的时候来自chroot，chroot大家可能都用过，或者都有了解过，在1979年的时候它是来自Unix，它主要的功能是可以修改进程和子进程的/。
+通过使用chroot达到什么样效果呢？使用chroot加某一个目录，然后再启动一个进程，那么这个进程自己所看到的 / ,就是我们平时所说的 / 目录，这个 / 就会是我们刚才指定的文件夹，或者说刚才指定的路径。这样子的话可以有效的保护我们操作系统上面的一些文件，或者说权限和安全相关的东西。
+在2000年的时候，出现了一个新的技术，叫做jails，其实它已经具备了sandbox，就是沙箱环境的雏形。使用jails的话，可以让一个进程或者说创建的环境拥有独立的网络接口和IP地址，而当我们提到使用jails的话，我们肯定会想到一个问题，就是如果你有了独立的网络接口和IP地址，这样的话就不能发原始的套接字，…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.kawabangga.com">卡瓦邦噶！</a></h3>
           <section class="articles-per-source">
             <article>
@@ -166,6 +197,79 @@ Firefox Setup</span>
     </ul>
   </section>
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-06-26">2021-06-26</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">K8S 生态周报| Kubernetes v1.22.0-beta.0 发布</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/06/27/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-beta.0-%E5%8F%91%E5%B8%83/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
+runc v1.0 正式发布
+从 2016 年 6 月发布 v1.0-rc1 版本开始，至今已整整 5 年时间，runc 历经多个 rc 版本终于发布了 v1.0 版本。整个过程及其思考请参考我之前的文章 《开源项目的 5 年长跑，runc v1.0 终于正式发布！》 。这里我们来看看 v1.0 新版本中带来了哪些值得注意的变更。
+破化性变更
+#2999 删除了 libcontainer/configs.Device* 标识，请使用 libcontainer/devices.* 来替代（是自 v1.0-rc94 开始废弃的）；
+#2999 删除了 libcontainer/system.RunningInUserNS 函数，请使用 libcontainer/userns.RunningInUserNS 函数代替（同样是自 v1.0-rc94 开始废弃的）；
+改进
+#2994 在 runc update 的时候设置了 SkipDevices ，所以在此期间我们就不会更新 cgroups 了；
+#3010 cgroup1 相关的 blkio 支持 BFQ weight 了，这里需要注意的是 2018 年 CFQ 已经从 Linux 删除，22019 年发布的 RHEL 8.0 和 Ubuntu 19.01 等发行版中也均使用 BFQ 替代了 CFQ 。关于 Linux 内核的 BFQ 和 CFQ 这里就不再展开了，只需要知道 BFQ 相比 CFQ 做到了低延迟和吞吐即可；
+更多关于此版本的变更，请参考其 ReleaseNote ，现在 Docker/containerd 等项目已将 runc 依赖升级到了 v1.0 ，K8S 项目尚未合并。
+Promethe…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-06-24">2021-06-24</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">更优雅的 Kubernetes 集群事件度量方案</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/06/25/%E6%9B%B4%E4%BC%98%E9%9B%85%E7%9A%84-Kubernetes-%E9%9B%86%E7%BE%A4%E4%BA%8B%E4%BB%B6%E5%BA%A6%E9%87%8F%E6%96%B9%E6%A1%88/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>大家好，我是张晋涛。
+
+群里有个小伙伴问了我上图中这个问题，如何度量滚动升级这个过程的时间。
+这个问题可以抽象为一种通用需求，适用于多种场景。
+比如你是 Kubernetes 集群的管理员，你想度量这个过程中的耗时，以便发现优化点；
+比如你是在做 CI/CD ，你想通过度量这个过程的耗时，来给出 CI/CD 过程的耗时；
+现有方案
+Kubernetes 已经提供了很方便的办法来解决此问题，也就是我回复中谈到的，通过 event 来度量即可。
+比如，我们在 K8S 中，创建一个 deployment，看看这个过程中的 event 信息：
+➜ ~ kubectl create ns moelove
+namespace/moelove created
+➜ ~ kubectl -n moelove create deployment redis --image&#x3D;ghcr.io/moelove/redis:alpine
+deployment.apps/redis created
+➜ ~ kubectl -n moelove get deploy
+NAME READY UP-TO-DATE AVAILABLE AGE
+redis 1/1 1 1 16s
+➜ ~ kubectl -n moelove get events
+LAST SEEN TYPE REASON OBJECT MESSAGE
+27s Normal Scheduled pod/redis-687967dbc5-gsz5n Successfully assigned moelove/redis-687967dbc5-gsz5n to kind-control-plane
+27s Normal Pulled pod/redis-687967dbc5-gsz5n Container image &quot;ghcr.io/moelove…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-06-23">2021-06-23</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -224,6 +328,55 @@ J2EE概念介绍
     </ul>
   </section>
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-06-22">2021-06-22</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">开源项目的 5 年长跑，runc v1.0 终于正式发布！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/06/23/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E7%9A%84-5-%E5%B9%B4%E9%95%BF%E8%B7%91runc-v1.0-%E7%BB%88%E4%BA%8E%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>本文我来分享下与我们（搞容器化/K8S 从业者）息息相关的一个基础项目 runc 是如何自 2016 年发布了 v1.0.0-rc1 到现在历经 5 年长跑，从 rc1 一直到 rc95 ，如今终于正式发布 v1.0 版本的过程，及这中间的故事。
+大家好，我是张晋涛。
+在 2018 年 11 月底时，我写了一篇文章 《runc 1.0-rc6 发布之际》 , 那应该是我第一次公开介绍 runc。如果你还不了解 runc 是什么，以及如何使用它，请参考我那篇文章。本文中不再对其概念和用法等进行说明。
+在 2019 年 3 月底时，我写了另一篇文章 《runc 1.0-rc7 发布之际》，介绍 runc 1.0-rc7 发布的原因，及那个版本中最主要的修复 CVE-2019-5736 。其中也介绍了关于 runc/Docker 等对于 Linux 内核兼容性的问题，感兴趣的小伙伴可以看看。
+关注我的朋友们，应该也在 K8S 生态周报 中多次看到过我对 runc 的介绍，包括其特性及安全漏洞等方面。
+在 2015 年 6 月， Docker ，CoreOS 和其他一些公司共同成立了 OCI （开放容器计划） 组织，其最主要的内容有两个：
+容器运行时规范
+容器镜像规范
+Docker 将其运行时捐赠给了 OCI ，作为容器运行时规范的基础实现，托管在了 https://github.com/opencontainers/runc 也就是现在大家看到的 runc 了。
+发布历程
+我们来看看 runc 版本发布的历程，以便了解它为何长跑 5 年。
+runc version
+release time
+runtime-spec version
+备注
+
+
+
+
+runc v1.0-rc1
+2016.06.04
+v1.0.0-rc1
+
+
+
+runc v1.0-rc2
+2016.10.01
+v1.0…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-06-18">2021-06-18</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -245,6 +398,78 @@ The post P99 是如何计算的 first appeared on 卡瓦邦噶！.
 使用 mtr 检查网络问题，以及注意事项
 程序员应该知道的时间概念
 Redis RESP3 的一些想法</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-06-17">2021-06-17</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为什么我们需要一个容器镜像的包管理器</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/06/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>TL;DR
+我们需要对 container 供应链进行更好的元数据管理，以便更好地进行分析;
+OCI 规范目前没有办法打包容器镜像工件或一组容器镜像。但他们会慢慢做到这一点；
+同时，我们需要一个用于容器镜像的包管理器；
+一些背景
+我维护着一个叫做 Tern 的开源项目，这个项目是为容器镜像生成一个软件材料清单（SBOM）。很多安装在容器镜像中的组件都是独立安装的，而非通过包管理器。这使得我们很难弄清楚创建这个容器镜像的作者的意图。它也没有提供更多关于容器镜像贡献者的信息。大多数容器镜像都是基于之前已有的容器镜像，通过客户端工具或者镜像仓库都很难看到这些信息。
+我想如果有一个“容器镜像”的包管理器，应该能解决这个问题。因此，我早在 KubeCon 2018 的时候就提出了 &quot;打包&quot; 的想法，我问容器镜像的 manifest 是否可以保存这些信息，以便工具可以根据容器镜像的供应链来进行分析。
+事实证明，社区已经在考虑如何管理 helm chart、OPA 策略、文件系统和签名等事情了。这就是我参与 开放容器计划（OCI）组织  的原因（我还欠 @vbatts 一个介绍我的人情）。当时的理解是，容器镜像除了需要通过摘要来进行识别外，不需要进行其他管理。也不需要管理依赖，因为所有的依赖都被打包进了容器镜像中。通过再次重建容器和保持一个下游消费者可以 pull 的滚动标签来处理更新。
+然而，容器生态除了可移植性外，并没有提供太多东西。和容器镜像一起管理容器元数据可以为使用者和贡献者提供更多关于供应链的宝贵信息。经过了两年时间和几次供应链攻击之后，我们仍然在讨论，如何最好的做到这一点。在这里，我试图将一些提议的概念归纳起来，看看它们如何满足我们对元数据管理的要求。
+回到起点
+我们写一个包管理器主要有以下三个原因：
+标识 - 为你的新文件或者包提供一个名字和其他唯一可识别的特征；
+上下文…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-06-13">2021-06-13</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">K8S 生态周报| Docker v20.10.7 发布，修复了死锁和容器启动失败的问题</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/06/14/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Docker-v20.10.7-%E5%8F%91%E5%B8%83%E4%BF%AE%E5%A4%8D%E4%BA%86%E6%AD%BB%E9%94%81%E5%92%8C%E5%AE%B9%E5%99%A8%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%97%AE%E9%A2%98/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
+Docker v20.10.7 正式发布
+Docker 在近期也发布了 v20.10.7 版本，这个版本中主要都是侧重在稳定性和安全性上，我们一起来看看具体有哪些值得关注的内容吧！
+CLI
+CLI 方面主要是移除掉了一直以来存在的 WARNING: No kernel memory limit support 这个 Warning 信息，同时在 cgroup v2 下也不会再显示 WARNING: No oom kill disable support 的 Warning 信息了。
+为什么呢？因为 oom kill disable 在 cgroup v2 下不可用。 如果你在 cgroup v2 下使用了 --oom-kill-disable 选项就会看到如下提示：
+➜ ~ docker info |grep Cgroup
+Cgroup Driver: systemd
+Cgroup Version: 2
+➜ ~ docker run --rm -it --oom-kill-disable -m 6m alpine sh
+WARNING: Your kernel does not support OomKillDisable. OomKillDisable discarded.
+
+
+这里如果要介绍 cgroup v2 那内容就太多了，我在 2019 年接受访谈聊容器技术趋势的时候就做了如下预测：
+从底层次技术的角度来看，cgroup v2 将逐步普及，进而取代 cgroup v1，但这个过程可能需要两三年左右。
+整体而言，稳定性和性能优化将会是未来的主旋律。
+现在已经过去了一年多的时间，完全符合我当时的预测。 现在包括 runc、containerd、Do…</span>
                   </div>
                 </a>
               </details>
@@ -308,7 +533,7 @@ HTTP 长连接</span>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-07-10T01:02:33.284Z">2021-07-10T01:02:33.284Z</time>
+    <time id="build-timestamp" datetime="2021-07-10T07:19:47.117Z">2021-07-10T07:19:47.117Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>
