@@ -22,12 +22,21 @@
       "siteUrl": "https://yeshan333.github.io/",
       "articles": [
         {
+          "id": "https://yeshan333.github.io/2021/07/10/checksum-gpg-tools/",
+          "author": null,
+          "description": "前言\n之前装软件一直都没有验证安装文件的习惯，信息安全意识不高，碰巧最近没啥事，微微写篇文章记录下校验工具（互联网http、https、ftp 服务并没有那么安全，是可以被劫持篡改。老装软件选手了，是该养成个校验文件的习惯了）。\n在互联网下载软件/文件的时候经常会看到官方提供了一段⌈校验和（checksum）⌋或包含校验和的文件供校验。常见的校验和有 md5、SHA 家族等。还有部分软件/文件会提供 GPG 校验文件（signature file, SIG）给下载者进行校验。\n来看看这两种校验方式相关的工具。",
+          "link": "https://yeshan333.github.io/2021/07/10/checksum-gpg-tools/",
+          "publishedOn": "2021-07-10T18:23:57.000Z",
+          "wordCount": 1338,
+          "title": "对下载软件/文件进行校验的工具（Checksum and GPG）"
+        },
+        {
           "id": "https://yeshan333.github.io/2021/06/29/osmosfeed-rss-reader/",
           "author": null,
           "description": "之前一直用 App Store 上的一个 RSS 阅读器 RSS Reader Prime 订阅技术周刊和 dalao 的技术博客，不得不说挺好用的，奈何全线下架了，现在就平板上保留着这个 App，手机上没有（国区好用的 RSS 阅读器基本无了）。有时候又想着用手机读读技术文章（板子太大，不好拿），于是乎翻了下 GitHub rss-reader topic 下的相关阅读器项目，挑了手基于 Web 和 GitHub Pages 的 RSS 阅读器（Web 才是真的“跨端”，2333~），水篇文章微微记录下。",
           "link": "https://yeshan333.github.io/2021/06/29/osmosfeed-rss-reader/",
           "publishedOn": "2021-06-29T15:34:20.000Z",
-          "wordCount": 241,
+          "wordCount": 246,
           "title": "使用 osmosfeed 创建自己的 Web RSS 阅读器"
         }
       ]
@@ -55,7 +64,7 @@
           "description": "最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]\nContinue reading...\nThe post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n坑爹的部署脚本\n开始用 Ansible 管理机器了\n关于\nSRE&Devops 每周分享 Issue #5\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4392",
           "publishedOn": "2021-07-08T13:49:51.000Z",
-          "wordCount": 797,
+          "wordCount": 760,
           "title": "警惕复用的陷阱"
         },
         {
@@ -64,7 +73,7 @@
           "description": "之前在博客介绍了 Linux From Scratch, 最近发现 LFS 已经有新的版本 10.1 了，周末 […]\nContinue reading...\nThe post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n珍藏资料\n编译LFS的一些经验\n如何杀死一个进程？\n/bin /usr/bin 和 /usr/local/bin 的故事\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4373",
           "publishedOn": "2021-07-02T17:09:35.000Z",
-          "wordCount": 2803,
+          "wordCount": 2766,
           "title": "开源软件源码编译指南"
         },
         {
@@ -73,7 +82,7 @@
           "description": "在我的博客切换到 Cloudflare 的 CDN 上之后，我发现速度快的惊人，原来 18s 才能加载完首页的 […]\nContinue reading...\nThe post 为什么 Cloudflare 提供免费的服务？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n欧格玛教会与言论自由\n博客迁移到 Cloudflare\nDNS 解析的原理\n最近的工作感悟\nFirefox Setup",
           "link": "https://www.kawabangga.com/posts/4361",
           "publishedOn": "2021-07-01T14:39:58.000Z",
-          "wordCount": 457,
+          "wordCount": 420,
           "title": "为什么 Cloudflare 提供免费的服务？"
         },
         {
@@ -82,7 +91,7 @@
           "description": "周末收到邮件通知，说博客的流量马上要用完了。发现博客的访问量变高了许多，另外我将博客首页展示了最近的 5 篇文 […]\nContinue reading...\nThe post 博客迁移到 Cloudflare first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n为什么 Cloudflare 提供免费的服务？\n欧格玛教会与言论自由\nDNS 解析的原理\n最近的工作感悟\nFirefox Setup",
           "link": "https://www.kawabangga.com/posts/4331",
           "publishedOn": "2021-06-27T07:42:08.000Z",
-          "wordCount": 961,
+          "wordCount": 924,
           "title": "博客迁移到 Cloudflare"
         },
         {
@@ -91,7 +100,7 @@
           "description": "我在 Shopee 维护一个 Service Mesh 系统，大部分的 RPC 调用要经过这个系统，这个系统每 […]\nContinue reading...\nThe post 最近的工作感悟 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n2020年的总结\nGitlab自动部署方案（Systemd+nc）\nJ2EE概念介绍\n分布式定时任务的重复执行问题",
           "link": "https://www.kawabangga.com/posts/4294",
           "publishedOn": "2021-06-23T17:48:21.000Z",
-          "wordCount": 888,
+          "wordCount": 851,
           "title": "最近的工作感悟"
         },
         {
@@ -100,7 +109,7 @@
           "description": "Latency （延迟）是我们在监控线上的组件运行情况的一个非常重要的指标，它可以告诉我们请求在多少时间内完成 […]\nContinue reading...\nThe post P99 是如何计算的 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n使用 mtr 检查网络问题，以及注意事项\n程序员应该知道的时间概念\nRedis RESP3 的一些想法",
           "link": "https://www.kawabangga.com/posts/4284",
           "publishedOn": "2021-06-18T13:55:08.000Z",
-          "wordCount": 643,
+          "wordCount": 606,
           "title": "P99 是如何计算的"
         },
         {
@@ -109,17 +118,8 @@
           "description": "在检查两个 IP 之间的网络情况的时候，常用的工具有两个：ping 可以检查两个 IP 之间通不通，以及延迟有 […]\nContinue reading...\nThe post 使用 mtr 检查网络问题，以及注意事项 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n连接池中的连接失效的几种处理方案\n程序员应该知道的时间概念\n一些命令行工具的增强版\nDocker (容器) 的原理\nRedis客户端缓存设计（In-Process caching）",
           "link": "https://www.kawabangga.com/posts/4275",
           "publishedOn": "2021-06-12T15:53:04.000Z",
-          "wordCount": 717,
+          "wordCount": 680,
           "title": "使用 mtr 检查网络问题，以及注意事项"
-        },
-        {
-          "id": "https://www.kawabangga.com/?p=4256",
-          "author": "laixintao",
-          "description": "在终端里面一个非常日常的操作，就是选中上一个命令的输出内容。比如使用文本处理程序处理一些服务器的 IP，最后得 […]\nContinue reading...\nThe post 在终端快速选中上一个命令的输出内容 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n记录一个pip安装错误\n认识Hibernate\n你的Linux上有一个超酷的 TCP 代理！\nNginx if 指令工作原理\nHTTP 长连接",
-          "link": "https://www.kawabangga.com/posts/4256",
-          "publishedOn": "2021-06-12T10:21:07.000Z",
-          "wordCount": 1164,
-          "title": "在终端快速选中上一个命令的输出内容"
         }
       ]
     },

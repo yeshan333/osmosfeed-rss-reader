@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-07-11T01:09:39.499Z</id>
+    <id>urn:2021-07-12T01:02:33.331Z</id>
     <title>osmos::feed</title>
-    <updated>2021-07-11T01:09:39.499Z</updated>
+    <updated>2021-07-12T01:02:33.331Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[对下载软件/文件进行校验的工具（Checksum and GPG）]]></title>
+        <id>https://yeshan333.github.io/2021/07/10/checksum-gpg-tools/</id>
+        <link href="https://yeshan333.github.io/2021/07/10/checksum-gpg-tools/"/>
+        <updated>2021-07-10T18:23:57.000Z</updated>
+        <summary type="html"><![CDATA[前言
+之前装软件一直都没有验证安装文件的习惯，信息安全意识不高，碰巧最近没啥事，微微写篇文章记录下校验工具（互联网http、https、ftp 服务并没有那么安全，是可以被劫持篡改。老装软件选手了，是该养成个校验文件的习惯了）。
+在互联网下载软件/文件的时候经常会看到官方提供了一段⌈校验和（checksum）⌋或包含校验和的文件供校验。常见的校验和有 md5、SHA 家族等。还有部分软件/文件会提供 GPG 校验文件（signature file, SIG）给下载者进行校验。
+来看看这两种校验方式相关的工具。]]></summary>
+        <author>
+            <name>ShanSan</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[警惕复用的陷阱]]></title>
         <id>https://www.kawabangga.com/?p=4392</id>
@@ -326,26 +339,6 @@ The post 使用 mtr 检查网络问题，以及注意事项 first appeared on �
 一些命令行工具的增强版
 Docker (容器) 的原理
 Redis客户端缓存设计（In-Process caching）]]></summary>
-        <author>
-            <name>laixintao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[在终端快速选中上一个命令的输出内容]]></title>
-        <id>https://www.kawabangga.com/?p=4256</id>
-        <link href="https://www.kawabangga.com/posts/4256"/>
-        <updated>2021-06-12T10:21:07.000Z</updated>
-        <summary type="html"><![CDATA[在终端里面一个非常日常的操作，就是选中上一个命令的输出内容。比如使用文本处理程序处理一些服务器的 IP，最后得 […]
-Continue reading...
-The post 在终端快速选中上一个命令的输出内容 first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-记录一个pip安装错误
-认识Hibernate
-你的Linux上有一个超酷的 TCP 代理！
-Nginx if 指令工作原理
-HTTP 长连接]]></summary>
         <author>
             <name>laixintao</name>
         </author>
