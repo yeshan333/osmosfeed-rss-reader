@@ -64,7 +64,7 @@
           "description": "最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]\nContinue reading...\nThe post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n坑爹的部署脚本\n开始用 Ansible 管理机器了\n关于\nSRE&Devops 每周分享 Issue #5\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4392",
           "publishedOn": "2021-07-08T13:49:51.000Z",
-          "wordCount": 760,
+          "wordCount": 800,
           "title": "警惕复用的陷阱"
         },
         {
@@ -111,15 +111,6 @@
           "publishedOn": "2021-06-18T13:55:08.000Z",
           "wordCount": 606,
           "title": "P99 是如何计算的"
-        },
-        {
-          "id": "https://www.kawabangga.com/?p=4275",
-          "author": "laixintao",
-          "description": "在检查两个 IP 之间的网络情况的时候，常用的工具有两个：ping 可以检查两个 IP 之间通不通，以及延迟有 […]\nContinue reading...\nThe post 使用 mtr 检查网络问题，以及注意事项 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n连接池中的连接失效的几种处理方案\n程序员应该知道的时间概念\n一些命令行工具的增强版\nDocker (容器) 的原理\nRedis客户端缓存设计（In-Process caching）",
-          "link": "https://www.kawabangga.com/posts/4275",
-          "publishedOn": "2021-06-12T15:53:04.000Z",
-          "wordCount": 680,
-          "title": "使用 mtr 检查网络问题，以及注意事项"
         }
       ]
     },
