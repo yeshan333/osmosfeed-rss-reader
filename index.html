@@ -16,6 +16,28 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-07-12">2021-07-12</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://draveness.me/">面向信仰编程</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如何提高缓存系统的内存利用率和可扩展性 · NSDI &#x27;21</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://draveness.me//papers-segcache">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>No content preview</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-07-10">2021-07-10</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -465,47 +487,9 @@ OCI 规范目前没有办法打包容器镜像工件或一组容器镜像。但�
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-06-13">2021-06-13</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">K8S 生态周报| Docker v20.10.7 发布，修复了死锁和容器启动失败的问题</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/06/14/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Docker-v20.10.7-%E5%8F%91%E5%B8%83%E4%BF%AE%E5%A4%8D%E4%BA%86%E6%AD%BB%E9%94%81%E5%92%8C%E5%AE%B9%E5%99%A8%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%97%AE%E9%A2%98/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
-Docker v20.10.7 正式发布
-Docker 在近期也发布了 v20.10.7 版本，这个版本中主要都是侧重在稳定性和安全性上，我们一起来看看具体有哪些值得关注的内容吧！
-CLI
-CLI 方面主要是移除掉了一直以来存在的 WARNING: No kernel memory limit support 这个 Warning 信息，同时在 cgroup v2 下也不会再显示 WARNING: No oom kill disable support 的 Warning 信息了。
-为什么呢？因为 oom kill disable 在 cgroup v2 下不可用。 如果你在 cgroup v2 下使用了 --oom-kill-disable 选项就会看到如下提示：
-➜ ~ docker info |grep Cgroup
-Cgroup Driver: systemd
-Cgroup Version: 2
-➜ ~ docker run --rm -it --oom-kill-disable -m 6m alpine sh
-WARNING: Your kernel does not support OomKillDisable. OomKillDisable discarded.
-
-
-这里如果要介绍 cgroup v2 那内容就太多了，我在 2019 年接受访谈聊容器技术趋势的时候就做了如下预测：
-从底层次技术的角度来看，cgroup v2 将逐步普及，进而取代 cgroup v1，但这个过程可能需要两三年左右。
-整体而言，稳定性和性能优化将会是未来的主旋律。
-现在已经过去了一年多的时间，完全符合我当时的预测。 现在包括 runc、containerd、Do…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-07-13T01:06:10.525Z">2021-07-13T01:06:10.525Z</time>
+    <time id="build-timestamp" datetime="2021-07-14T01:00:31.331Z">2021-07-14T01:00:31.331Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>
