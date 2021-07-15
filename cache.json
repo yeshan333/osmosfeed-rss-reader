@@ -74,7 +74,7 @@
           "description": "最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]\nContinue reading...\nThe post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n坑爹的部署脚本\n开始用 Ansible 管理机器了\n关于\nSRE&Devops 每周分享 Issue #5\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4392",
           "publishedOn": "2021-07-08T13:49:51.000Z",
-          "wordCount": 819,
+          "wordCount": 856,
           "title": "警惕复用的陷阱"
         },
         {
@@ -83,7 +83,7 @@
           "description": "之前在博客介绍了 Linux From Scratch, 最近发现 LFS 已经有新的版本 10.1 了，周末 […]\nContinue reading...\nThe post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n珍藏资料\n编译LFS的一些经验\n如何杀死一个进程？\n/bin /usr/bin 和 /usr/local/bin 的故事\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4373",
           "publishedOn": "2021-07-02T17:09:35.000Z",
-          "wordCount": 2785,
+          "wordCount": 2822,
           "title": "开源软件源码编译指南"
         },
         {
@@ -92,7 +92,7 @@
           "description": "在我的博客切换到 Cloudflare 的 CDN 上之后，我发现速度快的惊人，原来 18s 才能加载完首页的 […]\nContinue reading...\nThe post 为什么 Cloudflare 提供免费的服务？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n欧格玛教会与言论自由\n博客迁移到 Cloudflare\nDNS 解析的原理\n最近的工作感悟\nFirefox Setup",
           "link": "https://www.kawabangga.com/posts/4361",
           "publishedOn": "2021-07-01T14:39:58.000Z",
-          "wordCount": 439,
+          "wordCount": 476,
           "title": "为什么 Cloudflare 提供免费的服务？"
         },
         {
@@ -101,7 +101,7 @@
           "description": "周末收到邮件通知，说博客的流量马上要用完了。发现博客的访问量变高了许多，另外我将博客首页展示了最近的 5 篇文 […]\nContinue reading...\nThe post 博客迁移到 Cloudflare first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n为什么 Cloudflare 提供免费的服务？\n欧格玛教会与言论自由\nDNS 解析的原理\n最近的工作感悟\nFirefox Setup",
           "link": "https://www.kawabangga.com/posts/4331",
           "publishedOn": "2021-06-27T07:42:08.000Z",
-          "wordCount": 943,
+          "wordCount": 980,
           "title": "博客迁移到 Cloudflare"
         },
         {
@@ -110,7 +110,7 @@
           "description": "我在 Shopee 维护一个 Service Mesh 系统，大部分的 RPC 调用要经过这个系统，这个系统每 […]\nContinue reading...\nThe post 最近的工作感悟 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n2020年的总结\nGitlab自动部署方案（Systemd+nc）\nJ2EE概念介绍\n分布式定时任务的重复执行问题",
           "link": "https://www.kawabangga.com/posts/4294",
           "publishedOn": "2021-06-23T17:48:21.000Z",
-          "wordCount": 891,
+          "wordCount": 928,
           "title": "最近的工作感悟"
         },
         {
@@ -119,7 +119,7 @@
           "description": "Latency （延迟）是我们在监控线上的组件运行情况的一个非常重要的指标，它可以告诉我们请求在多少时间内完成 […]\nContinue reading...\nThe post P99 是如何计算的 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n使用 mtr 检查网络问题，以及注意事项\n程序员应该知道的时间概念\nRedis RESP3 的一些想法",
           "link": "https://www.kawabangga.com/posts/4284",
           "publishedOn": "2021-06-18T13:55:08.000Z",
-          "wordCount": 625,
+          "wordCount": 662,
           "title": "P99 是如何计算的"
         }
       ]
