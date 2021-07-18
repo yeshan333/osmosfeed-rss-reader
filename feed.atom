@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-07-17T01:02:40.437Z</id>
+    <id>urn:2021-07-18T01:06:52.788Z</id>
     <title>osmos::feed</title>
-    <updated>2021-07-17T01:02:40.437Z</updated>
+    <updated>2021-07-18T01:06:52.788Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[程序员可能必读书单推荐（一）]]></title>
+        <id>https://draveness.me//books-1</id>
+        <link href="https://draveness.me//books-1"/>
+        <updated>2021-07-16T00:00:00.000Z</updated>
+        <author>
+            <name>面向信仰编程</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[如何提高缓存系统的内存利用率和可扩展性 · NSDI '21]]></title>
         <id>https://draveness.me//papers-segcache</id>
@@ -282,28 +291,6 @@ The post P99 是如何计算的 first appeared on 卡瓦邦噶！.
 Redis RESP3 的一些想法]]></summary>
         <author>
             <name>laixintao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为什么我们需要一个容器镜像的包管理器]]></title>
-        <id>https://moelove.info/2021/06/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</id>
-        <link href="https://moelove.info/2021/06/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/"/>
-        <updated>2021-06-17T15:55:43.000Z</updated>
-        <summary type="html"><![CDATA[TL;DR
-我们需要对 container 供应链进行更好的元数据管理，以便更好地进行分析;
-OCI 规范目前没有办法打包容器镜像工件或一组容器镜像。但他们会慢慢做到这一点；
-同时，我们需要一个用于容器镜像的包管理器；
-一些背景
-我维护着一个叫做 Tern 的开源项目，这个项目是为容器镜像生成一个软件材料清单（SBOM）。很多安装在容器镜像中的组件都是独立安装的，而非通过包管理器。这使得我们很难弄清楚创建这个容器镜像的作者的意图。它也没有提供更多关于容器镜像贡献者的信息。大多数容器镜像都是基于之前已有的容器镜像，通过客户端工具或者镜像仓库都很难看到这些信息。
-我想如果有一个“容器镜像”的包管理器，应该能解决这个问题。因此，我早在 KubeCon 2018 的时候就提出了 "打包" 的想法，我问容器镜像的 manifest 是否可以保存这些信息，以便工具可以根据容器镜像的供应链来进行分析。
-事实证明，社区已经在考虑如何管理 helm chart、OPA 策略、文件系统和签名等事情了。这就是我参与 开放容器计划（OCI）组织  的原因（我还欠 @vbatts 一个介绍我的人情）。当时的理解是，容器镜像除了需要通过摘要来进行识别外，不需要进行其他管理。也不需要管理依赖，因为所有的依赖都被打包进了容器镜像中。通过再次重建容器和保持一个下游消费者可以 pull 的滚动标签来处理更新。
-然而，容器生态除了可移植性外，并没有提供太多东西。和容器镜像一起管理容器元数据可以为使用者和贡献者提供更多关于供应链的宝贵信息。经过了两年时间和几次供应链攻击之后，我们仍然在讨论，如何最好的做到这一点。在这里，我试图将一些提议的概念归纳起来，看看它们如何满足我们对元数据管理的要求。
-回到起点
-我们写一个包管理器主要有以下三个原因：
-标识 - 为你的新文件或者包提供一个名字和其他唯一可识别的特征；
-上下文…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
     </entry>
 </feed>
