@@ -4,17 +4,7 @@
       "title": "Release notes from osmosfeed",
       "feedUrl": "https://github.com/osmoscraft/osmosfeed/releases.atom",
       "siteUrl": "https://github.com/osmoscraft/osmosfeed/releases",
-      "articles": [
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.0",
-          "author": null,
-          "description": "Added: support an experimental template for YouTube feed 📺 Demo | Source\n\nAggregate content from any YouTube channel rss url https://www.youtube.com/feeds/videos.xml?channel_id=<replace_with_channel_id>\nVideos are embedded via iframe and loading accelerated by youtube-lite-embed\nAds are reduced thanks to YouTube's policy for embedded videos 🙃\nWorks on mobile devices with butter smooth horizontal scroll.\nCaveat: the template works only with YouTube content. You cannot mix textual RSS feed or other video sources such as Vimeo.\nChanged: Default HTML template meta tag adjusted to match convention\nChanged: sources in template data is now ordered by last update timestamp (as opposed to alphabetical)\nThank you @PiyushLosalka",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.0",
-          "publishedOn": "2021-06-23T05:57:59.000Z",
-          "wordCount": 370,
-          "title": "v1.11.0"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "ShanSan",
@@ -83,7 +73,7 @@
           "description": "好吧，我承认这么说可能违反了广告法，但是……它确实挺小的。 可以对比一组数据： 官方的 Redis 镜像：10 […]\nContinue reading...\nThe post Build 一个最小的 Redis Docker Image first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nRedis 的命令设计\nRedis RESP3 的一些想法\nIRedis 开发记2：CircleCI workflow 自动发布到 pypi\nDjango 项目使用 CircleCI\n关于",
           "link": "https://www.kawabangga.com/posts/4411",
           "publishedOn": "2021-07-19T16:48:01.000Z",
-          "wordCount": 1352,
+          "wordCount": 1354,
           "title": "Build 一个最小的 Redis Docker Image"
         },
         {
@@ -92,7 +82,7 @@
           "description": "最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]\nContinue reading...\nThe post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n坑爹的部署脚本\n开始用 Ansible 管理机器了\n关于\nSRE&Devops 每周分享 Issue #5\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4392",
           "publishedOn": "2021-07-08T13:49:51.000Z",
-          "wordCount": 844,
+          "wordCount": 846,
           "title": "警惕复用的陷阱"
         },
         {
@@ -101,7 +91,7 @@
           "description": "之前在博客介绍了 Linux From Scratch, 最近发现 LFS 已经有新的版本 10.1 了，周末 […]\nContinue reading...\nThe post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n珍藏资料\n编译LFS的一些经验\n如何杀死一个进程？\n/bin /usr/bin 和 /usr/local/bin 的故事\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4373",
           "publishedOn": "2021-07-02T17:09:35.000Z",
-          "wordCount": 2804,
+          "wordCount": 2806,
           "title": "开源软件源码编译指南"
         },
         {
@@ -110,7 +100,7 @@
           "description": "在我的博客切换到 Cloudflare 的 CDN 上之后，我发现速度快的惊人，原来 18s 才能加载完首页的 […]\nContinue reading...\nThe post 为什么 Cloudflare 提供免费的服务？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n欧格玛教会与言论自由\n博客迁移到 Cloudflare\nDNS 解析的原理\n最近的工作感悟\nFirefox Setup",
           "link": "https://www.kawabangga.com/posts/4361",
           "publishedOn": "2021-07-01T14:39:58.000Z",
-          "wordCount": 458,
+          "wordCount": 460,
           "title": "为什么 Cloudflare 提供免费的服务？"
         },
         {
@@ -119,7 +109,7 @@
           "description": "周末收到邮件通知，说博客的流量马上要用完了。发现博客的访问量变高了许多，另外我将博客首页展示了最近的 5 篇文 […]\nContinue reading...\nThe post 博客迁移到 Cloudflare first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n为什么 Cloudflare 提供免费的服务？\n欧格玛教会与言论自由\nDNS 解析的原理\n最近的工作感悟\nFirefox Setup",
           "link": "https://www.kawabangga.com/posts/4331",
           "publishedOn": "2021-06-27T07:42:08.000Z",
-          "wordCount": 962,
+          "wordCount": 964,
           "title": "博客迁移到 Cloudflare"
         },
         {
@@ -128,7 +118,7 @@
           "description": "我在 Shopee 维护一个 Service Mesh 系统，大部分的 RPC 调用要经过这个系统，这个系统每 […]\nContinue reading...\nThe post 最近的工作感悟 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n2020年的总结\nGitlab自动部署方案（Systemd+nc）\nJ2EE概念介绍\n分布式定时任务的重复执行问题",
           "link": "https://www.kawabangga.com/posts/4294",
           "publishedOn": "2021-06-23T17:48:21.000Z",
-          "wordCount": 910,
+          "wordCount": 912,
           "title": "最近的工作感悟"
         }
       ]
@@ -164,15 +154,6 @@
           "publishedOn": "2021-06-24T21:53:03.000Z",
           "wordCount": 464,
           "title": "更优雅的 Kubernetes 集群事件度量方案"
-        },
-        {
-          "id": "https://moelove.info/2021/06/23/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E7%9A%84-5-%E5%B9%B4%E9%95%BF%E8%B7%91runc-v1.0-%E7%BB%88%E4%BA%8E%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "本文我来分享下与我们（搞容器化/K8S 从业者）息息相关的一个基础项目 runc 是如何自 2016 年发布了 v1.0.0-rc1 到现在历经 5 年长跑，从 rc1 一直到 rc95 ，如今终于正式发布 v1.0 版本的过程，及这中间的故事。\n大家好，我是张晋涛。\n在 2018 年 11 月底时，我写了一篇文章 《runc 1.0-rc6 发布之际》 , 那应该是我第一次公开介绍 runc。如果你还不了解 runc 是什么，以及如何使用它，请参考我那篇文章。本文中不再对其概念和用法等进行说明。\n在 2019 年 3 月底时，我写了另一篇文章 《runc 1.0-rc7 发布之际》，介绍 runc 1.0-rc7 发布的原因，及那个版本中最主要的修复 CVE-2019-5736 。其中也介绍了关于 runc/Docker 等对于 Linux 内核兼容性的问题，感兴趣的小伙伴可以看看。\n关注我的朋友们，应该也在 K8S 生态周报 中多次看到过我对 runc 的介绍，包括其特性及安全漏洞等方面。\n在 2015 年 6 月， Docker ，CoreOS 和其他一些公司共同成立了 OCI （开放容器计划） 组织，其最主要的内容有两个：\n容器运行时规范\n容器镜像规范\nDocker 将其运行时捐赠给了 OCI ，作为容器运行时规范的基础实现，托管在了 https://github.com/opencontainers/runc 也就是现在大家看到的 runc 了。\n发布历程\n我们来看看 runc 版本发布的历程，以便了解它为何长跑 5 年。\nrunc version\nrelease time\nruntime-spec version\n备注\n\n\n\n\nrunc v1.0-rc1\n2016.06.04\nv1.0.0-rc1\n\n\n\nrunc v1.0-rc2\n2016.10.01\nv1.0…",
-          "link": "https://moelove.info/2021/06/23/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E7%9A%84-5-%E5%B9%B4%E9%95%BF%E8%B7%91runc-v1.0-%E7%BB%88%E4%BA%8E%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/",
-          "publishedOn": "2021-06-22T18:08:20.000Z",
-          "wordCount": 302,
-          "title": "开源项目的 5 年长跑，runc v1.0 终于正式发布！"
         }
       ]
     }
