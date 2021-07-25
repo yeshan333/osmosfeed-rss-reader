@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-07-24T01:04:54.981Z</id>
+    <id>urn:2021-07-25T01:06:49.973Z</id>
     <title>osmos::feed</title>
-    <updated>2021-07-24T01:04:54.981Z</updated>
+    <updated>2021-07-25T01:06:49.973Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[PromQL 简明教程]]></title>
+        <id>https://www.kawabangga.com/?p=4408</id>
+        <link href="https://www.kawabangga.com/posts/4408"/>
+        <updated>2021-07-24T09:33:06.000Z</updated>
+        <summary type="html"><![CDATA[这篇文章介绍如何使用 PromQL 查询 Prometheus 里面的数据。包括如何使用函数，理解这些函数，M […]
+Continue reading...
+The post PromQL 简明教程 first appeared on 卡瓦邦噶！.
+
+相关文章:
+
+P99 是如何计算的
+SRE&Devops 每周分享 Issue #4 AWS Layer
+关于
+DB资料集
+Gitops 的一些实践经验]]></summary>
+        <author>
+            <name>laixintao</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Build 一个最小的 Redis Docker Image]]></title>
         <id>https://www.kawabangga.com/?p=4411</id>
@@ -186,35 +206,6 @@ runc v1.0 正式发布
 #3010 cgroup1 相关的 blkio 支持 BFQ weight 了，这里需要注意的是 2018 年 CFQ 已经从 Linux 删除，22019 年发布的 RHEL 8.0 和 Ubuntu 19.01 等发行版中也均使用 BFQ 替代了 CFQ 。关于 Linux 内核的 BFQ 和 CFQ 这里就不再展开了，只需要知道 BFQ 相比 CFQ 做到了低延迟和吞吐即可；
 更多关于此版本的变更，请参考其 ReleaseNote ，现在 Docker/containerd 等项目已将 runc 依赖升级到了 v1.0 ，K8S 项目尚未合并。
 Promethe…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[更优雅的 Kubernetes 集群事件度量方案]]></title>
-        <id>https://moelove.info/2021/06/25/%E6%9B%B4%E4%BC%98%E9%9B%85%E7%9A%84-Kubernetes-%E9%9B%86%E7%BE%A4%E4%BA%8B%E4%BB%B6%E5%BA%A6%E9%87%8F%E6%96%B9%E6%A1%88/</id>
-        <link href="https://moelove.info/2021/06/25/%E6%9B%B4%E4%BC%98%E9%9B%85%E7%9A%84-Kubernetes-%E9%9B%86%E7%BE%A4%E4%BA%8B%E4%BB%B6%E5%BA%A6%E9%87%8F%E6%96%B9%E6%A1%88/"/>
-        <updated>2021-06-24T21:53:03.000Z</updated>
-        <summary type="html"><![CDATA[大家好，我是张晋涛。
-
-群里有个小伙伴问了我上图中这个问题，如何度量滚动升级这个过程的时间。
-这个问题可以抽象为一种通用需求，适用于多种场景。
-比如你是 Kubernetes 集群的管理员，你想度量这个过程中的耗时，以便发现优化点；
-比如你是在做 CI/CD ，你想通过度量这个过程的耗时，来给出 CI/CD 过程的耗时；
-现有方案
-Kubernetes 已经提供了很方便的办法来解决此问题，也就是我回复中谈到的，通过 event 来度量即可。
-比如，我们在 K8S 中，创建一个 deployment，看看这个过程中的 event 信息：
-➜ ~ kubectl create ns moelove
-namespace/moelove created
-➜ ~ kubectl -n moelove create deployment redis --image=ghcr.io/moelove/redis:alpine
-deployment.apps/redis created
-➜ ~ kubectl -n moelove get deploy
-NAME READY UP-TO-DATE AVAILABLE AGE
-redis 1/1 1 1 16s
-➜ ~ kubectl -n moelove get events
-LAST SEEN TYPE REASON OBJECT MESSAGE
-27s Normal Scheduled pod/redis-687967dbc5-gsz5n Successfully assigned moelove/redis-687967dbc5-gsz5n to kind-control-plane
-27s Normal Pulled pod/redis-687967dbc5-gsz5n Container image "ghcr.io/moelove…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>

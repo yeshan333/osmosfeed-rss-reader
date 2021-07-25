@@ -16,6 +16,38 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-07-24">2021-07-24</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.kawabangga.com">卡瓦邦噶！</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">PromQL 简明教程</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.kawabangga.com/posts/4408">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>这篇文章介绍如何使用 PromQL 查询 Prometheus 里面的数据。包括如何使用函数，理解这些函数，M […]
+Continue reading...
+The post PromQL 简明教程 first appeared on 卡瓦邦噶！.
+
+相关文章:
+
+P99 是如何计算的
+SRE&amp;Devops 每周分享 Issue #4 AWS Layer
+关于
+DB资料集
+Gitops 的一些实践经验</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-07-19">2021-07-19</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -223,7 +255,7 @@ SRE&amp;Devops 每周分享 Issue #3</span>
                 <summary class="article-expander__title">为什么 Cloudflare 提供免费的服务？</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://www.kawabangga.com/posts/4361">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
+                    <span class="article-reading-time">(1 min)</span>
                     <span>在我的博客切换到 Cloudflare 的 CDN 上之后，我发现速度快的惊人，原来 18s 才能加载完首页的 […]
 Continue reading...
 The post 为什么 Cloudflare 提供免费的服务？ first appeared on 卡瓦邦噶！.
@@ -329,50 +361,9 @@ Promethe…</span>
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-06-24">2021-06-24</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">更优雅的 Kubernetes 集群事件度量方案</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/06/25/%E6%9B%B4%E4%BC%98%E9%9B%85%E7%9A%84-Kubernetes-%E9%9B%86%E7%BE%A4%E4%BA%8B%E4%BB%B6%E5%BA%A6%E9%87%8F%E6%96%B9%E6%A1%88/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>大家好，我是张晋涛。
-
-群里有个小伙伴问了我上图中这个问题，如何度量滚动升级这个过程的时间。
-这个问题可以抽象为一种通用需求，适用于多种场景。
-比如你是 Kubernetes 集群的管理员，你想度量这个过程中的耗时，以便发现优化点；
-比如你是在做 CI/CD ，你想通过度量这个过程的耗时，来给出 CI/CD 过程的耗时；
-现有方案
-Kubernetes 已经提供了很方便的办法来解决此问题，也就是我回复中谈到的，通过 event 来度量即可。
-比如，我们在 K8S 中，创建一个 deployment，看看这个过程中的 event 信息：
-➜ ~ kubectl create ns moelove
-namespace/moelove created
-➜ ~ kubectl -n moelove create deployment redis --image&#x3D;ghcr.io/moelove/redis:alpine
-deployment.apps/redis created
-➜ ~ kubectl -n moelove get deploy
-NAME READY UP-TO-DATE AVAILABLE AGE
-redis 1/1 1 1 16s
-➜ ~ kubectl -n moelove get events
-LAST SEEN TYPE REASON OBJECT MESSAGE
-27s Normal Scheduled pod/redis-687967dbc5-gsz5n Successfully assigned moelove/redis-687967dbc5-gsz5n to kind-control-plane
-27s Normal Pulled pod/redis-687967dbc5-gsz5n Container image &quot;ghcr.io/moelove…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-07-24T01:04:54.965Z">2021-07-24T01:04:54.965Z</time>
+    <time id="build-timestamp" datetime="2021-07-25T01:06:49.956Z">2021-07-25T01:06:49.956Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>
