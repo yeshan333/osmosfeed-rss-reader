@@ -73,7 +73,7 @@
           "description": "这篇文章介绍如何使用 PromQL 查询 Prometheus 里面的数据。包括如何使用函数，理解这些函数，M […]\nContinue reading...\nThe post PromQL 简明教程 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nP99 是如何计算的\nSRE&Devops 每周分享 Issue #4 AWS Layer\n关于\nDB资料集\nGitops 的一些实践经验",
           "link": "https://www.kawabangga.com/posts/4408",
           "publishedOn": "2021-07-24T09:33:06.000Z",
-          "wordCount": 1156,
+          "wordCount": 1210,
           "title": "PromQL 简明教程"
         },
         {
@@ -82,7 +82,7 @@
           "description": "好吧，我承认这么说可能违反了广告法，但是……它确实挺小的。 可以对比一组数据： 官方的 Redis 镜像：10 […]\nContinue reading...\nThe post Build 一个最小的 Redis Docker Image first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nRedis 的命令设计\nRedis RESP3 的一些想法\nIRedis 开发记2：CircleCI workflow 自动发布到 pypi\nDjango 项目使用 CircleCI\n关于",
           "link": "https://www.kawabangga.com/posts/4411",
           "publishedOn": "2021-07-19T16:48:01.000Z",
-          "wordCount": 1363,
+          "wordCount": 1419,
           "title": "Build 一个最小的 Redis Docker Image"
         },
         {
@@ -91,7 +91,7 @@
           "description": "最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]\nContinue reading...\nThe post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n坑爹的部署脚本\n开始用 Ansible 管理机器了\n关于\nSRE&Devops 每周分享 Issue #5\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4392",
           "publishedOn": "2021-07-08T13:49:51.000Z",
-          "wordCount": 852,
+          "wordCount": 863,
           "title": "警惕复用的陷阱"
         },
         {
@@ -100,7 +100,7 @@
           "description": "之前在博客介绍了 Linux From Scratch, 最近发现 LFS 已经有新的版本 10.1 了，周末 […]\nContinue reading...\nThe post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n珍藏资料\n编译LFS的一些经验\n如何杀死一个进程？\n/bin /usr/bin 和 /usr/local/bin 的故事\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4373",
           "publishedOn": "2021-07-02T17:09:35.000Z",
-          "wordCount": 2812,
+          "wordCount": 2823,
           "title": "开源软件源码编译指南"
         },
         {
@@ -109,17 +109,8 @@
           "description": "在我的博客切换到 Cloudflare 的 CDN 上之后，我发现速度快的惊人，原来 18s 才能加载完首页的 […]\nContinue reading...\nThe post 为什么 Cloudflare 提供免费的服务？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n欧格玛教会与言论自由\n博客迁移到 Cloudflare\nDNS 解析的原理\n最近的工作感悟\nFirefox Setup",
           "link": "https://www.kawabangga.com/posts/4361",
           "publishedOn": "2021-07-01T14:39:58.000Z",
-          "wordCount": 466,
+          "wordCount": 477,
           "title": "为什么 Cloudflare 提供免费的服务？"
-        },
-        {
-          "id": "https://www.kawabangga.com/?p=4331",
-          "author": "laixintao",
-          "description": "周末收到邮件通知，说博客的流量马上要用完了。发现博客的访问量变高了许多，另外我将博客首页展示了最近的 5 篇文 […]\nContinue reading...\nThe post 博客迁移到 Cloudflare first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n为什么 Cloudflare 提供免费的服务？\n欧格玛教会与言论自由\nDNS 解析的原理\n最近的工作感悟\nFirefox Setup",
-          "link": "https://www.kawabangga.com/posts/4331",
-          "publishedOn": "2021-06-27T07:42:08.000Z",
-          "wordCount": 970,
-          "title": "博客迁移到 Cloudflare"
         }
       ]
     },
@@ -136,15 +127,6 @@
           "publishedOn": "2021-07-02T04:39:40.000Z",
           "wordCount": 190,
           "title": "Redis 容器化技术选型，K8S 并非唯一"
-        },
-        {
-          "id": "https://moelove.info/2021/06/27/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-beta.0-%E5%8F%91%E5%B8%83/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nrunc v1.0 正式发布\n从 2016 年 6 月发布 v1.0-rc1 版本开始，至今已整整 5 年时间，runc 历经多个 rc 版本终于发布了 v1.0 版本。整个过程及其思考请参考我之前的文章 《开源项目的 5 年长跑，runc v1.0 终于正式发布！》 。这里我们来看看 v1.0 新版本中带来了哪些值得注意的变更。\n破化性变更\n#2999 删除了 libcontainer/configs.Device* 标识，请使用 libcontainer/devices.* 来替代（是自 v1.0-rc94 开始废弃的）；\n#2999 删除了 libcontainer/system.RunningInUserNS 函数，请使用 libcontainer/userns.RunningInUserNS 函数代替（同样是自 v1.0-rc94 开始废弃的）；\n改进\n#2994 在 runc update 的时候设置了 SkipDevices ，所以在此期间我们就不会更新 cgroups 了；\n#3010 cgroup1 相关的 blkio 支持 BFQ weight 了，这里需要注意的是 2018 年 CFQ 已经从 Linux 删除，22019 年发布的 RHEL 8.0 和 Ubuntu 19.01 等发行版中也均使用 BFQ 替代了 CFQ 。关于 Linux 内核的 BFQ 和 CFQ 这里就不再展开了，只需要知道 BFQ 相比 CFQ 做到了低延迟和吞吐即可；\n更多关于此版本的变更，请参考其 ReleaseNote ，现在 Docker/containerd 等项目已将 runc 依赖升级到了 v1.0 ，K8S 项目尚未合并。\nPromethe…",
-          "link": "https://moelove.info/2021/06/27/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-beta.0-%E5%8F%91%E5%B8%83/",
-          "publishedOn": "2021-06-26T21:52:12.000Z",
-          "wordCount": 349,
-          "title": "K8S 生态周报| Kubernetes v1.22.0-beta.0 发布"
         }
       ]
     }

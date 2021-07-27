@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-07-26T01:04:43.881Z</id>
+    <id>urn:2021-07-27T01:07:05.183Z</id>
     <title>osmos::feed</title>
-    <updated>2021-07-26T01:04:43.881Z</updated>
+    <updated>2021-07-27T01:07:05.183Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -168,46 +168,6 @@ Firefox Setup]]></summary>
         <summary type="html"><![CDATA[之前一直用 App Store 上的一个 RSS 阅读器 RSS Reader Prime 订阅技术周刊和 dalao 的技术博客，不得不说挺好用的，奈何全线下架了，现在就平板上保留着这个 App，手机上没有（国区好用的 RSS 阅读器基本无了）。有时候又想着用手机读读技术文章（板子太大，不好拿），于是乎翻了下 GitHub rss-reader topic 下的相关阅读器项目，挑了手基于 Web 和 GitHub Pages 的 RSS 阅读器（Web 才是真的“跨端”，2333~），水篇文章微微记录下。]]></summary>
         <author>
             <name>ShanSan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[博客迁移到 Cloudflare]]></title>
-        <id>https://www.kawabangga.com/?p=4331</id>
-        <link href="https://www.kawabangga.com/posts/4331"/>
-        <updated>2021-06-27T07:42:08.000Z</updated>
-        <summary type="html"><![CDATA[周末收到邮件通知，说博客的流量马上要用完了。发现博客的访问量变高了许多，另外我将博客首页展示了最近的 5 篇文 […]
-Continue reading...
-The post 博客迁移到 Cloudflare first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-为什么 Cloudflare 提供免费的服务？
-欧格玛教会与言论自由
-DNS 解析的原理
-最近的工作感悟
-Firefox Setup]]></summary>
-        <author>
-            <name>laixintao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[K8S 生态周报| Kubernetes v1.22.0-beta.0 发布]]></title>
-        <id>https://moelove.info/2021/06/27/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-beta.0-%E5%8F%91%E5%B8%83/</id>
-        <link href="https://moelove.info/2021/06/27/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-beta.0-%E5%8F%91%E5%B8%83/"/>
-        <updated>2021-06-26T21:52:12.000Z</updated>
-        <summary type="html"><![CDATA[「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
-runc v1.0 正式发布
-从 2016 年 6 月发布 v1.0-rc1 版本开始，至今已整整 5 年时间，runc 历经多个 rc 版本终于发布了 v1.0 版本。整个过程及其思考请参考我之前的文章 《开源项目的 5 年长跑，runc v1.0 终于正式发布！》 。这里我们来看看 v1.0 新版本中带来了哪些值得注意的变更。
-破化性变更
-#2999 删除了 libcontainer/configs.Device* 标识，请使用 libcontainer/devices.* 来替代（是自 v1.0-rc94 开始废弃的）；
-#2999 删除了 libcontainer/system.RunningInUserNS 函数，请使用 libcontainer/userns.RunningInUserNS 函数代替（同样是自 v1.0-rc94 开始废弃的）；
-改进
-#2994 在 runc update 的时候设置了 SkipDevices ，所以在此期间我们就不会更新 cgroups 了；
-#3010 cgroup1 相关的 blkio 支持 BFQ weight 了，这里需要注意的是 2018 年 CFQ 已经从 Linux 删除，22019 年发布的 RHEL 8.0 和 Ubuntu 19.01 等发行版中也均使用 BFQ 替代了 CFQ 。关于 Linux 内核的 BFQ 和 CFQ 这里就不再展开了，只需要知道 BFQ 相比 CFQ 做到了低延迟和吞吐即可；
-更多关于此版本的变更，请参考其 ReleaseNote ，现在 Docker/containerd 等项目已将 runc 依赖升级到了 v1.0 ，K8S 项目尚未合并。
-Promethe…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
     </entry>
 </feed>
