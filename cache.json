@@ -19,15 +19,6 @@
           "publishedOn": "2021-07-10T18:23:57.000Z",
           "wordCount": 1338,
           "title": "对下载软件/文件进行校验的工具（Checksum and GPG）"
-        },
-        {
-          "id": "https://yeshan333.github.io/2021/06/29/osmosfeed-rss-reader/",
-          "author": null,
-          "description": "之前一直用 App Store 上的一个 RSS 阅读器 RSS Reader Prime 订阅技术周刊和 dalao 的技术博客，不得不说挺好用的，奈何全线下架了，现在就平板上保留着这个 App，手机上没有（国区好用的 RSS 阅读器基本无了）。有时候又想着用手机读读技术文章（板子太大，不好拿），于是乎翻了下 GitHub rss-reader topic 下的相关阅读器项目，挑了手基于 Web 和 GitHub Pages 的 RSS 阅读器（Web 才是真的“跨端”，2333~），水篇文章微微记录下。",
-          "link": "https://yeshan333.github.io/2021/06/29/osmosfeed-rss-reader/",
-          "publishedOn": "2021-06-29T15:34:20.000Z",
-          "wordCount": 246,
-          "title": "使用 osmosfeed 创建自己的 Web RSS 阅读器"
         }
       ]
     },
@@ -73,7 +64,7 @@
           "description": "这篇文章介绍如何使用 PromQL 查询 Prometheus 里面的数据。包括如何使用函数，理解这些函数，M […]\nContinue reading...\nThe post PromQL 简明教程 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nP99 是如何计算的\nSRE&Devops 每周分享 Issue #4 AWS Layer\n关于\nDB资料集\nGitops 的一些实践经验",
           "link": "https://www.kawabangga.com/posts/4408",
           "publishedOn": "2021-07-24T09:33:06.000Z",
-          "wordCount": 1165,
+          "wordCount": 1182,
           "title": "PromQL 简明教程"
         },
         {
@@ -82,7 +73,7 @@
           "description": "好吧，我承认这么说可能违反了广告法，但是……它确实挺小的。 可以对比一组数据： 官方的 Redis 镜像：10 […]\nContinue reading...\nThe post Build 一个最小的 Redis Docker Image first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nRedis 的命令设计\nRedis RESP3 的一些想法\nIRedis 开发记2：CircleCI workflow 自动发布到 pypi\nDjango 项目使用 CircleCI\n关于",
           "link": "https://www.kawabangga.com/posts/4411",
           "publishedOn": "2021-07-19T16:48:01.000Z",
-          "wordCount": 1374,
+          "wordCount": 1391,
           "title": "Build 一个最小的 Redis Docker Image"
         },
         {
@@ -91,7 +82,7 @@
           "description": "最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]\nContinue reading...\nThe post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n坑爹的部署脚本\n开始用 Ansible 管理机器了\n关于\nSRE&Devops 每周分享 Issue #5\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4392",
           "publishedOn": "2021-07-08T13:49:51.000Z",
-          "wordCount": 818,
+          "wordCount": 835,
           "title": "警惕复用的陷阱"
         },
         {
@@ -100,7 +91,7 @@
           "description": "之前在博客介绍了 Linux From Scratch, 最近发现 LFS 已经有新的版本 10.1 了，周末 […]\nContinue reading...\nThe post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n珍藏资料\n编译LFS的一些经验\n如何杀死一个进程？\n/bin /usr/bin 和 /usr/local/bin 的故事\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4373",
           "publishedOn": "2021-07-02T17:09:35.000Z",
-          "wordCount": 2778,
+          "wordCount": 2795,
           "title": "开源软件源码编译指南"
         },
         {
@@ -109,7 +100,7 @@
           "description": "在我的博客切换到 Cloudflare 的 CDN 上之后，我发现速度快的惊人，原来 18s 才能加载完首页的 […]\nContinue reading...\nThe post 为什么 Cloudflare 提供免费的服务？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n欧格玛教会与言论自由\n博客迁移到 Cloudflare\nDNS 解析的原理\n最近的工作感悟\nFirefox Setup",
           "link": "https://www.kawabangga.com/posts/4361",
           "publishedOn": "2021-07-01T14:39:58.000Z",
-          "wordCount": 442,
+          "wordCount": 459,
           "title": "为什么 Cloudflare 提供免费的服务？"
         }
       ]
