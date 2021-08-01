@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-07-31T01:03:56.285Z</id>
+    <id>urn:2021-08-01T01:13:42.809Z</id>
     <title>osmos::feed</title>
-    <updated>2021-07-31T01:03:56.285Z</updated>
+    <updated>2021-08-01T01:13:42.809Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -112,50 +112,6 @@ The post 开源软件源码编译指南 first appeared on 卡瓦邦噶！.
 如何杀死一个进程？
 /bin /usr/bin 和 /usr/local/bin 的故事
 SRE&Devops 每周分享 Issue #3]]></summary>
-        <author>
-            <name>laixintao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Redis 容器化技术选型，K8S 并非唯一]]></title>
-        <id>https://moelove.info/2021/07/02/Redis-%E5%AE%B9%E5%99%A8%E5%8C%96%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8BK8S-%E5%B9%B6%E9%9D%9E%E5%94%AF%E4%B8%80/</id>
-        <link href="https://moelove.info/2021/07/02/Redis-%E5%AE%B9%E5%99%A8%E5%8C%96%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8BK8S-%E5%B9%B6%E9%9D%9E%E5%94%AF%E4%B8%80/"/>
-        <updated>2021-07-02T04:39:40.000Z</updated>
-        <summary type="html"><![CDATA[本文根据我在〖deeplus直播第247期〗线上分享演讲内容整理而成。
-今天将分享的内容分为以下4个方面：
-一、缘起
-二、介绍多样的容器化技术
-三、Redis介绍
-四、Redis容器化方案的对比
-一、缘起
-首先我们先聊一下为什么今天我会分享这个主题。我和朋友一起组织了一个 Redis技术交流群，到现在已经经营了6年左右的时间，其中某一天在群里有一个小伙伴就抛出来一个问题：
-
-他问大家线上的Redis有没有使用Docker安装？Docker使用Host的网络模式、磁盘使用本地挂载模式这种方案怎么样？这里的话我们暂时先不说这个方案如何，因为在今天的分享之后，我相信大家对于这个方案应该会有一个更清晰的认识和评价。
-二、介绍多样的容器化技术
-1、chroot和jails
-在容器化技术方面，其实历史很久远了。虽然我们现在用的容器化技术，或者说 k8s，还有云原生的概念是近几年才火起来的，但是实际上就容器化技术的发展来说，其实是很早的了。比如说最早的时候来自chroot，chroot大家可能都用过，或者都有了解过，在1979年的时候它是来自Unix，它主要的功能是可以修改进程和子进程的/。
-通过使用chroot达到什么样效果呢？使用chroot加某一个目录，然后再启动一个进程，那么这个进程自己所看到的 / ,就是我们平时所说的 / 目录，这个 / 就会是我们刚才指定的文件夹，或者说刚才指定的路径。这样子的话可以有效的保护我们操作系统上面的一些文件，或者说权限和安全相关的东西。
-在2000年的时候，出现了一个新的技术，叫做jails，其实它已经具备了sandbox，就是沙箱环境的雏形。使用jails的话，可以让一个进程或者说创建的环境拥有独立的网络接口和IP地址，而当我们提到使用jails的话，我们肯定会想到一个问题，就是如果你有了独立的网络接口和IP地址，这样的话就不能发原始的套接字，…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为什么 Cloudflare 提供免费的服务？]]></title>
-        <id>https://www.kawabangga.com/?p=4361</id>
-        <link href="https://www.kawabangga.com/posts/4361"/>
-        <updated>2021-07-01T14:39:58.000Z</updated>
-        <summary type="html"><![CDATA[在我的博客切换到 Cloudflare 的 CDN 上之后，我发现速度快的惊人，原来 18s 才能加载完首页的 […]
-Continue reading...
-The post 为什么 Cloudflare 提供免费的服务？ first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-欧格玛教会与言论自由
-博客迁移到 Cloudflare
-DNS 解析的原理
-最近的工作感悟
-Firefox Setup]]></summary>
         <author>
             <name>laixintao</name>
         </author>
