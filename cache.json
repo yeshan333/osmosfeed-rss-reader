@@ -64,7 +64,7 @@
           "description": "最近读完了这本讲监控的书：Prometheus Up & Running，学到很多东西，在博客上推荐一 […]\nContinue reading...\nThe post 《Prometheus Up & Running》阅读 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nP99 是如何计算的\nPromQL 简明教程\n关于\nGitops 的一些实践经验\n记录一个pip安装错误",
           "link": "https://www.kawabangga.com/posts/4467",
           "publishedOn": "2021-08-02T14:45:03.000Z",
-          "wordCount": 562,
+          "wordCount": 537,
           "title": "《Prometheus Up & Running》阅读"
         },
         {
@@ -73,7 +73,7 @@
           "description": "这篇文章介绍如何使用 PromQL 查询 Prometheus 里面的数据。包括如何使用函数，理解这些函数，M […]\nContinue reading...\nThe post PromQL 简明教程 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n《Prometheus Up & Running》阅读\nP99 是如何计算的\nSRE&Devops 每周分享 Issue #4 AWS Layer\n关于\nDB资料集",
           "link": "https://www.kawabangga.com/posts/4408",
           "publishedOn": "2021-07-24T09:33:06.000Z",
-          "wordCount": 1226,
+          "wordCount": 1201,
           "title": "PromQL 简明教程"
         },
         {
@@ -82,7 +82,7 @@
           "description": "好吧，我承认这么说可能违反了广告法，但是……它确实挺小的。 可以对比一组数据： 官方的 Redis 镜像：10 […]\nContinue reading...\nThe post Build 一个最小的 Redis Docker Image first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nRedis 的命令设计\nRedis RESP3 的一些想法\nIRedis 开发记2：CircleCI workflow 自动发布到 pypi\nDjango 项目使用 CircleCI\n关于",
           "link": "https://www.kawabangga.com/posts/4411",
           "publishedOn": "2021-07-19T16:48:01.000Z",
-          "wordCount": 1427,
+          "wordCount": 1402,
           "title": "Build 一个最小的 Redis Docker Image"
         },
         {
@@ -91,7 +91,7 @@
           "description": "最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]\nContinue reading...\nThe post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n坑爹的部署脚本\n开始用 Ansible 管理机器了\n关于\nSRE&Devops 每周分享 Issue #5\nSRE&Devops 每周分享 Issue #3",
           "link": "https://www.kawabangga.com/posts/4392",
           "publishedOn": "2021-07-08T13:49:51.000Z",
-          "wordCount": 871,
+          "wordCount": 846,
           "title": "警惕复用的陷阱"
         }
       ]
@@ -100,7 +100,17 @@
       "title": "MoeLove",
       "feedUrl": "https://moelove.info/index.xml",
       "siteUrl": "https://moelove.info/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://moelove.info/2021/08/05/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nKubernetes v1.22 已经在今天正式发布了，这是 2021 年的第二个正式发布的版本。此版本中共包含 53 项增强更新，其中 13 项达到 stable，24 项达到 beta 还有 16 项为 alpha。当然，也有 3 项特性被标记为废弃。\n从今年的 4 月份，Kubernetes 的发布节奏由原来的每 3 个月一个版本修改成了每 4 个月一个版本，这也是第一个应用了此节奏的长周期版本。我们一起来看看有哪些值得注意的变更吧！\nServer-side Apply 特性达到 GA\nServer-side Apply 这个特性主要目标是把逻辑从 kubectl apply 移动到 kube-apiserver 中，这可以修复当前遇到的很多有关所有权冲突的问题。\n还记得在之前的『K8S生态周报』中我曾为你介绍过 Kubernetes 新增的 .meta.managedFields 吗？Server-side Apply 当前就是通过此特性来跟踪对象字段的更改的。\n同时此特性的好处在与你可以直接通过 API 完成声明式配置的操作，而无需依赖于特定的 kubectl apply 命令，比如直接通过 curl 即可完成。\n此功能的用法如下：\nkubectl apply --server-side [--dry-run=server]\n\nPod Security Policy 的替代品\nPodSecurity admission controller 是在 Kubernets v1.21 中被废弃的 Pod Security Policies  的替代品。\n这个 admission controller 可以按 namespace 级别启用 Pod Se…",
+          "link": "https://moelove.info/2021/08/05/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/",
+          "publishedOn": "2021-08-04T21:23:50.000Z",
+          "wordCount": 412,
+          "title": "K8S 生态周报| Kubernetes v1.22.0 正式发布，新特性一览！"
+        }
+      ]
     }
   ],
   "cliVersion": "1.11.0"
