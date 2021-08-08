@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-08-07T00:59:26.505Z</id>
+    <id>urn:2021-08-08T01:05:17.533Z</id>
     <title>osmos::feed</title>
-    <updated>2021-08-07T00:59:26.505Z</updated>
+    <updated>2021-08-08T01:05:17.533Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -116,26 +116,6 @@ Django 项目使用 CircleCI
 来看看这两种校验方式相关的工具。]]></summary>
         <author>
             <name>ShanSan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[警惕复用的陷阱]]></title>
-        <id>https://www.kawabangga.com/?p=4392</id>
-        <link href="https://www.kawabangga.com/posts/4392"/>
-        <updated>2021-07-08T13:49:51.000Z</updated>
-        <summary type="html"><![CDATA[最近经历了人生的低谷。原因是在重构一些 Ansible 的部署脚本，Ansible 是本着声明式的理念世界的， […]
-Continue reading...
-The post 警惕复用的陷阱 first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-坑爹的部署脚本
-开始用 Ansible 管理机器了
-关于
-SRE&Devops 每周分享 Issue #5
-SRE&Devops 每周分享 Issue #3]]></summary>
-        <author>
-            <name>laixintao</name>
         </author>
     </entry>
 </feed>
