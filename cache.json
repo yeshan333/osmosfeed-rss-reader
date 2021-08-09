@@ -64,7 +64,7 @@
           "description": "最近读完了这本讲监控的书：Prometheus Up & Running，学到很多东西，在博客上推荐一 […]\nContinue reading...\nThe post 《Prometheus Up & Running》阅读 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nP99 是如何计算的\nPromQL 简明教程\n关于\nGitops 的一些实践经验\n记录一个pip安装错误",
           "link": "https://www.kawabangga.com/posts/4467",
           "publishedOn": "2021-08-02T14:45:03.000Z",
-          "wordCount": 539,
+          "wordCount": 545,
           "title": "《Prometheus Up & Running》阅读"
         },
         {
@@ -73,7 +73,7 @@
           "description": "这篇文章介绍如何使用 PromQL 查询 Prometheus 里面的数据。包括如何使用函数，理解这些函数，M […]\nContinue reading...\nThe post PromQL 简明教程 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n《Prometheus Up & Running》阅读\nP99 是如何计算的\nSRE&Devops 每周分享 Issue #4 AWS Layer\n关于\nDB资料集",
           "link": "https://www.kawabangga.com/posts/4408",
           "publishedOn": "2021-07-24T09:33:06.000Z",
-          "wordCount": 1203,
+          "wordCount": 1209,
           "title": "PromQL 简明教程"
         },
         {
@@ -82,7 +82,7 @@
           "description": "好吧，我承认这么说可能违反了广告法，但是……它确实挺小的。 可以对比一组数据： 官方的 Redis 镜像：10 […]\nContinue reading...\nThe post Build 一个最小的 Redis Docker Image first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nRedis 的命令设计\nRedis RESP3 的一些想法\nIRedis 开发记2：CircleCI workflow 自动发布到 pypi\nDjango 项目使用 CircleCI\n关于",
           "link": "https://www.kawabangga.com/posts/4411",
           "publishedOn": "2021-07-19T16:48:01.000Z",
-          "wordCount": 1404,
+          "wordCount": 1410,
           "title": "Build 一个最小的 Redis Docker Image"
         }
       ]
