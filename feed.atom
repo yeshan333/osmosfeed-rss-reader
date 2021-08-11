@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-08-10T01:06:48.415Z</id>
+    <id>urn:2021-08-11T01:05:00.396Z</id>
     <title>osmos::feed</title>
-    <updated>2021-08-10T01:06:48.415Z</updated>
+    <updated>2021-08-11T01:05:00.397Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -112,15 +112,6 @@ Django 项目使用 CircleCI
         <id>https://draveness.me//books-1</id>
         <link href="https://draveness.me//books-1"/>
         <updated>2021-07-16T00:00:00.000Z</updated>
-        <author>
-            <name>面向信仰编程</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何提高缓存系统的内存利用率和可扩展性 · NSDI '21]]></title>
-        <id>https://draveness.me//papers-segcache</id>
-        <link href="https://draveness.me//papers-segcache"/>
-        <updated>2021-07-12T00:00:00.000Z</updated>
         <author>
             <name>面向信仰编程</name>
         </author>
