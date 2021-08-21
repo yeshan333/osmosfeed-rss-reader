@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-08-20T01:01:47.880Z</id>
+    <id>urn:2021-08-21T01:01:53.348Z</id>
     <title>osmos::feed</title>
-    <updated>2021-08-20T01:01:47.880Z</updated>
+    <updated>2021-08-21T01:01:53.348Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[Django 优化数据库查询的一些经验]]></title>
+        <id>https://www.kawabangga.com/?p=4484</id>
+        <link href="https://www.kawabangga.com/posts/4484"/>
+        <updated>2021-08-20T12:06:12.000Z</updated>
+        <summary type="html"><![CDATA[ORM 帮我们节省了很多工作，基本上不用写 SQL，就可以完成很多 CRUD 操作，而且外键的关联也会自动被  […]
+Continue reading...
+The post Django 优化数据库查询的一些经验 first appeared on 卡瓦邦噶！.
+
+相关文章:
+
+PyCon China 2019演讲Slide: Django Migration Under the Hood
+辅助Django开发的一些隐藏资源（文档）
+Django的信号机制
+上海PyCon见！
+记一个 Python logging 多进程 rotate 问题]]></summary>
+        <author>
+            <name>laixintao</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PromQL 使用多个 label 组合过滤]]></title>
         <id>https://www.kawabangga.com/?p=4476</id>
@@ -81,8 +101,8 @@ The post PromQL 简明教程 first appeared on 卡瓦邦噶！.
 《Prometheus Up & Running》阅读
 PromQL 使用多个 label 组合过滤
 P99 是如何计算的
-SRE&Devops 每周分享 Issue #4 AWS Layer
-关于]]></summary>
+Django 优化数据库查询的一些经验
+SRE&Devops 每周分享 Issue #4 AWS Layer]]></summary>
         <author>
             <name>laixintao</name>
         </author>
