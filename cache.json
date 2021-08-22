@@ -35,7 +35,7 @@
           "description": "ORM 帮我们节省了很多工作，基本上不用写 SQL，就可以完成很多 CRUD 操作，而且外键的关联也会自动被  […]\nContinue reading...\nThe post Django 优化数据库查询的一些经验 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n辅助Django开发的一些隐藏资源（文档）\nDjango的信号机制\n上海PyCon见！\n记一个 Python logging 多进程 rotate 问题",
           "link": "https://www.kawabangga.com/posts/4484",
           "publishedOn": "2021-08-20T12:06:12.000Z",
-          "wordCount": 1036,
+          "wordCount": 1068,
           "title": "Django 优化数据库查询的一些经验"
         },
         {
@@ -44,7 +44,7 @@
           "description": "继《最近的工作感悟》中提到的大部分问题都解决了之后，有一些错误还是无法避免的，就试图想办法从监控系统中忽略掉。 […]\nContinue reading...\nThe post PromQL 使用多个 label 组合过滤 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n《Prometheus Up & Running》阅读\nPromQL 简明教程\nJoin Shopee & Work with Me!\nSLIC算法分割超像素原理及Python实现\nLinux文件打包和压缩命令总结",
           "link": "https://www.kawabangga.com/posts/4476",
           "publishedOn": "2021-08-09T07:43:02.000Z",
-          "wordCount": 515,
+          "wordCount": 547,
           "title": "PromQL 使用多个 label 组合过滤"
         },
         {
@@ -53,7 +53,7 @@
           "description": "最近读完了这本讲监控的书：Prometheus Up & Running，学到很多东西，在博客上推荐一 […]\nContinue reading...\nThe post 《Prometheus Up & Running》阅读 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nP99 是如何计算的\nPromQL 使用多个 label 组合过滤\nPromQL 简明教程\n关于\nGitops 的一些实践经验",
           "link": "https://www.kawabangga.com/posts/4467",
           "publishedOn": "2021-08-02T14:45:03.000Z",
-          "wordCount": 523,
+          "wordCount": 555,
           "title": "《Prometheus Up & Running》阅读"
         },
         {
@@ -62,7 +62,7 @@
           "description": "这篇文章介绍如何使用 PromQL 查询 Prometheus 里面的数据。包括如何使用函数，理解这些函数，M […]\nContinue reading...\nThe post PromQL 简明教程 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n《Prometheus Up & Running》阅读\nPromQL 使用多个 label 组合过滤\nP99 是如何计算的\nDjango 优化数据库查询的一些经验\nSRE&Devops 每周分享 Issue #4 AWS Layer",
           "link": "https://www.kawabangga.com/posts/4408",
           "publishedOn": "2021-07-24T09:33:06.000Z",
-          "wordCount": 1189,
+          "wordCount": 1221,
           "title": "PromQL 简明教程"
         }
       ]
