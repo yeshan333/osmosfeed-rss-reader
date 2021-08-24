@@ -73,6 +73,22 @@
           "title": "K8S 生态周报| Kubernetes v1.22.0 正式发布，新特性一览！"
         }
       ]
+    },
+    {
+      "title": "CJ Ting's Blog",
+      "feedUrl": "https://cjting.me/index.xml",
+      "siteUrl": "https://cjting.me/",
+      "articles": [
+        {
+          "id": "https://cjting.me/2021/08/07/fourier-transform-and-audio-visualization/",
+          "author": null,
+          "description": "印象中使用的第一个 PC 音乐播放器是「千千静听」，大概是 08 年左右。我还清楚地记得它自带了一首梁静茹的歌「Love is everything」，动听的旋律至今萦绕耳旁。\n\n千千静听的左上角有一组随着音乐跳动的柱子，我想大家都习以为常了，很多播放器都有这功能。但是其实有没有想过，这是怎么实现的？\n要理解这个问题，我们首先要理解声音是什么。\n波\n中学物理有介绍过，声音是由物体振动产生的，这个振动经由介质传导到我们的耳朵中引起耳膜振动从而让我们听见声音。\n我们可以用波形来描述振动，其中横轴是时间，纵轴是振动的位移，也就是离开原点的距离。\n振动的两个关键属性是频率和振幅，频率是指一秒钟振动多少次，对应于音高，频率越高声音越尖锐刺耳。\n振幅则表示最大的位移值，对应于音量，振幅越大声音越响。\n\n上图是用 matplot 绘制的一个正弦波，可以看出在 0.01s 内振动了 2 次，因此频率是 200，振幅是 1。\nfrom matplotlib import pyplot as plt\nimport numpy as np\n\ndef sin_wave(hz):\n  x = np.linspace(0, 0.01, 1000, endpoint=False)\n  y = np.sin(x * hz * 2 * np.pi)\n  plt.plot(x, y)\n  plt.xlabel(\"Time\")\n  plt.axhline(y=0, color='k')\n  plt.show()\n\nsin_wave(200)\n\n\n这种最简单的波形对应的声音叫做 pure tone，顾名思义，非常的简单而且纯粹。\n下面是用 scipy 生成的 200hz 的声音，大家可以听听看。\nimport scipy.io.wavfile as wav\n\nSAMPLE_RATE = 44100\nDURATIO…",
+          "link": "https://cjting.me/2021/08/07/fourier-transform-and-audio-visualization/",
+          "publishedOn": "2021-08-06T16:57:45.000Z",
+          "wordCount": 1017,
+          "title": "音频可视化：采样、频率和傅里叶变换"
+        }
+      ]
     }
   ],
   "cliVersion": "1.11.0"
