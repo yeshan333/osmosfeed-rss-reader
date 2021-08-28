@@ -35,7 +35,7 @@
           "description": "最近在重构一个非常古老的 build 流程（太多 bash script 了，准备重构到基于 golang:l […]\nContinue reading...\nThe post Golang 的一个动态链接依赖问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nSRE&Devops 每周分享 Issue #6 Closing\nGitlab自动部署方案（Systemd+nc）\n坑爹的部署脚本\nBuild 一个最小的 Redis Docker Image\nTmux内部分享slides",
           "link": "https://www.kawabangga.com/posts/4495",
           "publishedOn": "2021-08-26T11:22:32.000Z",
-          "wordCount": 1292,
+          "wordCount": 1281,
           "title": "Golang 的一个动态链接依赖问题"
         },
         {
@@ -44,7 +44,7 @@
           "description": "ORM 帮我们节省了很多工作，基本上不用写 SQL，就可以完成很多 CRUD 操作，而且外键的关联也会自动被  […]\nContinue reading...\nThe post Django 优化数据库查询的一些经验 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n辅助Django开发的一些隐藏资源（文档）\nDjango的信号机制\n上海PyCon见！\n记一个 Python logging 多进程 rotate 问题",
           "link": "https://www.kawabangga.com/posts/4484",
           "publishedOn": "2021-08-20T12:06:12.000Z",
-          "wordCount": 1050,
+          "wordCount": 1039,
           "title": "Django 优化数据库查询的一些经验"
         },
         {
@@ -53,7 +53,7 @@
           "description": "继《最近的工作感悟》中提到的大部分问题都解决了之后，有一些错误还是无法避免的，就试图想办法从监控系统中忽略掉。 […]\nContinue reading...\nThe post PromQL 使用多个 label 组合过滤 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n《Prometheus Up & Running》阅读\nPromQL 简明教程\nJoin Shopee & Work with Me!\nSLIC算法分割超像素原理及Python实现\nLinux文件打包和压缩命令总结",
           "link": "https://www.kawabangga.com/posts/4476",
           "publishedOn": "2021-08-09T07:43:02.000Z",
-          "wordCount": 526,
+          "wordCount": 515,
           "title": "PromQL 使用多个 label 组合过滤"
         },
         {
@@ -62,7 +62,7 @@
           "description": "最近读完了这本讲监控的书：Prometheus Up & Running，学到很多东西，在博客上推荐一 […]\nContinue reading...\nThe post 《Prometheus Up & Running》阅读 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nP99 是如何计算的\nPromQL 使用多个 label 组合过滤\nPromQL 简明教程\n关于\nGitops 的一些实践经验",
           "link": "https://www.kawabangga.com/posts/4467",
           "publishedOn": "2021-08-02T14:45:03.000Z",
-          "wordCount": 534,
+          "wordCount": 523,
           "title": "《Prometheus Up & Running》阅读"
         }
       ]
@@ -73,12 +73,21 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2021/08/27/%E5%BC%80%E6%BA%90%E6%B5%AA%E6%BD%AE%E4%B8%8B%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92%E5%92%8C%E6%88%90%E9%95%BF/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\n无论从年初开源社发布的《2020 中国开源年度报告》还是整体的大环境，不难看到中国的开源正在崛起，越来越多的来自中国的开源项目和开发者们正在走入大家的视野。在开源浪潮的大趋势下，程序员又该如何规划自己的职业以及个人成长呢？不如听听正在全职做开源的工程师张晋涛怎么说。\n本文根据张晋涛在又拍云 Open Talk 技术沙龙北京站主题演讲《开源浪潮下程序员的职业规划和成长》整理而成，现场视频及 PPT 可下拉文末点击阅读原文查看。\n张晋涛，支流科技云原生技术专家，Apache APISIX committer, Kubernetes ingress-nginx reviewer，containerd/Docker/Helm/Kubernetes/KIND 等众多开源项目 contributor，对 Docker 和 Kubernetes 等容器化技术有大量实践和深入源码的研究，著有 《Kubernetes 上手实践》和 《Docker 核心知识必知必会》等专栏。\n大家好，今天我分享的主题是《开源浪潮下程序员的职业规划和成长》。今天在这里聊两个项目，一个是 Apache APISIX，APISIX 是 Apache 基金会旗下的顶级开源项目。第二个项目是 ingress-nginx，它是 Kubernetes 整个生态圈里头，除去 Kubernetes 自身以外使用频率最高的软件之一了。搞过 Kubernetes 的同学应该基本上都用过这个项目。\n今天我分享的内容主要从四个方面来聊：\n开源的文化\n如何参与开源\n关于我的故事\n职业规划相关的内容\n了解开源文化\n自由软件运动\n提到开源文化，首先需要了解自由软件运动。\n\n图右是被称为自由软件之父的斯托曼，他在 1983 年提出了 GNU 计划。1984 年，斯托曼提出了 Copyleft 的概念，Copyleft 跟…",
+          "link": "https://moelove.info/2021/08/27/%E5%BC%80%E6%BA%90%E6%B5%AA%E6%BD%AE%E4%B8%8B%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92%E5%92%8C%E6%88%90%E9%95%BF/",
+          "publishedOn": "2021-08-27T04:39:40.000Z",
+          "wordCount": 252,
+          "title": "开源浪潮下程序员的职业规划和成长"
+        },
+        {
           "id": "https://moelove.info/2021/08/05/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nKubernetes v1.22 已经在今天正式发布了，这是 2021 年的第二个正式发布的版本。此版本中共包含 53 项增强更新，其中 13 项达到 stable，24 项达到 beta 还有 16 项为 alpha。当然，也有 3 项特性被标记为废弃。\n从今年的 4 月份，Kubernetes 的发布节奏由原来的每 3 个月一个版本修改成了每 4 个月一个版本，这也是第一个应用了此节奏的长周期版本。我们一起来看看有哪些值得注意的变更吧！\nServer-side Apply 特性达到 GA\nServer-side Apply 这个特性主要目标是把逻辑从 kubectl apply 移动到 kube-apiserver 中，这可以修复当前遇到的很多有关所有权冲突的问题。\n还记得在之前的『K8S生态周报』中我曾为你介绍过 Kubernetes 新增的 .meta.managedFields 吗？Server-side Apply 当前就是通过此特性来跟踪对象字段的更改的。\n同时此特性的好处在与你可以直接通过 API 完成声明式配置的操作，而无需依赖于特定的 kubectl apply 命令，比如直接通过 curl 即可完成。\n此功能的用法如下：\nkubectl apply --server-side [--dry-run=server]\n\nPod Security Policy 的替代品\nPodSecurity admission controller 是在 Kubernets v1.21 中被废弃的 Pod Security Policies  的替代品。\n这个 admission controller 可以按 namespace 级别启用 Pod Se…",
           "link": "https://moelove.info/2021/08/05/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/",
           "publishedOn": "2021-08-04T21:23:50.000Z",
-          "wordCount": 412,
+          "wordCount": 413,
           "title": "K8S 生态周报| Kubernetes v1.22.0 正式发布，新特性一览！"
         }
       ]
