@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-08-29T01:05:56.542Z</id>
+    <id>urn:2021-08-30T01:03:26.552Z</id>
     <title>osmos::feed</title>
-    <updated>2021-08-29T01:05:56.542Z</updated>
+    <updated>2021-08-30T01:03:26.552Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -12,7 +12,7 @@
         <updated>2021-08-28T17:25:18.000Z</updated>
         <summary type="html"><![CDATA[一不小心就八月末了，我敲，最近大部分的时间都在了解 Prometheus，一直想“搂”篇文章出来，奈何一直在墨迹，是时候了，不然就九月了，完不成博客的 Flag 了，233333。
 前言
-本篇文章主要介绍了基于 Docker 搭建一个最小化的 Prometheus Federation 集群娱乐环境的相关操作。不是 Step By Step 的。]]></summary>
+本篇文章主要介绍了 Promethues Federation 集群化机制 & 基于 Docker 搭建一个最小化的 Prometheus Federation 集群娱乐环境的相关操作。不是 Step By Step 的。]]></summary>
         <author>
             <name>ShanSan</name>
         </author>
