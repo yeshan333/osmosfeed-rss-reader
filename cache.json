@@ -45,7 +45,7 @@
           "description": "最近在重构一个非常古老的 build 流程（太多 bash script 了，准备重构到基于 golang:l […]\nContinue reading...\nThe post Golang 的一个动态链接依赖问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nSRE&Devops 每周分享 Issue #6 Closing\nGitlab自动部署方案（Systemd+nc）\n坑爹的部署脚本\nBuild 一个最小的 Redis Docker Image\nTmux内部分享slides",
           "link": "https://www.kawabangga.com/posts/4495",
           "publishedOn": "2021-08-26T11:22:32.000Z",
-          "wordCount": 1277,
+          "wordCount": 1285,
           "title": "Golang 的一个动态链接依赖问题"
         },
         {
@@ -54,7 +54,7 @@
           "description": "ORM 帮我们节省了很多工作，基本上不用写 SQL，就可以完成很多 CRUD 操作，而且外键的关联也会自动被  […]\nContinue reading...\nThe post Django 优化数据库查询的一些经验 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n辅助Django开发的一些隐藏资源（文档）\nDjango的信号机制\n上海PyCon见！\n记一个 Python logging 多进程 rotate 问题",
           "link": "https://www.kawabangga.com/posts/4484",
           "publishedOn": "2021-08-20T12:06:12.000Z",
-          "wordCount": 1035,
+          "wordCount": 1024,
           "title": "Django 优化数据库查询的一些经验"
         },
         {
@@ -63,7 +63,7 @@
           "description": "继《最近的工作感悟》中提到的大部分问题都解决了之后，有一些错误还是无法避免的，就试图想办法从监控系统中忽略掉。 […]\nContinue reading...\nThe post PromQL 使用多个 label 组合过滤 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n《Prometheus Up & Running》阅读\nPromQL 简明教程\nJoin Shopee & Work with Me!\nSLIC算法分割超像素原理及Python实现\nLinux文件打包和压缩命令总结",
           "link": "https://www.kawabangga.com/posts/4476",
           "publishedOn": "2021-08-09T07:43:02.000Z",
-          "wordCount": 511,
+          "wordCount": 500,
           "title": "PromQL 使用多个 label 组合过滤"
         },
         {
@@ -72,7 +72,7 @@
           "description": "最近读完了这本讲监控的书：Prometheus Up & Running，学到很多东西，在博客上推荐一 […]\nContinue reading...\nThe post 《Prometheus Up & Running》阅读 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nP99 是如何计算的\nPromQL 使用多个 label 组合过滤\nPromQL 简明教程\n关于\nGitops 的一些实践经验",
           "link": "https://www.kawabangga.com/posts/4467",
           "publishedOn": "2021-08-02T14:45:03.000Z",
-          "wordCount": 519,
+          "wordCount": 508,
           "title": "《Prometheus Up & Running》阅读"
         }
       ]
