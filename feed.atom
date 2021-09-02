@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-09-01T01:11:04.439Z</id>
+    <id>urn:2021-09-02T01:04:46.969Z</id>
     <title>osmos::feed</title>
-    <updated>2021-09-01T01:11:04.439Z</updated>
+    <updated>2021-09-02T01:04:46.969Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -161,26 +161,6 @@ PodSecurity admission controller 是在 Kubernets v1.21 中被废弃的 Pod Secu
 这个 admission controller 可以按 namespace 级别启用 Pod Se…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[《Prometheus Up & Running》阅读]]></title>
-        <id>https://www.kawabangga.com/?p=4467</id>
-        <link href="https://www.kawabangga.com/posts/4467"/>
-        <updated>2021-08-02T14:45:03.000Z</updated>
-        <summary type="html"><![CDATA[最近读完了这本讲监控的书：Prometheus Up & Running，学到很多东西，在博客上推荐一 […]
-Continue reading...
-The post 《Prometheus Up & Running》阅读 first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-P99 是如何计算的
-PromQL 使用多个 label 组合过滤
-PromQL 简明教程
-关于
-Gitops 的一些实践经验]]></summary>
-        <author>
-            <name>laixintao</name>
         </author>
     </entry>
 </feed>
