@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-09-03T01:04:10.013Z</id>
+    <id>urn:2021-09-04T01:05:47.436Z</id>
     <title>osmos::feed</title>
-    <updated>2021-09-03T01:04:10.013Z</updated>
+    <updated>2021-09-04T01:05:47.436Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -139,28 +139,6 @@ SAMPLE_RATE = 44100
 DURATIO…]]></summary>
         <author>
             <name>CJ Ting's Blog</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[K8S 生态周报| Kubernetes v1.22.0 正式发布，新特性一览！]]></title>
-        <id>https://moelove.info/2021/08/05/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/</id>
-        <link href="https://moelove.info/2021/08/05/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.22.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/"/>
-        <updated>2021-08-04T21:23:50.000Z</updated>
-        <summary type="html"><![CDATA[「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
-Kubernetes v1.22 已经在今天正式发布了，这是 2021 年的第二个正式发布的版本。此版本中共包含 53 项增强更新，其中 13 项达到 stable，24 项达到 beta 还有 16 项为 alpha。当然，也有 3 项特性被标记为废弃。
-从今年的 4 月份，Kubernetes 的发布节奏由原来的每 3 个月一个版本修改成了每 4 个月一个版本，这也是第一个应用了此节奏的长周期版本。我们一起来看看有哪些值得注意的变更吧！
-Server-side Apply 特性达到 GA
-Server-side Apply 这个特性主要目标是把逻辑从 kubectl apply 移动到 kube-apiserver 中，这可以修复当前遇到的很多有关所有权冲突的问题。
-还记得在之前的『K8S生态周报』中我曾为你介绍过 Kubernetes 新增的 .meta.managedFields 吗？Server-side Apply 当前就是通过此特性来跟踪对象字段的更改的。
-同时此特性的好处在与你可以直接通过 API 完成声明式配置的操作，而无需依赖于特定的 kubectl apply 命令，比如直接通过 curl 即可完成。
-此功能的用法如下：
-kubectl apply --server-side [--dry-run=server]
-
-Pod Security Policy 的替代品
-PodSecurity admission controller 是在 Kubernets v1.21 中被废弃的 Pod Security Policies  的替代品。
-这个 admission controller 可以按 namespace 级别启用 Pod Se…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
     </entry>
 </feed>
