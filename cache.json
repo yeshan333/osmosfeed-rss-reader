@@ -45,7 +45,7 @@
           "description": "最近在重构一个非常古老的 build 流程（太多 bash script 了，准备重构到基于 golang:l […]\nContinue reading...\nThe post Golang 的一个动态链接依赖问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nSRE&Devops 每周分享 Issue #6 Closing\nGitlab自动部署方案（Systemd+nc）\n坑爹的部署脚本\nBuild 一个最小的 Redis Docker Image\nTmux内部分享slides",
           "link": "https://www.kawabangga.com/posts/4495",
           "publishedOn": "2021-08-26T11:22:32.000Z",
-          "wordCount": 1334,
+          "wordCount": 1338,
           "title": "Golang 的一个动态链接依赖问题"
         },
         {
@@ -54,7 +54,7 @@
           "description": "ORM 帮我们节省了很多工作，基本上不用写 SQL，就可以完成很多 CRUD 操作，而且外键的关联也会自动被  […]\nContinue reading...\nThe post Django 优化数据库查询的一些经验 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n辅助Django开发的一些隐藏资源（文档）\nDjango的信号机制\n上海PyCon见！\n记一个 Python logging 多进程 rotate 问题",
           "link": "https://www.kawabangga.com/posts/4484",
           "publishedOn": "2021-08-20T12:06:12.000Z",
-          "wordCount": 1065,
+          "wordCount": 1069,
           "title": "Django 优化数据库查询的一些经验"
         },
         {
@@ -63,7 +63,7 @@
           "description": "继《最近的工作感悟》中提到的大部分问题都解决了之后，有一些错误还是无法避免的，就试图想办法从监控系统中忽略掉。 […]\nContinue reading...\nThe post PromQL 使用多个 label 组合过滤 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n《Prometheus Up & Running》阅读\nPromQL 简明教程\nJoin Shopee & Work with Me!\nSLIC算法分割超像素原理及Python实现\nLinux文件打包和压缩命令总结",
           "link": "https://www.kawabangga.com/posts/4476",
           "publishedOn": "2021-08-09T07:43:02.000Z",
-          "wordCount": 541,
+          "wordCount": 545,
           "title": "PromQL 使用多个 label 组合过滤"
         }
       ]
@@ -74,12 +74,21 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2021/09/05/%E8%AF%91LimaDocker-Desktop-for-Mac-%E7%9A%84%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E4%B8%94%E8%87%AA%E7%94%B1%E7%9A%84%E6%9B%BF%E4%BB%A3%E5%93%81/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "近期，Docker Inc. 公司突然修改了其产品定价和策略，Docker Desktop for Mac/Win 不再 免费 供大型企业内个人使用。\n关于此新闻中涉及的条款，这里就不再展开介绍了。我来为大家介绍 一款免费、自由、开源的 Docker for Mac 替代品，containerd & Lima 。\n你只需要执行以下命令即可快速体验：\n$ brew install lima\n$ limactl start\n$ lima nerdctl run -it --rm alpine\n\n\n注意：如果是 Arm 版的 Mac 则需要安装一个额外的 QEMU 的 patch ，请参考 Lima 的文档。\n什么是 containerd ? 什么是 nerdctl ?\ncontainerd 是一个开源的容器运行时，被很多项目所使用，包括 Docker，和很多云厂商默认配置的 Kubernetes 集群，例如 AKS， EKS 和 GKE。\n由于 containerd 项目的核心范围仅限于非面向用户的区域，因此用户很难直接与 containerd 进行交互。所以我们近期贡献了一个人性化的 CLI 作为 containerd 的非核心子项目：nerdctl 。\nnerdctl 的功能和用法几乎与 Docker CLI 相同，但是 nerdctl 还支持 Docker 中不存在的几个 containerd 的前沿功能。此类功能包括但不限于 延迟拉取(stargz) 和 运行加密镜像（ocicrypt）。\n有关更多输 nerdctl 的内容可参考之前的文章：nerdctl: Docker-compatible CLI for contaiNERD\n什么是 Lima？\nLima（Linux MAchines）可以启动具有自动文件共享、端口转发和使用 containerd 的 Linux …",
+          "link": "https://moelove.info/2021/09/05/%E8%AF%91LimaDocker-Desktop-for-Mac-%E7%9A%84%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E4%B8%94%E8%87%AA%E7%94%B1%E7%9A%84%E6%9B%BF%E4%BB%A3%E5%93%81/",
+          "publishedOn": "2021-09-05T02:39:13.000Z",
+          "wordCount": 420,
+          "title": "【译】Lima：Docker Desktop for Mac 的免费开源且自由的替代品"
+        },
+        {
           "id": "https://moelove.info/2021/08/27/%E5%BC%80%E6%BA%90%E6%B5%AA%E6%BD%AE%E4%B8%8B%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92%E5%92%8C%E6%88%90%E9%95%BF/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "大家好，我是张晋涛。\n无论从年初开源社发布的《2020 中国开源年度报告》还是整体的大环境，不难看到中国的开源正在崛起，越来越多的来自中国的开源项目和开发者们正在走入大家的视野。在开源浪潮的大趋势下，程序员又该如何规划自己的职业以及个人成长呢？不如听听正在全职做开源的工程师张晋涛怎么说。\n本文根据张晋涛在又拍云 Open Talk 技术沙龙北京站主题演讲《开源浪潮下程序员的职业规划和成长》整理而成，现场视频及 PPT 可下拉文末点击阅读原文查看。\n张晋涛，支流科技云原生技术专家，Apache APISIX committer, Kubernetes ingress-nginx reviewer，containerd/Docker/Helm/Kubernetes/KIND 等众多开源项目 contributor，对 Docker 和 Kubernetes 等容器化技术有大量实践和深入源码的研究，著有 《Kubernetes 上手实践》和 《Docker 核心知识必知必会》等专栏。\n大家好，今天我分享的主题是《开源浪潮下程序员的职业规划和成长》。今天在这里聊两个项目，一个是 Apache APISIX，APISIX 是 Apache 基金会旗下的顶级开源项目。第二个项目是 ingress-nginx，它是 Kubernetes 整个生态圈里头，除去 Kubernetes 自身以外使用频率最高的软件之一了。搞过 Kubernetes 的同学应该基本上都用过这个项目。\n今天我分享的内容主要从四个方面来聊：\n开源的文化\n如何参与开源\n关于我的故事\n职业规划相关的内容\n了解开源文化\n自由软件运动\n提到开源文化，首先需要了解自由软件运动。\n\n图右是被称为自由软件之父的斯托曼，他在 1983 年提出了 GNU 计划。1984 年，斯托曼提出了 Copyleft 的概念，Copyleft 跟…",
           "link": "https://moelove.info/2021/08/27/%E5%BC%80%E6%BA%90%E6%B5%AA%E6%BD%AE%E4%B8%8B%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92%E5%92%8C%E6%88%90%E9%95%BF/",
           "publishedOn": "2021-08-27T04:39:40.000Z",
-          "wordCount": 252,
+          "wordCount": 257,
           "title": "开源浪潮下程序员的职业规划和成长"
         }
       ]
@@ -88,17 +97,7 @@
       "title": "CJ Ting's Blog",
       "feedUrl": "https://cjting.me/index.xml",
       "siteUrl": "https://cjting.me/",
-      "articles": [
-        {
-          "id": "https://cjting.me/2021/08/07/fourier-transform-and-audio-visualization/",
-          "author": null,
-          "description": "印象中使用的第一个 PC 音乐播放器是「千千静听」，大概是 08 年左右。我还清楚地记得它自带了一首梁静茹的歌「Love is everything」，动听的旋律至今萦绕耳旁。\n\n千千静听的左上角有一组随着音乐跳动的柱子，我想大家都习以为常了，很多播放器都有这功能。但是其实有没有想过，这是怎么实现的？\n要理解这个问题，我们首先要理解声音是什么。\n波\n中学物理有介绍过，声音是由物体振动产生的，这个振动经由介质传导到我们的耳朵中引起耳膜振动从而让我们听见声音。\n我们可以用波形来描述振动，其中横轴是时间，纵轴是振动的位移，也就是离开原点的距离。\n振动的两个关键属性是频率和振幅，频率是指一秒钟振动多少次，对应于音高，频率越高声音越尖锐刺耳。\n振幅则表示最大的位移值，对应于音量，振幅越大声音越响。\n\n上图是用 matplot 绘制的一个正弦波，可以看出在 0.01s 内振动了 2 次，因此频率是 200，振幅是 1。\nfrom matplotlib import pyplot as plt\nimport numpy as np\n\ndef sin_wave(hz):\n  x = np.linspace(0, 0.01, 1000, endpoint=False)\n  y = np.sin(x * hz * 2 * np.pi)\n  plt.plot(x, y)\n  plt.xlabel(\"Time\")\n  plt.axhline(y=0, color='k')\n  plt.show()\n\nsin_wave(200)\n\n\n这种最简单的波形对应的声音叫做 pure tone，顾名思义，非常的简单而且纯粹。\n下面是用 scipy 生成的 200hz 的声音，大家可以听听看。\nimport scipy.io.wavfile as wav\n\nSAMPLE_RATE = 44100\nDURATIO…",
-          "link": "https://cjting.me/2021/08/07/fourier-transform-and-audio-visualization/",
-          "publishedOn": "2021-08-06T16:57:45.000Z",
-          "wordCount": 1017,
-          "title": "音频可视化：采样、频率和傅里叶变换"
-        }
-      ]
+      "articles": []
     }
   ],
   "cliVersion": "1.11.0"
