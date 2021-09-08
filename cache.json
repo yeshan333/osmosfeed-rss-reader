@@ -56,15 +56,6 @@
           "publishedOn": "2021-08-20T12:06:12.000Z",
           "wordCount": 1069,
           "title": "Django 优化数据库查询的一些经验"
-        },
-        {
-          "id": "https://www.kawabangga.com/?p=4476",
-          "author": "laixintao",
-          "description": "继《最近的工作感悟》中提到的大部分问题都解决了之后，有一些错误还是无法避免的，就试图想办法从监控系统中忽略掉。 […]\nContinue reading...\nThe post PromQL 使用多个 label 组合过滤 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n《Prometheus Up & Running》阅读\nPromQL 简明教程\nJoin Shopee & Work with Me!\nSLIC算法分割超像素原理及Python实现\nLinux文件打包和压缩命令总结",
-          "link": "https://www.kawabangga.com/posts/4476",
-          "publishedOn": "2021-08-09T07:43:02.000Z",
-          "wordCount": 545,
-          "title": "PromQL 使用多个 label 组合过滤"
         }
       ]
     },
