@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-09-10T01:09:02.636Z</id>
+    <id>urn:2021-09-11T01:04:01.305Z</id>
     <title>osmos::feed</title>
-    <updated>2021-09-10T01:09:02.636Z</updated>
+    <updated>2021-09-11T01:04:01.305Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -104,16 +104,6 @@ Django的信号机制
 记一个 Python logging 多进程 rotate 问题]]></summary>
         <author>
             <name>laixintao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Memcached的存储原理解析（续）]]></title>
-        <id>https://www.codedump.info/post/20210812-memcached/</id>
-        <link href="https://www.codedump.info/post/20210812-memcached/"/>
-        <updated>2021-08-12T00:40:04.000Z</updated>
-        <summary type="html"><![CDATA[概述 在前面的Memcached的存储原理解析一文中，简单分析了memcached的存储原理，但是最近在照搬memcached的实现原理到项目]]></summary>
-        <author>
-            <name>codedump的网络日志</name>
         </author>
     </entry>
 </feed>

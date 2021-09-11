@@ -45,7 +45,7 @@
           "description": "最近在重构一个非常古老的 build 流程（太多 bash script 了，准备重构到基于 golang:l […]\nContinue reading...\nThe post Golang 的一个动态链接依赖问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nSRE&Devops 每周分享 Issue #6 Closing\nGitlab自动部署方案（Systemd+nc）\n坑爹的部署脚本\nBuild 一个最小的 Redis Docker Image\nTmux内部分享slides",
           "link": "https://www.kawabangga.com/posts/4495",
           "publishedOn": "2021-08-26T11:22:32.000Z",
-          "wordCount": 1339,
+          "wordCount": 1322,
           "title": "Golang 的一个动态链接依赖问题"
         },
         {
@@ -54,7 +54,7 @@
           "description": "ORM 帮我们节省了很多工作，基本上不用写 SQL，就可以完成很多 CRUD 操作，而且外键的关联也会自动被  […]\nContinue reading...\nThe post Django 优化数据库查询的一些经验 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n辅助Django开发的一些隐藏资源（文档）\nDjango的信号机制\n上海PyCon见！\n记一个 Python logging 多进程 rotate 问题",
           "link": "https://www.kawabangga.com/posts/4484",
           "publishedOn": "2021-08-20T12:06:12.000Z",
-          "wordCount": 1070,
+          "wordCount": 1053,
           "title": "Django 优化数据库查询的一些经验"
         }
       ]
@@ -94,17 +94,7 @@
       "title": "codedump的网络日志",
       "feedUrl": "https://www.codedump.info/index.xml",
       "siteUrl": "https://www.codedump.info/",
-      "articles": [
-        {
-          "id": "https://www.codedump.info/post/20210812-memcached/",
-          "author": null,
-          "description": "概述 在前面的Memcached的存储原理解析一文中，简单分析了memcached的存储原理，但是最近在照搬memcached的实现原理到项目",
-          "link": "https://www.codedump.info/post/20210812-memcached/",
-          "publishedOn": "2021-08-12T00:40:04.000Z",
-          "wordCount": 399,
-          "title": "Memcached的存储原理解析（续）"
-        }
-      ]
+      "articles": []
     }
   ],
   "cliVersion": "1.11.0"
