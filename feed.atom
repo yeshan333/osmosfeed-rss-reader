@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-09-16T01:10:04.039Z</id>
+    <id>urn:2021-09-17T01:13:30.619Z</id>
     <title>osmos::feed</title>
-    <updated>2021-09-16T01:10:04.039Z</updated>
-    <generator>osmosfeed 1.11.0</generator>
+    <updated>2021-09-17T01:13:30.619Z</updated>
+    <generator>osmosfeed 1.11.1</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[v1.11.1]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.1</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.1"/>
+        <updated>2021-09-16T06:39:32.000Z</updated>
+        <summary type="html"><![CDATA[Fixed: Unexpected nested element in author field crashes the parser
+Thank you @ad-m]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【译】Lima：Docker Desktop for Mac 的免费开源且自由的替代品]]></title>
         <id>https://moelove.info/2021/09/05/%E8%AF%91LimaDocker-Desktop-for-Mac-%E7%9A%84%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E4%B8%94%E8%87%AA%E7%94%B1%E7%9A%84%E6%9B%BF%E4%BB%A3%E5%93%81/</id>
