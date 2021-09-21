@@ -43,7 +43,7 @@
           "description": "Go语言的1.17版本发布了，其中开始正式支持泛型了。虽然还有一些限制（比如，不能把泛型函数export），但是，可以体验了。我的这个《Go编程模式》的系列终于...\n Read More  Read More\nGo编程模式 ： 泛型编程 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21615.html",
           "publishedOn": "2021-09-04T05:44:02.000Z",
-          "wordCount": 1855,
+          "wordCount": 1764,
           "title": "Go编程模式 ： 泛型编程"
         }
       ]
@@ -65,7 +65,7 @@
           "description": "最近在重构一个非常古老的 build 流程（太多 bash script 了，准备重构到基于 golang:l […]\nContinue reading...\nThe post Golang 的一个动态链接依赖问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nSRE&Devops 每周分享 Issue #6 Closing\nGitlab自动部署方案（Systemd+nc）\n坑爹的部署脚本\nBuild 一个最小的 Redis Docker Image\nTmux内部分享slides",
           "link": "https://www.kawabangga.com/posts/4495",
           "publishedOn": "2021-08-26T11:22:32.000Z",
-          "wordCount": 1315,
+          "wordCount": 1304,
           "title": "Golang 的一个动态链接依赖问题"
         }
       ]
