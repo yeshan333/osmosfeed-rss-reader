@@ -11,7 +11,7 @@
           "description": "Fixed: Unexpected nested element in author field crashes the parser\nThank you @ad-m",
           "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.1",
           "publishedOn": "2021-09-16T06:39:32.000Z",
-          "wordCount": 343,
+          "wordCount": 348,
           "title": "v1.11.1"
         }
       ]
@@ -58,17 +58,7 @@
       "title": "卡瓦邦噶！",
       "feedUrl": "https://www.kawabangga.com/feed",
       "siteUrl": "https://www.kawabangga.com",
-      "articles": [
-        {
-          "id": "https://www.kawabangga.com/?p=4495",
-          "author": "laixintao",
-          "description": "最近在重构一个非常古老的 build 流程（太多 bash script 了，准备重构到基于 golang:l […]\nContinue reading...\nThe post Golang 的一个动态链接依赖问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nSRE&Devops 每周分享 Issue #6 Closing\nGitlab自动部署方案（Systemd+nc）\n坑爹的部署脚本\nBuild 一个最小的 Redis Docker Image\nTmux内部分享slides",
-          "link": "https://www.kawabangga.com/posts/4495",
-          "publishedOn": "2021-08-26T11:22:32.000Z",
-          "wordCount": 1312,
-          "title": "Golang 的一个动态链接依赖问题"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "MoeLove",

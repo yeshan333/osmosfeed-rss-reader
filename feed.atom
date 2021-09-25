@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-09-24T01:08:07.642Z</id>
+    <id>urn:2021-09-25T01:05:30.690Z</id>
     <title>osmos::feed</title>
-    <updated>2021-09-24T01:08:07.642Z</updated>
+    <updated>2021-09-25T01:05:30.690Z</updated>
     <generator>osmosfeed 1.11.1</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -87,26 +87,6 @@ Go编程模式 ： 泛型编程 first appeared on 酷 壳 - CoolShell.]]></summa
 图右是被称为自由软件之父的斯托曼，他在 1983 年提出了 GNU 计划。1984 年，斯托曼提出了 Copyleft 的概念，Copyleft 跟…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Golang 的一个动态链接依赖问题]]></title>
-        <id>https://www.kawabangga.com/?p=4495</id>
-        <link href="https://www.kawabangga.com/posts/4495"/>
-        <updated>2021-08-26T11:22:32.000Z</updated>
-        <summary type="html"><![CDATA[最近在重构一个非常古老的 build 流程（太多 bash script 了，准备重构到基于 golang:l […]
-Continue reading...
-The post Golang 的一个动态链接依赖问题 first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-SRE&Devops 每周分享 Issue #6 Closing
-Gitlab自动部署方案（Systemd+nc）
-坑爹的部署脚本
-Build 一个最小的 Redis Docker Image
-Tmux内部分享slides]]></summary>
-        <author>
-            <name>laixintao</name>
         </author>
     </entry>
 </feed>
