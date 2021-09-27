@@ -6,12 +6,21 @@
       "siteUrl": "https://github.com/osmoscraft/osmosfeed/releases",
       "articles": [
         {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.2",
+          "author": null,
+          "description": "Fixed: unicode characters in URL caused download error\nFixed: project root npm install error\nAdded: unit test library\nChore: Dependency updates\nThank you: @CaptNo1",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.2",
+          "publishedOn": "2021-09-26T18:45:39.000Z",
+          "wordCount": 354,
+          "title": "v1.11.2"
+        },
+        {
           "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.1",
           "author": null,
           "description": "Fixed: Unexpected nested element in author field crashes the parser\nThank you @ad-m",
           "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.1",
           "publishedOn": "2021-09-16T06:39:32.000Z",
-          "wordCount": 348,
+          "wordCount": 344,
           "title": "v1.11.1"
         }
       ]
@@ -43,7 +52,7 @@
           "description": "Go语言的1.17版本发布了，其中开始正式支持泛型了。虽然还有一些限制（比如，不能把泛型函数export），但是，可以体验了。我的这个《Go编程模式》的系列终于...\n Read More  Read More\nGo编程模式 ： 泛型编程 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21615.html",
           "publishedOn": "2021-09-04T05:44:02.000Z",
-          "wordCount": 1863,
+          "wordCount": 1864,
           "title": "Go编程模式 ： 泛型编程"
         }
       ]
@@ -89,5 +98,5 @@
       "articles": []
     }
   ],
-  "cliVersion": "1.11.1"
+  "cliVersion": "1.11.2"
 }
