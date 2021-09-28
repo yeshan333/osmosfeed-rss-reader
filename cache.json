@@ -29,17 +29,7 @@
       "title": "ShanSan",
       "feedUrl": "https://shansan.top/rss2",
       "siteUrl": "https://yeshan333.github.io/",
-      "articles": [
-        {
-          "id": "https://yeshan333.github.io/2021/08/28/prometheus-federation/",
-          "author": null,
-          "description": "一不小心就八月末了，我敲，最近大部分的时间都在了解 Prometheus，一直想“搂”篇文章出来，奈何一直在墨迹，是时候了，不然就九月了，完不成博客的 Flag 了，233333。\n前言\n本篇文章主要介绍了 Promethues Federation 集群化机制 & 基于 Docker 搭建一个最小化的 Prometheus Federation 集群娱乐环境的相关操作。不是 Step By Step 的。",
-          "link": "https://yeshan333.github.io/2021/08/28/prometheus-federation/",
-          "publishedOn": "2021-08-28T17:25:18.000Z",
-          "wordCount": 836,
-          "title": "基于 Docker 搭建一个最小化的 Prometheus Federation「联邦」集群"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "酷 壳 – CoolShell",
@@ -52,7 +42,7 @@
           "description": "Go语言的1.17版本发布了，其中开始正式支持泛型了。虽然还有一些限制（比如，不能把泛型函数export），但是，可以体验了。我的这个《Go编程模式》的系列终于...\n Read More  Read More\nGo编程模式 ： 泛型编程 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21615.html",
           "publishedOn": "2021-09-04T05:44:02.000Z",
-          "wordCount": 1864,
+          "wordCount": 1862,
           "title": "Go编程模式 ： 泛型编程"
         }
       ]
