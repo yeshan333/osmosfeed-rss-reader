@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-10-03T01:13:23.961Z</id>
+    <id>urn:2021-10-04T01:13:12.480Z</id>
     <title>osmos::feed</title>
-    <updated>2021-10-03T01:13:23.961Z</updated>
+    <updated>2021-10-04T01:13:12.480Z</updated>
     <generator>osmosfeed 1.11.2</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -53,18 +53,6 @@ nerdctl 的功能和用法几乎与 Docker CLI 相同，但是 nerdctl 还支持
 Lima（Linux MAchines）可以启动具有自动文件共享、端口转发和使用 containerd 的 Linux …]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Go编程模式 ： 泛型编程]]></title>
-        <id>https://coolshell.cn/?p=21615</id>
-        <link href="https://coolshell.cn/articles/21615.html"/>
-        <updated>2021-09-04T05:44:02.000Z</updated>
-        <summary type="html"><![CDATA[Go语言的1.17版本发布了，其中开始正式支持泛型了。虽然还有一些限制（比如，不能把泛型函数export），但是，可以体验了。我的这个《Go编程模式》的系列终于...
- Read More  Read More
-Go编程模式 ： 泛型编程 first appeared on 酷 壳 - CoolShell.]]></summary>
-        <author>
-            <name>陈皓</name>
         </author>
     </entry>
 </feed>
