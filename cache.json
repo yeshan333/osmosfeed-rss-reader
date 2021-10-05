@@ -53,17 +53,7 @@
       "title": "MoeLove",
       "feedUrl": "https://moelove.info/index.xml",
       "siteUrl": "https://moelove.info/",
-      "articles": [
-        {
-          "id": "https://moelove.info/2021/09/05/%E8%AF%91LimaDocker-Desktop-for-Mac-%E7%9A%84%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E4%B8%94%E8%87%AA%E7%94%B1%E7%9A%84%E6%9B%BF%E4%BB%A3%E5%93%81/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "近期，Docker Inc. 公司突然修改了其产品定价和策略，Docker Desktop for Mac/Win 不再 免费 供大型企业内个人使用。\n关于此新闻中涉及的条款，这里就不再展开介绍了。我来为大家介绍 一款免费、自由、开源的 Docker for Mac 替代品，containerd & Lima 。\n你只需要执行以下命令即可快速体验：\n$ brew install lima\n$ limactl start\n$ lima nerdctl run -it --rm alpine\n\n\n注意：如果是 Arm 版的 Mac 则需要安装一个额外的 QEMU 的 patch ，请参考 Lima 的文档。\n什么是 containerd ? 什么是 nerdctl ?\ncontainerd 是一个开源的容器运行时，被很多项目所使用，包括 Docker，和很多云厂商默认配置的 Kubernetes 集群，例如 AKS， EKS 和 GKE。\n由于 containerd 项目的核心范围仅限于非面向用户的区域，因此用户很难直接与 containerd 进行交互。所以我们近期贡献了一个人性化的 CLI 作为 containerd 的非核心子项目：nerdctl 。\nnerdctl 的功能和用法几乎与 Docker CLI 相同，但是 nerdctl 还支持 Docker 中不存在的几个 containerd 的前沿功能。此类功能包括但不限于 延迟拉取(stargz) 和 运行加密镜像（ocicrypt）。\n有关更多输 nerdctl 的内容可参考之前的文章：nerdctl: Docker-compatible CLI for contaiNERD\n什么是 Lima？\nLima（Linux MAchines）可以启动具有自动文件共享、端口转发和使用 containerd 的 Linux …",
-          "link": "https://moelove.info/2021/09/05/%E8%AF%91LimaDocker-Desktop-for-Mac-%E7%9A%84%E5%85%8D%E8%B4%B9%E5%BC%80%E6%BA%90%E4%B8%94%E8%87%AA%E7%94%B1%E7%9A%84%E6%9B%BF%E4%BB%A3%E5%93%81/",
-          "publishedOn": "2021-09-05T02:39:13.000Z",
-          "wordCount": 420,
-          "title": "【译】Lima：Docker Desktop for Mac 的免费开源且自由的替代品"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "CJ Ting's Blog",
