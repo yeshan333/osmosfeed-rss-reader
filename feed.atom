@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-10-06T01:08:28.523Z</id>
+    <id>urn:2021-10-07T01:10:41.906Z</id>
     <title>osmos::feed</title>
-    <updated>2021-10-06T01:08:28.523Z</updated>
+    <updated>2021-10-07T01:10:41.906Z</updated>
     <generator>osmosfeed 1.11.2</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -17,6 +17,16 @@ Chore: Dependency updates
 Thank you: @CaptNo1]]></summary>
         <author>
             <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[常用的 Linux 网络相关的命令]]></title>
+        <id>https://yeshan333.github.io/2021/09/25/common-use-linux-network-command/</id>
+        <link href="https://yeshan333.github.io/2021/09/25/common-use-linux-network-command/"/>
+        <updated>2021-09-25T16:34:52.000Z</updated>
+        <summary type="html"><![CDATA[水文警告⚠😂，最近这些玩意用得多，微微记录一下，目前写的比较水，后面应该会补点实践经验🚩。]]></summary>
+        <author>
+            <name>ShanSan</name>
         </author>
     </entry>
     <entry>
