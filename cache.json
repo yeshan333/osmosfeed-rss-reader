@@ -31,12 +31,21 @@
       "siteUrl": "https://yeshan333.github.io/",
       "articles": [
         {
+          "id": "https://yeshan333.github.io/2021/10/07/io-bound-cpu-bound-with-average-load/",
+          "author": null,
+          "description": "在排查性能问题的时候，我们经常会使用 top 或者 uptime 两个 Linux 命令，top 命令和 uptime 命令都会给出最近机器 1 min，5 min，15 min 的平均负载情况，一般平均负载值（Average Load）接近甚至超出 CPU cores",
+          "link": "https://yeshan333.github.io/2021/10/07/io-bound-cpu-bound-with-average-load/",
+          "publishedOn": "2021-10-07T16:12:38.000Z",
+          "wordCount": 773,
+          "title": "从平均负载开始，这进程是 CPU Bound 还是 IO Bound 的？"
+        },
+        {
           "id": "https://yeshan333.github.io/2021/09/25/common-use-linux-network-command/",
           "author": null,
           "description": "水文警告⚠😂，最近这些玩意用得多，微微记录一下，目前写的比较水，后面应该会补点实践经验🚩。",
           "link": "https://yeshan333.github.io/2021/09/25/common-use-linux-network-command/",
           "publishedOn": "2021-09-25T16:34:52.000Z",
-          "wordCount": 402,
+          "wordCount": 424,
           "title": "常用的 Linux 网络相关的命令"
         }
       ]
