@@ -84,7 +84,17 @@
       "title": "codedump的网络日志",
       "feedUrl": "https://www.codedump.info/index.xml",
       "siteUrl": "https://www.codedump.info/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://www.codedump.info/post/20211011-raft-propose-prev-term/",
+          "author": null,
+          "description": "概述 在Raft大论文中3.6.2中，有一个细节“不允许提交之前任期的日志”，之前看了几次都理解的不够准确，把这部分内容展开阐述一下。 问题 还是",
+          "link": "https://www.codedump.info/post/20211011-raft-propose-prev-term/",
+          "publishedOn": "2021-10-11T15:14:01.000Z",
+          "wordCount": 208,
+          "title": "为什么Raft协议不能提交之前任期的日志？"
+        }
+      ]
     }
   ],
   "cliVersion": "1.11.2"
