@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-10-15T01:12:23.524Z</id>
+    <id>urn:2021-10-16T01:15:29.333Z</id>
     <title>osmos::feed</title>
-    <updated>2021-10-15T01:12:23.524Z</updated>
-    <generator>osmosfeed 1.11.2</generator>
+    <updated>2021-10-16T01:15:29.333Z</updated>
+    <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[v1.11.3]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.3</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.3"/>
+        <updated>2021-10-16T00:01:47.000Z</updated>
+        <summary type="html"><![CDATA[Fixed: broken links in documentation
+Chore: Dependency updates
+Thank you: @hirdot]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[为什么Raft协议不能提交之前任期的日志？]]></title>
         <id>https://www.codedump.info/post/20211011-raft-propose-prev-term/</id>
@@ -47,17 +59,6 @@ Thank you: @CaptNo1]]></summary>
         <summary type="html"><![CDATA[水文警告⚠😂，最近这些玩意用得多，微微记录一下，目前写的比较水，后面应该会补点实践经验🚩。]]></summary>
         <author>
             <name>ShanSan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.11.1]]></title>
-        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.1</id>
-        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.1"/>
-        <updated>2021-09-16T06:39:32.000Z</updated>
-        <summary type="html"><![CDATA[Fixed: Unexpected nested element in author field crashes the parser
-Thank you @ad-m]]></summary>
-        <author>
-            <name>Release notes from osmosfeed</name>
         </author>
     </entry>
 </feed>
