@@ -68,12 +68,21 @@
       "siteUrl": "https://www.kawabangga.com",
       "articles": [
         {
+          "id": "https://www.kawabangga.com/?p=4558",
+          "author": "laixintao",
+          "description": "今天花了很长的时间在排查一个诡异的问题，值得记录一下。 本来是想写一个 HTTP 的服务，你告诉这个 HTTP […]\nContinue reading...\nThe post Debug 一个在 uWSGI 下使用 subprocess 卡住的问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\n部署 Django 项目背后的原理：为什么需要 Nginx 和 Gunicron这些东西？\n我的线程池怎么没了？\n使用uWSGI的spooler做异步任务\nDjango的日志配置",
+          "link": "https://www.kawabangga.com/posts/4558",
+          "publishedOn": "2021-10-21T17:52:43.000Z",
+          "wordCount": 1822,
+          "title": "Debug 一个在 uWSGI 下使用 subprocess 卡住的问题"
+        },
+        {
           "id": "https://www.kawabangga.com/?p=4515",
           "author": "laixintao",
           "description": "先来回答一道面试题：我们知道在终端中有一些常用的快捷键，Ctrl+E 可以移动到行尾，Ctrl+W 可以删除一 […]\nContinue reading...\nThe post TTY 到底是什么？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nVim:移动窗口和tab\nVim:快速复制和替换\n推荐 Vim 进阶书籍：《Vim 实用技巧》\n一些命令行工具的增强版\nVim LSP 配置",
           "link": "https://www.kawabangga.com/posts/4515",
           "publishedOn": "2021-10-19T17:08:01.000Z",
-          "wordCount": 1799,
+          "wordCount": 1805,
           "title": "TTY 到底是什么？"
         }
       ]
