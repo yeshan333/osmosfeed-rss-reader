@@ -11,7 +11,7 @@
           "description": "Fixed: broken links in documentation\nChore: Dependency updates\nThank you: @hirdot",
           "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.3",
           "publishedOn": "2021-10-16T00:01:47.000Z",
-          "wordCount": 295,
+          "wordCount": 292,
           "title": "v1.11.3"
         },
         {
@@ -20,7 +20,7 @@
           "description": "Fixed: unicode characters in URL caused download error\nFixed: project root npm install error\nAdded: unit test library\nChore: Dependency updates\nThank you: @CaptNo1",
           "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.2",
           "publishedOn": "2021-09-26T18:45:39.000Z",
-          "wordCount": 326,
+          "wordCount": 323,
           "title": "v1.11.2"
         }
       ]
@@ -47,15 +47,6 @@
           "publishedOn": "2021-10-07T16:12:38.000Z",
           "wordCount": 784,
           "title": "从平均负载开始，这进程是 CPU Bound 还是 IO Bound 的？"
-        },
-        {
-          "id": "https://yeshan333.github.io/2021/09/25/common-use-linux-network-command/",
-          "author": null,
-          "description": "水文警告⚠😂，最近这些玩意用得多，微微记录一下，目前写的比较水，后面应该会补点实践经验🚩。",
-          "link": "https://yeshan333.github.io/2021/09/25/common-use-linux-network-command/",
-          "publishedOn": "2021-09-25T16:34:52.000Z",
-          "wordCount": 424,
-          "title": "常用的 Linux 网络相关的命令"
         }
       ]
     },
@@ -82,7 +73,7 @@
           "description": "今天花了很长的时间在排查一个诡异的问题，值得记录一下。 本来是想写一个 HTTP 的服务，你告诉这个 HTTP […]\nContinue reading...\nThe post Debug 一个在 uWSGI 下使用 subprocess 卡住的问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\n部署 Django 项目背后的原理：为什么需要 Nginx 和 Gunicron这些东西？\n我的线程池怎么没了？\n使用uWSGI的spooler做异步任务\nDjango的日志配置",
           "link": "https://www.kawabangga.com/posts/4558",
           "publishedOn": "2021-10-21T17:52:43.000Z",
-          "wordCount": 1825,
+          "wordCount": 1827,
           "title": "Debug 一个在 uWSGI 下使用 subprocess 卡住的问题"
         },
         {
@@ -91,7 +82,7 @@
           "description": "先来回答一道面试题：我们知道在终端中有一些常用的快捷键，Ctrl+E 可以移动到行尾，Ctrl+W 可以删除一 […]\nContinue reading...\nThe post TTY 到底是什么？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nVim:移动窗口和tab\nVim:快速复制和替换\n推荐 Vim 进阶书籍：《Vim 实用技巧》\n一些命令行工具的增强版\nVim LSP 配置",
           "link": "https://www.kawabangga.com/posts/4515",
           "publishedOn": "2021-10-19T17:08:01.000Z",
-          "wordCount": 1780,
+          "wordCount": 1782,
           "title": "TTY 到底是什么？"
         }
       ]
