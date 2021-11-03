@@ -100,7 +100,17 @@
       "title": "MoeLove",
       "feedUrl": "https://moelove.info/index.xml",
       "siteUrl": "https://moelove.info/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://moelove.info/2021/10/19/GitOps-%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97-%E7%BB%BC%E8%BF%B0/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\n接下来会为大家带来一个 GitOps 的应用实践系列文章，这是第一篇。\n什么是 GitOps\n首先我们来了解下 GitOps：\nGitOps 最早是在2017年由 Weaveworks 创立提出，它是一种进行 Kubernetes 集群管理和应用程序交付的方式。 GitOps 使用 Git 作为声明性基础设施和应用程序的单一事实来源。 GitOps 的核心思想是拥有一个 Git repository，包含目标环境中当前所需基础设施的声明性描述，以及使目标环境与 Git repository 中描述的状态相匹配的自动化过程。借助 GitOps，可以针对 Git repository 与集群中运行的内容之间的任何差异发出警报，如果存在差异，Kubernetes reconcilers会根据情况自动更新或回滚集群。 以 Git 作为 pipeline 的中心，开发人员可以使用自己熟悉的工具发出PR，以加速和简化 Kubernetes 中应用程序部署和操作任务。\n这使得 GitOps 在 Twitter 和 KubeCon 上引起了不小的轰动。\n\n这里说一下Weaveworks 这家公司，这是一家为开发人员提供最高效的方式来连接、观察和控制 Docker 容器的公司。在官网上，我们能看到，GitOps 工作流的原则和模式，如何实现它们在生产中大规模运行 Kubernetes， 以及GitOps 和基础设施即代码 (IAC) 配置管理工具之间的区别和最佳实践等等。https://www.weave.works/technologies/gitops/\nK8S的创始人之一：Kelsey Hightower 曾发推文评论过 GitOps是基于声明式基础设施的版本化 CI/CD， 停止脚本化操作，开始（自动化）分发。\nGitOps 是如何工作的呢？\n把环境配置作为 G…",
+          "link": "https://moelove.info/2021/10/19/GitOps-%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97-%E7%BB%BC%E8%BF%B0/",
+          "publishedOn": "2021-10-19T12:56:29.000Z",
+          "wordCount": 211,
+          "title": "GitOps 应用实践系列 - 综述"
+        }
+      ]
     },
     {
       "title": "CJ Ting's Blog",
