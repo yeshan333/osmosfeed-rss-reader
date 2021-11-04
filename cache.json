@@ -64,7 +64,7 @@
           "description": "我们有个服务以类似 SideCar 的方式和应用一起运行，SideCar 和应用通过 Unix Domain  […]\nContinue reading...\nThe post 多租户环境中的 TCP 限速（基于 iptables） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nApache2 “AH00558: apache2: Could not reliably…\nDNS 解析的原理\nHTTP连接池（基于Python的requests和urllib3）\n做一件事，做好它。——苹果",
           "link": "https://www.kawabangga.com/posts/4594",
           "publishedOn": "2021-10-30T08:19:15.000Z",
-          "wordCount": 615,
+          "wordCount": 620,
           "title": "多租户环境中的 TCP 限速（基于 iptables）"
         },
         {
@@ -73,7 +73,7 @@
           "description": "上周末写了一个小工具，叫做 Lobbyboy（源代码：https://github.com/laixintao […]\nContinue reading...\nThe post 介绍 Lobbyboy 项目 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n杭州PyCon 2019 Slide: 《做Side Project的几个建议》\nPython 文化中的接口和协议 Slides\nTmux内部分享slides\nZoom 直播分享 Awesome Commandline 录像和资料下载",
           "link": "https://www.kawabangga.com/posts/4576",
           "publishedOn": "2021-10-27T10:00:07.000Z",
-          "wordCount": 653,
+          "wordCount": 658,
           "title": "介绍 Lobbyboy 项目"
         },
         {
@@ -82,7 +82,7 @@
           "description": "今天花了很长的时间在排查一个诡异的问题，值得记录一下。 本来是想写一个 HTTP 的服务，你告诉这个 HTTP […]\nContinue reading...\nThe post Debug 一个在 uWSGI 下使用 subprocess 卡住的问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\n部署 Django 项目背后的原理：为什么需要 Nginx 和 Gunicron这些东西？\n我的线程池怎么没了？\n使用uWSGI的spooler做异步任务\nDjango的日志配置",
           "link": "https://www.kawabangga.com/posts/4558",
           "publishedOn": "2021-10-21T17:52:43.000Z",
-          "wordCount": 1838,
+          "wordCount": 1843,
           "title": "Debug 一个在 uWSGI 下使用 subprocess 卡住的问题"
         },
         {
@@ -91,7 +91,7 @@
           "description": "先来回答一道面试题：我们知道在终端中有一些常用的快捷键，Ctrl+E 可以移动到行尾，Ctrl+W 可以删除一 […]\nContinue reading...\nThe post TTY 到底是什么？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nVim:移动窗口和tab\nVim:快速复制和替换\n推荐 Vim 进阶书籍：《Vim 实用技巧》\n一些命令行工具的增强版\nVim LSP 配置",
           "link": "https://www.kawabangga.com/posts/4515",
           "publishedOn": "2021-10-19T17:08:01.000Z",
-          "wordCount": 1819,
+          "wordCount": 1824,
           "title": "TTY 到底是什么？"
         }
       ]
@@ -102,12 +102,21 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2021/10/31/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%A2%9E%E5%BC%BA%E5%AF%B9-OCI-%E7%9A%84%E6%94%AF%E6%8C%81/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nDocker v20.10.10 发布\n这个版本是 Docker v20.10 的第 10 个小版本，这个版本中没有什么太特别的共性问题，但是由于 Go 1.16 中 net/http 包对 $HTTP_PROXY 行为的变化，所以当你为 Docker daemon 设置代理的时候，请确认你已经正确的设置了 $HTTP_PROXY 和 $HTTPS_PROXY 等。\n此版本的其他变更，可参考其 ReleaseNote 。至于 Docker v21.x 短时间内还不会发布，不过里面确实增加了一些值得一提的特性，后续新版本快发布前再跟大家分享。\nHelm v3.7 正式发布\nHelm v3.7 是一个特性版本，我们一起来看看有哪些值得关注的变更吧。\n对 OCI Chart 的支持相关的变更\nhelm chart export 已删除\nhelm chart list 已删除\nhelm chart pull 由 helm pull 代替\nhelm chart push 由 helm push 代替\nhelm chart remove 已删除\nhelm chart save 由 helm package 代替\n另外， 如果是通过旧版本创建的 OCI chart 需要使用 Helm v3.7 进行重新打包和上传才能使用。\n一些新特性\n新增 helm uninstall --wait\n新增 helm show crds\nhelm dependency list 新增 --max-col-width 用于设置列宽\nhelm repo add 新增 --password-stdin 用于从 stdin 输入密码\nhelm repo update 可以指定 repo 名称进…",
+          "link": "https://moelove.info/2021/10/31/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%A2%9E%E5%BC%BA%E5%AF%B9-OCI-%E7%9A%84%E6%94%AF%E6%8C%81/",
+          "publishedOn": "2021-10-30T17:15:34.000Z",
+          "wordCount": 436,
+          "title": "K8S 生态周报| Helm 新版本发布增强对 OCI 的支持"
+        },
+        {
           "id": "https://moelove.info/2021/10/19/GitOps-%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97-%E7%BB%BC%E8%BF%B0/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "大家好，我是张晋涛。\n接下来会为大家带来一个 GitOps 的应用实践系列文章，这是第一篇。\n什么是 GitOps\n首先我们来了解下 GitOps：\nGitOps 最早是在2017年由 Weaveworks 创立提出，它是一种进行 Kubernetes 集群管理和应用程序交付的方式。 GitOps 使用 Git 作为声明性基础设施和应用程序的单一事实来源。 GitOps 的核心思想是拥有一个 Git repository，包含目标环境中当前所需基础设施的声明性描述，以及使目标环境与 Git repository 中描述的状态相匹配的自动化过程。借助 GitOps，可以针对 Git repository 与集群中运行的内容之间的任何差异发出警报，如果存在差异，Kubernetes reconcilers会根据情况自动更新或回滚集群。 以 Git 作为 pipeline 的中心，开发人员可以使用自己熟悉的工具发出PR，以加速和简化 Kubernetes 中应用程序部署和操作任务。\n这使得 GitOps 在 Twitter 和 KubeCon 上引起了不小的轰动。\n\n这里说一下Weaveworks 这家公司，这是一家为开发人员提供最高效的方式来连接、观察和控制 Docker 容器的公司。在官网上，我们能看到，GitOps 工作流的原则和模式，如何实现它们在生产中大规模运行 Kubernetes， 以及GitOps 和基础设施即代码 (IAC) 配置管理工具之间的区别和最佳实践等等。https://www.weave.works/technologies/gitops/\nK8S的创始人之一：Kelsey Hightower 曾发推文评论过 GitOps是基于声明式基础设施的版本化 CI/CD， 停止脚本化操作，开始（自动化）分发。\nGitOps 是如何工作的呢？\n把环境配置作为 G…",
           "link": "https://moelove.info/2021/10/19/GitOps-%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97-%E7%BB%BC%E8%BF%B0/",
           "publishedOn": "2021-10-19T12:56:29.000Z",
-          "wordCount": 211,
+          "wordCount": 222,
           "title": "GitOps 应用实践系列 - 综述"
         }
       ]
