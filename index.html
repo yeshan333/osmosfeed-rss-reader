@@ -16,6 +16,37 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-11-03">2021-11-03</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">OCI 与下一代镜像构建工具</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/11/03/OCI-%E4%B8%8E%E4%B8%8B%E4%B8%80%E4%BB%A3%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>大家好，我是张晋涛。
+这篇文章中我将介绍 OCI 及 Docker 镜像相关的内容，欢迎留言讨论。
+OCI 的前世今生
+2013 年 3 月 dotCloud 公司在 PyCon 上进行了 Docker 的首次展示，随后宣布开源。自此 Docker 开始被众人知晓，随后掀起了一股容器化的热潮。
+在 2014 年 6 月 Docker 1.0 正式发布，有近 460 位贡献者和超过 8700 次提交，这也标志着 Docker 达到了生产可用的状态。
+在当时，提到容器化第一想法就是用 Docker 。而当时 Docker 的实现或者说发展方向主要是由 Docker Inc. 公司控制的，并没有一个统一的工业标准。这对于一些头部公司而言，显然是不能接受的，没有统一的工业标准意味着如果选择了使用 Docker 的容器化技术，便会被 Docker Inc. 公司所绑定；加上随着 Docker 软件的升级，某些功能或者特性必然会进行变动，没人能保证不发生破坏性变更。
+所以，为了推进容器化技术的工业标准化，2015 年 6 月在 DockerCon 上 Linux 基金会与 Google，华为，惠普，IBM，Docker，Red Hat，VMware 等公司共同宣布成立开放容器项目(OCP)，后更名为 OCI。它的主要目标便是 建立容器格式和运行时的工业开放通用标准。
+发展至今， OCI 制定的主要标准有三个分别是 runtime-spec 、image-spec 和 distribution-spec 这三个标准分别定义了容器运行时，容器镜像还有分发的规范，后面会展开介绍。
+为了支持 OCI 容器运行时标准的推进，Docker 公司起草了镜像格式和运行时规范的草案，并将 Docker 项目的相关实现捐献给了 OCI 作为容器运行时的基础实现，现在项目名为 runc 。
+后来 Docke…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-10-30">2021-10-30</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -300,7 +331,7 @@ Thank you: @hirdot</span>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-11-04T01:06:44.459Z">2021-11-04T01:06:44.459Z</time>
+    <time id="build-timestamp" datetime="2021-11-05T01:06:20.464Z">2021-11-05T01:06:20.464Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>
