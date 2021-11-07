@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-11-06T01:04:43.769Z</id>
+    <id>urn:2021-11-07T01:09:37.152Z</id>
     <title>osmos::feed</title>
-    <updated>2021-11-06T01:04:43.769Z</updated>
+    <updated>2021-11-07T01:09:37.152Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[SRE 的工作介绍]]></title>
+        <id>https://www.kawabangga.com/?p=4481</id>
+        <link href="https://www.kawabangga.com/posts/4481"/>
+        <updated>2021-11-06T15:23:03.000Z</updated>
+        <summary type="html"><![CDATA[有很多人问过我想了解一下 SRE 这个岗位，这是个很大的话题，在这篇博客中把想到的一些介绍一下吧。 SRE 到 […]
+Continue reading...
+The post SRE 的工作介绍 first appeared on 卡瓦邦噶！.
+
+相关文章:
+
+构建大型Cron系统的思考
+博客维护：速度优化，嵌入instagram
+Python正则表达式解惑
+申请友链
+DB资料集]]></summary>
+        <author>
+            <name>laixintao</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[OCI 与下一代镜像构建工具]]></title>
         <id>https://moelove.info/2021/11/03/OCI-%E4%B8%8E%E4%B8%8B%E4%B8%80%E4%BB%A3%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/</id>
@@ -185,16 +205,6 @@ Thank you: @hirdot]]></summary>
         <summary type="html"><![CDATA[概述 在Raft大论文中3.6.2中，有一个细节“不允许提交之前任期的日志”，之前看了几次都理解的不够准确，把这部分内容展开阐述一下。 问题 还是]]></summary>
         <author>
             <name>codedump的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[从平均负载开始，这进程是 CPU Bound 还是 IO Bound 的？]]></title>
-        <id>https://yeshan333.github.io/2021/10/07/io-bound-cpu-bound-with-average-load/</id>
-        <link href="https://yeshan333.github.io/2021/10/07/io-bound-cpu-bound-with-average-load/"/>
-        <updated>2021-10-07T16:12:38.000Z</updated>
-        <summary type="html"><![CDATA[在排查性能问题的时候，我们经常会使用 top 或者 uptime 两个 Linux 命令，top 命令和 uptime 命令都会给出最近机器 1 min，5 min，15 min 的平均负载情况，一般平均负载值（Average Load）接近甚至超出 CPU cores]]></summary>
-        <author>
-            <name>ShanSan</name>
         </author>
     </entry>
 </feed>
