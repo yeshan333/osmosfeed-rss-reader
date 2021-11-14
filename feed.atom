@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-11-08T01:07:25.092Z</id>
+    <id>urn:2021-11-14T02:19:46.412Z</id>
     <title>osmos::feed</title>
-    <updated>2021-11-08T01:07:25.092Z</updated>
+    <updated>2021-11-14T02:19:46.412Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -195,16 +195,6 @@ Chore: Dependency updates
 Thank you: @hirdot]]></summary>
         <author>
             <name>Release notes from osmosfeed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为什么Raft协议不能提交之前任期的日志？]]></title>
-        <id>https://www.codedump.info/post/20211011-raft-propose-prev-term/</id>
-        <link href="https://www.codedump.info/post/20211011-raft-propose-prev-term/"/>
-        <updated>2021-10-11T15:14:01.000Z</updated>
-        <summary type="html"><![CDATA[概述 在Raft大论文中3.6.2中，有一个细节“不允许提交之前任期的日志”，之前看了几次都理解的不够准确，把这部分内容展开阐述一下。 问题 还是]]></summary>
-        <author>
-            <name>codedump的网络日志</name>
         </author>
     </entry>
 </feed>
