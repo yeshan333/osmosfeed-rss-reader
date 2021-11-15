@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-11-14T02:19:46.412Z</id>
+    <id>urn:2021-11-15T01:00:18.101Z</id>
     <title>osmos::feed</title>
-    <updated>2021-11-14T02:19:46.412Z</updated>
+    <updated>2021-11-15T01:00:18.101Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[Coredns 源码阅读（导读）]]></title>
+        <id>https://www.kawabangga.com/?p=4607</id>
+        <link href="https://www.kawabangga.com/posts/4607"/>
+        <updated>2021-11-14T10:43:09.000Z</updated>
+        <summary type="html"><![CDATA[周末看了一下 coredns 的源代码，目前为止只是差不多搞清楚了这个代码库的逻辑。写篇博客记录一下，如果你也 […]
+Continue reading...
+The post Coredns 源码阅读（导读） first appeared on 卡瓦邦噶！.
+
+相关文章:
+
+Join Shopee & Work with Me!
+辅助Django开发的一些隐藏资源（文档）
+一些命令行工具的增强版
+实时上传数据备份文件到S3]]></summary>
+        <author>
+            <name>laixintao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[回到十月-生活中的一点儿小确幸]]></title>
+        <id>https://yeshan333.github.io/2021/11/14/back-to-october/</id>
+        <link href="https://yeshan333.github.io/2021/11/14/back-to-october/"/>
+        <updated>2021-11-14T10:21:37.000Z</updated>
+        <summary type="html"><![CDATA[前言
+不知不觉，离开校园将近四个月了，正式工作（摸🐟~）也差不多四个多月了，最近经历了很多事，头发也掉了不少😂]]></summary>
+        <author>
+            <name>ShanSan</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SRE 的工作介绍]]></title>
         <id>https://www.kawabangga.com/?p=4481</id>
@@ -183,18 +213,6 @@ GitOps 是如何工作的呢？
 把环境配置作为 G…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.11.3]]></title>
-        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.3</id>
-        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.3"/>
-        <updated>2021-10-16T00:01:47.000Z</updated>
-        <summary type="html"><![CDATA[Fixed: broken links in documentation
-Chore: Dependency updates
-Thank you: @hirdot]]></summary>
-        <author>
-            <name>Release notes from osmosfeed</name>
         </author>
     </entry>
 </feed>
