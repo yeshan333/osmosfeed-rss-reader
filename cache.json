@@ -17,7 +17,7 @@
           "description": "前言\n不知不觉，离开校园将近四个月了，正式工作（摸🐟~）也差不多四个多月了，最近经历了很多事，头发也掉了不少😂",
           "link": "https://yeshan333.github.io/2021/11/14/back-to-october/",
           "publishedOn": "2021-11-14T10:21:37.000Z",
-          "wordCount": 212,
+          "wordCount": 208,
           "title": "回到十月-生活中的一点儿小确幸"
         },
         {
@@ -54,7 +54,7 @@
           "description": "周末看了一下 coredns 的源代码，目前为止只是差不多搞清楚了这个代码库的逻辑。写篇博客记录一下，如果你也 […]\nContinue reading...\nThe post Coredns 源码阅读（导读） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n辅助Django开发的一些隐藏资源（文档）\n一些命令行工具的增强版\n实时上传数据备份文件到S3",
           "link": "https://www.kawabangga.com/posts/4607",
           "publishedOn": "2021-11-14T10:43:09.000Z",
-          "wordCount": 582,
+          "wordCount": 576,
           "title": "Coredns 源码阅读（导读）"
         },
         {
@@ -63,7 +63,7 @@
           "description": "有很多人问过我想了解一下 SRE 这个岗位，这是个很大的话题，在这篇博客中把想到的一些介绍一下吧。 SRE 到 […]\nContinue reading...\nThe post SRE 的工作介绍 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n构建大型Cron系统的思考\n博客维护：速度优化，嵌入instagram\nPython正则表达式解惑\n申请友链\nDB资料集",
           "link": "https://www.kawabangga.com/posts/4481",
           "publishedOn": "2021-11-06T15:23:03.000Z",
-          "wordCount": 872,
+          "wordCount": 866,
           "title": "SRE 的工作介绍"
         },
         {
@@ -72,7 +72,7 @@
           "description": "我们有个服务以类似 SideCar 的方式和应用一起运行，SideCar 和应用通过 Unix Domain  […]\nContinue reading...\nThe post 多租户环境中的 TCP 限速（基于 iptables） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nApache2 “AH00558: apache2: Could not reliably…\nDNS 解析的原理\nHTTP连接池（基于Python的requests和urllib3）\n做一件事，做好它。——苹果",
           "link": "https://www.kawabangga.com/posts/4594",
           "publishedOn": "2021-10-30T08:19:15.000Z",
-          "wordCount": 643,
+          "wordCount": 637,
           "title": "多租户环境中的 TCP 限速（基于 iptables）"
         },
         {
@@ -81,7 +81,7 @@
           "description": "上周末写了一个小工具，叫做 Lobbyboy（源代码：https://github.com/laixintao […]\nContinue reading...\nThe post 介绍 Lobbyboy 项目 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n杭州PyCon 2019 Slide: 《做Side Project的几个建议》\nPython 文化中的接口和协议 Slides\nTmux内部分享slides\nZoom 直播分享 Awesome Commandline 录像和资料下载",
           "link": "https://www.kawabangga.com/posts/4576",
           "publishedOn": "2021-10-27T10:00:07.000Z",
-          "wordCount": 677,
+          "wordCount": 671,
           "title": "介绍 Lobbyboy 项目"
         },
         {
@@ -90,7 +90,7 @@
           "description": "今天花了很长的时间在排查一个诡异的问题，值得记录一下。 本来是想写一个 HTTP 的服务，你告诉这个 HTTP […]\nContinue reading...\nThe post Debug 一个在 uWSGI 下使用 subprocess 卡住的问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\n部署 Django 项目背后的原理：为什么需要 Nginx 和 Gunicron这些东西？\n我的线程池怎么没了？\n使用uWSGI的spooler做异步任务\nDjango的日志配置",
           "link": "https://www.kawabangga.com/posts/4558",
           "publishedOn": "2021-10-21T17:52:43.000Z",
-          "wordCount": 1871,
+          "wordCount": 1865,
           "title": "Debug 一个在 uWSGI 下使用 subprocess 卡住的问题"
         },
         {
@@ -99,7 +99,7 @@
           "description": "先来回答一道面试题：我们知道在终端中有一些常用的快捷键，Ctrl+E 可以移动到行尾，Ctrl+W 可以删除一 […]\nContinue reading...\nThe post TTY 到底是什么？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nVim:移动窗口和tab\nVim:快速复制和替换\n推荐 Vim 进阶书籍：《Vim 实用技巧》\n一些命令行工具的增强版\nVim LSP 配置",
           "link": "https://www.kawabangga.com/posts/4515",
           "publishedOn": "2021-10-19T17:08:01.000Z",
-          "wordCount": 1844,
+          "wordCount": 1838,
           "title": "TTY 到底是什么？"
         }
       ]
