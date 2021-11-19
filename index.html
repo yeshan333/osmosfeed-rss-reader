@@ -16,6 +16,52 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-11-17">2021-11-17</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一篇搞懂容器技术的基石： cgroup</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/11/17/%E4%B8%80%E7%AF%87%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-cgroup/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>大家好，我是张晋涛。
+目前我们所提到的容器技术、虚拟化技术（不论何种抽象层次下的虚拟化技术）都能做到资源层面上的隔离和限制。
+对于容器技术而言，它实现资源层面上的限制和隔离，依赖于 Linux 内核所提供的 cgroup 和 namespace 技术。
+我们先对这两项技术的作用做个概括：
+cgroup 的主要作用：管理资源的分配、限制；
+namespace 的主要作用：封装抽象，限制，隔离，使命名空间内的进程看起来拥有他们自己的全局资源；
+本篇，我们重点来聊 cgroup 。
+为什么要关注 cgroup &amp; namespace
+云原生/容器技术的井喷式增长
+自 1979年，Unix 版本7 在开发过程中引入 Chroot Jail 以及 Chroot 系统调用开始，直到 2013 年开源出的 Docker，2014 年开源出来的 Kubernetes，直到现在的云原生生态的火热。 容器技术已经逐步成为主流的基础技术之一。
+在越来越多的公司、个人选择了云服务/容器技术后，资源的分配和隔离，以及安全性变成了人们关注及讨论的热点话题。
+其实容器技术使用起来并不难，但要真正把它用好，大规模的在生产环境中使用， 那我们还是需要掌握其核心的。
+以下是容器技术&amp;云原生生态的大致发展历程：
+
+图 1 ，容器技术发展历程
+从图中，我们可以看到容器技术、云原生生态的发展轨迹。容器技术其实很早就出现了，但为何在 Docker 出现后才开始有了较为显著的发展？早期的 chroot 、 Linux VServer 又有哪些问题呢？
+Chroot 带来的安全性问题
+
+图 2 ，chroot 示例
+Chroot 可以将进程及其子进程与操作系统的其余部分隔离开来。但是，对于 root process ，却可以任意退出 chroot。
+package main
+import (
+&quot;log&quot;
+&quot;os&quot;
+&quot;sy…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-11-14">2021-11-14</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -283,41 +329,9 @@ Django的日志配置</span>
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-10-19">2021-10-19</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.kawabangga.com">卡瓦邦噶！</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">TTY 到底是什么？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.kawabangga.com/posts/4515">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(6 min)</span>
-                    <span>先来回答一道面试题：我们知道在终端中有一些常用的快捷键，Ctrl+E 可以移动到行尾，Ctrl+W 可以删除一 […]
-Continue reading...
-The post TTY 到底是什么？ first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-Vim:移动窗口和tab
-Vim:快速复制和替换
-推荐 Vim 进阶书籍：《Vim 实用技巧》
-一些命令行工具的增强版
-Vim LSP 配置</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-11-18T01:00:53.091Z">2021-11-18T01:00:53.091Z</time>
+    <time id="build-timestamp" datetime="2021-11-19T01:00:54.208Z">2021-11-19T01:00:54.208Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>

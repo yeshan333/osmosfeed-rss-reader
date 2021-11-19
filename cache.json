@@ -54,7 +54,7 @@
           "description": "周末看了一下 coredns 的源代码，目前为止只是差不多搞清楚了这个代码库的逻辑。写篇博客记录一下，如果你也 […]\nContinue reading...\nThe post Coredns 源码阅读（导读） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n辅助Django开发的一些隐藏资源（文档）\n一些命令行工具的增强版\n实时上传数据备份文件到S3",
           "link": "https://www.kawabangga.com/posts/4607",
           "publishedOn": "2021-11-14T10:43:09.000Z",
-          "wordCount": 609,
+          "wordCount": 604,
           "title": "Coredns 源码阅读（导读）"
         },
         {
@@ -63,7 +63,7 @@
           "description": "有很多人问过我想了解一下 SRE 这个岗位，这是个很大的话题，在这篇博客中把想到的一些介绍一下吧。 SRE 到 […]\nContinue reading...\nThe post SRE 的工作介绍 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n构建大型Cron系统的思考\n博客维护：速度优化，嵌入instagram\nPython正则表达式解惑\n申请友链\nDB资料集",
           "link": "https://www.kawabangga.com/posts/4481",
           "publishedOn": "2021-11-06T15:23:03.000Z",
-          "wordCount": 910,
+          "wordCount": 905,
           "title": "SRE 的工作介绍"
         },
         {
@@ -72,7 +72,7 @@
           "description": "我们有个服务以类似 SideCar 的方式和应用一起运行，SideCar 和应用通过 Unix Domain  […]\nContinue reading...\nThe post 多租户环境中的 TCP 限速（基于 iptables） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nApache2 “AH00558: apache2: Could not reliably…\nDNS 解析的原理\nHTTP连接池（基于Python的requests和urllib3）\n做一件事，做好它。——苹果",
           "link": "https://www.kawabangga.com/posts/4594",
           "publishedOn": "2021-10-30T08:19:15.000Z",
-          "wordCount": 670,
+          "wordCount": 665,
           "title": "多租户环境中的 TCP 限速（基于 iptables）"
         },
         {
@@ -81,7 +81,7 @@
           "description": "上周末写了一个小工具，叫做 Lobbyboy（源代码：https://github.com/laixintao […]\nContinue reading...\nThe post 介绍 Lobbyboy 项目 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n杭州PyCon 2019 Slide: 《做Side Project的几个建议》\nPython 文化中的接口和协议 Slides\nTmux内部分享slides\nZoom 直播分享 Awesome Commandline 录像和资料下载",
           "link": "https://www.kawabangga.com/posts/4576",
           "publishedOn": "2021-10-27T10:00:07.000Z",
-          "wordCount": 704,
+          "wordCount": 699,
           "title": "介绍 Lobbyboy 项目"
         },
         {
@@ -90,17 +90,8 @@
           "description": "今天花了很长的时间在排查一个诡异的问题，值得记录一下。 本来是想写一个 HTTP 的服务，你告诉这个 HTTP […]\nContinue reading...\nThe post Debug 一个在 uWSGI 下使用 subprocess 卡住的问题 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\n部署 Django 项目背后的原理：为什么需要 Nginx 和 Gunicron这些东西？\n我的线程池怎么没了？\n使用uWSGI的spooler做异步任务\nDjango的日志配置",
           "link": "https://www.kawabangga.com/posts/4558",
           "publishedOn": "2021-10-21T17:52:43.000Z",
-          "wordCount": 1898,
+          "wordCount": 1893,
           "title": "Debug 一个在 uWSGI 下使用 subprocess 卡住的问题"
-        },
-        {
-          "id": "https://www.kawabangga.com/?p=4515",
-          "author": "laixintao",
-          "description": "先来回答一道面试题：我们知道在终端中有一些常用的快捷键，Ctrl+E 可以移动到行尾，Ctrl+W 可以删除一 […]\nContinue reading...\nThe post TTY 到底是什么？ first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nVim:移动窗口和tab\nVim:快速复制和替换\n推荐 Vim 进阶书籍：《Vim 实用技巧》\n一些命令行工具的增强版\nVim LSP 配置",
-          "link": "https://www.kawabangga.com/posts/4515",
-          "publishedOn": "2021-10-19T17:08:01.000Z",
-          "wordCount": 1871,
-          "title": "TTY 到底是什么？"
         }
       ]
     },
@@ -110,12 +101,21 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2021/11/17/%E4%B8%80%E7%AF%87%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-cgroup/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\n目前我们所提到的容器技术、虚拟化技术（不论何种抽象层次下的虚拟化技术）都能做到资源层面上的隔离和限制。\n对于容器技术而言，它实现资源层面上的限制和隔离，依赖于 Linux 内核所提供的 cgroup 和 namespace 技术。\n我们先对这两项技术的作用做个概括：\ncgroup 的主要作用：管理资源的分配、限制；\nnamespace 的主要作用：封装抽象，限制，隔离，使命名空间内的进程看起来拥有他们自己的全局资源；\n本篇，我们重点来聊 cgroup 。\n为什么要关注 cgroup & namespace\n云原生/容器技术的井喷式增长\n自 1979年，Unix 版本7 在开发过程中引入 Chroot Jail 以及 Chroot 系统调用开始，直到 2013 年开源出的 Docker，2014 年开源出来的 Kubernetes，直到现在的云原生生态的火热。 容器技术已经逐步成为主流的基础技术之一。\n在越来越多的公司、个人选择了云服务/容器技术后，资源的分配和隔离，以及安全性变成了人们关注及讨论的热点话题。\n其实容器技术使用起来并不难，但要真正把它用好，大规模的在生产环境中使用， 那我们还是需要掌握其核心的。\n以下是容器技术&云原生生态的大致发展历程：\n\n图 1 ，容器技术发展历程\n从图中，我们可以看到容器技术、云原生生态的发展轨迹。容器技术其实很早就出现了，但为何在 Docker 出现后才开始有了较为显著的发展？早期的 chroot 、 Linux VServer 又有哪些问题呢？\nChroot 带来的安全性问题\n\n图 2 ，chroot 示例\nChroot 可以将进程及其子进程与操作系统的其余部分隔离开来。但是，对于 root process ，却可以任意退出 chroot。\npackage main\nimport (\n\"log\"\n\"os\"\n\"sy…",
+          "link": "https://moelove.info/2021/11/17/%E4%B8%80%E7%AF%87%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-cgroup/",
+          "publishedOn": "2021-11-17T15:16:42.000Z",
+          "wordCount": 821,
+          "title": "一篇搞懂容器技术的基石： cgroup"
+        },
+        {
           "id": "https://moelove.info/2021/11/03/OCI-%E4%B8%8E%E4%B8%8B%E4%B8%80%E4%BB%A3%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "大家好，我是张晋涛。\n这篇文章中我将介绍 OCI 及 Docker 镜像相关的内容，欢迎留言讨论。\nOCI 的前世今生\n2013 年 3 月 dotCloud 公司在 PyCon 上进行了 Docker 的首次展示，随后宣布开源。自此 Docker 开始被众人知晓，随后掀起了一股容器化的热潮。\n在 2014 年 6 月 Docker 1.0 正式发布，有近 460 位贡献者和超过 8700 次提交，这也标志着 Docker 达到了生产可用的状态。\n在当时，提到容器化第一想法就是用 Docker 。而当时 Docker 的实现或者说发展方向主要是由 Docker Inc. 公司控制的，并没有一个统一的工业标准。这对于一些头部公司而言，显然是不能接受的，没有统一的工业标准意味着如果选择了使用 Docker 的容器化技术，便会被 Docker Inc. 公司所绑定；加上随着 Docker 软件的升级，某些功能或者特性必然会进行变动，没人能保证不发生破坏性变更。\n所以，为了推进容器化技术的工业标准化，2015 年 6 月在 DockerCon 上 Linux 基金会与 Google，华为，惠普，IBM，Docker，Red Hat，VMware 等公司共同宣布成立开放容器项目(OCP)，后更名为 OCI。它的主要目标便是 建立容器格式和运行时的工业开放通用标准。\n发展至今， OCI 制定的主要标准有三个分别是 runtime-spec 、image-spec 和 distribution-spec 这三个标准分别定义了容器运行时，容器镜像还有分发的规范，后面会展开介绍。\n为了支持 OCI 容器运行时标准的推进，Docker 公司起草了镜像格式和运行时规范的草案，并将 Docker 项目的相关实现捐献给了 OCI 作为容器运行时的基础实现，现在项目名为 runc 。\n后来 Docke…",
           "link": "https://moelove.info/2021/11/03/OCI-%E4%B8%8E%E4%B8%8B%E4%B8%80%E4%BB%A3%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/",
           "publishedOn": "2021-11-03T15:16:42.000Z",
-          "wordCount": 657,
+          "wordCount": 658,
           "title": "OCI 与下一代镜像构建工具"
         },
         {
