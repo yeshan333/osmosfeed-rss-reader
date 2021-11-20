@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-11-19T01:00:54.225Z</id>
+    <id>urn:2021-11-20T00:59:43.790Z</id>
     <title>osmos::feed</title>
-    <updated>2021-11-19T01:00:54.225Z</updated>
+    <updated>2021-11-20T00:59:43.790Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[源代码特洛伊木马攻击]]></title>
+        <id>https://coolshell.cn/?p=21649</id>
+        <link href="https://coolshell.cn/articles/21649.html"/>
+        <updated>2021-11-19T09:02:46.000Z</updated>
+        <summary type="html"><![CDATA[最近，我们在 Github 的 Code Review 中看到 Github 开始出现下面这个 Warning 信息—— “This file contains...
+ Read More  Read More
+源代码特洛伊木马攻击 first appeared on 酷 壳 - CoolShell.]]></summary>
+        <author>
+            <name>陈皓</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[一篇搞懂容器技术的基石： cgroup]]></title>
         <id>https://moelove.info/2021/11/17/%E4%B8%80%E7%AF%87%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-cgroup/</id>
