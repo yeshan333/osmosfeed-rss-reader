@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-11-20T00:59:43.790Z</id>
+    <id>urn:2021-11-21T01:03:07.490Z</id>
     <title>osmos::feed</title>
-    <updated>2021-11-20T00:59:43.790Z</updated>
+    <updated>2021-11-21T01:03:07.490Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -199,26 +199,6 @@ YY：国庆的时候趁着阿里云和腾讯云的轻量级服务器做促销一
 这次拿官方的 Kubeadm 耍一下，以阿里云的轻量级应用服务器为 Control 节点，腾讯云的轻量级应用服务器为 Worker 节点，说干就干。]]></summary>
         <author>
             <name>ShanSan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Debug 一个在 uWSGI 下使用 subprocess 卡住的问题]]></title>
-        <id>https://www.kawabangga.com/?p=4558</id>
-        <link href="https://www.kawabangga.com/posts/4558"/>
-        <updated>2021-10-21T17:52:43.000Z</updated>
-        <summary type="html"><![CDATA[今天花了很长的时间在排查一个诡异的问题，值得记录一下。 本来是想写一个 HTTP 的服务，你告诉这个 HTTP […]
-Continue reading...
-The post Debug 一个在 uWSGI 下使用 subprocess 卡住的问题 first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-uWSGI socket 队列被占满的问题
-部署 Django 项目背后的原理：为什么需要 Nginx 和 Gunicron这些东西？
-我的线程池怎么没了？
-使用uWSGI的spooler做异步任务
-Django的日志配置]]></summary>
-        <author>
-            <name>laixintao</name>
         </author>
     </entry>
 </feed>
