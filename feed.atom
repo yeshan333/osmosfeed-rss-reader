@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-11-21T01:03:07.490Z</id>
+    <id>urn:2021-11-22T01:01:39.167Z</id>
     <title>osmos::feed</title>
-    <updated>2021-11-21T01:03:07.490Z</updated>
+    <updated>2021-11-22T01:01:39.167Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[《Go 语言设计与实现》纸质书预售了！]]></title>
+        <id>https://draveness.me//golang-book-release</id>
+        <link href="https://draveness.me//golang-book-release"/>
+        <updated>2021-11-20T00:00:00.000Z</updated>
+        <author>
+            <name>面向信仰编程</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[源代码特洛伊木马攻击]]></title>
         <id>https://coolshell.cn/?p=21649</id>

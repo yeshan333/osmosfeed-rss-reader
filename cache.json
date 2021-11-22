@@ -42,7 +42,7 @@
           "description": "最近，我们在 Github 的 Code Review 中看到 Github 开始出现下面这个 Warning 信息—— “This file contains...\n Read More  Read More\n源代码特洛伊木马攻击 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21649.html",
           "publishedOn": "2021-11-19T09:02:46.000Z",
-          "wordCount": 835,
+          "wordCount": 857,
           "title": "源代码特洛伊木马攻击"
         }
       ]
@@ -51,7 +51,17 @@
       "title": "面向信仰编程",
       "feedUrl": "https://draveness.me/feed.xml",
       "siteUrl": "https://draveness.me/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://draveness.me//golang-book-release",
+          "author": null,
+          "description": "",
+          "link": "https://draveness.me//golang-book-release",
+          "publishedOn": "2021-11-20T00:00:00.000Z",
+          "wordCount": 81,
+          "title": "《Go 语言设计与实现》纸质书预售了！"
+        }
+      ]
     },
     {
       "title": "卡瓦邦噶！",
