@@ -42,7 +42,7 @@
           "description": "最近，我们在 Github 的 Code Review 中看到 Github 开始出现下面这个 Warning 信息—— “This file contains...\n Read More  Read More\n源代码特洛伊木马攻击 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21649.html",
           "publishedOn": "2021-11-19T09:02:46.000Z",
-          "wordCount": 857,
+          "wordCount": 962,
           "title": "源代码特洛伊木马攻击"
         }
       ]
@@ -74,7 +74,7 @@
           "description": "周末看了一下 coredns 的源代码，目前为止只是差不多搞清楚了这个代码库的逻辑。写篇博客记录一下，如果你也 […]\nContinue reading...\nThe post Coredns 源码阅读（导读） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n辅助Django开发的一些隐藏资源（文档）\n一些命令行工具的增强版\n实时上传数据备份文件到S3",
           "link": "https://www.kawabangga.com/posts/4607",
           "publishedOn": "2021-11-14T10:43:09.000Z",
-          "wordCount": 554,
+          "wordCount": 589,
           "title": "Coredns 源码阅读（导读）"
         },
         {
@@ -83,7 +83,7 @@
           "description": "有很多人问过我想了解一下 SRE 这个岗位，这是个很大的话题，在这篇博客中把想到的一些介绍一下吧。 SRE 到 […]\nContinue reading...\nThe post SRE 的工作介绍 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n构建大型Cron系统的思考\n博客维护：速度优化，嵌入instagram\nPython正则表达式解惑\n申请友链\nDB资料集",
           "link": "https://www.kawabangga.com/posts/4481",
           "publishedOn": "2021-11-06T15:23:03.000Z",
-          "wordCount": 887,
+          "wordCount": 922,
           "title": "SRE 的工作介绍"
         },
         {
@@ -92,7 +92,7 @@
           "description": "我们有个服务以类似 SideCar 的方式和应用一起运行，SideCar 和应用通过 Unix Domain  […]\nContinue reading...\nThe post 多租户环境中的 TCP 限速（基于 iptables） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nApache2 “AH00558: apache2: Could not reliably…\nDNS 解析的原理\nHTTP连接池（基于Python的requests和urllib3）\n做一件事，做好它。——苹果",
           "link": "https://www.kawabangga.com/posts/4594",
           "publishedOn": "2021-10-30T08:19:15.000Z",
-          "wordCount": 615,
+          "wordCount": 650,
           "title": "多租户环境中的 TCP 限速（基于 iptables）"
         },
         {
@@ -101,7 +101,7 @@
           "description": "上周末写了一个小工具，叫做 Lobbyboy（源代码：https://github.com/laixintao […]\nContinue reading...\nThe post 介绍 Lobbyboy 项目 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n杭州PyCon 2019 Slide: 《做Side Project的几个建议》\nPython 文化中的接口和协议 Slides\nTmux内部分享slides\nZoom 直播分享 Awesome Commandline 录像和资料下载",
           "link": "https://www.kawabangga.com/posts/4576",
           "publishedOn": "2021-10-27T10:00:07.000Z",
-          "wordCount": 649,
+          "wordCount": 684,
           "title": "介绍 Lobbyboy 项目"
         }
       ]
@@ -112,12 +112,21 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2021/11/21/Shell-%E8%84%9A%E6%9C%AC%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97%E4%B8%80/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\n提到 Shell 大家想必不会太陌生，我们通常认为 Shell 是我们和系统交互的接口，执行命令返回输出，比如 bash 、zsh 等。偶尔也会有人把 Shell 和 Terminal（终端）混淆，但这和本文关系不大，暂且略过。\n作为一名程序员，我们可能天天都会用到 Shell ，偶尔也会把一些命令组织到一起，写个 Shell 脚本之类的，以便提升我们的工作效率。\n然而在看似简单的 Shell 脚本中，可能隐藏着很深的坑。这里我先给出两段简单且相似的 Shell 脚本，大家不妨来看看这两段代码的输出是什么：\n#!/bin/bash\nset -e -u\ni=0\nwhile [ $i -lt 6 ]; do\necho $i\n((i++))\ndone\n\n答案是只会输出一个 0 。\n#!/bin/bash\nset -e -u\nlet i=0\nwhile [ $i -lt 6 ]; do\necho $i\n((i++))\ndone\n\n答案是没有任何输出，直接退出。\n如果你能解释清楚上面两段代码输出结果的话， 那大概你可以跳过这篇文章后续的内容了。\n我先来分解下这段代码中涉及到的主要知识点。\n变量声明\n变量声明有很多种办法， 但是其行为却各有不同。\n我们必须先有个基础认识： Bash 没有类型系统，所有变量都是 string 。 基于这个原因，如果是让变量进行算术运算时，不能像在其他的编程语言中那样直接写算术运算符。这会让 bash 解释为对 string 的操作，而不是对数字的操作。\n直接声明\n(MoeLove)➜ ~ foo=1+1\n(MoeLove)➜ ~ echo $foo\n1+1\n\n直接声明最简单，但正如前面提到的，直接声明会默认当作 string 进行处理，不能在声明时进行算术运算。\ndeclare 声明\n(MoeLove)➜ ~ declare foo…",
+          "link": "https://moelove.info/2021/11/21/Shell-%E8%84%9A%E6%9C%AC%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97%E4%B8%80/",
+          "publishedOn": "2021-11-21T14:41:02.000Z",
+          "wordCount": 735,
+          "title": "Shell 脚本避坑指南（一）"
+        },
+        {
           "id": "https://moelove.info/2021/11/17/%E4%B8%80%E7%AF%87%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-cgroup/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "大家好，我是张晋涛。\n目前我们所提到的容器技术、虚拟化技术（不论何种抽象层次下的虚拟化技术）都能做到资源层面上的隔离和限制。\n对于容器技术而言，它实现资源层面上的限制和隔离，依赖于 Linux 内核所提供的 cgroup 和 namespace 技术。\n我们先对这两项技术的作用做个概括：\ncgroup 的主要作用：管理资源的分配、限制；\nnamespace 的主要作用：封装抽象，限制，隔离，使命名空间内的进程看起来拥有他们自己的全局资源；\n本篇，我们重点来聊 cgroup 。\n为什么要关注 cgroup & namespace\n云原生/容器技术的井喷式增长\n自 1979年，Unix 版本7 在开发过程中引入 Chroot Jail 以及 Chroot 系统调用开始，直到 2013 年开源出的 Docker，2014 年开源出来的 Kubernetes，直到现在的云原生生态的火热。 容器技术已经逐步成为主流的基础技术之一。\n在越来越多的公司、个人选择了云服务/容器技术后，资源的分配和隔离，以及安全性变成了人们关注及讨论的热点话题。\n其实容器技术使用起来并不难，但要真正把它用好，大规模的在生产环境中使用， 那我们还是需要掌握其核心的。\n以下是容器技术&云原生生态的大致发展历程：\n\n图 1 ，容器技术发展历程\n从图中，我们可以看到容器技术、云原生生态的发展轨迹。容器技术其实很早就出现了，但为何在 Docker 出现后才开始有了较为显著的发展？早期的 chroot 、 Linux VServer 又有哪些问题呢？\nChroot 带来的安全性问题\n\n图 2 ，chroot 示例\nChroot 可以将进程及其子进程与操作系统的其余部分隔离开来。但是，对于 root process ，却可以任意退出 chroot。\npackage main\nimport (\n\"log\"\n\"os\"\n\"sy…",
           "link": "https://moelove.info/2021/11/17/%E4%B8%80%E7%AF%87%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-cgroup/",
           "publishedOn": "2021-11-17T15:16:42.000Z",
-          "wordCount": 821,
+          "wordCount": 823,
           "title": "一篇搞懂容器技术的基石： cgroup"
         },
         {
