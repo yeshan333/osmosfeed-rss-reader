@@ -33,7 +33,7 @@
           "description": "最近，我们在 Github 的 Code Review 中看到 Github 开始出现下面这个 Warning 信息—— “This file contains...\n Read More  Read More\n源代码特洛伊木马攻击 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21649.html",
           "publishedOn": "2021-11-19T09:02:46.000Z",
-          "wordCount": 965,
+          "wordCount": 867,
           "title": "源代码特洛伊木马攻击"
         }
       ]
@@ -65,7 +65,7 @@
           "description": "周末看了一下 coredns 的源代码，目前为止只是差不多搞清楚了这个代码库的逻辑。写篇博客记录一下，如果你也 […]\nContinue reading...\nThe post Coredns 源码阅读（导读） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n辅助Django开发的一些隐藏资源（文档）\n一些命令行工具的增强版\n实时上传数据备份文件到S3",
           "link": "https://www.kawabangga.com/posts/4607",
           "publishedOn": "2021-11-14T10:43:09.000Z",
-          "wordCount": 567,
+          "wordCount": 572,
           "title": "Coredns 源码阅读（导读）"
         },
         {
@@ -74,7 +74,7 @@
           "description": "有很多人问过我想了解一下 SRE 这个岗位，这是个很大的话题，在这篇博客中把想到的一些介绍一下吧。 SRE 到 […]\nContinue reading...\nThe post SRE 的工作介绍 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n构建大型Cron系统的思考\n博客维护：速度优化，嵌入instagram\nPython正则表达式解惑\n申请友链\nDB资料集",
           "link": "https://www.kawabangga.com/posts/4481",
           "publishedOn": "2021-11-06T15:23:03.000Z",
-          "wordCount": 900,
+          "wordCount": 905,
           "title": "SRE 的工作介绍"
         },
         {
@@ -83,7 +83,7 @@
           "description": "我们有个服务以类似 SideCar 的方式和应用一起运行，SideCar 和应用通过 Unix Domain  […]\nContinue reading...\nThe post 多租户环境中的 TCP 限速（基于 iptables） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nApache2 “AH00558: apache2: Could not reliably…\nDNS 解析的原理\nHTTP连接池（基于Python的requests和urllib3）\n做一件事，做好它。——苹果",
           "link": "https://www.kawabangga.com/posts/4594",
           "publishedOn": "2021-10-30T08:19:15.000Z",
-          "wordCount": 628,
+          "wordCount": 633,
           "title": "多租户环境中的 TCP 限速（基于 iptables）"
         },
         {
@@ -92,7 +92,7 @@
           "description": "上周末写了一个小工具，叫做 Lobbyboy（源代码：https://github.com/laixintao […]\nContinue reading...\nThe post 介绍 Lobbyboy 项目 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nPyCon China 2019演讲Slide: Django Migration Under the Hood\n杭州PyCon 2019 Slide: 《做Side Project的几个建议》\nPython 文化中的接口和协议 Slides\nTmux内部分享slides\nZoom 直播分享 Awesome Commandline 录像和资料下载",
           "link": "https://www.kawabangga.com/posts/4576",
           "publishedOn": "2021-10-27T10:00:07.000Z",
-          "wordCount": 662,
+          "wordCount": 667,
           "title": "介绍 Lobbyboy 项目"
         }
       ]
@@ -103,12 +103,21 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2021/11/23/%E4%BA%91%E5%8E%9F%E7%94%9F%E6%97%B6%E4%BB%A3%E4%B8%8B%E7%9A%84%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E5%AE%89%E5%85%A8%E4%B8%8A/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\nKubernetes 作为云原生的基石，为我们带来了极大的便利性，越来越多的公司也都将 Kubernetes 应用到了生产环境中。然而，在享受其带来的便利性的同时，我们也需要关注其中的一些安全隐患。\n本篇，我将为你重点介绍容器镜像安全相关的内容。\n通常情况下，我们提到容器镜像安全，主要是指以下两个方面：\n镜像自身内容的安全；\n镜像分发过程的安全；\n镜像自身内容的安全\n要聊镜像自身内容的安全，那我们就需要知道镜像到底是什么，以及它其中的内容是什么。\n镜像是什么\n我们以 debian镜像为例，pull 最新的镜像，并将其保存为 tar 文件，之后进行解压：\n➜ ~ mkdir -p debian-image\n➜ ~ docker pull debian\nUsing default tag: latest\nlatest: Pulling from library/debian\n647acf3d48c2: Pull complete\nDigest: sha256:e8c184b56a94db0947a9d51ec68f42ef5584442f20547fa3bd8cbd00203b2e7a\nStatus: Downloaded newer image for debian:latest\ndocker.io/library/debian:latest\n➜ ~ docker image save -o debian-image/debian.tar debian\n➜ ~ ls debian-image\ndebian.tar\n➜ ~ tar -C debian-image -xf debian-image/debian.tar\n➜ ~ tree -I debian.tar debian-image\ndebian-image\n├── 827e5611389abf13d…",
+          "link": "https://moelove.info/2021/11/23/%E4%BA%91%E5%8E%9F%E7%94%9F%E6%97%B6%E4%BB%A3%E4%B8%8B%E7%9A%84%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E5%AE%89%E5%85%A8%E4%B8%8A/",
+          "publishedOn": "2021-11-23T15:16:42.000Z",
+          "wordCount": 532,
+          "title": "云原生时代下的容器镜像安全（上）"
+        },
+        {
           "id": "https://moelove.info/2021/11/21/Shell-%E8%84%9A%E6%9C%AC%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97%E4%B8%80/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "大家好，我是张晋涛。\n提到 Shell 大家想必不会太陌生，我们通常认为 Shell 是我们和系统交互的接口，执行命令返回输出，比如 bash 、zsh 等。偶尔也会有人把 Shell 和 Terminal（终端）混淆，但这和本文关系不大，暂且略过。\n作为一名程序员，我们可能天天都会用到 Shell ，偶尔也会把一些命令组织到一起，写个 Shell 脚本之类的，以便提升我们的工作效率。\n然而在看似简单的 Shell 脚本中，可能隐藏着很深的坑。这里我先给出两段简单且相似的 Shell 脚本，大家不妨来看看这两段代码的输出是什么：\n#!/bin/bash\nset -e -u\ni=0\nwhile [ $i -lt 6 ]; do\necho $i\n((i++))\ndone\n\n答案是只会输出一个 0 。\n#!/bin/bash\nset -e -u\nlet i=0\nwhile [ $i -lt 6 ]; do\necho $i\n((i++))\ndone\n\n答案是没有任何输出，直接退出。\n如果你能解释清楚上面两段代码输出结果的话， 那大概你可以跳过这篇文章后续的内容了。\n我先来分解下这段代码中涉及到的主要知识点。\n变量声明\n变量声明有很多种办法， 但是其行为却各有不同。\n我们必须先有个基础认识： Bash 没有类型系统，所有变量都是 string 。 基于这个原因，如果是让变量进行算术运算时，不能像在其他的编程语言中那样直接写算术运算符。这会让 bash 解释为对 string 的操作，而不是对数字的操作。\n直接声明\n(MoeLove)➜ ~ foo=1+1\n(MoeLove)➜ ~ echo $foo\n1+1\n\n直接声明最简单，但正如前面提到的，直接声明会默认当作 string 进行处理，不能在声明时进行算术运算。\ndeclare 声明\n(MoeLove)➜ ~ declare foo…",
           "link": "https://moelove.info/2021/11/21/Shell-%E8%84%9A%E6%9C%AC%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97%E4%B8%80/",
           "publishedOn": "2021-11-21T14:41:02.000Z",
-          "wordCount": 735,
+          "wordCount": 732,
           "title": "Shell 脚本避坑指南（一）"
         },
         {
@@ -117,7 +126,7 @@
           "description": "大家好，我是张晋涛。\n目前我们所提到的容器技术、虚拟化技术（不论何种抽象层次下的虚拟化技术）都能做到资源层面上的隔离和限制。\n对于容器技术而言，它实现资源层面上的限制和隔离，依赖于 Linux 内核所提供的 cgroup 和 namespace 技术。\n我们先对这两项技术的作用做个概括：\ncgroup 的主要作用：管理资源的分配、限制；\nnamespace 的主要作用：封装抽象，限制，隔离，使命名空间内的进程看起来拥有他们自己的全局资源；\n本篇，我们重点来聊 cgroup 。\n为什么要关注 cgroup & namespace\n云原生/容器技术的井喷式增长\n自 1979年，Unix 版本7 在开发过程中引入 Chroot Jail 以及 Chroot 系统调用开始，直到 2013 年开源出的 Docker，2014 年开源出来的 Kubernetes，直到现在的云原生生态的火热。 容器技术已经逐步成为主流的基础技术之一。\n在越来越多的公司、个人选择了云服务/容器技术后，资源的分配和隔离，以及安全性变成了人们关注及讨论的热点话题。\n其实容器技术使用起来并不难，但要真正把它用好，大规模的在生产环境中使用， 那我们还是需要掌握其核心的。\n以下是容器技术&云原生生态的大致发展历程：\n\n图 1 ，容器技术发展历程\n从图中，我们可以看到容器技术、云原生生态的发展轨迹。容器技术其实很早就出现了，但为何在 Docker 出现后才开始有了较为显著的发展？早期的 chroot 、 Linux VServer 又有哪些问题呢？\nChroot 带来的安全性问题\n\n图 2 ，chroot 示例\nChroot 可以将进程及其子进程与操作系统的其余部分隔离开来。但是，对于 root process ，却可以任意退出 chroot。\npackage main\nimport (\n\"log\"\n\"os\"\n\"sy…",
           "link": "https://moelove.info/2021/11/17/%E4%B8%80%E7%AF%87%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-cgroup/",
           "publishedOn": "2021-11-17T15:16:42.000Z",
-          "wordCount": 823,
+          "wordCount": 822,
           "title": "一篇搞懂容器技术的基石： cgroup"
         },
         {
@@ -126,7 +135,7 @@
           "description": "大家好，我是张晋涛。\n这篇文章中我将介绍 OCI 及 Docker 镜像相关的内容，欢迎留言讨论。\nOCI 的前世今生\n2013 年 3 月 dotCloud 公司在 PyCon 上进行了 Docker 的首次展示，随后宣布开源。自此 Docker 开始被众人知晓，随后掀起了一股容器化的热潮。\n在 2014 年 6 月 Docker 1.0 正式发布，有近 460 位贡献者和超过 8700 次提交，这也标志着 Docker 达到了生产可用的状态。\n在当时，提到容器化第一想法就是用 Docker 。而当时 Docker 的实现或者说发展方向主要是由 Docker Inc. 公司控制的，并没有一个统一的工业标准。这对于一些头部公司而言，显然是不能接受的，没有统一的工业标准意味着如果选择了使用 Docker 的容器化技术，便会被 Docker Inc. 公司所绑定；加上随着 Docker 软件的升级，某些功能或者特性必然会进行变动，没人能保证不发生破坏性变更。\n所以，为了推进容器化技术的工业标准化，2015 年 6 月在 DockerCon 上 Linux 基金会与 Google，华为，惠普，IBM，Docker，Red Hat，VMware 等公司共同宣布成立开放容器项目(OCP)，后更名为 OCI。它的主要目标便是 建立容器格式和运行时的工业开放通用标准。\n发展至今， OCI 制定的主要标准有三个分别是 runtime-spec 、image-spec 和 distribution-spec 这三个标准分别定义了容器运行时，容器镜像还有分发的规范，后面会展开介绍。\n为了支持 OCI 容器运行时标准的推进，Docker 公司起草了镜像格式和运行时规范的草案，并将 Docker 项目的相关实现捐献给了 OCI 作为容器运行时的基础实现，现在项目名为 runc 。\n后来 Docke…",
           "link": "https://moelove.info/2021/11/03/OCI-%E4%B8%8E%E4%B8%8B%E4%B8%80%E4%BB%A3%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/",
           "publishedOn": "2021-11-03T15:16:42.000Z",
-          "wordCount": 658,
+          "wordCount": 656,
           "title": "OCI 与下一代镜像构建工具"
         },
         {
