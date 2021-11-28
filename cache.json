@@ -12,12 +12,21 @@
       "siteUrl": "https://yeshan333.github.io/",
       "articles": [
         {
+          "id": "https://yeshan333.github.io/2021/11/27/loopback-addr/",
+          "author": null,
+          "description": "心血来潮，小水一篇！\n回环地址（loopback address）\n\nloopback 在维基百科上有一段这样的解释：Loopback (also written loop-back) is the routing of electronic signals or digital data streams back to their source without intentional processing or modification. It is primarily a means of testing the communications infrastructure.\n通熟的说就是将由“源”发送出去的数据路由回“源”。",
+          "link": "https://yeshan333.github.io/2021/11/27/loopback-addr/",
+          "publishedOn": "2021-11-27T11:41:50.000Z",
+          "wordCount": 330,
+          "title": "回环地址的一点儿破事"
+        },
+        {
           "id": "https://yeshan333.github.io/2021/11/14/back-to-october/",
           "author": null,
           "description": "前言\n不知不觉，离开校园将近四个月了，正式工作（摸🐟~）也差不多四个多月了，最近经历了很多事，头发也掉了不少😂",
           "link": "https://yeshan333.github.io/2021/11/14/back-to-october/",
           "publishedOn": "2021-11-14T10:21:37.000Z",
-          "wordCount": 208,
+          "wordCount": 219,
           "title": "回到十月-生活中的一点儿小确幸"
         }
       ]
@@ -33,7 +42,7 @@
           "description": "最近，我们在 Github 的 Code Review 中看到 Github 开始出现下面这个 Warning 信息—— “This file contains...\n Read More  Read More\n源代码特洛伊木马攻击 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21649.html",
           "publishedOn": "2021-11-19T09:02:46.000Z",
-          "wordCount": 948,
+          "wordCount": 953,
           "title": "源代码特洛伊木马攻击"
         }
       ]
@@ -65,7 +74,7 @@
           "description": "记录一个今天遇到的小问题。这是继 Debug 一个在 uWSGI 下使用 subprocess 卡住的问题 之 […]\nContinue reading...\nThe post 寻找丢失的信号 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nDebug 一个在 uWSGI 下使用 subprocess 卡住的问题\n如何杀死一个进程？\nSRE&Devops 每周分享 Issue #3\n我的线程池怎么没了？",
           "link": "https://www.kawabangga.com/posts/4617",
           "publishedOn": "2021-11-26T14:25:38.000Z",
-          "wordCount": 890,
+          "wordCount": 949,
           "title": "寻找丢失的信号"
         },
         {
@@ -74,7 +83,7 @@
           "description": "周末看了一下 coredns 的源代码，目前为止只是差不多搞清楚了这个代码库的逻辑。写篇博客记录一下，如果你也 […]\nContinue reading...\nThe post Coredns 源码阅读（导读） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n辅助Django开发的一些隐藏资源（文档）\n一些命令行工具的增强版\n实时上传数据备份文件到S3",
           "link": "https://www.kawabangga.com/posts/4607",
           "publishedOn": "2021-11-14T10:43:09.000Z",
-          "wordCount": 559,
+          "wordCount": 556,
           "title": "Coredns 源码阅读（导读）"
         },
         {
@@ -83,7 +92,7 @@
           "description": "有很多人问过我想了解一下 SRE 这个岗位，这是个很大的话题，在这篇博客中把想到的一些介绍一下吧。 SRE 到 […]\nContinue reading...\nThe post SRE 的工作介绍 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n构建大型Cron系统的思考\n博客维护：速度优化，嵌入instagram\nPython正则表达式解惑\n申请友链\nDB资料集",
           "link": "https://www.kawabangga.com/posts/4481",
           "publishedOn": "2021-11-06T15:23:03.000Z",
-          "wordCount": 890,
+          "wordCount": 887,
           "title": "SRE 的工作介绍"
         },
         {
@@ -92,7 +101,7 @@
           "description": "我们有个服务以类似 SideCar 的方式和应用一起运行，SideCar 和应用通过 Unix Domain  […]\nContinue reading...\nThe post 多租户环境中的 TCP 限速（基于 iptables） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nApache2 “AH00558: apache2: Could not reliably…\nDNS 解析的原理\nHTTP连接池（基于Python的requests和urllib3）\n做一件事，做好它。——苹果",
           "link": "https://www.kawabangga.com/posts/4594",
           "publishedOn": "2021-10-30T08:19:15.000Z",
-          "wordCount": 618,
+          "wordCount": 615,
           "title": "多租户环境中的 TCP 限速（基于 iptables）"
         }
       ]

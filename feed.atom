@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-11-27T00:59:07.463Z</id>
+    <id>urn:2021-11-28T01:02:08.374Z</id>
     <title>osmos::feed</title>
-    <updated>2021-11-27T00:59:07.463Z</updated>
+    <updated>2021-11-28T01:02:08.375Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[回环地址的一点儿破事]]></title>
+        <id>https://yeshan333.github.io/2021/11/27/loopback-addr/</id>
+        <link href="https://yeshan333.github.io/2021/11/27/loopback-addr/"/>
+        <updated>2021-11-27T11:41:50.000Z</updated>
+        <summary type="html"><![CDATA[心血来潮，小水一篇！
+回环地址（loopback address）
+
+loopback 在维基百科上有一段这样的解释：Loopback (also written loop-back) is the routing of electronic signals or digital data streams back to their source without intentional processing or modification. It is primarily a means of testing the communications infrastructure.
+通熟的说就是将由“源”发送出去的数据路由回“源”。]]></summary>
+        <author>
+            <name>ShanSan</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[寻找丢失的信号]]></title>
         <id>https://www.kawabangga.com/?p=4617</id>
