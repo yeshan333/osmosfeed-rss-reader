@@ -20,6 +20,37 @@
     <ul class="sources card">
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">新功能：Prometheus Agent 模式上手体验</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/11/28/%E6%96%B0%E5%8A%9F%E8%83%BDPrometheus-Agent-%E6%A8%A1%E5%BC%8F%E4%B8%8A%E6%89%8B%E4%BD%93%E9%AA%8C/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>大家好，我是张晋涛。
+Prometheus 几乎已经成为了云原生时代下监控选型的事实标准，它也是第二个从 CNCF 毕业的项目。
+当前，Prometheus 几乎可以满足各种场景/服务的监控需求。我之前有写过一些文章介绍过 Prometheus 及其生态，本篇我们将聚焦于 Prometheus 最新版本中发布的 Agent 模式，对于与此主题无关的一些概念或者用法，我会粗略带过。
+拉模式（Pull）和 推模式（Push）
+众所周知，Prometheus 是一种拉模式（Pull）的监控系统，这不同于传统的基于推模式（Push）的监控系统。
+什么是拉模式（Pull）呢？
+
+待监控的服务自身或者通过一些 exporter 暴露出来一些 metrics 指标的接口，由 Prometheus 去主动的定时进行抓取/采集，这就是拉模式（Pull）。即由监控系统主动的去拉（Pull）目标的 metrics。
+与之相对应的就是推模式（Push）了。
+
+由应用程序主动将自身的一些 metrics 指标进行上报，监控系统再进行相对应的处理。如果对于某些应用程序的监控想要使用推模式（Push），比如：不易实现 metrics 接口等原因，可以考虑使用 Pushgateway 来完成。
+对于拉模式（Pull）和推模式（Push）到底哪种更好的讨论一直都在继续，有兴趣的小伙伴可以自行搜索下。
+这里主要是聚焦于单个 Prometheus 和应用服务之间交互的手方式。本篇我们从更上层的角度或者全局角度来看看当前 Prometheus 是如何做 HA、 持久化和集群的。
+Prometheus HA/持久化/集群的方案
+在大规模生产环境中使用时，很少有系统中仅有一个单实例 Prometheus 存在的情况出现。无论从高可用、数据持久化还是从为用户提供更易用的全局视图来考虑，运行多个 Prometheus 实…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://yeshan333.github.io/">ShanSan</a></h3>
           <section class="articles-per-source">
             <article>
@@ -461,38 +492,11 @@ helm repo update 可以指定 repo 名称进…</span>
             </article>
         </section>
       </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.kawabangga.com">卡瓦邦噶！</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">多租户环境中的 TCP 限速（基于 iptables）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.kawabangga.com/posts/4594">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>我们有个服务以类似 SideCar 的方式和应用一起运行，SideCar 和应用通过 Unix Domain  […]
-Continue reading...
-The post 多租户环境中的 TCP 限速（基于 iptables） first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-uWSGI socket 队列被占满的问题
-Apache2 “AH00558: apache2: Could not reliably…
-DNS 解析的原理
-HTTP连接池（基于Python的requests和urllib3）
-做一件事，做好它。——苹果</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
     </ul>
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-11-28T01:02:08.351Z">2021-11-28T01:02:08.351Z</time>
+    <time id="build-timestamp" datetime="2021-11-29T01:00:57.778Z">2021-11-29T01:00:57.778Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>

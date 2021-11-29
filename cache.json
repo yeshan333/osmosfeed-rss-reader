@@ -92,17 +92,8 @@
           "description": "有很多人问过我想了解一下 SRE 这个岗位，这是个很大的话题，在这篇博客中把想到的一些介绍一下吧。 SRE 到 […]\nContinue reading...\nThe post SRE 的工作介绍 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n构建大型Cron系统的思考\n博客维护：速度优化，嵌入instagram\nPython正则表达式解惑\n申请友链\nDB资料集",
           "link": "https://www.kawabangga.com/posts/4481",
           "publishedOn": "2021-11-06T15:23:03.000Z",
-          "wordCount": 887,
+          "wordCount": 895,
           "title": "SRE 的工作介绍"
-        },
-        {
-          "id": "https://www.kawabangga.com/?p=4594",
-          "author": "laixintao",
-          "description": "我们有个服务以类似 SideCar 的方式和应用一起运行，SideCar 和应用通过 Unix Domain  […]\nContinue reading...\nThe post 多租户环境中的 TCP 限速（基于 iptables） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nApache2 “AH00558: apache2: Could not reliably…\nDNS 解析的原理\nHTTP连接池（基于Python的requests和urllib3）\n做一件事，做好它。——苹果",
-          "link": "https://www.kawabangga.com/posts/4594",
-          "publishedOn": "2021-10-30T08:19:15.000Z",
-          "wordCount": 615,
-          "title": "多租户环境中的 TCP 限速（基于 iptables）"
         }
       ]
     },
@@ -111,6 +102,15 @@
       "feedUrl": "https://moelove.info/index.xml",
       "siteUrl": "https://moelove.info/",
       "articles": [
+        {
+          "id": "https://moelove.info/2021/11/28/%E6%96%B0%E5%8A%9F%E8%83%BDPrometheus-Agent-%E6%A8%A1%E5%BC%8F%E4%B8%8A%E6%89%8B%E4%BD%93%E9%AA%8C/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\nPrometheus 几乎已经成为了云原生时代下监控选型的事实标准，它也是第二个从 CNCF 毕业的项目。\n当前，Prometheus 几乎可以满足各种场景/服务的监控需求。我之前有写过一些文章介绍过 Prometheus 及其生态，本篇我们将聚焦于 Prometheus 最新版本中发布的 Agent 模式，对于与此主题无关的一些概念或者用法，我会粗略带过。\n拉模式（Pull）和 推模式（Push）\n众所周知，Prometheus 是一种拉模式（Pull）的监控系统，这不同于传统的基于推模式（Push）的监控系统。\n什么是拉模式（Pull）呢？\n\n待监控的服务自身或者通过一些 exporter 暴露出来一些 metrics 指标的接口，由 Prometheus 去主动的定时进行抓取/采集，这就是拉模式（Pull）。即由监控系统主动的去拉（Pull）目标的 metrics。\n与之相对应的就是推模式（Push）了。\n\n由应用程序主动将自身的一些 metrics 指标进行上报，监控系统再进行相对应的处理。如果对于某些应用程序的监控想要使用推模式（Push），比如：不易实现 metrics 接口等原因，可以考虑使用 Pushgateway 来完成。\n对于拉模式（Pull）和推模式（Push）到底哪种更好的讨论一直都在继续，有兴趣的小伙伴可以自行搜索下。\n这里主要是聚焦于单个 Prometheus 和应用服务之间交互的手方式。本篇我们从更上层的角度或者全局角度来看看当前 Prometheus 是如何做 HA、 持久化和集群的。\nPrometheus HA/持久化/集群的方案\n在大规模生产环境中使用时，很少有系统中仅有一个单实例 Prometheus 存在的情况出现。无论从高可用、数据持久化还是从为用户提供更易用的全局视图来考虑，运行多个 Prometheus 实…",
+          "link": "https://moelove.info/2021/11/28/%E6%96%B0%E5%8A%9F%E8%83%BDPrometheus-Agent-%E6%A8%A1%E5%BC%8F%E4%B8%8A%E6%89%8B%E4%BD%93%E9%AA%8C/",
+          "publishedOn": "2021-11-27T16:26:44.000Z",
+          "wordCount": 684,
+          "title": "新功能：Prometheus Agent 模式上手体验"
+        },
         {
           "id": "https://moelove.info/2021/11/26/%E7%94%A8-Go-%E8%B0%83%E7%94%A8-Rust/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
@@ -135,7 +135,7 @@
           "description": "大家好，我是张晋涛。\n提到 Shell 大家想必不会太陌生，我们通常认为 Shell 是我们和系统交互的接口，执行命令返回输出，比如 bash 、zsh 等。偶尔也会有人把 Shell 和 Terminal（终端）混淆，但这和本文关系不大，暂且略过。\n作为一名程序员，我们可能天天都会用到 Shell ，偶尔也会把一些命令组织到一起，写个 Shell 脚本之类的，以便提升我们的工作效率。\n然而在看似简单的 Shell 脚本中，可能隐藏着很深的坑。这里我先给出两段简单且相似的 Shell 脚本，大家不妨来看看这两段代码的输出是什么：\n#!/bin/bash\nset -e -u\ni=0\nwhile [ $i -lt 6 ]; do\necho $i\n((i++))\ndone\n\n答案是只会输出一个 0 。\n#!/bin/bash\nset -e -u\nlet i=0\nwhile [ $i -lt 6 ]; do\necho $i\n((i++))\ndone\n\n答案是没有任何输出，直接退出。\n如果你能解释清楚上面两段代码输出结果的话， 那大概你可以跳过这篇文章后续的内容了。\n我先来分解下这段代码中涉及到的主要知识点。\n变量声明\n变量声明有很多种办法， 但是其行为却各有不同。\n我们必须先有个基础认识： Bash 没有类型系统，所有变量都是 string 。 基于这个原因，如果是让变量进行算术运算时，不能像在其他的编程语言中那样直接写算术运算符。这会让 bash 解释为对 string 的操作，而不是对数字的操作。\n直接声明\n(MoeLove)➜ ~ foo=1+1\n(MoeLove)➜ ~ echo $foo\n1+1\n\n直接声明最简单，但正如前面提到的，直接声明会默认当作 string 进行处理，不能在声明时进行算术运算。\ndeclare 声明\n(MoeLove)➜ ~ declare foo…",
           "link": "https://moelove.info/2021/11/21/Shell-%E8%84%9A%E6%9C%AC%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97%E4%B8%80/",
           "publishedOn": "2021-11-21T14:41:02.000Z",
-          "wordCount": 735,
+          "wordCount": 734,
           "title": "Shell 脚本避坑指南（一）"
         },
         {
