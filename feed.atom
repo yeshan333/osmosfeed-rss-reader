@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-11-29T01:00:57.796Z</id>
+    <id>urn:2021-11-30T01:01:24.233Z</id>
     <title>osmos::feed</title>
-    <updated>2021-11-29T01:00:57.796Z</updated>
+    <updated>2021-11-30T01:01:24.233Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -292,35 +292,6 @@ OCI 的前世今生
 发展至今， OCI 制定的主要标准有三个分别是 runtime-spec 、image-spec 和 distribution-spec 这三个标准分别定义了容器运行时，容器镜像还有分发的规范，后面会展开介绍。
 为了支持 OCI 容器运行时标准的推进，Docker 公司起草了镜像格式和运行时规范的草案，并将 Docker 项目的相关实现捐献给了 OCI 作为容器运行时的基础实现，现在项目名为 runc 。
 后来 Docke…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[K8S 生态周报| Helm 新版本发布增强对 OCI 的支持]]></title>
-        <id>https://moelove.info/2021/10/31/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%A2%9E%E5%BC%BA%E5%AF%B9-OCI-%E7%9A%84%E6%94%AF%E6%8C%81/</id>
-        <link href="https://moelove.info/2021/10/31/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%A2%9E%E5%BC%BA%E5%AF%B9-OCI-%E7%9A%84%E6%94%AF%E6%8C%81/"/>
-        <updated>2021-10-30T17:15:34.000Z</updated>
-        <summary type="html"><![CDATA[「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
-Docker v20.10.10 发布
-这个版本是 Docker v20.10 的第 10 个小版本，这个版本中没有什么太特别的共性问题，但是由于 Go 1.16 中 net/http 包对 $HTTP_PROXY 行为的变化，所以当你为 Docker daemon 设置代理的时候，请确认你已经正确的设置了 $HTTP_PROXY 和 $HTTPS_PROXY 等。
-此版本的其他变更，可参考其 ReleaseNote 。至于 Docker v21.x 短时间内还不会发布，不过里面确实增加了一些值得一提的特性，后续新版本快发布前再跟大家分享。
-Helm v3.7 正式发布
-Helm v3.7 是一个特性版本，我们一起来看看有哪些值得关注的变更吧。
-对 OCI Chart 的支持相关的变更
-helm chart export 已删除
-helm chart list 已删除
-helm chart pull 由 helm pull 代替
-helm chart push 由 helm push 代替
-helm chart remove 已删除
-helm chart save 由 helm package 代替
-另外， 如果是通过旧版本创建的 OCI chart 需要使用 Helm v3.7 进行重新打包和上传才能使用。
-一些新特性
-新增 helm uninstall --wait
-新增 helm show crds
-helm dependency list 新增 --max-col-width 用于设置列宽
-helm repo add 新增 --password-stdin 用于从 stdin 输入密码
-helm repo update 可以指定 repo 名称进…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
