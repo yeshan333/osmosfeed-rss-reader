@@ -16,6 +16,48 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-11-29">2021-11-29</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">理清 Kubernetes 中的准入控制（Admission Controller)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/11/30/%E7%90%86%E6%B8%85-Kubernetes-%E4%B8%AD%E7%9A%84%E5%87%86%E5%85%A5%E6%8E%A7%E5%88%B6Admission-Controller/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>大家好，我是张晋涛。
+在我之前发布的文章 《云原生时代下的容器镜像安全》（系列）中，我提到过 Kubernetes 集群的核心组件 -- kube-apiserver，它允许来自终端用户或集群的各组件与之进行通信（例如，查询、创建、修改或删除 Kubernetes 资源）。
+本篇我们将聚焦于 kube-apiserver 请求处理过程中一个很重要的部分 -- 准入控制器（Admission Controller）
+K8s 的准入控制器是什么
+K8s 中的请求处理流程
+在聊 K8s 准入控制器是什么之前，让我们先来回顾一下 Kubernetes API 的处理具体请求的过程。
+
+图 1 ，Kubernetes API 处理请求的过程 （从 API Handler 到 etcd 持久化的过程）
+如上图所示，每个 API 的请求从开始被 kube-apiserver 接收到最终持久化到 ETCD 的过程，即为 Kubernetes API 的请求处理流程。
+它主要包含了以下几个部分：
+API Handler -- 主要负责提供服务，接收请求。
+对于其内部实现而言，请求会先到 FullHandlerChain （它是由 DefaultBuildHandlerChain 构建出来的）是一个 director 对象
+type director struct {
+name string
+goRestfulContainer *restful.Container
+nonGoRestfulMux *mux.PathRecorderMux
+}
+
+
+director根据配置进行初始化，如果 goRestfulContainer的 WebServices 的 RootPath 是 /apis，或者请求前缀与 RootPath 匹配，则进入 Restful 处理链路。
+Authentication …</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-11-27">2021-11-27</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -455,7 +497,7 @@ OCI 的前世今生
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-11-30T01:01:24.211Z">2021-11-30T01:01:24.211Z</time>
+    <time id="build-timestamp" datetime="2021-12-01T01:05:06.558Z">2021-12-01T01:05:06.558Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>
