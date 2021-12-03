@@ -74,7 +74,7 @@
           "description": "记录一个今天遇到的小问题。这是继 Debug 一个在 uWSGI 下使用 subprocess 卡住的问题 之 […]\nContinue reading...\nThe post 寻找丢失的信号 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nDebug 一个在 uWSGI 下使用 subprocess 卡住的问题\n如何杀死一个进程？\nSRE&Devops 每周分享 Issue #3\n我的线程池怎么没了？",
           "link": "https://www.kawabangga.com/posts/4617",
           "publishedOn": "2021-11-26T14:25:38.000Z",
-          "wordCount": 968,
+          "wordCount": 964,
           "title": "寻找丢失的信号"
         },
         {
@@ -83,7 +83,7 @@
           "description": "周末看了一下 coredns 的源代码，目前为止只是差不多搞清楚了这个代码库的逻辑。写篇博客记录一下，如果你也 […]\nContinue reading...\nThe post Coredns 源码阅读（导读） first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nJoin Shopee & Work with Me!\n辅助Django开发的一些隐藏资源（文档）\n一些命令行工具的增强版\n实时上传数据备份文件到S3",
           "link": "https://www.kawabangga.com/posts/4607",
           "publishedOn": "2021-11-14T10:43:09.000Z",
-          "wordCount": 575,
+          "wordCount": 571,
           "title": "Coredns 源码阅读（导读）"
         },
         {
@@ -92,7 +92,7 @@
           "description": "有很多人问过我想了解一下 SRE 这个岗位，这是个很大的话题，在这篇博客中把想到的一些介绍一下吧。 SRE 到 […]\nContinue reading...\nThe post SRE 的工作介绍 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n构建大型Cron系统的思考\n博客维护：速度优化，嵌入instagram\nPython正则表达式解惑\n申请友链\nDB资料集",
           "link": "https://www.kawabangga.com/posts/4481",
           "publishedOn": "2021-11-06T15:23:03.000Z",
-          "wordCount": 914,
+          "wordCount": 910,
           "title": "SRE 的工作介绍"
         }
       ]
