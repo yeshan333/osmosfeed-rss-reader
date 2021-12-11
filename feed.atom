@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-12-10T01:03:39.956Z</id>
+    <id>urn:2021-12-11T01:02:23.774Z</id>
     <title>osmos::feed</title>
-    <updated>2021-12-10T01:03:39.956Z</updated>
+    <updated>2021-12-11T01:02:23.774Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[搞懂容器技术的基石： namespace （上）]]></title>
+        <id>https://moelove.info/2021/12/10/%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-namespace-%E4%B8%8A/</id>
+        <link href="https://moelove.info/2021/12/10/%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-namespace-%E4%B8%8A/"/>
+        <updated>2021-12-09T19:50:29.000Z</updated>
+        <summary type="html"><![CDATA[大家好，我是张晋涛。
+目前我们所提到的容器技术、虚拟化技术（不论何种抽象层次下的虚拟化技术）都能做到资源层面上的隔离和限制。
+对于容器技术而言，它实现资源层面上的限制和隔离，依赖于 Linux 内核所提供的 cgroup 和 namespace 技术。
+我们先对这两项技术的作用做个概括：
+cgroup 的主要作用：管理资源的分配、限制；
+namespace 的主要作用：封装抽象，限制，隔离，使命名空间内的进程看起来拥有他们自己的全局资源；
+在上一篇文章中，我们重点聊了 cgroup 。本篇，我们重点来聊 namespace 。
+Namespace 是什么？
+我们引用 wiki 上对 namespace 的定义：
+Namespaces are a feature of the Linux kernel that partitions kernel resources such that one set of processes sees one set of resources while another set of processes sees a different set of resources. The feature works by having the same namespace for a set of resources and processes, but those namespaces refer to distinct resources.
+namespace 是 Linux 内核的一项特性，它可以对内核资源进行分区，使得一组进程可以看到一组资源；而另一组进程可以看到另一组不同的资源。该功能的原理是为一组资源和进程使用相同的 namespace，但是这些 namespace 实际上引用的是不同的资源。
+这样的说法未免太绕了些，简单来说 name…]]></summary>
+        <author>
+            <name>zhangjintao9020@gmail.com (张晋涛)</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[K8S 生态周报| Kubernetes v1.23.0 正式发布，新特性一览]]></title>
         <id>https://moelove.info/2021/12/08/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.23.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/</id>

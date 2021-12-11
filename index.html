@@ -16,6 +16,39 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-12-09">2021-12-09</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">搞懂容器技术的基石： namespace （上）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/12/10/%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-namespace-%E4%B8%8A/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>大家好，我是张晋涛。
+目前我们所提到的容器技术、虚拟化技术（不论何种抽象层次下的虚拟化技术）都能做到资源层面上的隔离和限制。
+对于容器技术而言，它实现资源层面上的限制和隔离，依赖于 Linux 内核所提供的 cgroup 和 namespace 技术。
+我们先对这两项技术的作用做个概括：
+cgroup 的主要作用：管理资源的分配、限制；
+namespace 的主要作用：封装抽象，限制，隔离，使命名空间内的进程看起来拥有他们自己的全局资源；
+在上一篇文章中，我们重点聊了 cgroup 。本篇，我们重点来聊 namespace 。
+Namespace 是什么？
+我们引用 wiki 上对 namespace 的定义：
+Namespaces are a feature of the Linux kernel that partitions kernel resources such that one set of processes sees one set of resources while another set of processes sees a different set of resources. The feature works by having the same namespace for a set of resources and processes, but those namespaces refer to distinct resources.
+namespace 是 Linux 内核的一项特性，它可以对内核资源进行分区，使得一组进程可以看到一组资源；而另一组进程可以看到另一组不同的资源。该功能的原理是为一组资源和进程使用相同的 namespace，但是这些 namespace 实际上引用的是不同的资源。
+这样的说法未免太绕了些，简单来说 name…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-12-07">2021-12-07</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -422,7 +455,7 @@ declare 声明
                 <summary class="article-expander__title">源代码特洛伊木马攻击</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://coolshell.cn/articles/21649.html">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(4 min)</span>
+                    <span class="article-reading-time">(3 min)</span>
                     <span>最近，我们在 Github 的 Code Review 中看到 Github 开始出现下面这个 Warning 信息—— “This file contains...
  Read More  Read More
 源代码特洛伊木马攻击 first appeared on 酷 壳 - CoolShell.</span>
@@ -530,7 +563,7 @@ Join Shopee &amp; Work with Me!
   </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-12-10T01:03:39.934Z">2021-12-10T01:03:39.934Z</time>
+    <time id="build-timestamp" datetime="2021-12-11T01:02:23.758Z">2021-12-11T01:02:23.758Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>
