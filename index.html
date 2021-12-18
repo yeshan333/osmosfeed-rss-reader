@@ -16,6 +16,71 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-12-17">2021-12-17</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.codedump.info/">codedump的网络日志</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">sqlite3.36版本 btree实现（零）- 起步及概述</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20211217-sqlite-btree-0/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>起步 在去年大体把btree以及b+tree算法流程研究了之后，我写了两篇博客： B树、B+树索引算法原理（上） - codedump的网络日志 B树</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-12-16">2021-12-16</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Grafana k6 的上手实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/12/17/Grafana-k6-%E7%9A%84%E4%B8%8A%E6%89%8B%E5%AE%9E%E8%B7%B5/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>大家好，我是张晋涛。
+本篇我将为你介绍一个工具 - k6 ，它和 K8s 并没有什么直接的关系，它是一款开源的性能压测工具。
+k6 背后的故事
+2016 年 8 月，k6 在 GitHub 上发布了第一个版本，至此，一个出色的开源负载压测工具进入了人们的视野。
+2021 年的 6 月，对于 Grafana 和 k6 来讲是个大日子，Grafana Labs 收购了 k6 。
+而事实上， Grafana 与 k6 的缘分还要追溯到更早的 2 年前。
+2019 年，在进行 Grafana 6.0 的短期令牌刷新行为的压测时，Grafana Labs 进行了一系列的技术选型。
+由于 Grafana Labs 的大部分后端软件是使用 Go 来实现的，恰巧 k6 满足 OSS 和 Go 需求，并且负载测试是使用 JS 编写（Grafana 前端框架及 UI 都在使用）。这使得 k6 自 Grafana 6.0 版本开始，不断地为 Grafana 开发者及测试者完成追踪 bug 的使命。
+
+图 1 ，k6 加入 Grafana Labs
+多样的压测工具
+一个称心应手的自动化负载压测工具会极大的提升程序开发人员的代码质量及效率。
+下图中是一些比较常见的用于负载压测的工具，我们可以在 GitHub 上看到，目前，更新比较频繁、活跃的项目主要有：Gatling, Jmeter 和 k6 。
+
+图 2 ，压测工具们
+如何从中选择，简单的讲就是工具效率的比拼。主要从以下两个方面来考量：
+工具性能
+工具使用体验
+下图对以上工具进行了一些简单的对比。
+
+这里我主要对比下其中较为活跃的 3 个项目。
+JMeter - 熟悉 Java 的小伙伴可能比较了解这个工具。由于存在时间久，JMeter 的功能是这之中最全面的，并且集成、附加组件做的较好。基于它构建的 SaaS 服务 Blazemeter，相信大…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-12-12">2021-12-12</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -540,55 +605,9 @@ declare 声明
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-11-17">2021-11-17</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">一篇搞懂容器技术的基石： cgroup</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/11/17/%E4%B8%80%E7%AF%87%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-cgroup/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(3 min)</span>
-                    <span>大家好，我是张晋涛。
-目前我们所提到的容器技术、虚拟化技术（不论何种抽象层次下的虚拟化技术）都能做到资源层面上的隔离和限制。
-对于容器技术而言，它实现资源层面上的限制和隔离，依赖于 Linux 内核所提供的 cgroup 和 namespace 技术。
-我们先对这两项技术的作用做个概括：
-cgroup 的主要作用：管理资源的分配、限制；
-namespace 的主要作用：封装抽象，限制，隔离，使命名空间内的进程看起来拥有他们自己的全局资源；
-本篇，我们重点来聊 cgroup 。
-为什么要关注 cgroup &amp; namespace
-云原生/容器技术的井喷式增长
-自 1979年，Unix 版本7 在开发过程中引入 Chroot Jail 以及 Chroot 系统调用开始，直到 2013 年开源出的 Docker，2014 年开源出来的 Kubernetes，直到现在的云原生生态的火热。 容器技术已经逐步成为主流的基础技术之一。
-在越来越多的公司、个人选择了云服务/容器技术后，资源的分配和隔离，以及安全性变成了人们关注及讨论的热点话题。
-其实容器技术使用起来并不难，但要真正把它用好，大规模的在生产环境中使用， 那我们还是需要掌握其核心的。
-以下是容器技术&amp;云原生生态的大致发展历程：
-
-图 1 ，容器技术发展历程
-从图中，我们可以看到容器技术、云原生生态的发展轨迹。容器技术其实很早就出现了，但为何在 Docker 出现后才开始有了较为显著的发展？早期的 chroot 、 Linux VServer 又有哪些问题呢？
-Chroot 带来的安全性问题
-
-图 2 ，chroot 示例
-Chroot 可以将进程及其子进程与操作系统的其余部分隔离开来。但是，对于 root process ，却可以任意退出 chroot。
-package main
-import (
-&quot;log&quot;
-&quot;os&quot;
-&quot;sy…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-12-17T01:05:48.215Z">2021-12-17T01:05:48.215Z</time>
+    <time id="build-timestamp" datetime="2021-12-18T01:07:01.390Z">2021-12-18T01:07:01.390Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>
