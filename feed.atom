@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-12-18T01:07:01.410Z</id>
+    <id>urn:2021-12-19T01:08:48.431Z</id>
     <title>osmos::feed</title>
-    <updated>2021-12-18T01:07:01.410Z</updated>
+    <updated>2021-12-19T01:08:48.431Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -393,18 +393,6 @@ declare 声明
         <updated>2021-11-20T00:00:00.000Z</updated>
         <author>
             <name>面向信仰编程</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[源代码特洛伊木马攻击]]></title>
-        <id>https://coolshell.cn/?p=21649</id>
-        <link href="https://coolshell.cn/articles/21649.html"/>
-        <updated>2021-11-19T09:02:46.000Z</updated>
-        <summary type="html"><![CDATA[最近，我们在 Github 的 Code Review 中看到 Github 开始出现下面这个 Warning 信息—— “This file contains...
- Read More  Read More
-源代码特洛伊木马攻击 first appeared on 酷 壳 - CoolShell.]]></summary>
-        <author>
-            <name>陈皓</name>
         </author>
     </entry>
 </feed>
