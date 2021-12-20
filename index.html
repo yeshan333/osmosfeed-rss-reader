@@ -16,12 +16,62 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-12-18">2021-12-18</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">GitOps 应用实践系列 - Flux CD 及其核心组件</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/12/18/GitOps-%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97-Flux-CD-%E5%8F%8A%E5%85%B6%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>大家好，我是张晋涛。
+经过前面三篇文章，不仅为大家介绍了什么是 GitOps 也介绍了如何利用 Argo CD 来实施 GitOps。本篇我来为你介绍另一个可用于实施 GitOps 的工具：Flux CD 。
+Flux CD
+
+Flux 是一组可支持实现 GitOps 的工具，用于使 Kubernetes 集群与配置源（如 Git 仓库）保持同步，并在有代码更新后自动同步配置，面向 Kubernetes 的持续渐进式交付解决方案。
+
+Flux CD 的发展历史
+2016 年 10 月 28 日，Flux single-user service 版本发布。
+它奠定了 flux 的两个基调：
+集中式运行的服务
+以守护进程的方式，在自动模式下运行在 k8s 集群中
+2016 年 12 月 15 日，发布《使用 Weave Flux 持续交付》，构建了将 CI 与持续部署 (CD) 联系起来的 Flux。
+​ 
+2017 年 8 月 22 日，v1.0.0 版本正式发布。
+自 v1.0.0 开始，Flux 致力于将集群与存储在 Git 中的配置同步，并在新版本准备好部署时自动升级镜像。（提出了：Configuration as code）
+​ 
+2018 年 5 月 1 日，发布的 alpha 版本中，集成了 Helm Operator 。这是 Flux Helm Operator 的第一个 alpha 标签的版本。
+2019 年 8 月 15 日，Flux 宣布加入 CNCF Sandbox。随着各开发者及企业开始落地 GitOps ，Flux 的用户数量不断增长。 彼时已超过 2500 个 GitHub star，也在不断地集成：Helm Operator 、 Kustomize 、 Weave Flagger 、 OpenFaaS 、 Fluxcloud 、 Flux Web…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-12-17">2021-12-17</time></h2>
     <ul class="sources card">
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.codedump.info/">codedump的网络日志</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">sqlite3.36版本 btree实现（一）- 管理页面缓存</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20211217-sqlite-btree-1-pagecache/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>概述 页面管理模块中，很重要的一个功能是缓存页面的内容在内存中： 读页面：如果页面已经在内存，就不需要到文件中读出页面内容。 写页面：如果页面已经</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">sqlite3.36版本 btree实现（零）- 起步及概述</summary>
@@ -559,31 +609,9 @@ declare 声明
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-11-20">2021-11-20</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://draveness.me/">面向信仰编程</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">《Go 语言设计与实现》纸质书预售了！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://draveness.me//golang-book-release">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>No content preview</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-12-19T01:08:48.409Z">2021-12-19T01:08:48.409Z</time>
+    <time id="build-timestamp" datetime="2021-12-20T01:05:35.579Z">2021-12-20T01:05:35.579Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>

@@ -41,17 +41,7 @@
       "title": "面向信仰编程",
       "feedUrl": "https://draveness.me/feed.xml",
       "siteUrl": "https://draveness.me/",
-      "articles": [
-        {
-          "id": "https://draveness.me//golang-book-release",
-          "author": null,
-          "description": "",
-          "link": "https://draveness.me//golang-book-release",
-          "publishedOn": "2021-11-20T00:00:00.000Z",
-          "wordCount": 81,
-          "title": "《Go 语言设计与实现》纸质书预售了！"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "卡瓦邦噶！",
@@ -64,7 +54,7 @@
           "description": "记录一个今天遇到的小问题。这是继 Debug 一个在 uWSGI 下使用 subprocess 卡住的问题 之 […]\nContinue reading...\nThe post 寻找丢失的信号 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nuWSGI socket 队列被占满的问题\nDebug 一个在 uWSGI 下使用 subprocess 卡住的问题\n如何杀死一个进程？\nSRE&Devops 每周分享 Issue #3\n我的线程池怎么没了？",
           "link": "https://www.kawabangga.com/posts/4617",
           "publishedOn": "2021-11-26T14:25:38.000Z",
-          "wordCount": 945,
+          "wordCount": 942,
           "title": "寻找丢失的信号"
         }
       ]
@@ -75,12 +65,21 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2021/12/18/GitOps-%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97-Flux-CD-%E5%8F%8A%E5%85%B6%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\n经过前面三篇文章，不仅为大家介绍了什么是 GitOps 也介绍了如何利用 Argo CD 来实施 GitOps。本篇我来为你介绍另一个可用于实施 GitOps 的工具：Flux CD 。\nFlux CD\n\nFlux 是一组可支持实现 GitOps 的工具，用于使 Kubernetes 集群与配置源（如 Git 仓库）保持同步，并在有代码更新后自动同步配置，面向 Kubernetes 的持续渐进式交付解决方案。\n\nFlux CD 的发展历史\n2016 年 10 月 28 日，Flux single-user service 版本发布。\n它奠定了 flux 的两个基调：\n集中式运行的服务\n以守护进程的方式，在自动模式下运行在 k8s 集群中\n2016 年 12 月 15 日，发布《使用 Weave Flux 持续交付》，构建了将 CI 与持续部署 (CD) 联系起来的 Flux。\n​ \n2017 年 8 月 22 日，v1.0.0 版本正式发布。\n自 v1.0.0 开始，Flux 致力于将集群与存储在 Git 中的配置同步，并在新版本准备好部署时自动升级镜像。（提出了：Configuration as code）\n​ \n2018 年 5 月 1 日，发布的 alpha 版本中，集成了 Helm Operator 。这是 Flux Helm Operator 的第一个 alpha 标签的版本。\n2019 年 8 月 15 日，Flux 宣布加入 CNCF Sandbox。随着各开发者及企业开始落地 GitOps ，Flux 的用户数量不断增长。 彼时已超过 2500 个 GitHub star，也在不断地集成：Helm Operator 、 Kustomize 、 Weave Flagger 、 OpenFaaS 、 Fluxcloud 、 Flux Web…",
+          "link": "https://moelove.info/2021/12/18/GitOps-%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97-Flux-CD-%E5%8F%8A%E5%85%B6%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/",
+          "publishedOn": "2021-12-18T12:56:29.000Z",
+          "wordCount": 927,
+          "title": "GitOps 应用实践系列 - Flux CD 及其核心组件"
+        },
+        {
           "id": "https://moelove.info/2021/12/17/Grafana-k6-%E7%9A%84%E4%B8%8A%E6%89%8B%E5%AE%9E%E8%B7%B5/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "大家好，我是张晋涛。\n本篇我将为你介绍一个工具 - k6 ，它和 K8s 并没有什么直接的关系，它是一款开源的性能压测工具。\nk6 背后的故事\n2016 年 8 月，k6 在 GitHub 上发布了第一个版本，至此，一个出色的开源负载压测工具进入了人们的视野。\n2021 年的 6 月，对于 Grafana 和 k6 来讲是个大日子，Grafana Labs 收购了 k6 。\n而事实上， Grafana 与 k6 的缘分还要追溯到更早的 2 年前。\n2019 年，在进行 Grafana 6.0 的短期令牌刷新行为的压测时，Grafana Labs 进行了一系列的技术选型。\n由于 Grafana Labs 的大部分后端软件是使用 Go 来实现的，恰巧 k6 满足 OSS 和 Go 需求，并且负载测试是使用 JS 编写（Grafana 前端框架及 UI 都在使用）。这使得 k6 自 Grafana 6.0 版本开始，不断地为 Grafana 开发者及测试者完成追踪 bug 的使命。\n\n图 1 ，k6 加入 Grafana Labs\n多样的压测工具\n一个称心应手的自动化负载压测工具会极大的提升程序开发人员的代码质量及效率。\n下图中是一些比较常见的用于负载压测的工具，我们可以在 GitHub 上看到，目前，更新比较频繁、活跃的项目主要有：Gatling, Jmeter 和 k6 。\n\n图 2 ，压测工具们\n如何从中选择，简单的讲就是工具效率的比拼。主要从以下两个方面来考量：\n工具性能\n工具使用体验\n下图对以上工具进行了一些简单的对比。\n\n这里我主要对比下其中较为活跃的 3 个项目。\nJMeter - 熟悉 Java 的小伙伴可能比较了解这个工具。由于存在时间久，JMeter 的功能是这之中最全面的，并且集成、附加组件做的较好。基于它构建的 SaaS 服务 Blazemeter，相信大…",
           "link": "https://moelove.info/2021/12/17/Grafana-k6-%E7%9A%84%E4%B8%8A%E6%89%8B%E5%AE%9E%E8%B7%B5/",
           "publishedOn": "2021-12-16T19:50:29.000Z",
-          "wordCount": 821,
+          "wordCount": 831,
           "title": "Grafana k6 的上手实践"
         },
         {
@@ -116,7 +115,7 @@
           "description": "大家好，我是张晋涛。\n本篇我来为你介绍一个我个人很喜欢的，通用策略引擎，名叫 OPA，全称是 Open Policy Agent。\n在具体聊 OPA 之前，我们先来聊一下为什么需要一个通用策略引擎，以及 OPA 解决了什么问题。\nOPA 解决了什么问题\n在实际的生产环境中很多场景中都需要策略控制，比如：\n需要策略控制用户是否可登陆服务器或者做一些操作；\n需要策略控制哪些项目/哪些组件可进行部署；\n需要策略控制如何访问数据库；\n需要策略控制哪些资源可部署到 Kubernetes 中；\n\n但是对于这些场景或者软件来说，配置它们的策略是需要与该软件进行耦合的，彼此是不统一，不通用的。管理起来也会比较混乱，带来了不小的维护成本。\nOPA 的出现可以将各处配置的策略进行统一，极大的降低了维护成本。以及将策略与对应的软件/服务进行解耦，方便进行移植/复用。\n\nOPA 的发展过程\nOPA 最初是由 Styra 公司在 2016 年创建并开源的项目，目前该公司的主要产品就是提供可视化策略控制及策略执行的可视化 Dashboard 服务的。\nOPA 首次进入 CNCF 并成为 sandbox 级别的项目是在 2018 年， 在 2021 年的 2 月份便已经从 CNCF 毕业，这个过程相对来说还是比较快的，由此也可以看出 OPA 是一个比较活跃且应用广泛的项目。\nOPA 是什么\n前面我们已经介绍过 Open Policy Agent (OPA) 是一种开源的通用策略引擎，可在整个堆栈中实现统一、上下文感知的策略控制。\nOPA 可将策略决策与应用程序的业务逻辑分离（解耦），透过现象看本质，策略就是一组规则，请求发送到引擎，引擎根据规则来进行决策。\n\n图 3 ，OPA 的策略解耦示例\nOPA 并不负责具体任务的执行，它仅负责决策，需要决策的请求通过 JSON 的方式传递给 OPA ，在 OPA …",
           "link": "https://moelove.info/2021/12/06/Open-Policy-Agent-OPA-%E5%85%A5%E9%97%A8%E5%AE%9E%E8%B7%B5/",
           "publishedOn": "2021-12-06T11:50:29.000Z",
-          "wordCount": 591,
+          "wordCount": 600,
           "title": "Open Policy Agent (OPA) 入门实践"
         },
         {
@@ -125,7 +124,7 @@
           "description": "大家好，我是张晋涛。\n在我之前发布的文章 《云原生时代下的容器镜像安全》（系列）中，我提到过 Kubernetes 集群的核心组件 -- kube-apiserver，它允许来自终端用户或集群的各组件与之进行通信（例如，查询、创建、修改或删除 Kubernetes 资源）。\n本篇我们将聚焦于 kube-apiserver 请求处理过程中一个很重要的部分 -- 准入控制器（Admission Controller）\nK8s 的准入控制器是什么\nK8s 中的请求处理流程\n在聊 K8s 准入控制器是什么之前，让我们先来回顾一下 Kubernetes API 的处理具体请求的过程。\n\n图 1 ，Kubernetes API 处理请求的过程 （从 API Handler 到 etcd 持久化的过程）\n如上图所示，每个 API 的请求从开始被 kube-apiserver 接收到最终持久化到 ETCD 的过程，即为 Kubernetes API 的请求处理流程。\n它主要包含了以下几个部分：\nAPI Handler -- 主要负责提供服务，接收请求。\n对于其内部实现而言，请求会先到 FullHandlerChain （它是由 DefaultBuildHandlerChain 构建出来的）是一个 director 对象\ntype director struct {\nname string\ngoRestfulContainer *restful.Container\nnonGoRestfulMux *mux.PathRecorderMux\n}\n\n\ndirector根据配置进行初始化，如果 goRestfulContainer的 WebServices 的 RootPath 是 /apis，或者请求前缀与 RootPath 匹配，则进入 Restful 处理链路。\nAuthentication …",
           "link": "https://moelove.info/2021/11/30/%E7%90%86%E6%B8%85-Kubernetes-%E4%B8%AD%E7%9A%84%E5%87%86%E5%85%A5%E6%8E%A7%E5%88%B6Admission-Controller/",
           "publishedOn": "2021-11-29T19:04:22.000Z",
-          "wordCount": 795,
+          "wordCount": 799,
           "title": "理清 Kubernetes 中的准入控制（Admission Controller)"
         },
         {
@@ -134,7 +133,7 @@
           "description": "大家好，我是张晋涛。\nPrometheus 几乎已经成为了云原生时代下监控选型的事实标准，它也是第二个从 CNCF 毕业的项目。\n当前，Prometheus 几乎可以满足各种场景/服务的监控需求。我之前有写过一些文章介绍过 Prometheus 及其生态，本篇我们将聚焦于 Prometheus 最新版本中发布的 Agent 模式，对于与此主题无关的一些概念或者用法，我会粗略带过。\n拉模式（Pull）和 推模式（Push）\n众所周知，Prometheus 是一种拉模式（Pull）的监控系统，这不同于传统的基于推模式（Push）的监控系统。\n什么是拉模式（Pull）呢？\n\n待监控的服务自身或者通过一些 exporter 暴露出来一些 metrics 指标的接口，由 Prometheus 去主动的定时进行抓取/采集，这就是拉模式（Pull）。即由监控系统主动的去拉（Pull）目标的 metrics。\n与之相对应的就是推模式（Push）了。\n\n由应用程序主动将自身的一些 metrics 指标进行上报，监控系统再进行相对应的处理。如果对于某些应用程序的监控想要使用推模式（Push），比如：不易实现 metrics 接口等原因，可以考虑使用 Pushgateway 来完成。\n对于拉模式（Pull）和推模式（Push）到底哪种更好的讨论一直都在继续，有兴趣的小伙伴可以自行搜索下。\n这里主要是聚焦于单个 Prometheus 和应用服务之间交互的手方式。本篇我们从更上层的角度或者全局角度来看看当前 Prometheus 是如何做 HA、 持久化和集群的。\nPrometheus HA/持久化/集群的方案\n在大规模生产环境中使用时，很少有系统中仅有一个单实例 Prometheus 存在的情况出现。无论从高可用、数据持久化还是从为用户提供更易用的全局视图来考虑，运行多个 Prometheus 实…",
           "link": "https://moelove.info/2021/11/28/%E6%96%B0%E5%8A%9F%E8%83%BDPrometheus-Agent-%E6%A8%A1%E5%BC%8F%E4%B8%8A%E6%89%8B%E4%BD%93%E9%AA%8C/",
           "publishedOn": "2021-11-27T16:26:44.000Z",
-          "wordCount": 697,
+          "wordCount": 699,
           "title": "新功能：Prometheus Agent 模式上手体验"
         },
         {
@@ -143,7 +142,7 @@
           "description": "大家好，我是张晋涛。\n近期 Rust 社区/团队有些变动，所以再一次将 Rust 拉到大多数人眼前。\n我最近看到很多小伙伴说的话：\nRust 还值得学吗？社区是不是不稳定呀\nRust 和 Go 哪个好？\nRust 还值得学吗？\n这些问题如果有人来问我，那我的回答是：\n小孩子才做选择，我都要！\n当然，关于 Rust 和 Go 的问题也不算新，比如之前的一条推文：\n\n我在本篇中就来介绍下如何用 Go 调用 Rust。\n当然，这篇中我基本上不会去比较 Go 和 Rust 的功能，或者这种方式的性能之类的，Just for Fun\nFFI 和 Binding\nFFI (Foreign Function Interface) 翻译过来叫做外部函数接口（为了比较简单，下文中都将使用 FFI 指代）。最早来自于 Common Lisp 的规范，这是在 wiki 上写的，我并没有去考证。\n不过我所使用过的绝大多数语言中都有 FFI 的概念/术语存在，比如：Python、Ruby, Haskell、Go、Rust、LuaJIT 等。\nFFI 的作用简单来说就是允许一种语言去调用另一种语言，有时候我们也会用 Binding 来表示类似的能力。\n在不同的语言中会有不同的实现，比如在 Go 中的 cgo , Python 中的 ctypes ， Haskell 中的 CAPI （之前还有一个 ccall）等。\n我个人感觉 Haskell 中用 FFI 相比其他语言要更简单&方便的多，不过这不是本篇的重点就不展开了。\n在本文中，对于 Go 和 Rust 而言，它们的 FFI 需要与 C 语言对象进行通信，而这部分其实是由操作系统根据 API 中的调用约定来完成的。\n我们来进入正题。\n准备 Rust 示例程序\nRust 的安装和 Cargo 工具的基本使用，这里就不介绍了。大家可以去 Rust 的官网…",
           "link": "https://moelove.info/2021/11/26/%E7%94%A8-Go-%E8%B0%83%E7%94%A8-Rust/",
           "publishedOn": "2021-11-25T19:04:22.000Z",
-          "wordCount": 460,
+          "wordCount": 462,
           "title": "用 Go 调用 Rust"
         },
         {
@@ -161,7 +160,7 @@
           "description": "大家好，我是张晋涛。\n提到 Shell 大家想必不会太陌生，我们通常认为 Shell 是我们和系统交互的接口，执行命令返回输出，比如 bash 、zsh 等。偶尔也会有人把 Shell 和 Terminal（终端）混淆，但这和本文关系不大，暂且略过。\n作为一名程序员，我们可能天天都会用到 Shell ，偶尔也会把一些命令组织到一起，写个 Shell 脚本之类的，以便提升我们的工作效率。\n然而在看似简单的 Shell 脚本中，可能隐藏着很深的坑。这里我先给出两段简单且相似的 Shell 脚本，大家不妨来看看这两段代码的输出是什么：\n#!/bin/bash\nset -e -u\ni=0\nwhile [ $i -lt 6 ]; do\necho $i\n((i++))\ndone\n\n答案是只会输出一个 0 。\n#!/bin/bash\nset -e -u\nlet i=0\nwhile [ $i -lt 6 ]; do\necho $i\n((i++))\ndone\n\n答案是没有任何输出，直接退出。\n如果你能解释清楚上面两段代码输出结果的话， 那大概你可以跳过这篇文章后续的内容了。\n我先来分解下这段代码中涉及到的主要知识点。\n变量声明\n变量声明有很多种办法， 但是其行为却各有不同。\n我们必须先有个基础认识： Bash 没有类型系统，所有变量都是 string 。 基于这个原因，如果是让变量进行算术运算时，不能像在其他的编程语言中那样直接写算术运算符。这会让 bash 解释为对 string 的操作，而不是对数字的操作。\n直接声明\n(MoeLove)➜ ~ foo=1+1\n(MoeLove)➜ ~ echo $foo\n1+1\n\n直接声明最简单，但正如前面提到的，直接声明会默认当作 string 进行处理，不能在声明时进行算术运算。\ndeclare 声明\n(MoeLove)➜ ~ declare foo…",
           "link": "https://moelove.info/2021/11/21/Shell-%E8%84%9A%E6%9C%AC%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97%E4%B8%80/",
           "publishedOn": "2021-11-21T14:41:02.000Z",
-          "wordCount": 737,
+          "wordCount": 740,
           "title": "Shell 脚本避坑指南（一）"
         }
       ]
@@ -178,12 +177,21 @@
       "siteUrl": "https://www.codedump.info/",
       "articles": [
         {
+          "id": "https://www.codedump.info/post/20211217-sqlite-btree-1-pagecache/",
+          "author": null,
+          "description": "概述 页面管理模块中，很重要的一个功能是缓存页面的内容在内存中： 读页面：如果页面已经在内存，就不需要到文件中读出页面内容。 写页面：如果页面已经",
+          "link": "https://www.codedump.info/post/20211217-sqlite-btree-1-pagecache/",
+          "publishedOn": "2021-12-17T06:22:06.000Z",
+          "wordCount": 870,
+          "title": "sqlite3.36版本 btree实现（一）- 管理页面缓存"
+        },
+        {
           "id": "https://www.codedump.info/post/20211217-sqlite-btree-0/",
           "author": null,
           "description": "起步 在去年大体把btree以及b+tree算法流程研究了之后，我写了两篇博客： B树、B+树索引算法原理（上） - codedump的网络日志 B树",
           "link": "https://www.codedump.info/post/20211217-sqlite-btree-0/",
           "publishedOn": "2021-12-17T02:19:05.000Z",
-          "wordCount": 458,
+          "wordCount": 464,
           "title": "sqlite3.36版本 btree实现（零）- 起步及概述"
         }
       ]
