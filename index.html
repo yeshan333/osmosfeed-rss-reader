@@ -16,6 +16,70 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-12-21">2021-12-21</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://coolshell.cn">酷 壳 – CoolShell</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我做系统架构的一些原则</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://coolshell.cn/articles/21672.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>工作 20 多年了，这 20 来年看到了很多公司系统架构，也看到了很多问题，在跟这些公司进行交流和讨论的时候，包括进行实施和方案比较的时候，都有很多各种方案的比...
+ Read More  Read More
+我做系统架构的一些原则 first appeared on 酷 壳 - CoolShell.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-12-20">2021-12-20</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">倍受关注的 Cilium Service Mesh 到底怎么玩？ - 上手实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/12/21/%E5%80%8D%E5%8F%97%E5%85%B3%E6%B3%A8%E7%9A%84-Cilium-Service-Mesh-%E5%88%B0%E5%BA%95%E6%80%8E%E4%B9%88%E7%8E%A9-%E4%B8%8A%E6%89%8B%E5%AE%9E%E8%B7%B5/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(11 min)</span>
+                    <span>大家好，我是张晋涛。
+Cilium 是一个基于 eBPF 技术，用于为容器工作负载间提供安全且具备可观测性的网络连接的开源软件。
+如果你对 Cilium 还不太了解，可以参考我之前的两篇文章：
+K8S生态周报| Google 选择 Cilium 作为 GKE 下一代数据面
+Cilium 上手实践
+最近 Cilium v1.11.0 正式发布了，增加 Open Telemetry 的支持以及其他一些增强特性。同时，也宣布了 Cilium Service Mesh 的计划。当前 Cilium Service Mesh 正处于测试阶段，预期在 2022 年会合并到 Cilium v1.12 版本中。
+Cilium Service Mesh 也带来了一个全新的模式。
+Cilium 直接通过 eBPF 技术实现的 Service Mesh 相比我们常规的 Istio/Linkerd 等方案，最显著的特点就是将 Sidecar proxy 模型替换成了 Kernel 模型， 如下图：
+
+不再需要每个应用程序旁边都放置一个 Sidecar 了，直接在每台 Node 上提供支持。
+
+我在几个月前就已经知道了这个消息并且进行了一些讨论，最近随着 isovalent 的一篇文章 How eBPF will solve Service Mesh - Goodbye Sidecars ，Cilium Service Mesh 也成为了大家关注的焦点。
+本篇我带你实际体验下 Cilium Service Mesh。
+安装部署
+这里我使用 KIND 作为测试环境，我的内核版本是 5.15.8 。
+准备 KIND 集群
+关于 KIND 命令行工具的安装这里就不再赘述了，感兴趣的小伙伴可以参考我之前的文章 《使用KIND搭建自己的本地 Kubernetes 测试环境》。
+以下是我创建集群使用的配置文件：
+…</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-12-18">2021-12-18</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -570,65 +634,9 @@ debian-image
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-11-21">2021-11-21</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Shell 脚本避坑指南（一）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2021/11/21/Shell-%E8%84%9A%E6%9C%AC%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97%E4%B8%80/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>大家好，我是张晋涛。
-提到 Shell 大家想必不会太陌生，我们通常认为 Shell 是我们和系统交互的接口，执行命令返回输出，比如 bash 、zsh 等。偶尔也会有人把 Shell 和 Terminal（终端）混淆，但这和本文关系不大，暂且略过。
-作为一名程序员，我们可能天天都会用到 Shell ，偶尔也会把一些命令组织到一起，写个 Shell 脚本之类的，以便提升我们的工作效率。
-然而在看似简单的 Shell 脚本中，可能隐藏着很深的坑。这里我先给出两段简单且相似的 Shell 脚本，大家不妨来看看这两段代码的输出是什么：
-#!/bin/bash
-set -e -u
-i&#x3D;0
-while [ $i -lt 6 ]; do
-echo $i
-((i++))
-done
-
-答案是只会输出一个 0 。
-#!/bin/bash
-set -e -u
-let i&#x3D;0
-while [ $i -lt 6 ]; do
-echo $i
-((i++))
-done
-
-答案是没有任何输出，直接退出。
-如果你能解释清楚上面两段代码输出结果的话， 那大概你可以跳过这篇文章后续的内容了。
-我先来分解下这段代码中涉及到的主要知识点。
-变量声明
-变量声明有很多种办法， 但是其行为却各有不同。
-我们必须先有个基础认识： Bash 没有类型系统，所有变量都是 string 。 基于这个原因，如果是让变量进行算术运算时，不能像在其他的编程语言中那样直接写算术运算符。这会让 bash 解释为对 string 的操作，而不是对数字的操作。
-直接声明
-(MoeLove)➜ ~ foo&#x3D;1+1
-(MoeLove)➜ ~ echo $foo
-1+1
-
-直接声明最简单，但正如前面提到的，直接声明会默认当作 string 进行处理，不能在声明时进行算术运算。
-declare 声明
-(MoeLove)➜ ~ declare foo…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-12-21T01:07:14.819Z">2021-12-21T01:07:14.819Z</time>
+    <time id="build-timestamp" datetime="2021-12-22T01:06:33.647Z">2021-12-22T01:06:33.647Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.3</a></span>
   </footer>
   <script src="index.js"></script>
