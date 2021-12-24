@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-12-23T01:04:45.626Z</id>
+    <id>urn:2021-12-24T01:03:50.978Z</id>
     <title>osmos::feed</title>
-    <updated>2021-12-23T01:04:45.626Z</updated>
+    <updated>2021-12-24T01:03:50.978Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -391,40 +391,6 @@ FFI 的作用简单来说就是允许一种语言去调用另一种语言，有�
 我们来进入正题。
 准备 Rust 示例程序
 Rust 的安装和 Cargo 工具的基本使用，这里就不介绍了。大家可以去 Rust 的官网…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[云原生时代下的容器镜像安全（上）]]></title>
-        <id>https://moelove.info/2021/11/23/%E4%BA%91%E5%8E%9F%E7%94%9F%E6%97%B6%E4%BB%A3%E4%B8%8B%E7%9A%84%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E5%AE%89%E5%85%A8%E4%B8%8A/</id>
-        <link href="https://moelove.info/2021/11/23/%E4%BA%91%E5%8E%9F%E7%94%9F%E6%97%B6%E4%BB%A3%E4%B8%8B%E7%9A%84%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F%E5%AE%89%E5%85%A8%E4%B8%8A/"/>
-        <updated>2021-11-23T15:16:42.000Z</updated>
-        <summary type="html"><![CDATA[大家好，我是张晋涛。
-Kubernetes 作为云原生的基石，为我们带来了极大的便利性，越来越多的公司也都将 Kubernetes 应用到了生产环境中。然而，在享受其带来的便利性的同时，我们也需要关注其中的一些安全隐患。
-本篇，我将为你重点介绍容器镜像安全相关的内容。
-通常情况下，我们提到容器镜像安全，主要是指以下两个方面：
-镜像自身内容的安全；
-镜像分发过程的安全；
-镜像自身内容的安全
-要聊镜像自身内容的安全，那我们就需要知道镜像到底是什么，以及它其中的内容是什么。
-镜像是什么
-我们以 debian镜像为例，pull 最新的镜像，并将其保存为 tar 文件，之后进行解压：
-➜ ~ mkdir -p debian-image
-➜ ~ docker pull debian
-Using default tag: latest
-latest: Pulling from library/debian
-647acf3d48c2: Pull complete
-Digest: sha256:e8c184b56a94db0947a9d51ec68f42ef5584442f20547fa3bd8cbd00203b2e7a
-Status: Downloaded newer image for debian:latest
-docker.io/library/debian:latest
-➜ ~ docker image save -o debian-image/debian.tar debian
-➜ ~ ls debian-image
-debian.tar
-➜ ~ tar -C debian-image -xf debian-image/debian.tar
-➜ ~ tree -I debian.tar debian-image
-debian-image
-├── 827e5611389abf13d…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
