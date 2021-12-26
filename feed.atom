@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-12-25T01:03:23.291Z</id>
+    <id>urn:2021-12-26T01:08:43.739Z</id>
     <title>osmos::feed</title>
-    <updated>2021-12-25T01:03:23.291Z</updated>
+    <updated>2021-12-26T01:08:43.739Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[sqlite3.36版本 btree实现（三）- journal文件备份机制]]></title>
+        <id>https://www.codedump.info/post/20211222-sqlite-btree-3-journal/</id>
+        <link href="https://www.codedump.info/post/20211222-sqlite-btree-3-journal/"/>
+        <updated>2021-12-22T11:15:31.000Z</updated>
+        <summary type="html"><![CDATA[概述 在上一节中（sqlite3.36版本 btree实现（二）- 并发控制框架），已经讲解了sqlite中的并发控制机制，里面会涉及到一个“备份]]></summary>
+        <author>
+            <name>codedump的网络日志</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我做系统架构的一些原则]]></title>
         <id>https://coolshell.cn/?p=21672</id>
@@ -362,37 +372,6 @@ SRE&Devops 每周分享 Issue #3
 我的线程池怎么没了？]]></summary>
         <author>
             <name>laixintao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[用 Go 调用 Rust]]></title>
-        <id>https://moelove.info/2021/11/26/%E7%94%A8-Go-%E8%B0%83%E7%94%A8-Rust/</id>
-        <link href="https://moelove.info/2021/11/26/%E7%94%A8-Go-%E8%B0%83%E7%94%A8-Rust/"/>
-        <updated>2021-11-25T19:04:22.000Z</updated>
-        <summary type="html"><![CDATA[大家好，我是张晋涛。
-近期 Rust 社区/团队有些变动，所以再一次将 Rust 拉到大多数人眼前。
-我最近看到很多小伙伴说的话：
-Rust 还值得学吗？社区是不是不稳定呀
-Rust 和 Go 哪个好？
-Rust 还值得学吗？
-这些问题如果有人来问我，那我的回答是：
-小孩子才做选择，我都要！
-当然，关于 Rust 和 Go 的问题也不算新，比如之前的一条推文：
-
-我在本篇中就来介绍下如何用 Go 调用 Rust。
-当然，这篇中我基本上不会去比较 Go 和 Rust 的功能，或者这种方式的性能之类的，Just for Fun
-FFI 和 Binding
-FFI (Foreign Function Interface) 翻译过来叫做外部函数接口（为了比较简单，下文中都将使用 FFI 指代）。最早来自于 Common Lisp 的规范，这是在 wiki 上写的，我并没有去考证。
-不过我所使用过的绝大多数语言中都有 FFI 的概念/术语存在，比如：Python、Ruby, Haskell、Go、Rust、LuaJIT 等。
-FFI 的作用简单来说就是允许一种语言去调用另一种语言，有时候我们也会用 Binding 来表示类似的能力。
-在不同的语言中会有不同的实现，比如在 Go 中的 cgo , Python 中的 ctypes ， Haskell 中的 CAPI （之前还有一个 ccall）等。
-我个人感觉 Haskell 中用 FFI 相比其他语言要更简单&方便的多，不过这不是本篇的重点就不展开了。
-在本文中，对于 Go 和 Rust 而言，它们的 FFI 需要与 C 语言对象进行通信，而这部分其实是由操作系统根据 API 中的调用约定来完成的。
-我们来进入正题。
-准备 Rust 示例程序
-Rust 的安装和 Cargo 工具的基本使用，这里就不介绍了。大家可以去 Rust 的官网…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
     </entry>
 </feed>
