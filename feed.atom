@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-12-27T01:05:44.240Z</id>
+    <id>urn:2021-12-28T01:04:51.565Z</id>
     <title>osmos::feed</title>
-    <updated>2021-12-27T01:05:44.240Z</updated>
+    <updated>2021-12-28T01:04:51.565Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -14,6 +14,30 @@
 看一下 GitHub 上的 microsoft/vscode 仓库，都有 九万多个 commit 了，可想而知 objects 的数量应该很恐怖，尝试 clone 一下（一百多万个 objects）：]]></summary>
         <author>
             <name>ShanSan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[K8S 生态周报| Helm 新版本发布，解决了内存泄漏的问题]]></title>
+        <id>https://moelove.info/2021/12/26/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E8%A7%A3%E5%86%B3%E4%BA%86%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+        <link href="https://moelove.info/2021/12/26/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E8%A7%A3%E5%86%B3%E4%BA%86%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+        <updated>2021-12-26T15:57:25.000Z</updated>
+        <summary type="html"><![CDATA[「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
+Trivy v0.22.0 正式发布
+Trivy 是一款轻量级的漏洞扫描工具，支持包括容器镜像，文件系统，IaC 配置文件等。在我之前的 『K8s生态周报』文章中已经介绍过多次，此处就不再展开了。我们一起来看看这个版本中有哪些值得关注的变更。
+新增了一个 --offline-scan 的选项，在对 pom.xml 和 JAR 文件进行扫描的时候，可以通过同时指定 --skip-update 和 --offline-scan 参数来避免 Trivy 去发起更新漏洞库的请求。在离线环境或者网络不好的场景下会比较有用；
+优化了内存的使用，在之前版本的逻辑中，如果对于大文件也会直接进行读取，有可能会造成 OOM 。本次修正了该问题，加入了一定的缓存。如果你正在使用 Trivy ，我建议你进行更新；
+再对 rpm 包扫描的时候， 支持了 NDB 格式 ， 对此格式感兴趣的小伙伴可以去看看 rpm 项目的发版说明。
+你可以直接去它的 Release 页面下载最新的二进制，也可以直接使用其容器镜像。
+(MoeLove) ➜ docker pull aquasec/trivy:0.22.0
+
+
+对于此版本的其他变更，可参考其 ReleaseNote
+Helm v3.7.2 发布
+Helm 最新一个大版本是 v3.7.0，但如果你去关注这个项目实际的变更，你会发现即使是大版本更新，也没有携带特别值得有价值的内容。反倒是这个小版本中还带来了一些值得注意的内容：
+修复了一个 Helm upgrade 时，内存泄漏的问题，感兴趣的小伙伴可以去围观下 https://github.com/helm/helm/issues/10439
+至于之前版本中的变更，感兴趣的小伙伴可以自行去…]]></summary>
+        <author>
+            <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
     </entry>
     <entry>
@@ -323,30 +347,6 @@ nonGoRestfulMux *mux.PathRecorderMux
 
 director根据配置进行初始化，如果 goRestfulContainer的 WebServices 的 RootPath 是 /apis，或者请求前缀与 RootPath 匹配，则进入 Restful 处理链路。
 Authentication …]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[新功能：Prometheus Agent 模式上手体验]]></title>
-        <id>https://moelove.info/2021/11/28/%E6%96%B0%E5%8A%9F%E8%83%BDPrometheus-Agent-%E6%A8%A1%E5%BC%8F%E4%B8%8A%E6%89%8B%E4%BD%93%E9%AA%8C/</id>
-        <link href="https://moelove.info/2021/11/28/%E6%96%B0%E5%8A%9F%E8%83%BDPrometheus-Agent-%E6%A8%A1%E5%BC%8F%E4%B8%8A%E6%89%8B%E4%BD%93%E9%AA%8C/"/>
-        <updated>2021-11-27T16:26:44.000Z</updated>
-        <summary type="html"><![CDATA[大家好，我是张晋涛。
-Prometheus 几乎已经成为了云原生时代下监控选型的事实标准，它也是第二个从 CNCF 毕业的项目。
-当前，Prometheus 几乎可以满足各种场景/服务的监控需求。我之前有写过一些文章介绍过 Prometheus 及其生态，本篇我们将聚焦于 Prometheus 最新版本中发布的 Agent 模式，对于与此主题无关的一些概念或者用法，我会粗略带过。
-拉模式（Pull）和 推模式（Push）
-众所周知，Prometheus 是一种拉模式（Pull）的监控系统，这不同于传统的基于推模式（Push）的监控系统。
-什么是拉模式（Pull）呢？
-
-待监控的服务自身或者通过一些 exporter 暴露出来一些 metrics 指标的接口，由 Prometheus 去主动的定时进行抓取/采集，这就是拉模式（Pull）。即由监控系统主动的去拉（Pull）目标的 metrics。
-与之相对应的就是推模式（Push）了。
-
-由应用程序主动将自身的一些 metrics 指标进行上报，监控系统再进行相对应的处理。如果对于某些应用程序的监控想要使用推模式（Push），比如：不易实现 metrics 接口等原因，可以考虑使用 Pushgateway 来完成。
-对于拉模式（Pull）和推模式（Push）到底哪种更好的讨论一直都在继续，有兴趣的小伙伴可以自行搜索下。
-这里主要是聚焦于单个 Prometheus 和应用服务之间交互的手方式。本篇我们从更上层的角度或者全局角度来看看当前 Prometheus 是如何做 HA、 持久化和集群的。
-Prometheus HA/持久化/集群的方案
-在大规模生产环境中使用时，很少有系统中仅有一个单实例 Prometheus 存在的情况出现。无论从高可用、数据持久化还是从为用户提供更易用的全局视图来考虑，运行多个 Prometheus 实…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>

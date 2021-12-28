@@ -65,12 +65,21 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2021/12/26/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E8%A7%A3%E5%86%B3%E4%BA%86%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9A%84%E9%97%AE%E9%A2%98/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nTrivy v0.22.0 正式发布\nTrivy 是一款轻量级的漏洞扫描工具，支持包括容器镜像，文件系统，IaC 配置文件等。在我之前的 『K8s生态周报』文章中已经介绍过多次，此处就不再展开了。我们一起来看看这个版本中有哪些值得关注的变更。\n新增了一个 --offline-scan 的选项，在对 pom.xml 和 JAR 文件进行扫描的时候，可以通过同时指定 --skip-update 和 --offline-scan 参数来避免 Trivy 去发起更新漏洞库的请求。在离线环境或者网络不好的场景下会比较有用；\n优化了内存的使用，在之前版本的逻辑中，如果对于大文件也会直接进行读取，有可能会造成 OOM 。本次修正了该问题，加入了一定的缓存。如果你正在使用 Trivy ，我建议你进行更新；\n再对 rpm 包扫描的时候， 支持了 NDB 格式 ， 对此格式感兴趣的小伙伴可以去看看 rpm 项目的发版说明。\n你可以直接去它的 Release 页面下载最新的二进制，也可以直接使用其容器镜像。\n(MoeLove) ➜ docker pull aquasec/trivy:0.22.0\n\n\n对于此版本的其他变更，可参考其 ReleaseNote\nHelm v3.7.2 发布\nHelm 最新一个大版本是 v3.7.0，但如果你去关注这个项目实际的变更，你会发现即使是大版本更新，也没有携带特别值得有价值的内容。反倒是这个小版本中还带来了一些值得注意的内容：\n修复了一个 Helm upgrade 时，内存泄漏的问题，感兴趣的小伙伴可以去围观下 https://github.com/helm/helm/issues/10439\n至于之前版本中的变更，感兴趣的小伙伴可以自行去…",
+          "link": "https://moelove.info/2021/12/26/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E8%A7%A3%E5%86%B3%E4%BA%86%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9A%84%E9%97%AE%E9%A2%98/",
+          "publishedOn": "2021-12-26T15:57:25.000Z",
+          "wordCount": 294,
+          "title": "K8S 生态周报| Helm 新版本发布，解决了内存泄漏的问题"
+        },
+        {
           "id": "https://moelove.info/2021/12/21/%E5%80%8D%E5%8F%97%E5%85%B3%E6%B3%A8%E7%9A%84-Cilium-Service-Mesh-%E5%88%B0%E5%BA%95%E6%80%8E%E4%B9%88%E7%8E%A9-%E4%B8%8A%E6%89%8B%E5%AE%9E%E8%B7%B5/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "大家好，我是张晋涛。\nCilium 是一个基于 eBPF 技术，用于为容器工作负载间提供安全且具备可观测性的网络连接的开源软件。\n如果你对 Cilium 还不太了解，可以参考我之前的两篇文章：\nK8S生态周报| Google 选择 Cilium 作为 GKE 下一代数据面\nCilium 上手实践\n最近 Cilium v1.11.0 正式发布了，增加 Open Telemetry 的支持以及其他一些增强特性。同时，也宣布了 Cilium Service Mesh 的计划。当前 Cilium Service Mesh 正处于测试阶段，预期在 2022 年会合并到 Cilium v1.12 版本中。\nCilium Service Mesh 也带来了一个全新的模式。\nCilium 直接通过 eBPF 技术实现的 Service Mesh 相比我们常规的 Istio/Linkerd 等方案，最显著的特点就是将 Sidecar proxy 模型替换成了 Kernel 模型， 如下图：\n\n不再需要每个应用程序旁边都放置一个 Sidecar 了，直接在每台 Node 上提供支持。\n\n我在几个月前就已经知道了这个消息并且进行了一些讨论，最近随着 isovalent 的一篇文章 How eBPF will solve Service Mesh - Goodbye Sidecars ，Cilium Service Mesh 也成为了大家关注的焦点。\n本篇我带你实际体验下 Cilium Service Mesh。\n安装部署\n这里我使用 KIND 作为测试环境，我的内核版本是 5.15.8 。\n准备 KIND 集群\n关于 KIND 命令行工具的安装这里就不再赘述了，感兴趣的小伙伴可以参考我之前的文章 《使用KIND搭建自己的本地 Kubernetes 测试环境》。\n以下是我创建集群使用的配置文件：\n…",
           "link": "https://moelove.info/2021/12/21/%E5%80%8D%E5%8F%97%E5%85%B3%E6%B3%A8%E7%9A%84-Cilium-Service-Mesh-%E5%88%B0%E5%BA%95%E6%80%8E%E4%B9%88%E7%8E%A9-%E4%B8%8A%E6%89%8B%E5%AE%9E%E8%B7%B5/",
           "publishedOn": "2021-12-20T18:30:17.000Z",
-          "wordCount": 3403,
+          "wordCount": 3406,
           "title": "倍受关注的 Cilium Service Mesh 到底怎么玩？ - 上手实践"
         },
         {
@@ -79,7 +88,7 @@
           "description": "大家好，我是张晋涛。\n经过前面三篇文章，不仅为大家介绍了什么是 GitOps 也介绍了如何利用 Argo CD 来实施 GitOps。本篇我来为你介绍另一个可用于实施 GitOps 的工具：Flux CD 。\nFlux CD\n\nFlux 是一组可支持实现 GitOps 的工具，用于使 Kubernetes 集群与配置源（如 Git 仓库）保持同步，并在有代码更新后自动同步配置，面向 Kubernetes 的持续渐进式交付解决方案。\n\nFlux CD 的发展历史\n2016 年 10 月 28 日，Flux single-user service 版本发布。\n它奠定了 flux 的两个基调：\n集中式运行的服务\n以守护进程的方式，在自动模式下运行在 k8s 集群中\n2016 年 12 月 15 日，发布《使用 Weave Flux 持续交付》，构建了将 CI 与持续部署 (CD) 联系起来的 Flux。\n​ \n2017 年 8 月 22 日，v1.0.0 版本正式发布。\n自 v1.0.0 开始，Flux 致力于将集群与存储在 Git 中的配置同步，并在新版本准备好部署时自动升级镜像。（提出了：Configuration as code）\n​ \n2018 年 5 月 1 日，发布的 alpha 版本中，集成了 Helm Operator 。这是 Flux Helm Operator 的第一个 alpha 标签的版本。\n2019 年 8 月 15 日，Flux 宣布加入 CNCF Sandbox。随着各开发者及企业开始落地 GitOps ，Flux 的用户数量不断增长。 彼时已超过 2500 个 GitHub star，也在不断地集成：Helm Operator 、 Kustomize 、 Weave Flagger 、 OpenFaaS 、 Fluxcloud 、 Flux Web…",
           "link": "https://moelove.info/2021/12/18/GitOps-%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5%E7%B3%BB%E5%88%97-Flux-CD-%E5%8F%8A%E5%85%B6%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/",
           "publishedOn": "2021-12-18T12:56:29.000Z",
-          "wordCount": 936,
+          "wordCount": 937,
           "title": "GitOps 应用实践系列 - Flux CD 及其核心组件"
         },
         {
@@ -97,7 +106,7 @@
           "description": "大家好，我是张晋涛。\n目前我们所提到的容器技术、虚拟化技术（不论何种抽象层次下的虚拟化技术）都能做到资源层面上的隔离和限制。\n对于容器技术而言，它实现资源层面上的限制和隔离，依赖于 Linux 内核所提供的 cgroup 和 namespace 技术。\n我们先对这两项技术的作用做个概括：\ncgroup 的主要作用：管理资源的分配、限制；\nnamespace 的主要作用：封装抽象，限制，隔离，使命名空间内的进程看起来拥有他们自己的全局资源；\n这是一个系列文章，对此系列感兴趣的小伙伴可以查看：\n彻底搞懂容器技术的基石：cgroup\n彻底搞懂容器技术的基石：namespace（上）\n本篇我们将继续聊 namespace。\nNamespace 类型\n我们先来总览一下 namespace 的类型，上篇中已经为大家介绍过 Cgroup , IPC, Network 和 Mount 等 4 种类型的 namespace。我们继续聊剩余的部分。\nnamespace名称\n使用的标识 - Flag\n控制内容\n\n\n\n\nCgroup\nCLONE_NEWCGROUP\nCgroup root directory cgroup 根目录\n\n\nIPC\nCLONE_NEWIPC\nSystem V IPC, POSIX message queues信号量，消息队列\n\n\nNetwork\nCLONE_NEWNET\nNetwork devices, stacks, ports, etc.网络设备，协议栈，端口等等\n\n\nMount\nCLONE_NEWNS\nMount points挂载点\n\n\nPID\nCLONE_NEWPID\nProcess IDs进程号\n\n\nTime\nCLONE_NEWTIME\nBoot and monotonic clocks启动和单调时钟\n\n\nUser\nCLONE_NEWUSER\nUser and …",
           "link": "https://moelove.info/2021/12/13/%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-namespace-%E4%B8%8B/",
           "publishedOn": "2021-12-12T19:50:29.000Z",
-          "wordCount": 838,
+          "wordCount": 837,
           "title": "搞懂容器技术的基石： namespace （下）"
         },
         {
@@ -106,7 +115,7 @@
           "description": "大家好，我是张晋涛。\n目前我们所提到的容器技术、虚拟化技术（不论何种抽象层次下的虚拟化技术）都能做到资源层面上的隔离和限制。\n对于容器技术而言，它实现资源层面上的限制和隔离，依赖于 Linux 内核所提供的 cgroup 和 namespace 技术。\n我们先对这两项技术的作用做个概括：\ncgroup 的主要作用：管理资源的分配、限制；\nnamespace 的主要作用：封装抽象，限制，隔离，使命名空间内的进程看起来拥有他们自己的全局资源；\n在上一篇文章中，我们重点聊了 cgroup 。本篇，我们重点来聊 namespace 。\nNamespace 是什么？\n我们引用 wiki 上对 namespace 的定义：\nNamespaces are a feature of the Linux kernel that partitions kernel resources such that one set of processes sees one set of resources while another set of processes sees a different set of resources. The feature works by having the same namespace for a set of resources and processes, but those namespaces refer to distinct resources.\nnamespace 是 Linux 内核的一项特性，它可以对内核资源进行分区，使得一组进程可以看到一组资源；而另一组进程可以看到另一组不同的资源。该功能的原理是为一组资源和进程使用相同的 namespace，但是这些 namespace 实际上引用的是不同的资源。\n这样的说法未免太绕了些，简单来说 name…",
           "link": "https://moelove.info/2021/12/10/%E6%90%9E%E6%87%82%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E7%9A%84%E5%9F%BA%E7%9F%B3-namespace-%E4%B8%8A/",
           "publishedOn": "2021-12-09T19:50:29.000Z",
-          "wordCount": 871,
+          "wordCount": 870,
           "title": "搞懂容器技术的基石： namespace （上）"
         },
         {
@@ -115,7 +124,7 @@
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nKubernetes v1.23 即将发布，这是 2021 年发布的第三个版本，也是今年最后一个正式发布的版本。\n此版本中主要包括 47 项增强更新，其中 11 项达到 stable, 17 项达到 beta 还有 19 项达到 alpha 。 当然，也有 1 项被标记为废弃。相比于 v1.22 从数量上来说是少了一点（v1.22 有 53 项增强更新），但这并不影响这是一个很棒的版本！\n在 Kubernetes 的发布周期变更为 每4个月一个版本 后，很明显的感觉就是不用在升级上面花费太多时间了，毕竟 Kubernetes 的升级操作是个体力活，大家觉得呢？\n我们一起来看看这个版本中有哪些值得关注的变更吧！\n新增 kubectl alpha events 命令\n在之前的 《K8S 生态周报| Helm 新版本发布增强对 OCI 的支持》 文章的上游进展中我曾为大家介绍了该功能。它是按照 KEP #1440 实施的。\n增加此命令主要是由于在不修改 kubectl get 的前提下，查看 event 有一些限制，所以直接增加 kubectl events 命令可以更方便的去获取到需要的信息，尤其是 event 是在 Kubernetes 中经常需要查看的一个信息。kubectl get events 比较典型的一些问题, 比如排序（虽然可以通过加参数解决）， watch，以及无法按照时间线方式去查看 events 等。\n我们来看看这个命令具体如何使用。\n我们先来创建两个 Pod，分别叫 redis 和 redis2 。\n(MoeLove) ➜ kubectl run redis --image=\"ghcr.io/tao12345666333/redis:a…",
           "link": "https://moelove.info/2021/12/08/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Kubernetes-v1.23.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/",
           "publishedOn": "2021-12-07T19:50:29.000Z",
-          "wordCount": 584,
+          "wordCount": 583,
           "title": "K8S 生态周报| Kubernetes v1.23.0 正式发布，新特性一览"
         },
         {
@@ -124,7 +133,7 @@
           "description": "大家好，我是张晋涛。\n本篇我来为你介绍一个我个人很喜欢的，通用策略引擎，名叫 OPA，全称是 Open Policy Agent。\n在具体聊 OPA 之前，我们先来聊一下为什么需要一个通用策略引擎，以及 OPA 解决了什么问题。\nOPA 解决了什么问题\n在实际的生产环境中很多场景中都需要策略控制，比如：\n需要策略控制用户是否可登陆服务器或者做一些操作；\n需要策略控制哪些项目/哪些组件可进行部署；\n需要策略控制如何访问数据库；\n需要策略控制哪些资源可部署到 Kubernetes 中；\n\n但是对于这些场景或者软件来说，配置它们的策略是需要与该软件进行耦合的，彼此是不统一，不通用的。管理起来也会比较混乱，带来了不小的维护成本。\nOPA 的出现可以将各处配置的策略进行统一，极大的降低了维护成本。以及将策略与对应的软件/服务进行解耦，方便进行移植/复用。\n\nOPA 的发展过程\nOPA 最初是由 Styra 公司在 2016 年创建并开源的项目，目前该公司的主要产品就是提供可视化策略控制及策略执行的可视化 Dashboard 服务的。\nOPA 首次进入 CNCF 并成为 sandbox 级别的项目是在 2018 年， 在 2021 年的 2 月份便已经从 CNCF 毕业，这个过程相对来说还是比较快的，由此也可以看出 OPA 是一个比较活跃且应用广泛的项目。\nOPA 是什么\n前面我们已经介绍过 Open Policy Agent (OPA) 是一种开源的通用策略引擎，可在整个堆栈中实现统一、上下文感知的策略控制。\nOPA 可将策略决策与应用程序的业务逻辑分离（解耦），透过现象看本质，策略就是一组规则，请求发送到引擎，引擎根据规则来进行决策。\n\n图 3 ，OPA 的策略解耦示例\nOPA 并不负责具体任务的执行，它仅负责决策，需要决策的请求通过 JSON 的方式传递给 OPA ，在 OPA …",
           "link": "https://moelove.info/2021/12/06/Open-Policy-Agent-OPA-%E5%85%A5%E9%97%A8%E5%AE%9E%E8%B7%B5/",
           "publishedOn": "2021-12-06T11:50:29.000Z",
-          "wordCount": 603,
+          "wordCount": 602,
           "title": "Open Policy Agent (OPA) 入门实践"
         },
         {
@@ -133,17 +142,8 @@
           "description": "大家好，我是张晋涛。\n在我之前发布的文章 《云原生时代下的容器镜像安全》（系列）中，我提到过 Kubernetes 集群的核心组件 -- kube-apiserver，它允许来自终端用户或集群的各组件与之进行通信（例如，查询、创建、修改或删除 Kubernetes 资源）。\n本篇我们将聚焦于 kube-apiserver 请求处理过程中一个很重要的部分 -- 准入控制器（Admission Controller）\nK8s 的准入控制器是什么\nK8s 中的请求处理流程\n在聊 K8s 准入控制器是什么之前，让我们先来回顾一下 Kubernetes API 的处理具体请求的过程。\n\n图 1 ，Kubernetes API 处理请求的过程 （从 API Handler 到 etcd 持久化的过程）\n如上图所示，每个 API 的请求从开始被 kube-apiserver 接收到最终持久化到 ETCD 的过程，即为 Kubernetes API 的请求处理流程。\n它主要包含了以下几个部分：\nAPI Handler -- 主要负责提供服务，接收请求。\n对于其内部实现而言，请求会先到 FullHandlerChain （它是由 DefaultBuildHandlerChain 构建出来的）是一个 director 对象\ntype director struct {\nname string\ngoRestfulContainer *restful.Container\nnonGoRestfulMux *mux.PathRecorderMux\n}\n\n\ndirector根据配置进行初始化，如果 goRestfulContainer的 WebServices 的 RootPath 是 /apis，或者请求前缀与 RootPath 匹配，则进入 Restful 处理链路。\nAuthentication …",
           "link": "https://moelove.info/2021/11/30/%E7%90%86%E6%B8%85-Kubernetes-%E4%B8%AD%E7%9A%84%E5%87%86%E5%85%A5%E6%8E%A7%E5%88%B6Admission-Controller/",
           "publishedOn": "2021-11-29T19:04:22.000Z",
-          "wordCount": 805,
+          "wordCount": 804,
           "title": "理清 Kubernetes 中的准入控制（Admission Controller)"
-        },
-        {
-          "id": "https://moelove.info/2021/11/28/%E6%96%B0%E5%8A%9F%E8%83%BDPrometheus-Agent-%E6%A8%A1%E5%BC%8F%E4%B8%8A%E6%89%8B%E4%BD%93%E9%AA%8C/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "大家好，我是张晋涛。\nPrometheus 几乎已经成为了云原生时代下监控选型的事实标准，它也是第二个从 CNCF 毕业的项目。\n当前，Prometheus 几乎可以满足各种场景/服务的监控需求。我之前有写过一些文章介绍过 Prometheus 及其生态，本篇我们将聚焦于 Prometheus 最新版本中发布的 Agent 模式，对于与此主题无关的一些概念或者用法，我会粗略带过。\n拉模式（Pull）和 推模式（Push）\n众所周知，Prometheus 是一种拉模式（Pull）的监控系统，这不同于传统的基于推模式（Push）的监控系统。\n什么是拉模式（Pull）呢？\n\n待监控的服务自身或者通过一些 exporter 暴露出来一些 metrics 指标的接口，由 Prometheus 去主动的定时进行抓取/采集，这就是拉模式（Pull）。即由监控系统主动的去拉（Pull）目标的 metrics。\n与之相对应的就是推模式（Push）了。\n\n由应用程序主动将自身的一些 metrics 指标进行上报，监控系统再进行相对应的处理。如果对于某些应用程序的监控想要使用推模式（Push），比如：不易实现 metrics 接口等原因，可以考虑使用 Pushgateway 来完成。\n对于拉模式（Pull）和推模式（Push）到底哪种更好的讨论一直都在继续，有兴趣的小伙伴可以自行搜索下。\n这里主要是聚焦于单个 Prometheus 和应用服务之间交互的手方式。本篇我们从更上层的角度或者全局角度来看看当前 Prometheus 是如何做 HA、 持久化和集群的。\nPrometheus HA/持久化/集群的方案\n在大规模生产环境中使用时，很少有系统中仅有一个单实例 Prometheus 存在的情况出现。无论从高可用、数据持久化还是从为用户提供更易用的全局视图来考虑，运行多个 Prometheus 实…",
-          "link": "https://moelove.info/2021/11/28/%E6%96%B0%E5%8A%9F%E8%83%BDPrometheus-Agent-%E6%A8%A1%E5%BC%8F%E4%B8%8A%E6%89%8B%E4%BD%93%E9%AA%8C/",
-          "publishedOn": "2021-11-27T16:26:44.000Z",
-          "wordCount": 702,
-          "title": "新功能：Prometheus Agent 模式上手体验"
         }
       ]
     },
