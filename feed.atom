@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-12-29T01:04:11.003Z</id>
+    <id>urn:2021-12-30T01:04:24.942Z</id>
     <title>osmos::feed</title>
-    <updated>2021-12-29T01:04:11.003Z</updated>
+    <updated>2021-12-30T01:04:24.942Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[彻底搞懂 Kubernetes 中的 Events]]></title>
+        <id>https://moelove.info/2021/12/28/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82-Kubernetes-%E4%B8%AD%E7%9A%84-Events/</id>
+        <link href="https://moelove.info/2021/12/28/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82-Kubernetes-%E4%B8%AD%E7%9A%84-Events/"/>
+        <updated>2021-12-28T14:12:37.000Z</updated>
+        <summary type="html"><![CDATA[大家好，我是张晋涛。
+之前我写了一篇《更优雅的 Kubernetes 集群事件度量方案》，利用 Jaeger 利用 tracing 的方式来采集 Kubernetes 集群中的 events 并进行展示。最终效果如下：
+
+写那篇文章的时候，立了个 flag 要详细介绍下其中的原理，鸽了很久，现在年底了，也该发出来了。
+Eents 概览
+我们先来做个简单的示例，来看看 Kubernetes 集群中的 events 是什么。
+创建一个新的名叫 moelove 的 namespace ，然后在其中创建一个叫做 redis 的 deployment。接下来查看这个 namespace 中的所有 events。
+(MoeLove) ➜ kubectl create ns moelove
+namespace/moelove created
+(MoeLove) ➜ kubectl -n moelove create deployment redis --image=ghcr.io/moelove/redis:alpine
+deployment.apps/redis created
+(MoeLove) ➜ kubectl -n moelove get deploy
+NAME READY UP-TO-DATE AVAILABLE AGE
+redis 1/1 1 1 11s
+(MoeLove) ➜ kubectl -n moelove get events
+LAST SEEN TYPE REASON OBJECT MESSAGE
+21s Normal Scheduled pod/redis-687967dbc5-27vmr Successfully assigned moelove/redis-687967dbc5-27vmr to kind-worker3
+21s Normal Pullin…]]></summary>
+        <author>
+            <name>zhangjintao9020@gmail.com (张晋涛)</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Git 仓库瘦身与 LFS 大文件存储]]></title>
         <id>https://yeshan333.github.io/2021/12/26/git-lfs-and-thin-repo/</id>
@@ -319,36 +346,6 @@ OPA 并不负责具体任务的执行，它仅负责决策，需要决策的请�
         <summary type="html"><![CDATA[今天凌晨五点就醒了，积累了好多好多的情绪啊！]]></summary>
         <author>
             <name>ShanSan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[理清 Kubernetes 中的准入控制（Admission Controller)]]></title>
-        <id>https://moelove.info/2021/11/30/%E7%90%86%E6%B8%85-Kubernetes-%E4%B8%AD%E7%9A%84%E5%87%86%E5%85%A5%E6%8E%A7%E5%88%B6Admission-Controller/</id>
-        <link href="https://moelove.info/2021/11/30/%E7%90%86%E6%B8%85-Kubernetes-%E4%B8%AD%E7%9A%84%E5%87%86%E5%85%A5%E6%8E%A7%E5%88%B6Admission-Controller/"/>
-        <updated>2021-11-29T19:04:22.000Z</updated>
-        <summary type="html"><![CDATA[大家好，我是张晋涛。
-在我之前发布的文章 《云原生时代下的容器镜像安全》（系列）中，我提到过 Kubernetes 集群的核心组件 -- kube-apiserver，它允许来自终端用户或集群的各组件与之进行通信（例如，查询、创建、修改或删除 Kubernetes 资源）。
-本篇我们将聚焦于 kube-apiserver 请求处理过程中一个很重要的部分 -- 准入控制器（Admission Controller）
-K8s 的准入控制器是什么
-K8s 中的请求处理流程
-在聊 K8s 准入控制器是什么之前，让我们先来回顾一下 Kubernetes API 的处理具体请求的过程。
-
-图 1 ，Kubernetes API 处理请求的过程 （从 API Handler 到 etcd 持久化的过程）
-如上图所示，每个 API 的请求从开始被 kube-apiserver 接收到最终持久化到 ETCD 的过程，即为 Kubernetes API 的请求处理流程。
-它主要包含了以下几个部分：
-API Handler -- 主要负责提供服务，接收请求。
-对于其内部实现而言，请求会先到 FullHandlerChain （它是由 DefaultBuildHandlerChain 构建出来的）是一个 director 对象
-type director struct {
-name string
-goRestfulContainer *restful.Container
-nonGoRestfulMux *mux.PathRecorderMux
-}
-
-
-director根据配置进行初始化，如果 goRestfulContainer的 WebServices 的 RootPath 是 /apis，或者请求前缀与 RootPath 匹配，则进入 Restful 处理链路。
-Authentication …]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
     </entry>
 </feed>
