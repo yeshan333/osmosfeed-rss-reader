@@ -42,7 +42,7 @@
           "description": "工作 20 多年了，这 20 来年看到了很多公司系统架构，也看到了很多问题，在跟这些公司进行交流和讨论的时候，包括进行实施和方案比较的时候，都有很多各种方案的比...\n Read More  Read More\n我做系统架构的一些原则 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21672.html",
           "publishedOn": "2021-12-21T07:46:41.000Z",
-          "wordCount": 883,
+          "wordCount": 964,
           "title": "我做系统架构的一些原则"
         }
       ]
@@ -65,12 +65,21 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2021/12/30/6-%E4%B8%AA%E6%9C%88%E5%86%85%E5%81%9A%E4%BA%86-15-%E5%9C%BA%E5%85%AC%E5%BC%80%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB%E6%88%91%E7%9A%84-2021-%E6%98%AF%E8%BF%99%E6%A0%B7%E8%BF%87%E7%9A%84/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\n一眨眼 2021 年就要结束了，我每年都会惯例的做个小回顾。2021 年也发生了很多的事情值得记录一下。\n生活与换工作\n这两年的疫情对每个人的生活都或多或少的产生了一定的影响，对我而言也是一样。更多的可能是一些想法和心态上的变化。\n我在 2020 年的回顾文章 《新晋程序员奶爸的云原生之路》 中有聊过，我和小可爱的宝宝在 2020 年出生了。\n相比于去年的各种手忙脚乱，以及学习和探索，今年整体来说已经轻松了很多。半夜已经基本上不需要再起来哄他或者冲奶了，也增加了很多互动，变得更加有趣了。\n我也更多的意识到对家人的陪伴是很关键的，之前总是在各种忙，在家人的陪伴方面是少了很多。\n得益于今年换了工作，现在在 API7.AI 是远程工作，全职做开源，工作之余也有了更多的时间陪伴家人。\n换工作期间有两个有趣的插曲跟大家一起分享下：\n爆火的离职消息\n加了我微信或者关注了我其他社交媒体账号的小伙伴可能会发现，我更新还是比较频繁的。\n在我从前司离职当天，我惯例的发了条 \"江湖再会\" 的消息，然后我就跟小可爱约会去了。\n结果很意外的，这条消息得到了很多关注。\n朋友圈自不必说，还有很多小伙伴给我发消息询问情况的。\n在推上有 3w 的展示和 1w 多的互动。在脉脉上甚至给我送上了脉脉周榜的前 100 名，感谢大家的关注。\n\n无缝衔接\n其实我本来想要早点交接完在离职后休息一段时间的，不过老板让我多待了段时间，所以恰好周五是 last day。\n经过了两天和平时差不多一样的周末后，我就直接入职 API7.AI 飞去珠海跟团队小伙伴团建去了。\n基本上算是无缝衔接了，也就是正常的过了个周末罢了。这敬业程度，评个劳模不过分吧？（哈哈哈\n远程工作的那些事\n再就是来聊聊我现在的工作，前面提到了，我现在是在 API7.AI 远程全职做开源。\n熟悉我的小伙伴可能知道，我一直都在参与开源项目和…",
+          "link": "https://moelove.info/2021/12/30/6-%E4%B8%AA%E6%9C%88%E5%86%85%E5%81%9A%E4%BA%86-15-%E5%9C%BA%E5%85%AC%E5%BC%80%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB%E6%88%91%E7%9A%84-2021-%E6%98%AF%E8%BF%99%E6%A0%B7%E8%BF%87%E7%9A%84/",
+          "publishedOn": "2021-12-30T13:39:12.000Z",
+          "wordCount": 188,
+          "title": "6 个月内做了 15 场公开技术分享，我的 2021 是这样过的"
+        },
+        {
           "id": "https://moelove.info/2021/12/28/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82-Kubernetes-%E4%B8%AD%E7%9A%84-Events/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "大家好，我是张晋涛。\n之前我写了一篇《更优雅的 Kubernetes 集群事件度量方案》，利用 Jaeger 利用 tracing 的方式来采集 Kubernetes 集群中的 events 并进行展示。最终效果如下：\n\n写那篇文章的时候，立了个 flag 要详细介绍下其中的原理，鸽了很久，现在年底了，也该发出来了。\nEents 概览\n我们先来做个简单的示例，来看看 Kubernetes 集群中的 events 是什么。\n创建一个新的名叫 moelove 的 namespace ，然后在其中创建一个叫做 redis 的 deployment。接下来查看这个 namespace 中的所有 events。\n(MoeLove) ➜ kubectl create ns moelove\nnamespace/moelove created\n(MoeLove) ➜ kubectl -n moelove create deployment redis --image=ghcr.io/moelove/redis:alpine\ndeployment.apps/redis created\n(MoeLove) ➜ kubectl -n moelove get deploy\nNAME READY UP-TO-DATE AVAILABLE AGE\nredis 1/1 1 1 11s\n(MoeLove) ➜ kubectl -n moelove get events\nLAST SEEN TYPE REASON OBJECT MESSAGE\n21s Normal Scheduled pod/redis-687967dbc5-27vmr Successfully assigned moelove/redis-687967dbc5-27vmr to kind-worker3\n21s Normal Pullin…",
           "link": "https://moelove.info/2021/12/28/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82-Kubernetes-%E4%B8%AD%E7%9A%84-Events/",
           "publishedOn": "2021-12-28T14:12:37.000Z",
-          "wordCount": 1082,
+          "wordCount": 1088,
           "title": "彻底搞懂 Kubernetes 中的 Events"
         },
         {
