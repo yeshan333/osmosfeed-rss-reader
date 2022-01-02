@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-01-01T01:07:29.935Z</id>
+    <id>urn:2022-01-02T01:09:06.175Z</id>
     <title>osmos::feed</title>
-    <updated>2022-01-01T01:07:29.935Z</updated>
+    <updated>2022-01-02T01:09:06.175Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[2021 | 肆意随心]]></title>
+        <id>https://yeshan333.github.io/2022/01/01/2021-annual-reviewed/</id>
+        <link href="https://yeshan333.github.io/2022/01/01/2021-annual-reviewed/"/>
+        <updated>2022-01-01T12:55:00.000Z</updated>
+        <summary type="html"><![CDATA[Yeah
+“兜兜转转”又一年了，又到了该水年度 Review 的时候啦✅❇️。
+算下来，博客三年了，准备开启新的三年了。这篇总结也算是第三篇总结了，3 - 可以说是我很喜欢的数字，挺多网名（ShanSan、yeshan333），还有博客域名（shansan.top、shan333.cn、…）是和“三”有关的（and so on），也算是“谐音梗”啦😎？
+回头看看之前写的几篇总结，还挺有意思的。21 年似乎并没有太多那么刻意去做的事，想到了就去试试了。这一次，不需要那么的有条理性，随手一记。]]></summary>
+        <author>
+            <name>ShanSan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[etcd 3.5版本的joint consensus实现解析]]></title>
+        <id>https://www.codedump.info/post/20220101-etcd3.5-joint-consensus/</id>
+        <link href="https://www.codedump.info/post/20220101-etcd3.5-joint-consensus/"/>
+        <updated>2022-01-01T07:02:50.000Z</updated>
+        <summary type="html"><![CDATA[概述 在以前的etcd实现中，“集群节点变更”这一功能，仅支持每次变更一个节点，最新的etcd已经能支持一次变更多个节点配置的功能了。本文将就]]></summary>
+        <author>
+            <name>codedump的网络日志</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[6 个月内做了 15 场公开技术分享，我的 2021 是这样过的]]></title>
         <id>https://moelove.info/2021/12/30/6-%E4%B8%AA%E6%9C%88%E5%86%85%E5%81%9A%E4%BA%86-15-%E5%9C%BA%E5%85%AC%E5%BC%80%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB%E6%88%91%E7%9A%84-2021-%E6%98%AF%E8%BF%99%E6%A0%B7%E8%BF%87%E7%9A%84/</id>

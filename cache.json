@@ -12,12 +12,21 @@
       "siteUrl": "https://yeshan333.github.io/",
       "articles": [
         {
+          "id": "https://yeshan333.github.io/2022/01/01/2021-annual-reviewed/",
+          "author": null,
+          "description": "Yeah\n“兜兜转转”又一年了，又到了该水年度 Review 的时候啦✅❇️。\n算下来，博客三年了，准备开启新的三年了。这篇总结也算是第三篇总结了，3 - 可以说是我很喜欢的数字，挺多网名（ShanSan、yeshan333），还有博客域名（shansan.top、shan333.cn、…）是和“三”有关的（and so on），也算是“谐音梗”啦😎？\n回头看看之前写的几篇总结，还挺有意思的。21 年似乎并没有太多那么刻意去做的事，想到了就去试试了。这一次，不需要那么的有条理性，随手一记。",
+          "link": "https://yeshan333.github.io/2022/01/01/2021-annual-reviewed/",
+          "publishedOn": "2022-01-01T12:55:00.000Z",
+          "wordCount": 394,
+          "title": "2021 | 肆意随心"
+        },
+        {
           "id": "https://yeshan333.github.io/2021/12/26/git-lfs-and-thin-repo/",
           "author": null,
           "description": "熟悉 Git 的小伙伴应该都知道随着 Git 仓库维护的时间越来越久，追踪的文件越来越多，git 存储的 objects 数量会极其庞大，每次从远程仓库 git clone 的时候都会墨迹很久。如果我们不小心 git add 了一个体积很大的文件，且 git push 到了远程仓库，那么我们 git clone 的时候也会很慢。\n看一下 GitHub 上的 microsoft/vscode 仓库，都有 九万多个 commit 了，可想而知 objects 的数量应该很恐怖，尝试 clone 一下（一百多万个 objects）：",
           "link": "https://yeshan333.github.io/2021/12/26/git-lfs-and-thin-repo/",
           "publishedOn": "2021-12-26T16:26:23.000Z",
-          "wordCount": 734,
+          "wordCount": 743,
           "title": "Git 仓库瘦身与 LFS 大文件存储"
         },
         {
@@ -168,12 +177,21 @@
       "siteUrl": "https://www.codedump.info/",
       "articles": [
         {
+          "id": "https://www.codedump.info/post/20220101-etcd3.5-joint-consensus/",
+          "author": null,
+          "description": "概述 在以前的etcd实现中，“集群节点变更”这一功能，仅支持每次变更一个节点，最新的etcd已经能支持一次变更多个节点配置的功能了。本文将就",
+          "link": "https://www.codedump.info/post/20220101-etcd3.5-joint-consensus/",
+          "publishedOn": "2022-01-01T07:02:50.000Z",
+          "wordCount": 311,
+          "title": "etcd 3.5版本的joint consensus实现解析"
+        },
+        {
           "id": "https://www.codedump.info/post/20211222-sqlite-btree-3-journal/",
           "author": null,
           "description": "概述 在上一节中（sqlite3.36版本 btree实现（二）- 并发控制框架），已经讲解了sqlite中的并发控制机制，里面会涉及到一个“备份",
           "link": "https://www.codedump.info/post/20211222-sqlite-btree-3-journal/",
           "publishedOn": "2021-12-22T11:15:31.000Z",
-          "wordCount": 302,
+          "wordCount": 304,
           "title": "sqlite3.36版本 btree实现（三）- journal文件备份机制"
         },
         {
