@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-01-02T01:09:06.175Z</id>
+    <id>urn:2022-01-03T01:05:36.777Z</id>
     <title>osmos::feed</title>
-    <updated>2022-01-02T01:09:06.175Z</updated>
+    <updated>2022-01-03T01:05:36.777Z</updated>
     <generator>osmosfeed 1.11.3</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[网络数字身份认证术]]></title>
+        <id>https://coolshell.cn/?p=21708</id>
+        <link href="https://coolshell.cn/articles/21708.html"/>
+        <updated>2022-01-02T08:38:13.000Z</updated>
+        <summary type="html"><![CDATA[这篇文章是《HTTP API 认证授权术》的姊妹篇，在那篇文章中，主要介绍了 HTTP API 认证和授权技术中用到的 HTTP Basic, Digest A...
+ Read More  Read More
+网络数字身份认证术 first appeared on 酷 壳 - CoolShell.]]></summary>
+        <author>
+            <name>陈皓</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021 | 肆意随心]]></title>
         <id>https://yeshan333.github.io/2022/01/01/2021-annual-reviewed/</id>
@@ -391,16 +403,6 @@ OPA 可将策略决策与应用程序的业务逻辑分离（解耦），透过�
 OPA 并不负责具体任务的执行，它仅负责决策，需要决策的请求通过 JSON 的方式传递给 OPA ，在 OPA …]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Deserve]]></title>
-        <id>https://yeshan333.github.io/2021/12/04/deserve/</id>
-        <link href="https://yeshan333.github.io/2021/12/04/deserve/"/>
-        <updated>2021-12-04T06:49:35.000Z</updated>
-        <summary type="html"><![CDATA[今天凌晨五点就醒了，积累了好多好多的情绪啊！]]></summary>
-        <author>
-            <name>ShanSan</name>
         </author>
     </entry>
 </feed>
