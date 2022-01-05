@@ -42,7 +42,7 @@
           "description": "这篇文章是《HTTP API 认证授权术》的姊妹篇，在那篇文章中，主要介绍了 HTTP API 认证和授权技术中用到的 HTTP Basic, Digest A...\n Read More  Read More\n网络数字身份认证术 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21708.html",
           "publishedOn": "2022-01-02T08:38:13.000Z",
-          "wordCount": 853,
+          "wordCount": 868,
           "title": "网络数字身份认证术"
         },
         {
@@ -51,7 +51,7 @@
           "description": "工作 20 多年了，这 20 来年看到了很多公司系统架构，也看到了很多问题，在跟这些公司进行交流和讨论的时候，包括进行实施和方案比较的时候，都有很多各种方案的比...\n Read More  Read More\n我做系统架构的一些原则 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21672.html",
           "publishedOn": "2021-12-21T07:46:41.000Z",
-          "wordCount": 985,
+          "wordCount": 1010,
           "title": "我做系统架构的一些原则"
         }
       ]
@@ -153,15 +153,6 @@
           "publishedOn": "2021-12-07T19:50:29.000Z",
           "wordCount": 583,
           "title": "K8S 生态周报| Kubernetes v1.23.0 正式发布，新特性一览"
-        },
-        {
-          "id": "https://moelove.info/2021/12/06/Open-Policy-Agent-OPA-%E5%85%A5%E9%97%A8%E5%AE%9E%E8%B7%B5/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "大家好，我是张晋涛。\n本篇我来为你介绍一个我个人很喜欢的，通用策略引擎，名叫 OPA，全称是 Open Policy Agent。\n在具体聊 OPA 之前，我们先来聊一下为什么需要一个通用策略引擎，以及 OPA 解决了什么问题。\nOPA 解决了什么问题\n在实际的生产环境中很多场景中都需要策略控制，比如：\n需要策略控制用户是否可登陆服务器或者做一些操作；\n需要策略控制哪些项目/哪些组件可进行部署；\n需要策略控制如何访问数据库；\n需要策略控制哪些资源可部署到 Kubernetes 中；\n\n但是对于这些场景或者软件来说，配置它们的策略是需要与该软件进行耦合的，彼此是不统一，不通用的。管理起来也会比较混乱，带来了不小的维护成本。\nOPA 的出现可以将各处配置的策略进行统一，极大的降低了维护成本。以及将策略与对应的软件/服务进行解耦，方便进行移植/复用。\n\nOPA 的发展过程\nOPA 最初是由 Styra 公司在 2016 年创建并开源的项目，目前该公司的主要产品就是提供可视化策略控制及策略执行的可视化 Dashboard 服务的。\nOPA 首次进入 CNCF 并成为 sandbox 级别的项目是在 2018 年， 在 2021 年的 2 月份便已经从 CNCF 毕业，这个过程相对来说还是比较快的，由此也可以看出 OPA 是一个比较活跃且应用广泛的项目。\nOPA 是什么\n前面我们已经介绍过 Open Policy Agent (OPA) 是一种开源的通用策略引擎，可在整个堆栈中实现统一、上下文感知的策略控制。\nOPA 可将策略决策与应用程序的业务逻辑分离（解耦），透过现象看本质，策略就是一组规则，请求发送到引擎，引擎根据规则来进行决策。\n\n图 3 ，OPA 的策略解耦示例\nOPA 并不负责具体任务的执行，它仅负责决策，需要决策的请求通过 JSON 的方式传递给 OPA ，在 OPA …",
-          "link": "https://moelove.info/2021/12/06/Open-Policy-Agent-OPA-%E5%85%A5%E9%97%A8%E5%AE%9E%E8%B7%B5/",
-          "publishedOn": "2021-12-06T11:50:29.000Z",
-          "wordCount": 603,
-          "title": "Open Policy Agent (OPA) 入门实践"
         }
       ]
     },
