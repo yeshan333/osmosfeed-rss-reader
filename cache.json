@@ -42,7 +42,7 @@
           "description": "这篇文章是《HTTP API 认证授权术》的姊妹篇，在那篇文章中，主要介绍了 HTTP API 认证和授权技术中用到的 HTTP Basic, Digest A...\n Read More  Read More\n网络数字身份认证术 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21708.html",
           "publishedOn": "2022-01-02T08:38:13.000Z",
-          "wordCount": 878,
+          "wordCount": 976,
           "title": "网络数字身份认证术"
         },
         {
@@ -200,7 +200,7 @@
           "description": "起步 在去年大体把btree以及b+tree算法流程研究了之后，我写了两篇博客： B树、B+树索引算法原理（上） - codedump的网络日志 B树",
           "link": "https://www.codedump.info/post/20211217-sqlite-btree-0/",
           "publishedOn": "2021-12-17T02:19:05.000Z",
-          "wordCount": 472,
+          "wordCount": 467,
           "title": "sqlite3.36版本 btree实现（零）- 起步及概述"
         }
       ]
