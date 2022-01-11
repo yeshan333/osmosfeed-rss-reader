@@ -4,7 +4,17 @@
       "title": "Release notes from osmosfeed",
       "feedUrl": "https://github.com/osmoscraft/osmosfeed/releases.atom",
       "siteUrl": "https://github.com/osmoscraft/osmosfeed/releases",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.0",
+          "author": null,
+          "description": "New: When one of the sources download fails, fall back to cache and continue rest of the build.\nChore: Dependency updates\nAdded docs for Netlify deployment\nFixed #71 #69 #65\nThank you: @sokomin, @molakirlee, @philippnagel, @tianheg",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.0",
+          "publishedOn": "2022-01-10T05:25:18.000Z",
+          "wordCount": 308,
+          "title": "v1.12.0"
+        }
+      ]
     },
     {
       "title": "ShanSan",
@@ -42,7 +52,7 @@
           "description": "这篇文章是《HTTP API 认证授权术》的姊妹篇，在那篇文章中，主要介绍了 HTTP API 认证和授权技术中用到的 HTTP Basic, Digest A...\n Read More  Read More\n网络数字身份认证术 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21708.html",
           "publishedOn": "2022-01-02T08:38:13.000Z",
-          "wordCount": 976,
+          "wordCount": 878,
           "title": "网络数字身份认证术"
         },
         {
@@ -51,7 +61,7 @@
           "description": "工作 20 多年了，这 20 来年看到了很多公司系统架构，也看到了很多问题，在跟这些公司进行交流和讨论的时候，包括进行实施和方案比较的时候，都有很多各种方案的比...\n Read More  Read More\n我做系统架构的一些原则 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21672.html",
           "publishedOn": "2021-12-21T07:46:41.000Z",
-          "wordCount": 1040,
+          "wordCount": 1045,
           "title": "我做系统架构的一些原则"
         }
       ]
@@ -206,5 +216,5 @@
       ]
     }
   ],
-  "cliVersion": "1.11.3"
+  "cliVersion": "1.12.0"
 }

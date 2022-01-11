@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-01-10T01:05:22.340Z</id>
+    <id>urn:2022-01-11T01:08:18.628Z</id>
     <title>osmos::feed</title>
-    <updated>2022-01-10T01:05:22.340Z</updated>
-    <generator>osmosfeed 1.11.3</generator>
+    <updated>2022-01-11T01:08:18.628Z</updated>
+    <generator>osmosfeed 1.12.0</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[v1.12.0]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.0</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.0"/>
+        <updated>2022-01-10T05:25:18.000Z</updated>
+        <summary type="html"><![CDATA[New: When one of the sources download fails, fall back to cache and continue rest of the build.
+Chore: Dependency updates
+Added docs for Netlify deployment
+Fixed #71 #69 #65
+Thank you: @sokomin, @molakirlee, @philippnagel, @tianheg]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[K8S 生态周报| 2021 回顾和 2022 展望]]></title>
         <id>https://moelove.info/2022/01/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-2021-%E5%9B%9E%E9%A1%BE%E5%92%8C-2022-%E5%B1%95%E6%9C%9B/</id>
