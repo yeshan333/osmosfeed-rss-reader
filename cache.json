@@ -29,15 +29,6 @@
           "publishedOn": "2022-01-01T12:55:00.000Z",
           "wordCount": 397,
           "title": "2021 | 肆意随心"
-        },
-        {
-          "id": "https://yeshan333.github.io/2021/12/26/git-lfs-and-thin-repo/",
-          "author": null,
-          "description": "熟悉 Git 的小伙伴应该都知道随着 Git 仓库维护的时间越来越久，追踪的文件越来越多，git 存储的 objects 数量会极其庞大，每次从远程仓库 git clone 的时候都会墨迹很久。如果我们不小心 git add 了一个体积很大的文件，且 git push 到了远程仓库，那么我们 git clone 的时候也会很慢。\n看一下 GitHub 上的 microsoft/vscode 仓库，都有 九万多个 commit 了，可想而知 objects 的数量应该很恐怖，尝试 clone 一下（一百多万个 objects）：",
-          "link": "https://yeshan333.github.io/2021/12/26/git-lfs-and-thin-repo/",
-          "publishedOn": "2021-12-26T16:26:23.000Z",
-          "wordCount": 745,
-          "title": "Git 仓库瘦身与 LFS 大文件存储"
         }
       ]
     },
@@ -100,15 +91,6 @@
           "publishedOn": "2021-12-28T14:12:37.000Z",
           "wordCount": 1088,
           "title": "彻底搞懂 Kubernetes 中的 Events"
-        },
-        {
-          "id": "https://moelove.info/2021/12/26/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E8%A7%A3%E5%86%B3%E4%BA%86%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9A%84%E9%97%AE%E9%A2%98/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nTrivy v0.22.0 正式发布\nTrivy 是一款轻量级的漏洞扫描工具，支持包括容器镜像，文件系统，IaC 配置文件等。在我之前的 『K8s生态周报』文章中已经介绍过多次，此处就不再展开了。我们一起来看看这个版本中有哪些值得关注的变更。\n新增了一个 --offline-scan 的选项，在对 pom.xml 和 JAR 文件进行扫描的时候，可以通过同时指定 --skip-update 和 --offline-scan 参数来避免 Trivy 去发起更新漏洞库的请求。在离线环境或者网络不好的场景下会比较有用；\n优化了内存的使用，在之前版本的逻辑中，如果对于大文件也会直接进行读取，有可能会造成 OOM 。本次修正了该问题，加入了一定的缓存。如果你正在使用 Trivy ，我建议你进行更新；\n再对 rpm 包扫描的时候， 支持了 NDB 格式 ， 对此格式感兴趣的小伙伴可以去看看 rpm 项目的发版说明。\n你可以直接去它的 Release 页面下载最新的二进制，也可以直接使用其容器镜像。\n(MoeLove) ➜ docker pull aquasec/trivy:0.22.0\n\n\n对于此版本的其他变更，可参考其 ReleaseNote\nHelm v3.7.2 发布\nHelm 最新一个大版本是 v3.7.0，但如果你去关注这个项目实际的变更，你会发现即使是大版本更新，也没有携带特别值得有价值的内容。反倒是这个小版本中还带来了一些值得注意的内容：\n修复了一个 Helm upgrade 时，内存泄漏的问题，感兴趣的小伙伴可以去围观下 https://github.com/helm/helm/issues/10439\n至于之前版本中的变更，感兴趣的小伙伴可以自行去…",
-          "link": "https://moelove.info/2021/12/26/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E8%A7%A3%E5%86%B3%E4%BA%86%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9A%84%E9%97%AE%E9%A2%98/",
-          "publishedOn": "2021-12-26T15:57:25.000Z",
-          "wordCount": 298,
-          "title": "K8S 生态周报| Helm 新版本发布，解决了内存泄漏的问题"
         }
       ]
     },
