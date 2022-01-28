@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-01-27T00:24:58.900Z</id>
+    <id>urn:2022-01-28T00:24:20.786Z</id>
     <title>osmos::feed</title>
-    <updated>2022-01-27T00:24:58.900Z</updated>
+    <updated>2022-01-28T00:24:20.786Z</updated>
     <generator>osmosfeed 1.12.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -184,33 +184,6 @@ Server{3,4,5}：当前都使用新的集群配置，可能选出server3为集群
 远程工作的那些事
 再就是来聊聊我现在的工作，前面提到了，我现在是在 API7.AI 远程全职做开源。
 熟悉我的小伙伴可能知道，我一直都在参与开源项目和…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[彻底搞懂 Kubernetes 中的 Events]]></title>
-        <id>https://moelove.info/2021/12/28/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82-Kubernetes-%E4%B8%AD%E7%9A%84-Events/</id>
-        <link href="https://moelove.info/2021/12/28/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82-Kubernetes-%E4%B8%AD%E7%9A%84-Events/"/>
-        <updated>2021-12-28T14:12:37.000Z</updated>
-        <summary type="html"><![CDATA[大家好，我是张晋涛。
-之前我写了一篇《更优雅的 Kubernetes 集群事件度量方案》，利用 Jaeger 利用 tracing 的方式来采集 Kubernetes 集群中的 events 并进行展示。最终效果如下：
-
-写那篇文章的时候，立了个 flag 要详细介绍下其中的原理，鸽了很久，现在年底了，也该发出来了。
-Eents 概览
-我们先来做个简单的示例，来看看 Kubernetes 集群中的 events 是什么。
-创建一个新的名叫 moelove 的 namespace ，然后在其中创建一个叫做 redis 的 deployment。接下来查看这个 namespace 中的所有 events。
-(MoeLove) ➜ kubectl create ns moelove
-namespace/moelove created
-(MoeLove) ➜ kubectl -n moelove create deployment redis --image=ghcr.io/moelove/redis:alpine
-deployment.apps/redis created
-(MoeLove) ➜ kubectl -n moelove get deploy
-NAME READY UP-TO-DATE AVAILABLE AGE
-redis 1/1 1 1 11s
-(MoeLove) ➜ kubectl -n moelove get events
-LAST SEEN TYPE REASON OBJECT MESSAGE
-21s Normal Scheduled pod/redis-687967dbc5-27vmr Successfully assigned moelove/redis-687967dbc5-27vmr to kind-worker3
-21s Normal Pullin…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>

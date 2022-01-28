@@ -43,7 +43,7 @@
           "description": "这篇文章是《HTTP API 认证授权术》的姊妹篇，在那篇文章中，主要介绍了 HTTP API 认证和授权技术中用到的 HTTP Basic, Digest A...\n Read More  Read More\n网络数字身份认证术 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/21708.html",
           "publishedOn": "2022-01-02T08:38:13.000Z",
-          "wordCount": 967,
+          "wordCount": 1065,
           "title": "网络数字身份认证术"
         }
       ]
@@ -82,15 +82,6 @@
           "publishedOn": "2021-12-30T13:39:12.000Z",
           "wordCount": 194,
           "title": "6 个月内做了 15 场公开技术分享，我的 2021 是这样过的"
-        },
-        {
-          "id": "https://moelove.info/2021/12/28/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82-Kubernetes-%E4%B8%AD%E7%9A%84-Events/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "大家好，我是张晋涛。\n之前我写了一篇《更优雅的 Kubernetes 集群事件度量方案》，利用 Jaeger 利用 tracing 的方式来采集 Kubernetes 集群中的 events 并进行展示。最终效果如下：\n\n写那篇文章的时候，立了个 flag 要详细介绍下其中的原理，鸽了很久，现在年底了，也该发出来了。\nEents 概览\n我们先来做个简单的示例，来看看 Kubernetes 集群中的 events 是什么。\n创建一个新的名叫 moelove 的 namespace ，然后在其中创建一个叫做 redis 的 deployment。接下来查看这个 namespace 中的所有 events。\n(MoeLove) ➜ kubectl create ns moelove\nnamespace/moelove created\n(MoeLove) ➜ kubectl -n moelove create deployment redis --image=ghcr.io/moelove/redis:alpine\ndeployment.apps/redis created\n(MoeLove) ➜ kubectl -n moelove get deploy\nNAME READY UP-TO-DATE AVAILABLE AGE\nredis 1/1 1 1 11s\n(MoeLove) ➜ kubectl -n moelove get events\nLAST SEEN TYPE REASON OBJECT MESSAGE\n21s Normal Scheduled pod/redis-687967dbc5-27vmr Successfully assigned moelove/redis-687967dbc5-27vmr to kind-worker3\n21s Normal Pullin…",
-          "link": "https://moelove.info/2021/12/28/%E5%BD%BB%E5%BA%95%E6%90%9E%E6%87%82-Kubernetes-%E4%B8%AD%E7%9A%84-Events/",
-          "publishedOn": "2021-12-28T14:12:37.000Z",
-          "wordCount": 1088,
-          "title": "彻底搞懂 Kubernetes 中的 Events"
         }
       ]
     },
