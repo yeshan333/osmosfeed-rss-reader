@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-01-31T00:24:52.067Z</id>
+    <id>urn:2022-02-01T00:25:37.853Z</id>
     <title>osmos::feed</title>
-    <updated>2022-01-31T00:24:52.067Z</updated>
+    <updated>2022-02-01T00:25:37.853Z</updated>
     <generator>osmosfeed 1.12.0</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[状态机的一点儿事（fsm-smr-dfsm）]]></title>
+        <id>https://yeshan333.github.io/2022/01/31/fsm-smr-dfsm/</id>
+        <link href="https://yeshan333.github.io/2022/01/31/fsm-smr-dfsm/"/>
+        <updated>2022-01-31T17:32:51.000Z</updated>
+        <summary type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"]]></summary>
+        <author>
+            <name>ShanSan</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[周刊（第3期）：一个前游戏开发者眼中的游戏后端技术]]></title>
         <id>https://www.codedump.info/post/20220129-weekly-3/</id>
@@ -132,31 +142,6 @@ node 0 free: 9769 MB
 node…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[网络数字身份认证术]]></title>
-        <id>https://coolshell.cn/?p=21708</id>
-        <link href="https://coolshell.cn/articles/21708.html"/>
-        <updated>2022-01-02T08:38:13.000Z</updated>
-        <summary type="html"><![CDATA[这篇文章是《HTTP API 认证授权术》的姊妹篇，在那篇文章中，主要介绍了 HTTP API 认证和授权技术中用到的 HTTP Basic, Digest A...
- Read More  Read More
-网络数字身份认证术 first appeared on 酷 壳 - CoolShell.]]></summary>
-        <author>
-            <name>陈皓</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2021 | 肆意随心]]></title>
-        <id>https://yeshan333.github.io/2022/01/01/2021-annual-reviewed/</id>
-        <link href="https://yeshan333.github.io/2022/01/01/2021-annual-reviewed/"/>
-        <updated>2022-01-01T12:55:00.000Z</updated>
-        <summary type="html"><![CDATA[Yeah
-“兜兜转转”又一年了，又到了该水年度 Review 的时候啦✅❇️。
-算下来，博客三年了，准备开启新的三年了。这篇总结也算是第三篇总结了，3 - 可以说是我很喜欢的数字，挺多网名（ShanSan、yeshan333），还有博客域名（shansan.top、shan333.cn、…）是和“三”有关的（and so on），也算是“谐音梗”啦😎？
-回头看看之前写的几篇总结，还挺有意思的。21 年似乎并没有太多那么刻意去做的事，想到了就去试试了。这一次，不需要那么的有条理性，随手一记。]]></summary>
-        <author>
-            <name>ShanSan</name>
         </author>
     </entry>
 </feed>
