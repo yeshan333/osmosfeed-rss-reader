@@ -189,46 +189,9 @@ Thank you: @sokomin, @molakirlee, @philippnagel, @tianheg</span>
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2022-01-06">2022-01-06</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://moelove.info/">MoeLove</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">K8S 生态周报| 2021 回顾和 2022 展望</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2022/01/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-2021-%E5%9B%9E%E9%A1%BE%E5%92%8C-2022-%E5%B1%95%E6%9C%9B/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
-大家好，我是张晋涛。
-2021 年已经结束了，我们来对 Kubernetes 及相关生态做个回顾和总结。
-Kubernetes 的 2021
-从 2021 年的 4 月份开始， Kubernetes 的发版节奏由原先的每 3 个月发布一个版本，修改成了每 4 个月发布一个版本。所以在 2021 年，Kubernetes 一共发布了 3 个大版本。包括 v1.21、v1.22 和 v1.23 。
-从整体的功能上而言，主要侧重在以下的几个方面。
-资源利用
-内存管理器（kubelet）
-在 Kubernetes v1.21 中在 kubelet 组件生态中新增了一个 内存管理器 ，在 Linux 系统中，为需要保证 QoS 的 Pod 在多 NUMA 节点保障内存和大内存页分配。这个特性非常有用，尤其是当数据库类或者使用 DPDK 进行高性能数据包处理的应用要部署到 Kubernetes 中时，内存对其性能影响至关重要。
-这里稍微聊点和 NUMA 相关的内容。简单来说就是在多 NUMA 结构下，为了保证效率，所以会按内存和 CPU 的相对距离来按 node 定义是否为 local memory 或者说本地内存，同时由于实际位置不同，所以就可能会产生内存分配不均匀的情况了。比如，我们可以使用 numactl 管理工具查看下当前机器上的情况：
-[tao@moelove ~]# numactl -H
-available: 2 nodes (0-1)
-node 0 cpus: 0 1 2 3 4 5 6 7 8 9 20 21 22 23 24 25 26 27 28 29
-node 0 size: 65186 MB
-node 0 free: 9769 MB
-node…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2022-02-04T00:24:35.486Z">2022-02-04T00:24:35.486Z</time>
+    <time id="build-timestamp" datetime="2022-02-05T00:20:46.529Z">2022-02-05T00:20:46.529Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.12.0</a></span>
   </footer>
   <script src="index.js"></script>
