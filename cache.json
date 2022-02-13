@@ -4,7 +4,17 @@
       "title": "Release notes from osmosfeed",
       "feedUrl": "https://github.com/osmoscraft/osmosfeed/releases.atom",
       "siteUrl": "https://github.com/osmoscraft/osmosfeed/releases",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1",
+          "author": null,
+          "description": "Fixed: Future articles appeared in the feed\nFxied: Security vulnerability from axios\nThank you: @naari3",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1",
+          "publishedOn": "2022-02-12T17:46:42.000Z",
+          "wordCount": 271,
+          "title": "v1.12.1"
+        }
+      ]
     },
     {
       "title": "ShanSan",
@@ -26,7 +36,17 @@
       "title": "酷 壳 – CoolShell",
       "feedUrl": "https://coolshell.cn/feed",
       "siteUrl": "https://coolshell.cn",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://coolshell.cn/?p=22157",
+          "author": "陈皓",
+          "description": "今天看到微博上有一个热点事件， 是一个关于某公司做的一个监控员工离职倾向的软件，从截图中可以看到员工访问招聘网站的次数，还有投递的简历以及搜索的关建词等等信息，...\n Read More  Read More\n谈谈公司对员工的监控 first appeared on 酷 壳 - CoolShell.",
+          "link": "https://coolshell.cn/articles/22157.html",
+          "publishedOn": "2022-02-12T07:50:06.000Z",
+          "wordCount": 607,
+          "title": "谈谈公司对员工的监控"
+        }
+      ]
     },
     {
       "title": "面向信仰编程",
@@ -96,5 +116,5 @@
       ]
     }
   ],
-  "cliVersion": "1.12.0"
+  "cliVersion": "1.12.1"
 }
