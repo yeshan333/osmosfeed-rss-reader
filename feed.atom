@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-02-13T00:28:49.543Z</id>
+    <id>urn:2022-02-14T00:26:01.433Z</id>
     <title>osmos::feed</title>
-    <updated>2022-02-13T00:28:49.543Z</updated>
-    <generator>osmosfeed 1.12.1</generator>
+    <updated>2022-02-14T00:26:01.433Z</updated>
+    <generator>osmosfeed 1.13.0</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[v1.13.0]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0"/>
+        <updated>2022-02-13T05:05:17.000Z</updated>
+        <summary type="html"><![CDATA[New: Thumbnail image display for each article
+New: Improved color, spacing, and typography for easier reading
+New: Click the date to toggle all accordions on that day. Ctrl + Click to toggle all accordions on the entire site.
+Changed: All sections are expanded by default
+Changed: Switched to vitest for easier testing
+Fixed: Long string (e.g. URL) caused horizontal overflow
+Thank you: @naari3, @tianheg]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[“一把梭：REST API 全用 POST ”]]></title>
+        <id>https://coolshell.cn/?p=22173</id>
+        <link href="https://coolshell.cn/articles/22173.html"/>
+        <updated>2022-02-13T04:28:47.000Z</updated>
+        <summary type="html"><![CDATA[写这篇文章的原因主要还是因为V2EX上的这个贴子，这个贴子中说—— “对接同事的接口，他定义的所有接口都是 post 请求，理由是 https 用 post 更...
+ Read More  Read More
+“一把梭：REST API 全用 POST ” first appeared on 酷 壳 - CoolShell.]]></summary>
+        <author>
+            <name>陈皓</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.12.1]]></title>
         <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1</id>
@@ -27,6 +55,31 @@ Thank you: @naari3]]></summary>
 谈谈公司对员工的监控 first appeared on 酷 壳 - CoolShell.]]></summary>
         <author>
             <name>陈皓</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[周刊（第5期）：从存储模型聊一聊时序数据库的应用场景]]></title>
+        <id>https://www.codedump.info/post/20220211-weekly-5/</id>
+        <link href="https://www.codedump.info/post/20220211-weekly-5/"/>
+        <updated>2022-02-11T14:27:57.000Z</updated>
+        <summary type="html"><![CDATA[引言：本期介绍时序数据库的存储模型，只有理解了时序数据的存储模型，才能更好的了解时序数据库的优缺点以及其适用场景。
+从存储模型聊一聊时序数据库的应用场景
+想写本文，是因为看到了知乎上的一篇文章：投资数据库领域：2021年总结（NoSQL、图、时序） - 知乎，里面谈到了时序数据库：
+但缺陷是实际的市场空间较小。跟通用型数据库，尤其是OLAP数据库相比，时序数据库最大的差异点在于对于时间维度建立了独特的索引与优化，而其他所谓schemaless等特性在OLAP数据库上都能做到，不存在技术障碍。这也就是为什么其实在公司做时序场景的数据库选型的时候会直接将时序数据库与一些OLAP数据库（比如ClickHouse）做比较。如果要把时序数据库往更宽的场景发展，那就是想好如何与那么多的通用型数据库做竞争了。
+由于之前有过短暂一段时间的时序数据库从业经历，所以想从我的理解聊聊时序数据库的应用场景。
+要了解应用场景，需要首先对时序数据库的存储模型有个大概的了解，在下文中我尽量不涉及到太艰深的技术术语来描述我的理解。由于我从业时序数据库的时间并不长，所以有可能理解会有偏差。
+何谓“时序数据（time-series data）”？就我个人粗浅的理解，就是任何一定会带上时间戳（timestamp）维度的数据。日常生活里，在微博、微信等社交媒体的发现就可以理解时序数据，因为它们肯定都有一个发言时间，所以有时候会把个人看到的微博等称为“时间线（timeline）”。对应到工业领域，比如一个电表每小时上报的用电量也是时序数据，比如服务器监控时每隔15分钟采集的性能数据也是时序数据。
+由于时序数据天然有“时间“这个维度，为了更好的优化其写入性能，通常专门存储时序数据的存储引擎会按照时间分块、按列来存储数据，如下图：
+
+
+
+上图中，演示用的数据格式有三列：
+时间戳。
+A指标。
+B指标。
+通常，时序数据库存…]]></summary>
+        <author>
+            <name>codedump的网络日志 on codedump的网络日志</name>
         </author>
     </entry>
     <entry>
