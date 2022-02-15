@@ -1,144 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>osmos::feed</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="robots" content="noindex, nofollow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="alternate" type="application/rss+xml" title="osmos::feed" href="feed.atom" />
-  <link href="index.css" rel="stylesheet" />
-  <!-- %before-head-end.html% -->
-</head>
+  <head>
+    <title>osmos::feed</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="osmos::feed" href="feed.atom" />
+    <link href="index.css?v1.14.4" rel="stylesheet" />
+    <!-- %before-head-end.html% -->
+  </head>
 
-<body>
-<!-- %after-body-begin.html% -->
-  <section class="daily-content js-toggle-accordions-scope">
-    <h2 class="daily-heading">
-      <button class="daily-heading__toggle" data-action="toggle-accordions"><time datetime="2022-02-13">2022-02-13</time></button>
-    </h2>
-    <ul class="sources">
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://coolshell.cn">酷 壳 – CoolShell</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>“一把梭：REST API 全用 POST ”</span>
-                    <span class="article-reading-time">4 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://coolshell.cn/articles/22173.html">
-                  <div class="article-summary-box-inner media-object">
-                    <img src="https://coolshell.cn/wp-content/uploads/2022/02/http_method.png" loading="lazy" class="media-object__media article-image"/>
-                    <span class="media-object__text">写这篇文章的原因主要还是因为V2EX上的这个贴子，这个贴子中说—— “对接同事的接口，他定义的所有接口都是 post 请求，理由是 https 用 post 更...
- Read More  Read More
-“一把梭：REST API 全用 POST ” first appeared on 酷 壳 - CoolShell.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://github.com/osmoscraft/osmosfeed/releases">Release notes from osmosfeed</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>v1.13.0</span>
-                    <span class="article-reading-time">1 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0">
-                  <div class="article-summary-box-inner media-object">
-                    <img src="https://opengraph.githubassets.com/fc77c41c87b2cd4d8990f4c940e0ddf681667b6b6e4363b0f609861b7ae5b6d8/osmoscraft/osmosfeed/releases/tag/v1.13.0" loading="lazy" class="media-object__media article-image"/>
-                    <span class="media-object__text">New: Thumbnail image display for each article
+  <body>
+    <!-- %after-body-begin.html% -->
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-14 datetime="2022-02-14T06:58:28.000Z">2022-02-14</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-14 datetime="2022-02-14T06:58:28.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Release notes from osmosfeed</button>
+                  <a class="source-heading__link" href="https://github.com/osmoscraft/osmosfeed/releases">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.4"
+                        open
+                      >
+                        <summary class="article-expander__title">v1.14.4</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.4">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://opengraph.githubassets.com/9a7043530dac30c2f389b7a285822cfe3c2b54efc7d2cdc63a0735d3cc5095a2/osmoscraft/osmosfeed/releases/tag/v1.14.4" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Fixed: Several style issues</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.3"
+                        open
+                      >
+                        <summary class="article-expander__title">v1.14.3</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.3">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://repository-images.githubusercontent.com/312859305/30a63d00-a162-11eb-8a1d-a3167673e96a" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>style tweak</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.2"
+                        open
+                      >
+                        <summary class="article-expander__title">v1.14.2</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.2">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://opengraph.githubassets.com/3d1aa7f7484f74c258c25be470129b65acc359f03644040243b05803daae68aa/osmoscraft/osmosfeed/releases/tag/v1.14.2" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>New: Adjust article grouping based on timezone. You need to add timezone in osmosfeed.yml for accurate grouping. See details in documentation.
+New: Card title now toggles card content
+New: all toggles on the UI are persisted with local storage. You can use it to track read/unread status within a single browser.
+New: Build timestamp now links to the GitHub Action run
+Changed: Sources are sorted based on publish time rather than alphabetical order
+Changed: Style adjusted for easier reading
+Fixed: Horizontal overflow on Safari
+Fixed: HTML syntax error in default template</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.1"
+                        open
+                      >
+                        <summary class="article-expander__title">v1.14.1</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.1">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://repository-images.githubusercontent.com/312859305/30a63d00-a162-11eb-8a1d-a3167673e96a" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>git typo in gh run url</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.0"
+                        open
+                      >
+                        <summary class="article-expander__title">v1.14.0: V1.14.0 (#79)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.0">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://repository-images.githubusercontent.com/312859305/30a63d00-a162-11eb-8a1d-a3167673e96a" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>New: Adjust article grouping based on timezone. You need to add timezone in osmosfeed.yml for accurate grouping. See details in documentation.
+New: Card title now toggles card content
+New: all toggles on the UI are persisted with local storage. You can use it to track read/unread status within a single browser.
+New: Build timestamp now links to the GitHub Action run
+Changed: Sources are sorted based on publish time rather than alphabetical order
+Changed: Style adjusted for easier reading
+Fixed: Horizontal overflow on Safari
+Fixed: HTML syntax error in default template</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-13 datetime="2022-02-13T05:05:17.000Z">2022-02-13</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-13 datetime="2022-02-13T05:05:17.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Release notes from osmosfeed</button>
+                  <a class="source-heading__link" href="https://github.com/osmoscraft/osmosfeed/releases">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0"
+                        open
+                      >
+                        <summary class="article-expander__title">v1.13.0</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://opengraph.githubassets.com/fc77c41c87b2cd4d8990f4c940e0ddf681667b6b6e4363b0f609861b7ae5b6d8/osmoscraft/osmosfeed/releases/tag/v1.13.0" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>New: Thumbnail image display for each article
 New: Improved color, spacing, and typography for easier reading
 New: Click the date to toggle all accordions on that day. Ctrl + Click to toggle all accordions on the entire site.
 Changed: All sections are expanded by default
 Changed: Switched to vitest for easier testing
 Fixed: Long string (e.g. URL) caused horizontal overflow
 Thank you: @naari3, @tianheg</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content js-toggle-accordions-scope">
-    <h2 class="daily-heading">
-      <button class="daily-heading__toggle" data-action="toggle-accordions"><time datetime="2022-02-12">2022-02-12</time></button>
-    </h2>
-    <ul class="sources">
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://coolshell.cn">酷 壳 – CoolShell</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>谈谈公司对员工的监控</span>
-                    <span class="article-reading-time">2 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://coolshell.cn/articles/22157.html">
-                  <div class="article-summary-box-inner media-object">
-                    <img src="https://coolshell.cn/wp-content/uploads/2022/02/monitoring.jpeg" loading="lazy" class="media-object__media article-image"/>
-                    <span class="media-object__text">今天看到微博上有一个热点事件， 是一个关于某公司做的一个监控员工离职倾向的软件，从截图中可以看到员工访问招聘网站的次数，还有投递的简历以及搜索的关建词等等信息，...
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >酷 壳 – CoolShell</button>
+                  <a class="source-heading__link" href="https://coolshell.cn">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://coolshell.cn/?p&#x3D;22173"
+                        open
+                      >
+                        <summary class="article-expander__title">“一把梭：REST API 全用 POST ”</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://coolshell.cn/articles/22173.html">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://coolshell.cn/wp-content/uploads/2022/02/http_method.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>写这篇文章的原因主要还是因为V2EX上的这个贴子，这个贴子中说—— “对接同事的接口，他定义的所有接口都是 post 请求，理由是 https 用 post 更...
  Read More  Read More
-谈谈公司对员工的监控 first appeared on 酷 壳 - CoolShell.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://github.com/osmoscraft/osmosfeed/releases">Release notes from osmosfeed</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>v1.12.1</span>
-                    <span class="article-reading-time">1 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1">
-                  <div class="article-summary-box-inner media-object">
-                    <img src="https://opengraph.githubassets.com/d69790a31f94b1adf743c58bae86b9754de6969cceb83f11b8fbeb28ab1ad632/osmoscraft/osmosfeed/releases/tag/v1.12.1" loading="lazy" class="media-object__media article-image"/>
-                    <span class="media-object__text">Fixed: Future articles appeared in the feed
+“一把梭：REST API 全用 POST ” first appeared on 酷 壳 - CoolShell.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;4
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-12 datetime="2022-02-12T17:46:42.000Z">2022-02-12</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-12 datetime="2022-02-12T17:46:42.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Release notes from osmosfeed</button>
+                  <a class="source-heading__link" href="https://github.com/osmoscraft/osmosfeed/releases">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1"
+                        open
+                      >
+                        <summary class="article-expander__title">v1.12.1</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://opengraph.githubassets.com/d69790a31f94b1adf743c58bae86b9754de6969cceb83f11b8fbeb28ab1ad632/osmoscraft/osmosfeed/releases/tag/v1.12.1" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Fixed: Future articles appeared in the feed
 Fxied: Security vulnerability from axios
 Thank you: @naari3</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content js-toggle-accordions-scope">
-    <h2 class="daily-heading">
-      <button class="daily-heading__toggle" data-action="toggle-accordions"><time datetime="2022-02-11">2022-02-11</time></button>
-    </h2>
-    <ul class="sources">
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.codedump.info/">codedump的网络日志 on codedump的网络日志</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>周刊（第5期）：从存储模型聊一聊时序数据库的应用场景</span>
-                    <span class="article-reading-time">1 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220211-weekly-5/">
-                  <div class="article-summary-box-inner media-object">
-                    <span class="media-object__text">引言：本期介绍时序数据库的存储模型，只有理解了时序数据的存储模型，才能更好的了解时序数据库的优缺点以及其适用场景。
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >酷 壳 – CoolShell</button>
+                  <a class="source-heading__link" href="https://coolshell.cn">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://coolshell.cn/?p&#x3D;22157"
+                        open
+                      >
+                        <summary class="article-expander__title">谈谈公司对员工的监控</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://coolshell.cn/articles/22157.html">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://coolshell.cn/wp-content/uploads/2022/02/monitoring.jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>今天看到微博上有一个热点事件， 是一个关于某公司做的一个监控员工离职倾向的软件，从截图中可以看到员工访问招聘网站的次数，还有投递的简历以及搜索的关建词等等信息，...
+ Read More  Read More
+谈谈公司对员工的监控 first appeared on 酷 壳 - CoolShell.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;2
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-11 datetime="2022-02-11T14:27:57.000Z">2022-02-11</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-11 datetime="2022-02-11T14:27:57.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >codedump的网络日志 on codedump的网络日志</button>
+                  <a class="source-heading__link" href="https://www.codedump.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.codedump.info/post/20220211-weekly-5/"
+                        open
+                      >
+                        <summary class="article-expander__title">周刊（第5期）：从存储模型聊一聊时序数据库的应用场景</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220211-weekly-5/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>引言：本期介绍时序数据库的存储模型，只有理解了时序数据的存储模型，才能更好的了解时序数据库的优缺点以及其适用场景。
 从存储模型聊一聊时序数据库的应用场景
 想写本文，是因为看到了知乎上的一篇文章：投资数据库领域：2021年总结（NoSQL、图、时序） - 知乎，里面谈到了时序数据库：
 但缺陷是实际的市场空间较小。跟通用型数据库，尤其是OLAP数据库相比，时序数据库最大的差异点在于对于时间维度建立了独特的索引与优化，而其他所谓schemaless等特性在OLAP数据库上都能做到，不存在技术障碍。这也就是为什么其实在公司做时序场景的数据库选型的时候会直接将时序数据库与一些OLAP数据库（比如ClickHouse）做比较。如果要把时序数据库往更宽的场景发展，那就是想好如何与那么多的通用型数据库做竞争了。
@@ -154,32 +383,53 @@ Thank you: @naari3</span>
 A指标。
 B指标。
 通常，时序数据库存…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content js-toggle-accordions-scope">
-    <h2 class="daily-heading">
-      <button class="daily-heading__toggle" data-action="toggle-accordions"><time datetime="2022-02-04">2022-02-04</time></button>
-    </h2>
-    <ul class="sources">
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.codedump.info/">codedump的网络日志 on codedump的网络日志</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>周刊（第4期）：为什么我还在看中国足球</span>
-                    <span class="article-reading-time">1 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220204-weekly-4/">
-                  <div class="article-summary-box-inner media-object">
-                    <span class="media-object__text">引言：虎年大年初一的晚上，一场脆败发生在世界杯亚洲区预选赛中国客场对越南队的比赛上。如今，“你居然还在看中国男足”，仿佛已成一句骂人的质问。本期从我角度来谈谈，我眼中的中国足球，以及说说我为什么还一直在关注这个领域。
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-04 datetime="2022-02-04T13:55:23.000Z">2022-02-04</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-04 datetime="2022-02-04T13:55:23.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >codedump的网络日志 on codedump的网络日志</button>
+                  <a class="source-heading__link" href="https://www.codedump.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.codedump.info/post/20220204-weekly-4/"
+                        open
+                      >
+                        <summary class="article-expander__title">周刊（第4期）：为什么我还在看中国足球</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220204-weekly-4/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>引言：虎年大年初一的晚上，一场脆败发生在世界杯亚洲区预选赛中国客场对越南队的比赛上。如今，“你居然还在看中国男足”，仿佛已成一句骂人的质问。本期从我角度来谈谈，我眼中的中国足球，以及说说我为什么还一直在关注这个领域。
 我为什么还在看中国足球
 我从94年开始看球，中国足球绝大部分的重要比赛都看了：94年亚运会决赛输给乌兹别克斯坦、97年大连金州被伊朗逆转、2002年世界杯出线…太多了，数不过来，算是从我开始看球之后就一直有关注中国足球。
 在看国足比赛二十多年之后，慢慢地从一个参与者、评论者的角色，切换到了近似于第三方视角的观察者角色。切换到这个视角之后，让我能从里面各种情绪里抽离出来，当然高兴的时候也会像个普通球迷那样欢乐，比如2017年世界杯预选赛击败韩国这样的比赛。
@@ -189,58 +439,100 @@ B指标。
 在商业化、职业化很好的体育项目，比如足球、篮球、网球等等领域，我们的成绩就不这么好了，李娜、姚明、刘翔是少数在这些领域拿得出手的世界级运动员。（后面会专门谈谈女足）
 一言以蔽之：举国体制从目前的成绩来看，并不适合职业化、商业化很好的体育项目。
 “足球是体育工业化的集大成者”（见(为什么整个中国都知道中国足球的问题，为什么还是没有办法解决？ - …</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content js-toggle-accordions-scope">
-    <h2 class="daily-heading">
-      <button class="daily-heading__toggle" data-action="toggle-accordions"><time datetime="2022-01-31">2022-01-31</time></button>
-    </h2>
-    <ul class="sources">
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://yeshan333.github.io/">ShanSan</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>状态机的一点儿事（fsm-smr-dfsm）</span>
-                    <span class="article-reading-time">1 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://yeshan333.github.io/2022/01/31/fsm-smr-dfsm/">
-                  <div class="article-summary-box-inner media-object">
-                    <span class="media-object__text">&lt;script src&#x3D;&quot;/assets/js/APlayer.min.js&quot;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content js-toggle-accordions-scope">
-    <h2 class="daily-heading">
-      <button class="daily-heading__toggle" data-action="toggle-accordions"><time datetime="2022-01-29">2022-01-29</time></button>
-    </h2>
-    <ul class="sources">
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.codedump.info/">codedump的网络日志 on codedump的网络日志</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>周刊（第3期）：一个前游戏开发者眼中的游戏后端技术</span>
-                    <span class="article-reading-time">1 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220129-weekly-3/">
-                  <div class="article-summary-box-inner media-object">
-                    <span class="media-object__text">引言：在我之前的工作里，因为各种原因，断续在游戏行业里有过总共大概四年左右的从业时间，今天想从我的视角聊聊游戏行业后端开发相关的技术，供那些想在这个行业从业，尤其是后端开发从业人员一些参考。
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-01-31 datetime="2022-01-31T17:32:51.000Z">2022-01-31</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-01-31 datetime="2022-01-31T17:32:51.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >ShanSan</button>
+                  <a class="source-heading__link" href="https://yeshan333.github.io/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://yeshan333.github.io/2022/01/31/fsm-smr-dfsm/"
+                        open
+                      >
+                        <summary class="article-expander__title">状态机的一点儿事（fsm-smr-dfsm）</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://yeshan333.github.io/2022/01/31/fsm-smr-dfsm/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>&lt;script src&#x3D;&quot;/assets/js/APlayer.min.js&quot;</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-01-29 datetime="2022-01-29T06:21:20.000Z">2022-01-29</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-01-29 datetime="2022-01-29T06:21:20.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >codedump的网络日志 on codedump的网络日志</button>
+                  <a class="source-heading__link" href="https://www.codedump.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.codedump.info/post/20220129-weekly-3/"
+                        open
+                      >
+                        <summary class="article-expander__title">周刊（第3期）：一个前游戏开发者眼中的游戏后端技术</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220129-weekly-3/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>引言：在我之前的工作里，因为各种原因，断续在游戏行业里有过总共大概四年左右的从业时间，今天想从我的视角聊聊游戏行业后端开发相关的技术，供那些想在这个行业从业，尤其是后端开发从业人员一些参考。
 一个前游戏开发者眼中的游戏后端技术
 由于我从业的方向都是后端开发，所以这里仅谈论游戏开发后端的技术。
 游戏本质是个内容行业，所以游戏开发时相当一部分工作内容，就是不停的更新新的内容出来给玩家消费。这些内容包括但不限于：新的英雄、技能、玩法，等等。
@@ -265,32 +557,53 @@ B指标。
 在图中，将游戏服务器架构分为了两层：
 引擎层：这部分由C++编码，实现了游戏开发中与具体逻辑关系不大、且不太会变更的部分，如网络数据收发、数据库访问，等等。
 脚本层：这部分…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content js-toggle-accordions-scope">
-    <h2 class="daily-heading">
-      <button class="daily-heading__toggle" data-action="toggle-accordions"><time datetime="2022-01-23">2022-01-23</time></button>
-    </h2>
-    <ul class="sources">
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.codedump.info/">codedump的网络日志 on codedump的网络日志</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>周刊（第2期）：从笔记软件谈被体制化</span>
-                    <span class="article-reading-time">1 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220123-weekly-2/">
-                  <div class="article-summary-box-inner media-object">
-                    <span class="media-object__text">从笔记软件谈被体制化
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-01-23 datetime="2022-01-23T07:38:31.000Z">2022-01-23</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-01-23 datetime="2022-01-23T07:38:31.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >codedump的网络日志 on codedump的网络日志</button>
+                  <a class="source-heading__link" href="https://www.codedump.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.codedump.info/post/20220123-weekly-2/"
+                        open
+                      >
+                        <summary class="article-expander__title">周刊（第2期）：从笔记软件谈被体制化</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220123-weekly-2/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>从笔记软件谈被体制化
 前两周，一则收购消息，在偌大的中文互联网上，几乎没有掀起任何的讨论：
 为知笔记并入 ONES，WizNote X 迎来新的征程
 我是为知笔记的老用户了，从 2011 年就开始使用为知笔记，即便是现在不怎么使用的情况下，也已经把 VIP 会员续费到了 2024 年。在我看来，为知笔记是一个气质与众不同的互联网产品：
@@ -314,60 +627,27 @@ Markdown 格式开始流行以后。
 纯文本格式，这意味着用任何文本编辑器就能打开。
 搭配好用的编辑器，能获得”所见即所得“的体验。
 由此，我开始反思之前对笔记本软件的使…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content js-toggle-accordions-scope">
-    <h2 class="daily-heading">
-      <button class="daily-heading__toggle" data-action="toggle-accordions"><time datetime="2022-01-16">2022-01-16</time></button>
-    </h2>
-    <ul class="sources">
-      <li class="source card">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.codedump.info/">codedump的网络日志 on codedump的网络日志</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander" open>
-                <summary class="article-expander__title">
-                    <span>周刊第1期：开刊，数字化生活数据</span>
-                    <span class="article-reading-time">1 min</span>
-                </summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220116-weekly-1/">
-                  <div class="article-summary-box-inner media-object">
-                    <span class="media-object__text">为什么会写周刊
-我为写周刊这个事情思考了小一阵子。
-列举了好几个优点和缺点。比如，优点有能以输出来倒逼自己的输入，缺点有我的积累是否能够足以支撑我每周写一点东西，以及这种有明确时间限制的输出，是否会给我带来心智负担，等等。再比如，以往的博客内容都是很“硬”的技术内容，周刊不可能也不会每周都更新硬技术文章，会不会导致读者群有点分裂。
-思考到最后，我还是决定写周刊。
-从去年开始远程工作，大部分时间都在家里。由于我又很宅，网购也足够的发达，这又让我更宅了。然而，“物理”意义上的活动范围变小，并不意味着“逻辑”上能触达的范围也变小了，实际情况是，由于把通勤时间节省下来，我有更多时间看书、跑步了。所以，我需要一种方式，能输出我看到的一些东西，来与外界发生交流。
-我在微博上看到了这么两句话，也反向让我坚定了这么做的意义。
-（宋一松SYS的微博）
-社交媒体在我看来最大的价值：它是最开放的peer review system
-硅谷王川的微博
-让读书产生好处的最简单办法是，一旦有灵感和想法之后，马上写出来，公开发布在社交媒体上，即使不成熟也没关系。写的过程也是自己深度思考的一个步骤，外人的有价值评论可帮你不断推敲，或给你带来新的线索，积累多了自然会出深刻的洞见。一个人孤立封闭的傻读写笔记，很难迅速提高思考深度。
-周刊于我的意义，就是能定期把自己想到、看到的事情都公开出去，反向的让自己定期整理、输出，这是我突破“物理”界限和人交流的手段之一。内容将会以自己的一些想法、业界的动态、推荐、读书、影视等为准，与我写的其他技术文章相比，不会这么“硬”。
-另外，写周刊还有一个好处，之前有很多想法、念头会散落在各种社交平台这样的新媒体上，实际对整理、汇总、索引等也不好，把念头汇之于文章，用这种更老式的传播方式可以更好得记录下来。
-数字化生活数据
-既然谈到了周刊做为个人对外输出的一个手段，我就想起最近几年一…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
 
-  <footer>
-    <time id="build-timestamp" datetime="2022-02-14T00:26:01.412Z">2022-02-14T00:26:01.412Z</time>
-    <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.13.0</a></span>
-  </footer>
-  <script src="index.js"></script>
-  <!-- %before-body-end.html% -->
-</body>
+    <footer>
+      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/1844261502">
+        <time id="build-timestamp" datetime="2022-02-15T00:27:03.282Z">2022-02-15T00:27:03.282Z</time>
+      </a>
+      <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a>
+    </footer>
+    <script src="index.js?v1.14.4"></script>
+    <!-- %before-body-end.html% -->
+  </body>
 
 </html>

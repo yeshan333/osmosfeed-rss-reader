@@ -6,12 +6,62 @@
       "siteUrl": "https://github.com/osmoscraft/osmosfeed/releases",
       "articles": [
         {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.4",
+          "author": null,
+          "description": "Fixed: Several style issues",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.4",
+          "publishedOn": "2022-02-14T06:58:28.000Z",
+          "wordCount": 258,
+          "title": "v1.14.4",
+          "imageUrl": "https://opengraph.githubassets.com/9a7043530dac30c2f389b7a285822cfe3c2b54efc7d2cdc63a0735d3cc5095a2/osmoscraft/osmosfeed/releases/tag/v1.14.4"
+        },
+        {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.3",
+          "author": null,
+          "description": "style tweak",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.3",
+          "publishedOn": "2022-02-14T06:29:16.000Z",
+          "wordCount": 255,
+          "title": "v1.14.3",
+          "imageUrl": "https://repository-images.githubusercontent.com/312859305/30a63d00-a162-11eb-8a1d-a3167673e96a"
+        },
+        {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.2",
+          "author": null,
+          "description": "New: Adjust article grouping based on timezone. You need to add timezone in osmosfeed.yml for accurate grouping. See details in documentation.\nNew: Card title now toggles card content\nNew: all toggles on the UI are persisted with local storage. You can use it to track read/unread status within a single browser.\nNew: Build timestamp now links to the GitHub Action run\nChanged: Sources are sorted based on publish time rather than alphabetical order\nChanged: Style adjusted for easier reading\nFixed: Horizontal overflow on Safari\nFixed: HTML syntax error in default template",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.2",
+          "publishedOn": "2022-02-14T05:53:33.000Z",
+          "wordCount": 356,
+          "title": "v1.14.2",
+          "imageUrl": "https://opengraph.githubassets.com/3d1aa7f7484f74c258c25be470129b65acc359f03644040243b05803daae68aa/osmoscraft/osmosfeed/releases/tag/v1.14.2"
+        },
+        {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.1",
+          "author": null,
+          "description": "git typo in gh run url",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.1",
+          "publishedOn": "2022-02-14T05:26:23.000Z",
+          "wordCount": 259,
+          "title": "v1.14.1",
+          "imageUrl": "https://repository-images.githubusercontent.com/312859305/30a63d00-a162-11eb-8a1d-a3167673e96a"
+        },
+        {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.0",
+          "author": null,
+          "description": "New: Adjust article grouping based on timezone. You need to add timezone in osmosfeed.yml for accurate grouping. See details in documentation.\nNew: Card title now toggles card content\nNew: all toggles on the UI are persisted with local storage. You can use it to track read/unread status within a single browser.\nNew: Build timestamp now links to the GitHub Action run\nChanged: Sources are sorted based on publish time rather than alphabetical order\nChanged: Style adjusted for easier reading\nFixed: Horizontal overflow on Safari\nFixed: HTML syntax error in default template",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.0",
+          "publishedOn": "2022-02-14T05:13:00.000Z",
+          "wordCount": 399,
+          "title": "v1.14.0: V1.14.0 (#79)",
+          "imageUrl": "https://repository-images.githubusercontent.com/312859305/30a63d00-a162-11eb-8a1d-a3167673e96a"
+        },
+        {
           "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0",
           "author": null,
           "description": "New: Thumbnail image display for each article\nNew: Improved color, spacing, and typography for easier reading\nNew: Click the date to toggle all accordions on that day. Ctrl + Click to toggle all accordions on the entire site.\nChanged: All sections are expanded by default\nChanged: Switched to vitest for easier testing\nFixed: Long string (e.g. URL) caused horizontal overflow\nThank you: @naari3, @tianheg",
           "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0",
           "publishedOn": "2022-02-13T05:05:17.000Z",
-          "wordCount": 342,
+          "wordCount": 340,
           "title": "v1.13.0",
           "imageUrl": "https://opengraph.githubassets.com/fc77c41c87b2cd4d8990f4c940e0ddf681667b6b6e4363b0f609861b7ae5b6d8/osmoscraft/osmosfeed/releases/tag/v1.13.0"
         },
@@ -55,7 +105,7 @@
           "description": "写这篇文章的原因主要还是因为V2EX上的这个贴子，这个贴子中说—— “对接同事的接口，他定义的所有接口都是 post 请求，理由是 https 用 post 更...\n Read More  Read More\n“一把梭：REST API 全用 POST ” first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/22173.html",
           "publishedOn": "2022-02-13T04:28:47.000Z",
-          "wordCount": 1172,
+          "wordCount": 1315,
           "title": "“一把梭：REST API 全用 POST ”",
           "imageUrl": "https://coolshell.cn/wp-content/uploads/2022/02/http_method.png"
         },
@@ -65,7 +115,7 @@
           "description": "今天看到微博上有一个热点事件， 是一个关于某公司做的一个监控员工离职倾向的软件，从截图中可以看到员工访问招聘网站的次数，还有投递的简历以及搜索的关建词等等信息，...\n Read More  Read More\n谈谈公司对员工的监控 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/22157.html",
           "publishedOn": "2022-02-12T07:50:06.000Z",
-          "wordCount": 627,
+          "wordCount": 637,
           "title": "谈谈公司对员工的监控",
           "imageUrl": "https://coolshell.cn/wp-content/uploads/2022/02/monitoring.jpeg"
         }
@@ -139,19 +189,9 @@
           "wordCount": 229,
           "title": "周刊（第2期）：从笔记软件谈被体制化",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.codedump.info/post/20220116-weekly-1/",
-          "author": null,
-          "description": "为什么会写周刊\n我为写周刊这个事情思考了小一阵子。\n列举了好几个优点和缺点。比如，优点有能以输出来倒逼自己的输入，缺点有我的积累是否能够足以支撑我每周写一点东西，以及这种有明确时间限制的输出，是否会给我带来心智负担，等等。再比如，以往的博客内容都是很“硬”的技术内容，周刊不可能也不会每周都更新硬技术文章，会不会导致读者群有点分裂。\n思考到最后，我还是决定写周刊。\n从去年开始远程工作，大部分时间都在家里。由于我又很宅，网购也足够的发达，这又让我更宅了。然而，“物理”意义上的活动范围变小，并不意味着“逻辑”上能触达的范围也变小了，实际情况是，由于把通勤时间节省下来，我有更多时间看书、跑步了。所以，我需要一种方式，能输出我看到的一些东西，来与外界发生交流。\n我在微博上看到了这么两句话，也反向让我坚定了这么做的意义。\n（宋一松SYS的微博）\n社交媒体在我看来最大的价值：它是最开放的peer review system\n硅谷王川的微博\n让读书产生好处的最简单办法是，一旦有灵感和想法之后，马上写出来，公开发布在社交媒体上，即使不成熟也没关系。写的过程也是自己深度思考的一个步骤，外人的有价值评论可帮你不断推敲，或给你带来新的线索，积累多了自然会出深刻的洞见。一个人孤立封闭的傻读写笔记，很难迅速提高思考深度。\n周刊于我的意义，就是能定期把自己想到、看到的事情都公开出去，反向的让自己定期整理、输出，这是我突破“物理”界限和人交流的手段之一。内容将会以自己的一些想法、业界的动态、推荐、读书、影视等为准，与我写的其他技术文章相比，不会这么“硬”。\n另外，写周刊还有一个好处，之前有很多想法、念头会散落在各种社交平台这样的新媒体上，实际对整理、汇总、索引等也不好，把念头汇之于文章，用这种更老式的传播方式可以更好得记录下来。\n数字化生活数据\n既然谈到了周刊做为个人对外输出的一个手段，我就想起最近几年一…",
-          "link": "https://www.codedump.info/post/20220116-weekly-1/",
-          "publishedOn": "2022-01-16T02:00:54.000Z",
-          "wordCount": 281,
-          "title": "周刊第1期：开刊，数字化生活数据",
-          "imageUrl": null
         }
       ]
     }
   ],
-  "cliVersion": "1.13.0"
+  "cliVersion": "1.14.4"
 }

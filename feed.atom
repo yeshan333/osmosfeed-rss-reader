@@ -1,10 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-02-14T00:26:01.433Z</id>
+    <id>urn:2022-02-15T00:27:03.304Z</id>
     <title>osmos::feed</title>
-    <updated>2022-02-14T00:26:01.433Z</updated>
-    <generator>osmosfeed 1.13.0</generator>
+    <updated>2022-02-15T00:27:03.304Z</updated>
+    <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[v1.14.4]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.4</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.4"/>
+        <updated>2022-02-14T06:58:28.000Z</updated>
+        <summary type="html"><![CDATA[Fixed: Several style issues]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v1.14.3]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.3</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.3"/>
+        <updated>2022-02-14T06:29:16.000Z</updated>
+        <summary type="html"><![CDATA[style tweak]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v1.14.2]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.2</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.2"/>
+        <updated>2022-02-14T05:53:33.000Z</updated>
+        <summary type="html"><![CDATA[New: Adjust article grouping based on timezone. You need to add timezone in osmosfeed.yml for accurate grouping. See details in documentation.
+New: Card title now toggles card content
+New: all toggles on the UI are persisted with local storage. You can use it to track read/unread status within a single browser.
+New: Build timestamp now links to the GitHub Action run
+Changed: Sources are sorted based on publish time rather than alphabetical order
+Changed: Style adjusted for easier reading
+Fixed: Horizontal overflow on Safari
+Fixed: HTML syntax error in default template]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v1.14.1]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.1</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.1"/>
+        <updated>2022-02-14T05:26:23.000Z</updated>
+        <summary type="html"><![CDATA[git typo in gh run url]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[v1.14.0: V1.14.0 (#79)]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.0</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.14.0"/>
+        <updated>2022-02-14T05:13:00.000Z</updated>
+        <summary type="html"><![CDATA[New: Adjust article grouping based on timezone. You need to add timezone in osmosfeed.yml for accurate grouping. See details in documentation.
+New: Card title now toggles card content
+New: all toggles on the UI are persisted with local storage. You can use it to track read/unread status within a single browser.
+New: Build timestamp now links to the GitHub Action run
+Changed: Sources are sorted based on publish time rather than alphabetical order
+Changed: Style adjusted for easier reading
+Fixed: Horizontal overflow on Safari
+Fixed: HTML syntax error in default template]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.13.0]]></title>
         <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0</id>
@@ -174,29 +238,6 @@ Markdown 格式开始流行以后。
 纯文本格式，这意味着用任何文本编辑器就能打开。
 搭配好用的编辑器，能获得”所见即所得“的体验。
 由此，我开始反思之前对笔记本软件的使…]]></summary>
-        <author>
-            <name>codedump的网络日志 on codedump的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[周刊第1期：开刊，数字化生活数据]]></title>
-        <id>https://www.codedump.info/post/20220116-weekly-1/</id>
-        <link href="https://www.codedump.info/post/20220116-weekly-1/"/>
-        <updated>2022-01-16T02:00:54.000Z</updated>
-        <summary type="html"><![CDATA[为什么会写周刊
-我为写周刊这个事情思考了小一阵子。
-列举了好几个优点和缺点。比如，优点有能以输出来倒逼自己的输入，缺点有我的积累是否能够足以支撑我每周写一点东西，以及这种有明确时间限制的输出，是否会给我带来心智负担，等等。再比如，以往的博客内容都是很“硬”的技术内容，周刊不可能也不会每周都更新硬技术文章，会不会导致读者群有点分裂。
-思考到最后，我还是决定写周刊。
-从去年开始远程工作，大部分时间都在家里。由于我又很宅，网购也足够的发达，这又让我更宅了。然而，“物理”意义上的活动范围变小，并不意味着“逻辑”上能触达的范围也变小了，实际情况是，由于把通勤时间节省下来，我有更多时间看书、跑步了。所以，我需要一种方式，能输出我看到的一些东西，来与外界发生交流。
-我在微博上看到了这么两句话，也反向让我坚定了这么做的意义。
-（宋一松SYS的微博）
-社交媒体在我看来最大的价值：它是最开放的peer review system
-硅谷王川的微博
-让读书产生好处的最简单办法是，一旦有灵感和想法之后，马上写出来，公开发布在社交媒体上，即使不成熟也没关系。写的过程也是自己深度思考的一个步骤，外人的有价值评论可帮你不断推敲，或给你带来新的线索，积累多了自然会出深刻的洞见。一个人孤立封闭的傻读写笔记，很难迅速提高思考深度。
-周刊于我的意义，就是能定期把自己想到、看到的事情都公开出去，反向的让自己定期整理、输出，这是我突破“物理”界限和人交流的手段之一。内容将会以自己的一些想法、业界的动态、推荐、读书、影视等为准，与我写的其他技术文章相比，不会这么“硬”。
-另外，写周刊还有一个好处，之前有很多想法、念头会散落在各种社交平台这样的新媒体上，实际对整理、汇总、索引等也不好，把念头汇之于文章，用这种更老式的传播方式可以更好得记录下来。
-数字化生活数据
-既然谈到了周刊做为个人对外输出的一个手段，我就想起最近几年一…]]></summary>
         <author>
             <name>codedump的网络日志 on codedump的网络日志</name>
         </author>
