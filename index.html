@@ -22,6 +22,67 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-20 datetime="2022-02-20T02:53:41.000Z">2022-02-20</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-20 datetime="2022-02-20T02:53:41.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >codedump的网络日志 on codedump的网络日志</button>
+                  <a class="source-heading__link" href="https://www.codedump.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.codedump.info/post/20220220-weekly-6/"
+                        open
+                      >
+                        <summary class="article-expander__title">周刊（第6期）：《sqlite 3.36 btree实现解析》番外篇</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220220-weekly-6/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>引言：从2021年9月份开始要探索生产级btree存储引擎的实现，到2022年2月整理完毕发布《sqlite 3.36 btree实现解析》的系列文章，我花费了小半年的时间，本期会聊聊整个过程下来我的一些想法。
+《sqlite 3.36 btree实现解析》番外篇
+时间回到2021年9月份。彼时，因为工作的关系，要研究一下生产级btree存储引擎的实现，在此之前我大体对btree、b+tree的数据结构和算法有个了解，见：
+B树、B+树索引算法原理（上） - codedump的网络日志
+B树、B+树索引算法原理（下） - codedump的网络日志
+但是，一个生产级的产品，对比教科书的示范型代码，还是有很大的区别的，具体来说，我当时不明白以下这些生产级存储引擎的问题如何解决：
+如何存储变长的数据？
+如何存储数据大小超过一个物理页面的数据？
+如何利用被回收的空间？
+如何处理崩溃恢复？
+读写并发如何处理？
+…
+为了解答这些疑问，先后去翻阅InnodDB、WiredTiger、sqlite的文档，但是这些项目代码量都太大了，以我当时的程度，无法马上找到很具体的解答。
+事情的突破在从网上查找文章时看到的这一篇文章：How Database B-Tree Indexing Works - DZone Database，这是一篇解释btree工作原理的文章，这篇文章同时还列出了一个项目：madushadhanushka/simple-sqlite: Code reading for sqlite backend，这个项目的作者，将sqlite2.5版本中btree的实现，单独抽取出来形成了一个独立的KV库，可以编译通过使用。
+看到这个项目的时候，我的感觉就是如获至宝，因为虽然只有几千行的代码量，但是解答了很多上面提到的疑问，“麻雀虽小五脏俱全”，我花了几天的时间整体阅读了解了原理，这个…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-15 datetime="2022-02-15T16:14:36.000Z">2022-02-15</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-15 datetime="2022-02-15T16:14:36.000Z"></time>
           </button>
@@ -767,8 +828,8 @@ Markdown 格式开始流行以后。
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/1870385087">
-        <time id="build-timestamp" datetime="2022-02-20T00:34:02.431Z">2022-02-20T00:34:02.431Z</time>
+      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/1873551188">
+        <time id="build-timestamp" datetime="2022-02-21T00:29:19.940Z">2022-02-21T00:29:19.940Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a>
     </footer>
