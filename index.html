@@ -22,11 +22,55 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-20 datetime="2022-02-20T02:53:41.000Z">2022-02-20</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-20 datetime="2022-02-20T02:53:41.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-20 datetime="2022-02-20T12:55:03.000Z">2022-02-20</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-20 datetime="2022-02-20T12:55:03.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >MoeLove</button>
+                  <a class="source-heading__link" href="https://moelove.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://moelove.info/2022/02/20/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-containerd-v1.6-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/"
+                        open
+                      >
+                        <summary class="article-expander__title">K8S 生态周报| containerd v1.6 正式发布，带来众多新特性</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2022/02/20/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-containerd-v1.6-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
+containerd v1.6.0 正式发布
+containerd v1.6 在本周也正式发布了，这是 containerd 的第 7 个大版本。距离上一个大的正式版 v1.5.0 已经过了将近 9 个月的时间（v1.5.0 是 2021 年 5 月发布的），关于 containerd v1.5.0 的主要变更，可参考我去年写的 K8S 生态周报| containerd v1.5.0-rc.0 发布。我们一起来看看 containerd v1.6.0 中有哪些值得关注的变更吧！
+Runtime
+#5744 在 containerd 的 metrics 接口中增加了 runtime 的 label;
+#6375 将 runc 的依赖升级到了 v1.1.0 版本；
+#5871 增加了 shim plugin 的支持，重构了 shim v2 来加载和注册 plugin;
+CRI
+#5619 当前会同时支持 CRI v1 和 v1alpha2 ；
+#6113 实现了新的 Kubernetes CRI pod sandbox stats API，这其实是为了遵守 Kubernetes 中 CRI 的变更。其根本原因实际上是在 Kubernetes 中希望能够增强 CRI 的能力，减少对 cAdvisor 的依赖。更深层次的则是由于 cAdvisor 仅支持 Linux 容器，和一般的容器运行时，无法支持类似 Kata Containers 这类 VM 运行时，以及不支持 Windows 容器。由此其实我们也可以看出来 Kubernetes &amp; containerd 的一些目标，做的更通用，更标准化；
+#6111 添加了 sandbox 和 container 延迟…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -756,80 +800,10 @@ B树、…</span>
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-01-23 datetime="2022-01-23T07:38:31.000Z">2022-01-23</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-01-23 datetime="2022-01-23T07:38:31.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >codedump的网络日志 on codedump的网络日志</button>
-                  <a class="source-heading__link" href="https://www.codedump.info/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.codedump.info/post/20220123-weekly-2/"
-                        open
-                      >
-                        <summary class="article-expander__title">周刊（第2期）：从笔记软件谈被体制化</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220123-weekly-2/">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>从笔记软件谈被体制化
-前两周，一则收购消息，在偌大的中文互联网上，几乎没有掀起任何的讨论：
-为知笔记并入 ONES，WizNote X 迎来新的征程
-我是为知笔记的老用户了，从 2011 年就开始使用为知笔记，即便是现在不怎么使用的情况下，也已经把 VIP 会员续费到了 2024 年。在我看来，为知笔记是一个气质与众不同的互联网产品：
-在互联网上几乎没看到这款产品主动来宣传自己，都是靠用户的口碑传播，最开始我也是通过用户的介绍知道这款产品的。
-是最早支持 Markdown 的笔记本软件，这在我最开始了解 MD 并且开始用这个格式来记录笔记时起了很大的帮助。
-价格良心。
-所以，当看到为知笔记被收购的新闻，心情还是有些复杂的。我大体知道一些互联网产品的玩法，知道为知笔记应该生存的不太好，被收购了也许对团队是个好事。
-于是，我开始回想起来，到底是什么样的契机，让我开始慢慢抛弃了传统的笔记软件，以及我现在都用什么方式记录笔记。
-在 Evernote 刚出来的时候，多端可用、可以收藏文章、记录自己的笔记等等，我也大概是那时候开始记录笔记的，然后就是后来使用网易云笔记，再到主力使用为知笔记。
-让我逐渐意识到不应该把笔记托管到笔记软件上，有那么几个原因：
-笔记软件之间竞争激烈，可能你从 A 家换到 B 家的产品时，数据的迁移是个大问题，有时候就不得不丢掉一部分难迁移的数据。比如把数据从 Evernote 迁移出来就很麻烦，还好我之前放在这里的笔记也不太用得上了。
-
-
-
-Markdown 格式开始流行以后。
-
-
-
-我大概是从2015年开始用MD格式开始写笔记的，这种格式马上就让我爱上了记录笔记：
-格式对比LaTex来说太简单了，只有常见的几种格式，易学易写。
-纯文本格式，这意味着用任何文本编辑器就能打开。
-搭配好用的编辑器，能获得”所见即所得“的体验。
-由此，我开始反思之前对笔记本软件的使…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/1873551188">
-        <time id="build-timestamp" datetime="2022-02-21T00:29:19.940Z">2022-02-21T00:29:19.940Z</time>
+      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/1878950241">
+        <time id="build-timestamp" datetime="2022-02-22T00:29:05.199Z">2022-02-22T00:29:05.199Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a>
     </footer>
