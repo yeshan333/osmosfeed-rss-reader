@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-02-25T00:30:36.355Z</id>
+    <id>urn:2022-02-26T00:29:07.561Z</id>
     <title>osmos::feed</title>
-    <updated>2022-02-25T00:30:36.355Z</updated>
+    <updated>2022-02-26T00:29:07.561Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[2021 年年鉴]]></title>
+        <id>https://www.kawabangga.com/?p=4626</id>
+        <link href="https://www.kawabangga.com/posts/4626"/>
+        <updated>2022-02-25T16:24:42.000Z</updated>
+        <summary type="html"><![CDATA[今年没有在跨年的时候及时写完年终总结，是因为那天还在西安隔离。2021 年一整年依然是疫情肆虐，下半年在新加坡 […]
+Continue reading...
+The post 2021 年年鉴 first appeared on 卡瓦邦噶！.
+
+相关文章:
+
+我在新加坡一个月的生活费明细
+为什么 Cloudflare 提供免费的服务？
+Build 一个最小的 Redis Docker Image
+《Prometheus Up & Running》阅读
+使用 mtr 检查网络问题，以及注意事项]]></summary>
+        <author>
+            <name>laixintao</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[K8S 生态周报| containerd v1.6 正式发布，带来众多新特性]]></title>
         <id>https://moelove.info/2022/02/20/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-containerd-v1.6-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/</id>
