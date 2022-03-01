@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-02-28T00:32:15.638Z</id>
+    <id>urn:2022-03-01T01:00:57.496Z</id>
     <title>osmos::feed</title>
-    <updated>2022-02-28T00:32:15.638Z</updated>
+    <updated>2022-03-01T01:00:57.496Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -208,13 +208,13 @@ Thank you: @naari3, @tianheg]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[“一把梭：REST API 全用 POST ”]]></title>
+        <title type="html"><![CDATA[“一把梭：REST API 全用 POST”]]></title>
         <id>https://coolshell.cn/?p=22173</id>
         <link href="https://coolshell.cn/articles/22173.html"/>
         <updated>2022-02-13T04:28:47.000Z</updated>
         <summary type="html"><![CDATA[写这篇文章的原因主要还是因为V2EX上的这个贴子，这个贴子中说—— “对接同事的接口，他定义的所有接口都是 post 请求，理由是 https 用 post 更...
  Read More  Read More
-“一把梭：REST API 全用 POST ” first appeared on 酷 壳 - CoolShell.]]></summary>
+“一把梭：REST API 全用 POST” first appeared on 酷 壳 - CoolShell.]]></summary>
         <author>
             <name>陈皓</name>
         </author>
