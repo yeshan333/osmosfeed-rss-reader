@@ -115,7 +115,7 @@
           "description": "写这篇文章的原因主要还是因为V2EX上的这个贴子，这个贴子中说—— “对接同事的接口，他定义的所有接口都是 post 请求，理由是 https 用 post 更...\n Read More  Read More\n“一把梭：REST API 全用 POST” first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/22173.html",
           "publishedOn": "2022-02-13T04:28:47.000Z",
-          "wordCount": 1615,
+          "wordCount": 1610,
           "title": "“一把梭：REST API 全用 POST”",
           "imageUrl": "https://coolshell.cn/wp-content/uploads/2022/02/http_method.png"
         },
@@ -125,7 +125,7 @@
           "description": "今天看到微博上有一个热点事件， 是一个关于某公司做的一个监控员工离职倾向的软件，从截图中可以看到员工访问招聘网站的次数，还有投递的简历以及搜索的关建词等等信息，...\n Read More  Read More\n谈谈公司对员工的监控 first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/22157.html",
           "publishedOn": "2022-02-12T07:50:06.000Z",
-          "wordCount": 659,
+          "wordCount": 674,
           "title": "谈谈公司对员工的监控",
           "imageUrl": "https://coolshell.cn/wp-content/uploads/2022/02/monitoring.jpeg"
         }
@@ -148,7 +148,7 @@
           "description": "今年没有在跨年的时候及时写完年终总结，是因为那天还在西安隔离。2021 年一整年依然是疫情肆虐，下半年在新加坡 […]\nContinue reading...\nThe post 2021 年年鉴 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n我在新加坡一个月的生活费明细\n为什么 Cloudflare 提供免费的服务？\nBuild 一个最小的 Redis Docker Image\n《Prometheus Up & Running》阅读\n使用 mtr 检查网络问题，以及注意事项",
           "link": "https://www.kawabangga.com/posts/4626",
           "publishedOn": "2022-02-25T16:24:42.000Z",
-          "wordCount": 509,
+          "wordCount": 505,
           "title": "2021 年年鉴",
           "imageUrl": null
         }
@@ -195,10 +195,10 @@
         {
           "id": "https://www.codedump.info/post/20220227-weekly-7/",
           "author": null,
-          "description": "引言：在工作里使用Rust已经有两个多月的时间了，谈谈我做为一名多年的C系（C、C++）程序员，对Rust的初体验。\n一个C系程序员的Rust初体验\n最近由于工作的原因，使用上了Rust语言，在此之前我有多年的C、C++编码经验（以下将C、C++简称C系语言）。\n使用C系语言编码时，最经常面对的问题就是内存问题，诸如：\n野指针（Wild Pointe）：使用了不可知的指针变量，如已经被释放、未初始化、随机，等等。\n内存地址由于访问越界等原因被覆盖（overflow），这不但是可能出错的问题，还有可能成为程序的内存漏洞被利用。\n内存分配后未回收。\n连Chrome的报告都指出，Chrome中大约70%的安全漏洞都是内存问题，见：Memory safety。\nC系语言发展到今天，已经有不少可以用于内存问题检测的利器了，其中最好用的莫过于AddressSanitizer，它的原理是在编译时给程序加上一些信息，一旦发生内存越界访问、野指针等错误都会自动检测出来。\n但是即便有这些工具，内存问题也不好解决，其核心的原因在于：这些问题绝大部分都是运行时（Runtime）问题，即要在程序跑到特定场景的时候才会暴露出来，诸如上面提到的AddressSanitizer就是这样。\n都知道解决问题的第一步是能复现问题，而如果一个问题是运行时问题，这就意味着：复现问题可能会是一件很麻烦的事情，有时候还可能到生产环境去复现。\n以我之前经历的一个Bug来看这类工作的复杂度，见线上存储服务崩溃问题分析记录 - codedump的网络日志，这是一个很典型的发生在生产环境上由于内存错误导致的崩溃问题：\n不好复现，因为跟特定的请求相关，还跟线程的调度有关；\n本质是由于使用了被释放的内存导致的错误。\n这个线上问题，记得当时花了一周时间来复现问题解决。\n换言之，如果一个问题要等到运行时才能发现，那么可以预见的是：一旦…",
+          "description": "引言：在工作里使用Rust已经有两个多月的时间了，谈谈我做为一名多年的C系（C、C++）程序员，对Rust的初体验。\n一个C系程序员的Rust初体验\n最近由于工作的原因，使用上了Rust语言，在此之前我有多年的C、C++编码经验（以下将C、C++简称C系语言）。\n使用C系语言编码时，最经常面对的问题就是内存问题，诸如：\n野指针（Wild Pointer）：使用了不可知的指针变量，如已经被释放、未初始化、随机，等等。\n内存地址由于访问越界等原因被覆盖（overflow），这不但是可能出错的问题，还有可能成为程序的内存漏洞被利用。\n内存分配后未回收。\n连Chrome的报告都指出，Chrome中大约70%的安全漏洞都是内存问题，见：Memory safety。（不仅如此，微软的文章也显示在微软的产品中70%的安全漏洞也是内存问题，见：Microsoft: 70 percent of all security bugs are memory safety issues | ZDNet）\nC系语言发展到今天，已经有不少可以用于内存问题检测的利器了，其中最好用的莫过于AddressSanitizer，它的原理是在编译时给程序加上一些信息，一旦发生内存越界访问、野指针等错误都会自动检测出来。\n但是即便有这些工具，内存问题也不好解决，其核心的原因在于：这些问题绝大部分都是运行时（Runtime）问题，即要在程序跑到特定场景的时候才会暴露出来，诸如上面提到的AddressSanitizer就是这样。\n都知道解决问题的第一步是能复现问题，而如果一个问题是运行时问题，这就意味着：复现问题可能会是一件很麻烦的事情，有时候还可能到生产环境去复现。\n以我之前经历的一个Bug来看这类工作的复杂度，见线上存储服务崩溃问题分析记录 - codedump的网络日志，这是一个很典型的发生在生产环境上由于内存错误…",
           "link": "https://www.codedump.info/post/20220227-weekly-7/",
           "publishedOn": "2022-02-27T03:25:33.000Z",
-          "wordCount": 186,
+          "wordCount": 226,
           "title": "周刊（第7期）：一个C系程序员的Rust初体验",
           "imageUrl": null
         },
