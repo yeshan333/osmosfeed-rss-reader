@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-03-02T00:36:42.713Z</id>
+    <id>urn:2022-03-03T00:46:01.090Z</id>
     <title>osmos::feed</title>
-    <updated>2022-03-02T00:36:42.713Z</updated>
+    <updated>2022-03-03T00:46:01.090Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -281,44 +281,6 @@ B指标。
 “足球是体育工业化的集大成者”（见(为什么整个中国都知道中国足球的问题，为什么还是没有办法解决？ - …]]></summary>
         <author>
             <name>codedump的网络日志 on codedump的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[sqlite3.36版本 btree实现（五）- Btree的实现]]></title>
-        <id>https://www.codedump.info/post/20220201-sqlite-btree-5-btree/</id>
-        <link href="https://www.codedump.info/post/20220201-sqlite-btree-5-btree/"/>
-        <updated>2022-02-01T07:55:40.000Z</updated>
-        <summary type="html"><![CDATA[《sqlite3.36版本 btree实现》系列文章：
-sqlite3.36版本 btree实现（零）- 起步及概述 - codedump的网络日志
-sqlite3.36版本 btree实现（一）- 管理页面缓存 - codedump的网络日志
-sqlite3.36版本 btree实现（二）- 并发控制框架 - codedump的网络日志
-sqlite3.36版本 btree实现（三）- journal文件备份机制 - codedump的网络日志
-sqlite3.36版本 btree实现（四）- WAL的实现 - codedump的网络日志
-sqlite3.36版本 btree实现（五）- Btree的实现 - codedump的网络日志
-概述
-前面的内容里，详细介绍了页面管理器部分的内容，回顾一下页面管理器和Btree模块的分工：
-页面管理器：提供页面级别的物理管理，如缓存、读取、写入、页面备份等。
-Btree：根据btree数据结构提供页面在逻辑上的组织，以及单个页面内的划分。
-还记得最开始，研究生产级别btree实现时的几个疑问：
-数据库教科书中，演示btree算法时，使用的都是定长的简单数据。实际应用中，存储的数据都是变长的，那么应该如何存储变长的数据呢？
-如果一行数据的大小，超过了一个物理页面的大小，又该如何处理？
-删除一行数据之后，它留下的空间如何回收利用？而回收利用时，不可避免的会出现碎片的问题，比如原先10字节的数据被回收，用来存储9字节的数据，多出来的1字节数据就被浪费了，碎片问题应该如何解决？
-这些问题，都与“一个物理页面内数据如何组织”这个核心问题息息相关，带着这些问题展开btree实现的讨论。
-在下文中，不会讨论btree算法的细节，这部分不熟悉的，可以回看之前的文章或者教科书：
-B树、B+树索引算法原理（上） - codedump的网络日志
-B树、…]]></summary>
-        <author>
-            <name>codedump的网络日志 on codedump的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[状态机的一点儿事（fsm-smr-dfsm）]]></title>
-        <id>https://yeshan333.github.io/2022/01/31/fsm-smr-dfsm/</id>
-        <link href="https://yeshan333.github.io/2022/01/31/fsm-smr-dfsm/"/>
-        <updated>2022-01-31T17:32:51.000Z</updated>
-        <summary type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"]]></summary>
-        <author>
-            <name>ShanSan</name>
         </author>
     </entry>
 </feed>
