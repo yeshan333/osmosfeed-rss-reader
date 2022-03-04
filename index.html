@@ -22,6 +22,71 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-03-02 datetime="2022-03-02T13:39:12.000Z">2022-03-02</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-03-02 datetime="2022-03-02T13:39:12.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >MoeLove</button>
+                  <a class="source-heading__link" href="https://moelove.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://moelove.info/2022/03/02/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AD%96%E7%95%A5%E5%BC%95%E6%93%8E-Kyverno-%E4%B8%8A/"
+                        open
+                      >
+                        <summary class="article-expander__title">云原生策略引擎 Kyverno （上）</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2022/03/02/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AD%96%E7%95%A5%E5%BC%95%E6%93%8E-Kyverno-%E4%B8%8A/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://s2.loli.net/2022/03/03/KUYpoEOH9SFIdL3.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>大家好，我是张晋涛。
+在之前的 『K8S生态周报』 和 《搞懂 Kubernetes 准入控制（Admission Controller)》 等文章中，我曾提到过 Kyverno 这个云原生策略引擎项目，很多小伙伴在后台私信我说对这个项目比较感兴趣。这篇文章我们专门来聊聊 Kyverno 吧。
+Kyverno 当前是一个 CNCF sandbox 级别的项目。
+
+本文的大纲如下，小伙伴们可自行跳跃到感兴趣的部分查阅。
+
+Kubernetes 的策略
+我们称 Kyverno 是云原生策略引擎，那么 Kubernetes 中的策略是什么呢？
+对于 Kubernetes 中的策略，大家可能比较熟悉的是 PodSecurityPolicy。 不过 PodSecurityPolicy 自 Kubernetes v1.21 起已弃用，并将在 v1.25 中删除（当前版本是 v1.23 ）。当前建议大家迁移到 Kubernetes 新增的替换方案 Pod Security Admission 或者类似本文中介绍的 Kyverno 等这种第三方策略插件。
+其实无论是 PodSecurityPolicy 还是它的替代方案 Pod Security Admission ，甚至包括 Kyverno 等，它们都是构筑在 Kubernetes 的 Admission 机制之上的。
+首先，我们主要从两个角度来理解为什么我们需要准入控制器（Admission Controller）：
+从安全的角度
+比如，为避免攻击。需要对Kubernetes 集群中部署的镜像来源判定；
+比如，避免 Pod 使用 root 用户，或者尽量不开启特权容器等；
+从治理的角度
+比如，通过 admission controller 校验服务是否拥有必须的 label；
+比如，避免出现资源超卖等；
+下图，是 kube-apiser…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;2
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-27 datetime="2022-02-27T03:25:33.000Z">2022-02-27</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-27 datetime="2022-02-27T03:25:33.000Z"></time>
           </button>
@@ -781,8 +846,8 @@ B指标。
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/1925417614">
-        <time id="build-timestamp" datetime="2022-03-03T00:46:01.054Z">2022-03-03T00:46:01.054Z</time>
+      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/1931201391">
+        <time id="build-timestamp" datetime="2022-03-04T00:35:43.509Z">2022-03-04T00:35:43.509Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a>
     </footer>

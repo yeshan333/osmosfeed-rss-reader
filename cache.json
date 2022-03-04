@@ -105,7 +105,7 @@
           "description": "写这篇文章的原因主要还是因为V2EX上的这个贴子，这个贴子中说—— “对接同事的接口，他定义的所有接口都是 post 请求，理由是 https 用 post 更...\n Read More  Read More\n“一把梭：REST API 全用 POST” first appeared on 酷 壳 - CoolShell.",
           "link": "https://coolshell.cn/articles/22173.html",
           "publishedOn": "2022-02-13T04:28:47.000Z",
-          "wordCount": 1610,
+          "wordCount": 1615,
           "title": "“一把梭：REST API 全用 POST”",
           "imageUrl": "https://coolshell.cn/wp-content/uploads/2022/02/http_method.png"
         },
@@ -138,7 +138,7 @@
           "description": "今年没有在跨年的时候及时写完年终总结，是因为那天还在西安隔离。2021 年一整年依然是疫情肆虐，下半年在新加坡 […]\nContinue reading...\nThe post 2021 年年鉴 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n我在新加坡一个月的生活费明细\n为什么 Cloudflare 提供免费的服务？\nBuild 一个最小的 Redis Docker Image\n《Prometheus Up & Running》阅读\n使用 mtr 检查网络问题，以及注意事项",
           "link": "https://www.kawabangga.com/posts/4626",
           "publishedOn": "2022-02-25T16:24:42.000Z",
-          "wordCount": 538,
+          "wordCount": 579,
           "title": "2021 年年鉴",
           "imageUrl": null
         }
@@ -150,12 +150,22 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2022/03/02/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AD%96%E7%95%A5%E5%BC%95%E6%93%8E-Kyverno-%E4%B8%8A/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\n在之前的 『K8S生态周报』 和 《搞懂 Kubernetes 准入控制（Admission Controller)》 等文章中，我曾提到过 Kyverno 这个云原生策略引擎项目，很多小伙伴在后台私信我说对这个项目比较感兴趣。这篇文章我们专门来聊聊 Kyverno 吧。\nKyverno 当前是一个 CNCF sandbox 级别的项目。\n\n本文的大纲如下，小伙伴们可自行跳跃到感兴趣的部分查阅。\n\nKubernetes 的策略\n我们称 Kyverno 是云原生策略引擎，那么 Kubernetes 中的策略是什么呢？\n对于 Kubernetes 中的策略，大家可能比较熟悉的是 PodSecurityPolicy。 不过 PodSecurityPolicy 自 Kubernetes v1.21 起已弃用，并将在 v1.25 中删除（当前版本是 v1.23 ）。当前建议大家迁移到 Kubernetes 新增的替换方案 Pod Security Admission 或者类似本文中介绍的 Kyverno 等这种第三方策略插件。\n其实无论是 PodSecurityPolicy 还是它的替代方案 Pod Security Admission ，甚至包括 Kyverno 等，它们都是构筑在 Kubernetes 的 Admission 机制之上的。\n首先，我们主要从两个角度来理解为什么我们需要准入控制器（Admission Controller）：\n从安全的角度\n比如，为避免攻击。需要对Kubernetes 集群中部署的镜像来源判定；\n比如，避免 Pod 使用 root 用户，或者尽量不开启特权容器等；\n从治理的角度\n比如，通过 admission controller 校验服务是否拥有必须的 label；\n比如，避免出现资源超卖等；\n下图，是 kube-apiser…",
+          "link": "https://moelove.info/2022/03/02/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AD%96%E7%95%A5%E5%BC%95%E6%93%8E-Kyverno-%E4%B8%8A/",
+          "publishedOn": "2022-03-02T13:39:12.000Z",
+          "wordCount": 464,
+          "title": "云原生策略引擎 Kyverno （上）",
+          "imageUrl": "https://s2.loli.net/2022/03/03/KUYpoEOH9SFIdL3.png"
+        },
+        {
           "id": "https://moelove.info/2022/02/20/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-containerd-v1.6-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\ncontainerd v1.6.0 正式发布\ncontainerd v1.6 在本周也正式发布了，这是 containerd 的第 7 个大版本。距离上一个大的正式版 v1.5.0 已经过了将近 9 个月的时间（v1.5.0 是 2021 年 5 月发布的），关于 containerd v1.5.0 的主要变更，可参考我去年写的 K8S 生态周报| containerd v1.5.0-rc.0 发布。我们一起来看看 containerd v1.6.0 中有哪些值得关注的变更吧！\nRuntime\n#5744 在 containerd 的 metrics 接口中增加了 runtime 的 label;\n#6375 将 runc 的依赖升级到了 v1.1.0 版本；\n#5871 增加了 shim plugin 的支持，重构了 shim v2 来加载和注册 plugin;\nCRI\n#5619 当前会同时支持 CRI v1 和 v1alpha2 ；\n#6113 实现了新的 Kubernetes CRI pod sandbox stats API，这其实是为了遵守 Kubernetes 中 CRI 的变更。其根本原因实际上是在 Kubernetes 中希望能够增强 CRI 的能力，减少对 cAdvisor 的依赖。更深层次的则是由于 cAdvisor 仅支持 Linux 容器，和一般的容器运行时，无法支持类似 Kata Containers 这类 VM 运行时，以及不支持 Windows 容器。由此其实我们也可以看出来 Kubernetes & containerd 的一些目标，做的更通用，更标准化；\n#6111 添加了 sandbox 和 container 延迟…",
           "link": "https://moelove.info/2022/02/20/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-containerd-v1.6-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
           "publishedOn": "2022-02-20T12:55:03.000Z",
-          "wordCount": 282,
+          "wordCount": 285,
           "title": "K8S 生态周报| containerd v1.6 正式发布，带来众多新特性",
           "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
         },
