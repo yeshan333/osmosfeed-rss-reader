@@ -22,6 +22,69 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-03-06 datetime="2022-03-06T15:39:51.000Z">2022-03-06</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-03-06 datetime="2022-03-06T15:39:51.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >MoeLove</button>
+                  <a class="source-heading__link" href="https://moelove.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/"
+                        open
+                      >
+                        <summary class="article-expander__title">K8S 生态周报| Knative 进入 CNCF 孵化，K8S ingress-nginx 解决多实例问题</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
+Kubernetes ingress-nginx v1.1.2 发布
+就在今天 Kubernetes ingress-nginx 项目发布了 v1.1.2 版本。
+我是这个版本的 release manager 。
+距离上个版本发布有将近两个月了，我们来看看这个版本中值得关注的一些变更。
+在 #8221 中，我们对 ingress-nginx 的 Admission controller 的逻辑做了一些调整，
+主要是可以用来修正 自 v1.0 版本后，如果 Kubernetes 集群中同时运行多个 ingress-nginx 的话，在创建 Ingress 资源的时候，可能导致每个 ingres-nginx 的 Admission 都会去进行检查的问题。
+而该问题最大的影响是，如果创建的 Ingress 配置相同的话，则会被直接拒绝掉。
+在 #8253 中则是为 ingress-nginx 增加了一个 ssl_certificate_info 的 metric， 直接公开当前被加载的证书的信息。
+这个功能的最大的好处就是可以避免 Ingress controller Pod 加载了旧证书，进而导致客户端连接失败的问题。
+此外 #8256 是为了修正在 nginx.ingress.kubernetes.io/auth-url 中传递无效 URL 的问题，
+建议升级 。
+此外还有一些小的 bugfix 和优化，更多详细信息请参考 ReleaseNote 。
+在这次发布过程中还有一些比较有趣的事情，
+本次发布过程从时间线看，从我开始发布流程，到最后完成发布，共持续了一周的时间，由几个人异步协作完成。
+这跟往常差别还是比较大的，往常我们可能会约某个时间，同时在线一…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-03-04 datetime="2022-03-04T14:10:11.000Z">2022-03-04</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-03-04 datetime="2022-03-04T14:10:11.000Z"></time>
           </button>
@@ -848,8 +911,8 @@ B指标。
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/1942807626">
-        <time id="build-timestamp" datetime="2022-03-07T00:31:17.698Z">2022-03-07T00:31:17.698Z</time>
+      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/1948764078">
+        <time id="build-timestamp" datetime="2022-03-08T00:31:06.887Z">2022-03-08T00:31:06.887Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a>
     </footer>

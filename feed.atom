@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-03-07T00:31:17.742Z</id>
+    <id>urn:2022-03-08T00:31:06.922Z</id>
     <title>osmos::feed</title>
-    <updated>2022-03-07T00:31:17.742Z</updated>
+    <updated>2022-03-08T00:31:06.922Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[K8S 生态周报| Knative 进入 CNCF 孵化，K8S ingress-nginx 解决多实例问题]]></title>
+        <id>https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/</id>
+        <link href="https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/"/>
+        <updated>2022-03-06T15:39:51.000Z</updated>
+        <summary type="html"><![CDATA[「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
+Kubernetes ingress-nginx v1.1.2 发布
+就在今天 Kubernetes ingress-nginx 项目发布了 v1.1.2 版本。
+我是这个版本的 release manager 。
+距离上个版本发布有将近两个月了，我们来看看这个版本中值得关注的一些变更。
+在 #8221 中，我们对 ingress-nginx 的 Admission controller 的逻辑做了一些调整，
+主要是可以用来修正 自 v1.0 版本后，如果 Kubernetes 集群中同时运行多个 ingress-nginx 的话，在创建 Ingress 资源的时候，可能导致每个 ingres-nginx 的 Admission 都会去进行检查的问题。
+而该问题最大的影响是，如果创建的 Ingress 配置相同的话，则会被直接拒绝掉。
+在 #8253 中则是为 ingress-nginx 增加了一个 ssl_certificate_info 的 metric， 直接公开当前被加载的证书的信息。
+这个功能的最大的好处就是可以避免 Ingress controller Pod 加载了旧证书，进而导致客户端连接失败的问题。
+此外 #8256 是为了修正在 nginx.ingress.kubernetes.io/auth-url 中传递无效 URL 的问题，
+建议升级 。
+此外还有一些小的 bugfix 和优化，更多详细信息请参考 ReleaseNote 。
+在这次发布过程中还有一些比较有趣的事情，
+本次发布过程从时间线看，从我开始发布流程，到最后完成发布，共持续了一周的时间，由几个人异步协作完成。
+这跟往常差别还是比较大的，往常我们可能会约某个时间，同时在线一…]]></summary>
+        <author>
+            <name>zhangjintao9020@gmail.com (张晋涛)</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[周刊（第8期）：技术配图的一些心得]]></title>
         <id>https://www.codedump.info/post/20220304-weekly-8/</id>
