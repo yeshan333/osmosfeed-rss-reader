@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-03-13T00:31:01.697Z</id>
+    <id>urn:2022-03-14T00:34:59.315Z</id>
     <title>osmos::feed</title>
-    <updated>2022-03-13T00:31:01.698Z</updated>
+    <updated>2022-03-14T00:34:59.315Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[周刊（第9期）：Mozilla rr使用简介]]></title>
+        <id>https://www.codedump.info/post/20220313-weekly-9/</id>
+        <link href="https://www.codedump.info/post/20220313-weekly-9/"/>
+        <updated>2022-03-13T03:20:59.000Z</updated>
+        <summary type="html"><![CDATA[引言：在之前的周刊（第7期）：一个C系程序员的Rust初体验中，简单提到过Mozilla rr这款调试工具，由于这个工具并不是太为人所知，所以本文对该工具做一个简介。
+Mozilla rr使用简介
+rr是由Mozilla出品的一款调试工具，用官网的话来说：
+rr aspires to be your primary C/C++ debugging tool for Linux, replacing — well, enhancing — gdb. You record a failure once, then debug the recording, deterministically, as many times as you want. The same execution is replayed every time.
+即它的特点是：可以记录下来程序运行时的上下文环境，包括线程、堆栈、寄存器等等，这样的好处有两个：
+“deterministically”：很多问题问题的产生，都与特定的环境相关，如：
+
+
+线程调度执行的顺序，先执行A线程再B线程，以及反之，可能得到的是不同的结果。
+环境参数，如输入不同的参数，尤其一些边界条件的触发就跟输入不同的参数有关。
+
+replay：记录下来程序执行的环境之后，rr除了支持gdb方式的调试之后，还能利用环境来不停的重放程序，甚至反向来执行程序。
+以下对rr的使用做一些简单的介绍。
+deterministically
+以下面一个最简单的多线程程序来解释何为deterministically：
+#include <pthread.h>
+#include <stdio.h>
+
+void * doPrint(void *arg)
+{
+    return NULL;
+}
+
+int main() {
+    pthread_t pid;
+ …]]></summary>
+        <author>
+            <name>codedump的网络日志 on codedump的网络日志</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[K8S 生态周报| Knative 进入 CNCF 孵化，K8S ingress-nginx 解决多实例问题]]></title>
         <id>https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/</id>
@@ -298,43 +333,6 @@ Fxied: Security vulnerability from axios
 Thank you: @naari3]]></summary>
         <author>
             <name>Release notes from osmosfeed</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[谈谈公司对员工的监控]]></title>
-        <id>https://coolshell.cn/?p=22157</id>
-        <link href="https://coolshell.cn/articles/22157.html"/>
-        <updated>2022-02-12T07:50:06.000Z</updated>
-        <summary type="html"><![CDATA[今天看到微博上有一个热点事件， 是一个关于某公司做的一个监控员工离职倾向的软件，从截图中可以看到员工访问招聘网站的次数，还有投递的简历以及搜索的关建词等等信息，...
- Read More  Read More
-谈谈公司对员工的监控 first appeared on 酷 壳 - CoolShell.]]></summary>
-        <author>
-            <name>陈皓</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[周刊（第5期）：从存储模型聊一聊时序数据库的应用场景]]></title>
-        <id>https://www.codedump.info/post/20220211-weekly-5/</id>
-        <link href="https://www.codedump.info/post/20220211-weekly-5/"/>
-        <updated>2022-02-11T14:27:57.000Z</updated>
-        <summary type="html"><![CDATA[引言：本期介绍时序数据库的存储模型，只有理解了时序数据的存储模型，才能更好的了解时序数据库的优缺点以及其适用场景。
-从存储模型聊一聊时序数据库的应用场景
-想写本文，是因为看到了知乎上的一篇文章：投资数据库领域：2021年总结（NoSQL、图、时序） - 知乎，里面谈到了时序数据库：
-但缺陷是实际的市场空间较小。跟通用型数据库，尤其是OLAP数据库相比，时序数据库最大的差异点在于对于时间维度建立了独特的索引与优化，而其他所谓schemaless等特性在OLAP数据库上都能做到，不存在技术障碍。这也就是为什么其实在公司做时序场景的数据库选型的时候会直接将时序数据库与一些OLAP数据库（比如ClickHouse）做比较。如果要把时序数据库往更宽的场景发展，那就是想好如何与那么多的通用型数据库做竞争了。
-由于之前有过短暂一段时间的时序数据库从业经历，所以想从我的理解聊聊时序数据库的应用场景。
-要了解应用场景，需要首先对时序数据库的存储模型有个大概的了解，在下文中我尽量不涉及到太艰深的技术术语来描述我的理解。由于我从业时序数据库的时间并不长，所以有可能理解会有偏差。
-何谓“时序数据（time-series data）”？就我个人粗浅的理解，就是任何一定会带上时间戳（timestamp）维度的数据。日常生活里，在微博、微信等社交媒体的发现就可以理解时序数据，因为它们肯定都有一个发言时间，所以有时候会把个人看到的微博等称为“时间线（timeline）”。对应到工业领域，比如一个电表每小时上报的用电量也是时序数据，比如服务器监控时每隔15分钟采集的性能数据也是时序数据。
-由于时序数据天然有“时间“这个维度，为了更好的优化其写入性能，通常专门存储时序数据的存储引擎会按照时间分块、按列来存储数据，如下图：
-
-
-
-上图中，演示用的数据格式有三列：
-时间戳。
-A指标。
-B指标。
-通常，时序数据库存…]]></summary>
-        <author>
-            <name>codedump的网络日志 on codedump的网络日志</name>
         </author>
     </entry>
 </feed>

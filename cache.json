@@ -108,16 +108,6 @@
           "wordCount": 1690,
           "title": "“一把梭：REST API 全用 POST”",
           "imageUrl": "https://coolshell.cn/wp-content/uploads/2022/02/http_method.png"
-        },
-        {
-          "id": "https://coolshell.cn/?p=22157",
-          "author": "陈皓",
-          "description": "今天看到微博上有一个热点事件， 是一个关于某公司做的一个监控员工离职倾向的软件，从截图中可以看到员工访问招聘网站的次数，还有投递的简历以及搜索的关建词等等信息，...\n Read More  Read More\n谈谈公司对员工的监控 first appeared on 酷 壳 - CoolShell.",
-          "link": "https://coolshell.cn/articles/22157.html",
-          "publishedOn": "2022-02-12T07:50:06.000Z",
-          "wordCount": 674,
-          "title": "谈谈公司对员工的监控",
-          "imageUrl": "https://coolshell.cn/wp-content/uploads/2022/02/monitoring.jpeg"
         }
       ]
     },
@@ -203,12 +193,22 @@
       "siteUrl": "https://www.codedump.info/",
       "articles": [
         {
+          "id": "https://www.codedump.info/post/20220313-weekly-9/",
+          "author": null,
+          "description": "引言：在之前的周刊（第7期）：一个C系程序员的Rust初体验中，简单提到过Mozilla rr这款调试工具，由于这个工具并不是太为人所知，所以本文对该工具做一个简介。\nMozilla rr使用简介\nrr是由Mozilla出品的一款调试工具，用官网的话来说：\nrr aspires to be your primary C/C++ debugging tool for Linux, replacing — well, enhancing — gdb. You record a failure once, then debug the recording, deterministically, as many times as you want. The same execution is replayed every time.\n即它的特点是：可以记录下来程序运行时的上下文环境，包括线程、堆栈、寄存器等等，这样的好处有两个：\n“deterministically”：很多问题问题的产生，都与特定的环境相关，如：\n\n\n线程调度执行的顺序，先执行A线程再B线程，以及反之，可能得到的是不同的结果。\n环境参数，如输入不同的参数，尤其一些边界条件的触发就跟输入不同的参数有关。\n\nreplay：记录下来程序执行的环境之后，rr除了支持gdb方式的调试之后，还能利用环境来不停的重放程序，甚至反向来执行程序。\n以下对rr的使用做一些简单的介绍。\ndeterministically\n以下面一个最简单的多线程程序来解释何为deterministically：\n#include <pthread.h>\n#include <stdio.h>\n\nvoid * doPrint(void *arg)\n{\n    return NULL;\n}\n\nint main() {\n    pthread_t pid;\n …",
+          "link": "https://www.codedump.info/post/20220313-weekly-9/",
+          "publishedOn": "2022-03-13T03:20:59.000Z",
+          "wordCount": 597,
+          "title": "周刊（第9期）：Mozilla rr使用简介",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.codedump.info/post/20220304-weekly-8/",
           "author": null,
           "description": "引言：写过不少技术文章，以及给不少技术思路手绘示例配图之后，在这方面有了一些心得，本文权当个人的一些的总结，抛砖引玉。\n技术配图的一些心得\n我觉得我们理工科出身的，对于可以量化的事情，总是很容易根据量化差异来做出判断，比如一个程序性能优化之后，能比优化之前快出多少，都能有一个量化的数字来说明。\n但是对于那些不能量化的东西，就很难说出具体好在哪里了。\n本文主题要讨论的“技术配图”就属于这种很难量化的领域，很难有一个标准来量化说明两幅图之间差别在哪里。我也是画了很多图，以及看了别人的很多配图之后，才慢慢有一些心得，本文权当个人的一些的总结，抛砖引玉。\n本文并不是一个画图工具的对比说明，尽管现在各种绘图工具已经很多，也各有自己的优缺点以及个人喜好，但是在这里并不讨论具体工具的使用，会把更多的文字放在配图的一些注意事项上。但是，也总有人问我文章的配图使用什么工具做的，在这里再回答一次：OmniGraffle，一款目前仅有Mac版本的工具软件。\n一图胜千言\n在开始交代具体的配图注意事项之前，有必要先说说配图的重要性。\n绘图，某种程度也是辅助自己思考某个技术点的手段之一，以我个人的体会来说，有时候讲不清楚一个技术点的时候，就手绘图出来，比朴素的文字更容易说明问题。其中的原因，有可能是：图片可以有多维的信息，而文字通常只有一维，遇到文字表达能力不太好的人，这仅有的一维能力可能还不好发挥出来。\n所以，在交代技术细节、沟通交流的时候，尽量多画图。反向的，图画多了，也自然慢慢会找到感觉，如何更好的通过图示表达思路。\n顺便一提，还有比朴素的文字表达更差的技术沟通方式，就是简单粗暴的贴一大段代码上去。这种做法，其实更多时候是没有对作者的思路有太多个人的整理，想偷懒的方式，最后回头再看写过的文字，可能连自己都看不懂了。\n个人的一个体会：如果产出某些输出的时候，能假设自己未来就是这些输出的读者、维护者…",
           "link": "https://www.codedump.info/post/20220304-weekly-8/",
           "publishedOn": "2022-03-04T14:10:11.000Z",
-          "wordCount": 247,
+          "wordCount": 249,
           "title": "周刊（第8期）：技术配图的一些心得",
           "imageUrl": null
         },
@@ -218,7 +218,7 @@
           "description": "引言：在工作里使用Rust已经有两个多月的时间了，谈谈我做为一名多年的C系（C、C++）程序员，对Rust的初体验。\n一个C系程序员的Rust初体验\n最近由于工作的原因，使用上了Rust语言，在此之前我有多年的C、C++编码经验（以下将C、C++简称C系语言）。\n使用C系语言编码时，最经常面对的问题就是内存问题，诸如：\n野指针（Wild Pointer）：使用了不可知的指针变量，如已经被释放、未初始化、随机，等等。\n内存地址由于访问越界等原因被覆盖（overflow），这不但是可能出错的问题，还有可能成为程序的内存漏洞被利用。\n内存分配后未回收。\n连Chrome的报告都指出，Chrome中大约70%的安全漏洞都是内存问题，见：Memory safety。（不仅如此，微软的文章也显示在微软的产品中70%的安全漏洞也是内存问题，见：Microsoft: 70 percent of all security bugs are memory safety issues | ZDNet）\nC系语言发展到今天，已经有不少可以用于内存问题检测的利器了，其中最好用的莫过于AddressSanitizer，它的原理是在编译时给程序加上一些信息，一旦发生内存越界访问、野指针等错误都会自动检测出来。\n但是即便有这些工具，内存问题也不好解决，其核心的原因在于：这些问题绝大部分都是运行时（Runtime）问题，即要在程序跑到特定场景的时候才会暴露出来，诸如上面提到的AddressSanitizer就是这样。\n都知道解决问题的第一步是能复现问题，而如果一个问题是运行时问题，这就意味着：复现问题可能会是一件很麻烦的事情，有时候还可能到生产环境去复现。\n以我之前经历的一个Bug来看这类工作的复杂度，见线上存储服务崩溃问题分析记录 - codedump的网络日志，这是一个很典型的发生在生产环境上由于内存错误…",
           "link": "https://www.codedump.info/post/20220227-weekly-7/",
           "publishedOn": "2022-02-27T03:25:33.000Z",
-          "wordCount": 235,
+          "wordCount": 236,
           "title": "周刊（第7期）：一个C系程序员的Rust初体验",
           "imageUrl": null
         },
@@ -228,18 +228,8 @@
           "description": "引言：从2021年9月份开始要探索生产级btree存储引擎的实现，到2022年2月整理完毕发布《sqlite 3.36 btree实现解析》的系列文章，我花费了小半年的时间，本期会聊聊整个过程下来我的一些想法。\n《sqlite 3.36 btree实现解析》番外篇\n时间回到2021年9月份。彼时，因为工作的关系，要研究一下生产级btree存储引擎的实现，在此之前我大体对btree、b+tree的数据结构和算法有个了解，见：\nB树、B+树索引算法原理（上） - codedump的网络日志\nB树、B+树索引算法原理（下） - codedump的网络日志\n但是，一个生产级的产品，对比教科书的示范型代码，还是有很大的区别的，具体来说，我当时不明白以下这些生产级存储引擎的问题如何解决：\n如何存储变长的数据？\n如何存储数据大小超过一个物理页面的数据？\n如何利用被回收的空间？\n如何处理崩溃恢复？\n读写并发如何处理？\n…\n为了解答这些疑问，先后去翻阅InnodDB、WiredTiger、sqlite的文档，但是这些项目代码量都太大了，以我当时的程度，无法马上找到很具体的解答。\n事情的突破在从网上查找文章时看到的这一篇文章：How Database B-Tree Indexing Works - DZone Database，这是一篇解释btree工作原理的文章，这篇文章同时还列出了一个项目：madushadhanushka/simple-sqlite: Code reading for sqlite backend，这个项目的作者，将sqlite2.5版本中btree的实现，单独抽取出来形成了一个独立的KV库，可以编译通过使用。\n看到这个项目的时候，我的感觉就是如获至宝，因为虽然只有几千行的代码量，但是解答了很多上面提到的疑问，“麻雀虽小五脏俱全”，我花了几天的时间整体阅读了解了原理，这个…",
           "link": "https://www.codedump.info/post/20220220-weekly-6/",
           "publishedOn": "2022-02-20T02:53:41.000Z",
-          "wordCount": 412,
+          "wordCount": 413,
           "title": "周刊（第6期）：《sqlite 3.36 btree实现解析》番外篇",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.codedump.info/post/20220211-weekly-5/",
-          "author": null,
-          "description": "引言：本期介绍时序数据库的存储模型，只有理解了时序数据的存储模型，才能更好的了解时序数据库的优缺点以及其适用场景。\n从存储模型聊一聊时序数据库的应用场景\n想写本文，是因为看到了知乎上的一篇文章：投资数据库领域：2021年总结（NoSQL、图、时序） - 知乎，里面谈到了时序数据库：\n但缺陷是实际的市场空间较小。跟通用型数据库，尤其是OLAP数据库相比，时序数据库最大的差异点在于对于时间维度建立了独特的索引与优化，而其他所谓schemaless等特性在OLAP数据库上都能做到，不存在技术障碍。这也就是为什么其实在公司做时序场景的数据库选型的时候会直接将时序数据库与一些OLAP数据库（比如ClickHouse）做比较。如果要把时序数据库往更宽的场景发展，那就是想好如何与那么多的通用型数据库做竞争了。\n由于之前有过短暂一段时间的时序数据库从业经历，所以想从我的理解聊聊时序数据库的应用场景。\n要了解应用场景，需要首先对时序数据库的存储模型有个大概的了解，在下文中我尽量不涉及到太艰深的技术术语来描述我的理解。由于我从业时序数据库的时间并不长，所以有可能理解会有偏差。\n何谓“时序数据（time-series data）”？就我个人粗浅的理解，就是任何一定会带上时间戳（timestamp）维度的数据。日常生活里，在微博、微信等社交媒体的发现就可以理解时序数据，因为它们肯定都有一个发言时间，所以有时候会把个人看到的微博等称为“时间线（timeline）”。对应到工业领域，比如一个电表每小时上报的用电量也是时序数据，比如服务器监控时每隔15分钟采集的性能数据也是时序数据。\n由于时序数据天然有“时间“这个维度，为了更好的优化其写入性能，通常专门存储时序数据的存储引擎会按照时间分块、按列来存储数据，如下图：\n\n\n\n上图中，演示用的数据格式有三列：\n时间戳。\nA指标。\nB指标。\n通常，时序数据库存…",
-          "link": "https://www.codedump.info/post/20220211-weekly-5/",
-          "publishedOn": "2022-02-11T14:27:57.000Z",
-          "wordCount": 280,
-          "title": "周刊（第5期）：从存储模型聊一聊时序数据库的应用场景",
           "imageUrl": null
         }
       ]
