@@ -54,26 +54,6 @@
           "wordCount": 398,
           "title": "v1.14.0: V1.14.0 (#79)",
           "imageUrl": "https://repository-images.githubusercontent.com/312859305/30a63d00-a162-11eb-8a1d-a3167673e96a"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0",
-          "author": null,
-          "description": "New: Thumbnail image display for each article\nNew: Improved color, spacing, and typography for easier reading\nNew: Click the date to toggle all accordions on that day. Ctrl + Click to toggle all accordions on the entire site.\nChanged: All sections are expanded by default\nChanged: Switched to vitest for easier testing\nFixed: Long string (e.g. URL) caused horizontal overflow\nThank you: @naari3, @tianheg",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.13.0",
-          "publishedOn": "2022-02-13T05:05:17.000Z",
-          "wordCount": 339,
-          "title": "v1.13.0",
-          "imageUrl": "https://opengraph.githubassets.com/fc77c41c87b2cd4d8990f4c940e0ddf681667b6b6e4363b0f609861b7ae5b6d8/osmoscraft/osmosfeed/releases/tag/v1.13.0"
-        },
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1",
-          "author": null,
-          "description": "Fixed: Future articles appeared in the feed\nFxied: Security vulnerability from axios\nThank you: @naari3",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1",
-          "publishedOn": "2022-02-12T17:46:42.000Z",
-          "wordCount": 268,
-          "title": "v1.12.1",
-          "imageUrl": "https://opengraph.githubassets.com/d69790a31f94b1adf743c58bae86b9754de6969cceb83f11b8fbeb28ab1ad632/osmoscraft/osmosfeed/releases/tag/v1.12.1"
         }
       ]
     },
@@ -98,18 +78,7 @@
       "title": "酷 壳 – CoolShell",
       "feedUrl": "https://coolshell.cn/feed",
       "siteUrl": "https://coolshell.cn",
-      "articles": [
-        {
-          "id": "https://coolshell.cn/?p=22173",
-          "author": "陈皓",
-          "description": "写这篇文章的原因主要还是因为V2EX上的这个贴子，这个贴子中说—— “对接同事的接口，他定义的所有接口都是 post 请求，理由是 https 用 post 更...\n Read More  Read More\n“一把梭：REST API 全用 POST” first appeared on 酷 壳 - CoolShell.",
-          "link": "https://coolshell.cn/articles/22173.html",
-          "publishedOn": "2022-02-13T04:28:47.000Z",
-          "wordCount": 1690,
-          "title": "“一把梭：REST API 全用 POST”",
-          "imageUrl": "https://coolshell.cn/wp-content/uploads/2022/02/http_method.png"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "面向信仰编程",
@@ -140,12 +109,22 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2022/03/12/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-v3.8-OCI-%E6%94%AF%E6%8C%81%E6%AD%A3%E5%BC%8F-GADocker-%E6%96%B0%E7%89%88%E6%9C%AC%E4%BF%AE%E5%A4%8D%E5%A4%9A%E4%B8%AA%E4%B8%A5%E9%87%8D-bug/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nKIND v0.12.0 发布\nKIND（Kubernetes In Docker）是我很喜欢，也是一直在参与的一个开源项目。\n在我之前的文章中有过多次介绍，可以参考\n我基本上每天都会用到它，非常的方便。\n距离上个大版本，v0.11 已经过了近十个月，我们来看看这个新版本带来哪些值得关注的特性吧：\n目前 v0.12.0 默认使用的 Kubernetes 版本为 v1.23.4 版本。如果升级 KIND 的话，会重新拉取最新的镜像，镜像托管在 Docker Hub 上，\n可能会比较耗时，建议确保网络顺畅。\n在 v0.12.0 中专门优化了对多架构的支持，默认的所有已发布镜像都包含了 amd64 和 arm64 的支持。\n在镜像中也对相关组件都做了升级：\ncontainerd v1.5.10\ncrictl 1.23.0\nCNI plugin v1.1.0\n此外，也修复了 Docker + cgroup2 + rootless 环境下的支持，和 WSL2 环境下的支持。建议大家进行升级。\n更多详细信息请参考其 ReleaseNote\nDocker v20.10.13 发布\n本周 Docker 发布了 v20.10.13 版本，是的，你没有看错，现在发布的版本还是在给 v20.10 打 patch 。\n实际上当前 Docker 仓库中最新的代码比 v20.10 已经多了很多功能特性，只不过尚未达到发布一个全新的大版本的目标，所以一直没有发布新的大版本。\n这个版本中主要是进行了一些 bugfix 和打包相关的变更。其中包括：\n将 buildx 升级到了 v0.8.0 版本。\n#43165 修复了当使用 local 日志驱动时，如果迅速产生大量日志，可能会产生 OO…",
+          "link": "https://moelove.info/2022/03/12/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-v3.8-OCI-%E6%94%AF%E6%8C%81%E6%AD%A3%E5%BC%8F-GADocker-%E6%96%B0%E7%89%88%E6%9C%AC%E4%BF%AE%E5%A4%8D%E5%A4%9A%E4%B8%AA%E4%B8%A5%E9%87%8D-bug/",
+          "publishedOn": "2022-03-11T18:34:36.000Z",
+          "wordCount": 380,
+          "title": "K8S 生态周报| Helm v3.8 OCI 支持正式 GA，Docker 新版本修复多个严重 bug",
+          "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
+        },
+        {
           "id": "https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nKubernetes ingress-nginx v1.1.2 发布\n就在今天 Kubernetes ingress-nginx 项目发布了 v1.1.2 版本。\n我是这个版本的 release manager 。\n距离上个版本发布有将近两个月了，我们来看看这个版本中值得关注的一些变更。\n在 #8221 中，我们对 ingress-nginx 的 Admission controller 的逻辑做了一些调整，\n主要是可以用来修正 自 v1.0 版本后，如果 Kubernetes 集群中同时运行多个 ingress-nginx 的话，在创建 Ingress 资源的时候，可能导致每个 ingres-nginx 的 Admission 都会去进行检查的问题。\n而该问题最大的影响是，如果创建的 Ingress 配置相同的话，则会被直接拒绝掉。\n在 #8253 中则是为 ingress-nginx 增加了一个 ssl_certificate_info 的 metric， 直接公开当前被加载的证书的信息。\n这个功能的最大的好处就是可以避免 Ingress controller Pod 加载了旧证书，进而导致客户端连接失败的问题。\n此外 #8256 是为了修正在 nginx.ingress.kubernetes.io/auth-url 中传递无效 URL 的问题，\n建议升级 。\n此外还有一些小的 bugfix 和优化，更多详细信息请参考 ReleaseNote 。\n在这次发布过程中还有一些比较有趣的事情，\n本次发布过程从时间线看，从我开始发布流程，到最后完成发布，共持续了一周的时间，由几个人异步协作完成。\n这跟往常差别还是比较大的，往常我们可能会约某个时间，同时在线一…",
           "link": "https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/",
           "publishedOn": "2022-03-06T15:39:51.000Z",
-          "wordCount": 269,
+          "wordCount": 284,
           "title": "K8S 生态周报| Knative 进入 CNCF 孵化，K8S ingress-nginx 解决多实例问题",
           "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
         },
@@ -155,7 +134,7 @@
           "description": "大家好，我是张晋涛。\n在之前的 『K8S生态周报』 和 《搞懂 Kubernetes 准入控制（Admission Controller)》 等文章中，我曾提到过 Kyverno 这个云原生策略引擎项目，很多小伙伴在后台私信我说对这个项目比较感兴趣。这篇文章我们专门来聊聊 Kyverno 吧。\nKyverno 当前是一个 CNCF sandbox 级别的项目。\n\n本文的大纲如下，小伙伴们可自行跳跃到感兴趣的部分查阅。\n\nKubernetes 的策略\n我们称 Kyverno 是云原生策略引擎，那么 Kubernetes 中的策略是什么呢？\n对于 Kubernetes 中的策略，大家可能比较熟悉的是 PodSecurityPolicy。 不过 PodSecurityPolicy 自 Kubernetes v1.21 起已弃用，并将在 v1.25 中删除（当前版本是 v1.23 ）。当前建议大家迁移到 Kubernetes 新增的替换方案 Pod Security Admission 或者类似本文中介绍的 Kyverno 等这种第三方策略插件。\n其实无论是 PodSecurityPolicy 还是它的替代方案 Pod Security Admission ，甚至包括 Kyverno 等，它们都是构筑在 Kubernetes 的 Admission 机制之上的。\n首先，我们主要从两个角度来理解为什么我们需要准入控制器（Admission Controller）：\n从安全的角度\n比如，为避免攻击。需要对Kubernetes 集群中部署的镜像来源判定；\n比如，避免 Pod 使用 root 用户，或者尽量不开启特权容器等；\n从治理的角度\n比如，通过 admission controller 校验服务是否拥有必须的 label；\n比如，避免出现资源超卖等；\n下图，是 kube-apiser…",
           "link": "https://moelove.info/2022/03/02/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AD%96%E7%95%A5%E5%BC%95%E6%93%8E-Kyverno-%E4%B8%8A/",
           "publishedOn": "2022-03-02T13:39:12.000Z",
-          "wordCount": 473,
+          "wordCount": 478,
           "title": "云原生策略引擎 Kyverno （上）",
           "imageUrl": "https://s2.loli.net/2022/03/03/KUYpoEOH9SFIdL3.png"
         },
@@ -165,7 +144,7 @@
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\ncontainerd v1.6.0 正式发布\ncontainerd v1.6 在本周也正式发布了，这是 containerd 的第 7 个大版本。距离上一个大的正式版 v1.5.0 已经过了将近 9 个月的时间（v1.5.0 是 2021 年 5 月发布的），关于 containerd v1.5.0 的主要变更，可参考我去年写的 K8S 生态周报| containerd v1.5.0-rc.0 发布。我们一起来看看 containerd v1.6.0 中有哪些值得关注的变更吧！\nRuntime\n#5744 在 containerd 的 metrics 接口中增加了 runtime 的 label;\n#6375 将 runc 的依赖升级到了 v1.1.0 版本；\n#5871 增加了 shim plugin 的支持，重构了 shim v2 来加载和注册 plugin;\nCRI\n#5619 当前会同时支持 CRI v1 和 v1alpha2 ；\n#6113 实现了新的 Kubernetes CRI pod sandbox stats API，这其实是为了遵守 Kubernetes 中 CRI 的变更。其根本原因实际上是在 Kubernetes 中希望能够增强 CRI 的能力，减少对 cAdvisor 的依赖。更深层次的则是由于 cAdvisor 仅支持 Linux 容器，和一般的容器运行时，无法支持类似 Kata Containers 这类 VM 运行时，以及不支持 Windows 容器。由此其实我们也可以看出来 Kubernetes & containerd 的一些目标，做的更通用，更标准化；\n#6111 添加了 sandbox 和 container 延迟…",
           "link": "https://moelove.info/2022/02/20/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-containerd-v1.6-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
           "publishedOn": "2022-02-20T12:55:03.000Z",
-          "wordCount": 288,
+          "wordCount": 294,
           "title": "K8S 生态周报| containerd v1.6 正式发布，带来众多新特性",
           "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
         },
@@ -175,7 +154,7 @@
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nIstio 即将发布重大安全更新，多个版本受影响\nIstio 产品安全工作组近期发现 Istio 中存在一些安全漏洞，其中 最高级别的漏洞被评级为高严重性。\n鉴于当前 Istio 的漏洞披露政策，所以目前我们不会透露具体的漏洞细节。\n在一周后的 2 月 22 日，将会发布 Istio v1.11.7、v1.12.3 和 v1.13.1 版本修正这些安全漏洞。届时会再更新漏洞的详细内容。\n请参考官方通告\n此外，本周 Istio 也发布了 v1.13.0 正式版， 在 v1.13.1 版本发布前，我不建议大家将自己所用的 Istio 升级到 v1.13.0 。\n虽然不建议现在升级，但我们也可以关注下 v1.13.0 带来的一些值得关注的变更：\nv1.13.0 版本中为东西向流量提供了基于主机名的多网络网关支持。主机名可以在控制面中被解析，解析记录可被用作 endpoint。\n如果你不需要这个行为，或者想要恢复到之前版本中的默认行为，可以为 istiod 添加 RESOLVE_HOSTNAME_GATEWAYS=false 的配置。\n此外，它还支持重写 gRPC 探针，以及通过 proxyMetadata 提供了在 Envoy 工作线程间的重平衡，并且通过学习 Kubernetes 的探测\n行为，改善了 istio-agent 健康检查的探测，这样它就不会再重用连接了。请参考 #36390 。\n同时我们会发现在这个版本中它对 Telemetry API 的支持增加了不少，尤其是它为 access log 支持了\nCommon Expression Language (CEL) filter 。如果你觉得对 CEL 有些陌生，那么你可以看下我之前的文章 《K8S…",
           "link": "https://moelove.info/2022/02/16/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Istio-%E5%8D%B3%E5%B0%86%E5%8F%91%E5%B8%83%E9%87%8D%E5%A4%A7%E5%AE%89%E5%85%A8%E6%9B%B4%E6%96%B0%E5%A4%9A%E4%B8%AA%E7%89%88%E6%9C%AC%E5%8F%97%E5%BD%B1%E5%93%8D/",
           "publishedOn": "2022-02-15T16:14:36.000Z",
-          "wordCount": 413,
+          "wordCount": 419,
           "title": "K8S 生态周报| Istio 即将发布重大安全更新，多个版本受影响",
           "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
         }
