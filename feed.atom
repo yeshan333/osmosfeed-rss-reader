@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-03-17T00:31:05.027Z</id>
+    <id>urn:2022-03-18T00:33:42.641Z</id>
     <title>osmos::feed</title>
-    <updated>2022-03-17T00:31:05.027Z</updated>
+    <updated>2022-03-18T00:33:42.642Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -256,29 +256,6 @@ B树、B+树索引算法原理（下） - codedump的网络日志
 看到这个项目的时候，我的感觉就是如获至宝，因为虽然只有几千行的代码量，但是解答了很多上面提到的疑问，“麻雀虽小五脏俱全”，我花了几天的时间整体阅读了解了原理，这个…]]></summary>
         <author>
             <name>codedump的网络日志 on codedump的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[K8S 生态周报| Istio 即将发布重大安全更新，多个版本受影响]]></title>
-        <id>https://moelove.info/2022/02/16/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Istio-%E5%8D%B3%E5%B0%86%E5%8F%91%E5%B8%83%E9%87%8D%E5%A4%A7%E5%AE%89%E5%85%A8%E6%9B%B4%E6%96%B0%E5%A4%9A%E4%B8%AA%E7%89%88%E6%9C%AC%E5%8F%97%E5%BD%B1%E5%93%8D/</id>
-        <link href="https://moelove.info/2022/02/16/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Istio-%E5%8D%B3%E5%B0%86%E5%8F%91%E5%B8%83%E9%87%8D%E5%A4%A7%E5%AE%89%E5%85%A8%E6%9B%B4%E6%96%B0%E5%A4%9A%E4%B8%AA%E7%89%88%E6%9C%AC%E5%8F%97%E5%BD%B1%E5%93%8D/"/>
-        <updated>2022-02-15T16:14:36.000Z</updated>
-        <summary type="html"><![CDATA[「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
-Istio 即将发布重大安全更新，多个版本受影响
-Istio 产品安全工作组近期发现 Istio 中存在一些安全漏洞，其中 最高级别的漏洞被评级为高严重性。
-鉴于当前 Istio 的漏洞披露政策，所以目前我们不会透露具体的漏洞细节。
-在一周后的 2 月 22 日，将会发布 Istio v1.11.7、v1.12.3 和 v1.13.1 版本修正这些安全漏洞。届时会再更新漏洞的详细内容。
-请参考官方通告
-此外，本周 Istio 也发布了 v1.13.0 正式版， 在 v1.13.1 版本发布前，我不建议大家将自己所用的 Istio 升级到 v1.13.0 。
-虽然不建议现在升级，但我们也可以关注下 v1.13.0 带来的一些值得关注的变更：
-v1.13.0 版本中为东西向流量提供了基于主机名的多网络网关支持。主机名可以在控制面中被解析，解析记录可被用作 endpoint。
-如果你不需要这个行为，或者想要恢复到之前版本中的默认行为，可以为 istiod 添加 RESOLVE_HOSTNAME_GATEWAYS=false 的配置。
-此外，它还支持重写 gRPC 探针，以及通过 proxyMetadata 提供了在 Envoy 工作线程间的重平衡，并且通过学习 Kubernetes 的探测
-行为，改善了 istio-agent 健康检查的探测，这样它就不会再重用连接了。请参考 #36390 。
-同时我们会发现在这个版本中它对 Telemetry API 的支持增加了不少，尤其是它为 access log 支持了
-Common Expression Language (CEL) filter 。如果你觉得对 CEL 有些陌生，那么你可以看下我之前的文章 《K8S…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
     </entry>
 </feed>
