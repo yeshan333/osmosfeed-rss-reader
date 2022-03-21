@@ -1,10 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-03-20T00:32:47.227Z</id>
+    <id>urn:2022-03-21T00:32:19.930Z</id>
     <title>osmos::feed</title>
-    <updated>2022-03-20T00:32:47.228Z</updated>
+    <updated>2022-03-21T00:32:19.930Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[周刊（第10期）：“忘记目标，专注于体系”]]></title>
+        <id>https://www.codedump.info/post/20220319-weekly-10/</id>
+        <link href="https://www.codedump.info/post/20220319-weekly-10/"/>
+        <updated>2022-03-19T05:50:46.000Z</updated>
+        <summary type="html"><![CDATA[引言：本期聊一聊《掌控习惯》这本书里提到的养成习惯的方法论。我读下来一个最深的感受是：越不需要“坚持”就能做下去的事情，才越能长久做下去。
+“忘记目标，专注于体系”
+“忘记目标，专注于体系（Forget About Setting Goals, Focus on the system Instead）”是出自《Atomic Habits》（中文名《掌控习惯 》）一书的一句话，个人认为这是本书最重要的一个观点。
+要做成一件事情，只是依靠简单的设定目标，是远远不够的，更重要的是建立一套体系，促进事情的良性循环，最终让事情发生；反之，如果一件不好的事情，经常重蹈覆辙，其根本原因也是从未改变导致这种状况一再发生的体系。如果没有建立一套体系，所做的一切只是治标不治本。
+这里说的“体系”，在作者的话语中就是“习惯”，作者列出了培养良好习惯的四个步骤（提示、渴求、反应和奖励）：
+1、提示：让它显而易见。
+
+
+
+2、渴求：让它有吸引力。
+
+
+
+3、反应：让它简便易行。
+
+
+
+4、奖励：让它令人愉悦。
+
+
+
+作者将这四个步骤，总结在习惯循环（habit-loop）里，如下图：
+这四个步骤缺一不可，任何一个环节做的不够的话，就难以形成习惯：
+消除提示，习惯形成循环永远也不会开始。
+降低渴求，就不会有足够的动力去行动。
+让行动变得困难，将无法付诸实施。
+如果奖励不能满足欲望，那么未来就没有理由再这样做了。
+没有前三步，就不会有任何行为发生。没有这四个步骤，任何一种行为都不会得以重复。
+1、提示：让它显而易见
+在日常行为中，“原动力经常被高估，而环境的作用往往被低估”，比如经常会认为树立一个远大的目标，坚持做下去就好；而现实的情况是，行为是环境中人的函数：
+B（行为）=f（函数）[P（人），E（环境）]
+即有怎样的行为，除了和人有关系之外，还和环境有重要的关系。
+环境函数中，常见的两个提示是时间和…]]></summary>
+        <author>
+            <name>codedump的网络日志 on codedump的网络日志</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Kubernetes、集群联邦和资源分发]]></title>
+        <id>https://draveness.me//kuberentes-federation</id>
+        <link href="https://draveness.me//kuberentes-federation"/>
+        <updated>2022-03-19T00:00:00.000Z</updated>
+        <author>
+            <name>面向信仰编程</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[分享一下“稍后阅读”的 random 功能]]></title>
         <id>https://www.kawabangga.com/?p=4663</id>

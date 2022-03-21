@@ -33,7 +33,18 @@
       "title": "面向信仰编程",
       "feedUrl": "https://draveness.me/feed.xml",
       "siteUrl": "https://draveness.me/",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://draveness.me//kuberentes-federation",
+          "author": null,
+          "description": "",
+          "link": "https://draveness.me//kuberentes-federation",
+          "publishedOn": "2022-03-19T00:00:00.000Z",
+          "wordCount": 569,
+          "title": "Kubernetes、集群联邦和资源分发",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "卡瓦邦噶！",
@@ -46,7 +57,7 @@
           "description": "最近用了 @yiran 转载的一个 pocket 的隐藏功能，发现太好用了。在博客上单独再分享一下。 TL;D […]\nContinue reading...\nThe post 分享一下“稍后阅读”的 random 功能 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nSRE&Devops 每周分享 Issue #1 Opening\nFirefox Setup\n近况\njava问答：终极父类（六）——等待/唤醒和接口\n玩了一下 Github 个人首页的 Profile （使用 Action 自动更新）",
           "link": "https://www.kawabangga.com/posts/4663",
           "publishedOn": "2022-03-18T16:28:45.000Z",
-          "wordCount": 420,
+          "wordCount": 437,
           "title": "分享一下“稍后阅读”的 random 功能",
           "imageUrl": null
         },
@@ -56,7 +67,7 @@
           "description": "最近在跨机房做一个部署，因为机房之间暂时没有专线，所以流量需要经过公网。对于经过公网的流量，我们一般需要做以下 […]\nContinue reading...\nThe post 用 Nginx 在公网上搭建加密数据通道 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n部署 Django 项目背后的原理：为什么需要 Nginx 和 Gunicron这些东西？\nNginx if 指令工作原理\n使用 ngx_lua （openresty）正确读取 HTTP 请求 body\n单页应用的登陆验证方式\n如何杀死一个进程？",
           "link": "https://www.kawabangga.com/posts/4649",
           "publishedOn": "2022-03-16T11:10:28.000Z",
-          "wordCount": 2053,
+          "wordCount": 2059,
           "title": "用 Nginx 在公网上搭建加密数据通道",
           "imageUrl": null
         },
@@ -66,7 +77,7 @@
           "description": "今年没有在跨年的时候及时写完年终总结，是因为那天还在西安隔离。2021 年一整年依然是疫情肆虐，下半年在新加坡 […]\nContinue reading...\nThe post 2021 年年鉴 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n我在新加坡一个月的生活费明细\n为什么 Cloudflare 提供免费的服务？\nBuild 一个最小的 Redis Docker Image\n《Prometheus Up & Running》阅读\n使用 mtr 检查网络问题，以及注意事项",
           "link": "https://www.kawabangga.com/posts/4626",
           "publishedOn": "2022-02-25T16:24:42.000Z",
-          "wordCount": 561,
+          "wordCount": 567,
           "title": "2021 年年鉴",
           "imageUrl": null
         }
@@ -130,6 +141,16 @@
       "feedUrl": "https://www.codedump.info/index.xml",
       "siteUrl": "https://www.codedump.info/",
       "articles": [
+        {
+          "id": "https://www.codedump.info/post/20220319-weekly-10/",
+          "author": null,
+          "description": "引言：本期聊一聊《掌控习惯》这本书里提到的养成习惯的方法论。我读下来一个最深的感受是：越不需要“坚持”就能做下去的事情，才越能长久做下去。\n“忘记目标，专注于体系”\n“忘记目标，专注于体系（Forget About Setting Goals, Focus on the system Instead）”是出自《Atomic Habits》（中文名《掌控习惯 》）一书的一句话，个人认为这是本书最重要的一个观点。\n要做成一件事情，只是依靠简单的设定目标，是远远不够的，更重要的是建立一套体系，促进事情的良性循环，最终让事情发生；反之，如果一件不好的事情，经常重蹈覆辙，其根本原因也是从未改变导致这种状况一再发生的体系。如果没有建立一套体系，所做的一切只是治标不治本。\n这里说的“体系”，在作者的话语中就是“习惯”，作者列出了培养良好习惯的四个步骤（提示、渴求、反应和奖励）：\n1、提示：让它显而易见。\n\n\n\n2、渴求：让它有吸引力。\n\n\n\n3、反应：让它简便易行。\n\n\n\n4、奖励：让它令人愉悦。\n\n\n\n作者将这四个步骤，总结在习惯循环（habit-loop）里，如下图：\n这四个步骤缺一不可，任何一个环节做的不够的话，就难以形成习惯：\n消除提示，习惯形成循环永远也不会开始。\n降低渴求，就不会有足够的动力去行动。\n让行动变得困难，将无法付诸实施。\n如果奖励不能满足欲望，那么未来就没有理由再这样做了。\n没有前三步，就不会有任何行为发生。没有这四个步骤，任何一种行为都不会得以重复。\n1、提示：让它显而易见\n在日常行为中，“原动力经常被高估，而环境的作用往往被低估”，比如经常会认为树立一个远大的目标，坚持做下去就好；而现实的情况是，行为是环境中人的函数：\nB（行为）=f（函数）[P（人），E（环境）]\n即有怎样的行为，除了和人有关系之外，还和环境有重要的关系。\n环境函数中，常见的两个提示是时间和…",
+          "link": "https://www.codedump.info/post/20220319-weekly-10/",
+          "publishedOn": "2022-03-19T05:50:46.000Z",
+          "wordCount": 221,
+          "title": "周刊（第10期）：“忘记目标，专注于体系”",
+          "imageUrl": null
+        },
         {
           "id": "https://www.codedump.info/post/20220313-weekly-9/",
           "author": null,
