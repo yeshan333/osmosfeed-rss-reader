@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-03-21T00:32:19.930Z</id>
+    <id>urn:2022-03-22T00:33:29.527Z</id>
     <title>osmos::feed</title>
-    <updated>2022-03-21T00:32:19.930Z</updated>
+    <updated>2022-03-22T00:33:29.527Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[K8S 生态周报| Argo Workflows 新版本发布，带来众多新特性]]></title>
+        <id>https://moelove.info/2022/03/21/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Argo-Workflows-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/</id>
+        <link href="https://moelove.info/2022/03/21/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Argo-Workflows-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+        <updated>2022-03-20T16:01:32.000Z</updated>
+        <summary type="html"><![CDATA[「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
+Trivy 新版本发布
+本周 Trivy 相继发布了 v0.24.3 和 v0.24.4 版本。最需要关注的变更是如下两个：
+#1791 更新了 hcl2json 的版本，以便于修正 hcl2json 在处理无效 HCL 配置时的发生的 panic;
+#1852 修正了一个自 v0.24.3 开始引入的 bug, 如果不提供镜像的 tag，在 v0.24.3 中将会报错，现在会遵循 Docker 的相关行为，如果不提供 tag 则默认使用 latest ；
+更多详情请参考其 ReleaseNote
+Argo Workflows v3.3 正式发布
+Argo Workflows 是一个 Kubernetes 上的通用 Workflow 引擎，近期发布的 v3.3 是它的一个特性版本。这里我主要列几个我所关注的变更：
+Plugin template 允许开发者使用任何语言对 workflow 进行扩展，这是一个非常棒的特性。在之前，如果我们想在 Workflow 中执行一些通知，或者做一些报告，那么我可能需要添加一个新的步骤。这样会让整个流程变长。而且，假如我需要上一步的执行结果或输出，那么我还需要单独的处理参数传递等事情，很繁琐。但是，v3.3 中增加的这个 Plugin template 能力，就让事情变得很简单了。比如我可以使用如下配置进行消息通知：
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+ generateName: plugin-example-
+spec:
+ entrypoint: main
+ templates:
+ - name: main
+ plugin:
+ webh…]]></summary>
+        <author>
+            <name>zhangjintao9020@gmail.com (张晋涛)</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[周刊（第10期）：“忘记目标，专注于体系”]]></title>
         <id>https://www.codedump.info/post/20220319-weekly-10/</id>
@@ -303,30 +331,6 @@ CRI
 #6111 添加了 sandbox 和 container 延迟…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[周刊（第6期）：《sqlite 3.36 btree实现解析》番外篇]]></title>
-        <id>https://www.codedump.info/post/20220220-weekly-6/</id>
-        <link href="https://www.codedump.info/post/20220220-weekly-6/"/>
-        <updated>2022-02-20T02:53:41.000Z</updated>
-        <summary type="html"><![CDATA[引言：从2021年9月份开始要探索生产级btree存储引擎的实现，到2022年2月整理完毕发布《sqlite 3.36 btree实现解析》的系列文章，我花费了小半年的时间，本期会聊聊整个过程下来我的一些想法。
-《sqlite 3.36 btree实现解析》番外篇
-时间回到2021年9月份。彼时，因为工作的关系，要研究一下生产级btree存储引擎的实现，在此之前我大体对btree、b+tree的数据结构和算法有个了解，见：
-B树、B+树索引算法原理（上） - codedump的网络日志
-B树、B+树索引算法原理（下） - codedump的网络日志
-但是，一个生产级的产品，对比教科书的示范型代码，还是有很大的区别的，具体来说，我当时不明白以下这些生产级存储引擎的问题如何解决：
-如何存储变长的数据？
-如何存储数据大小超过一个物理页面的数据？
-如何利用被回收的空间？
-如何处理崩溃恢复？
-读写并发如何处理？
-…
-为了解答这些疑问，先后去翻阅InnodDB、WiredTiger、sqlite的文档，但是这些项目代码量都太大了，以我当时的程度，无法马上找到很具体的解答。
-事情的突破在从网上查找文章时看到的这一篇文章：How Database B-Tree Indexing Works - DZone Database，这是一篇解释btree工作原理的文章，这篇文章同时还列出了一个项目：madushadhanushka/simple-sqlite: Code reading for sqlite backend，这个项目的作者，将sqlite2.5版本中btree的实现，单独抽取出来形成了一个独立的KV库，可以编译通过使用。
-看到这个项目的时候，我的感觉就是如获至宝，因为虽然只有几千行的代码量，但是解答了很多上面提到的疑问，“麻雀虽小五脏俱全”，我花了几天的时间整体阅读了解了原理，这个…]]></summary>
-        <author>
-            <name>codedump的网络日志 on codedump的网络日志</name>
         </author>
     </entry>
 </feed>

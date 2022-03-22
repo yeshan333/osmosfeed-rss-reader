@@ -57,7 +57,7 @@
           "description": "最近用了 @yiran 转载的一个 pocket 的隐藏功能，发现太好用了。在博客上单独再分享一下。 TL;D […]\nContinue reading...\nThe post 分享一下“稍后阅读”的 random 功能 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nSRE&Devops 每周分享 Issue #1 Opening\nFirefox Setup\n近况\njava问答：终极父类（六）——等待/唤醒和接口\n玩了一下 Github 个人首页的 Profile （使用 Action 自动更新）",
           "link": "https://www.kawabangga.com/posts/4663",
           "publishedOn": "2022-03-18T16:28:45.000Z",
-          "wordCount": 437,
+          "wordCount": 425,
           "title": "分享一下“稍后阅读”的 random 功能",
           "imageUrl": null
         },
@@ -67,7 +67,7 @@
           "description": "最近在跨机房做一个部署，因为机房之间暂时没有专线，所以流量需要经过公网。对于经过公网的流量，我们一般需要做以下 […]\nContinue reading...\nThe post 用 Nginx 在公网上搭建加密数据通道 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n部署 Django 项目背后的原理：为什么需要 Nginx 和 Gunicron这些东西？\nNginx if 指令工作原理\n使用 ngx_lua （openresty）正确读取 HTTP 请求 body\n单页应用的登陆验证方式\n如何杀死一个进程？",
           "link": "https://www.kawabangga.com/posts/4649",
           "publishedOn": "2022-03-16T11:10:28.000Z",
-          "wordCount": 2059,
+          "wordCount": 2047,
           "title": "用 Nginx 在公网上搭建加密数据通道",
           "imageUrl": null
         },
@@ -77,7 +77,7 @@
           "description": "今年没有在跨年的时候及时写完年终总结，是因为那天还在西安隔离。2021 年一整年依然是疫情肆虐，下半年在新加坡 […]\nContinue reading...\nThe post 2021 年年鉴 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n我在新加坡一个月的生活费明细\n为什么 Cloudflare 提供免费的服务？\nBuild 一个最小的 Redis Docker Image\n《Prometheus Up & Running》阅读\n使用 mtr 检查网络问题，以及注意事项",
           "link": "https://www.kawabangga.com/posts/4626",
           "publishedOn": "2022-02-25T16:24:42.000Z",
-          "wordCount": 567,
+          "wordCount": 555,
           "title": "2021 年年鉴",
           "imageUrl": null
         }
@@ -89,12 +89,22 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2022/03/21/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Argo-Workflows-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nTrivy 新版本发布\n本周 Trivy 相继发布了 v0.24.3 和 v0.24.4 版本。最需要关注的变更是如下两个：\n#1791 更新了 hcl2json 的版本，以便于修正 hcl2json 在处理无效 HCL 配置时的发生的 panic;\n#1852 修正了一个自 v0.24.3 开始引入的 bug, 如果不提供镜像的 tag，在 v0.24.3 中将会报错，现在会遵循 Docker 的相关行为，如果不提供 tag 则默认使用 latest ；\n更多详情请参考其 ReleaseNote\nArgo Workflows v3.3 正式发布\nArgo Workflows 是一个 Kubernetes 上的通用 Workflow 引擎，近期发布的 v3.3 是它的一个特性版本。这里我主要列几个我所关注的变更：\nPlugin template 允许开发者使用任何语言对 workflow 进行扩展，这是一个非常棒的特性。在之前，如果我们想在 Workflow 中执行一些通知，或者做一些报告，那么我可能需要添加一个新的步骤。这样会让整个流程变长。而且，假如我需要上一步的执行结果或输出，那么我还需要单独的处理参数传递等事情，很繁琐。但是，v3.3 中增加的这个 Plugin template 能力，就让事情变得很简单了。比如我可以使用如下配置进行消息通知：\napiVersion: argoproj.io/v1alpha1\nkind: Workflow\nmetadata:\n generateName: plugin-example-\nspec:\n entrypoint: main\n templates:\n - name: main\n plugin:\n webh…",
+          "link": "https://moelove.info/2022/03/21/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Argo-Workflows-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
+          "publishedOn": "2022-03-20T16:01:32.000Z",
+          "wordCount": 310,
+          "title": "K8S 生态周报| Argo Workflows 新版本发布，带来众多新特性",
+          "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
+        },
+        {
           "id": "https://moelove.info/2022/03/12/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-v3.8-OCI-%E6%94%AF%E6%8C%81%E6%AD%A3%E5%BC%8F-GADocker-%E6%96%B0%E7%89%88%E6%9C%AC%E4%BF%AE%E5%A4%8D%E5%A4%9A%E4%B8%AA%E4%B8%A5%E9%87%8D-bug/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nKIND v0.12.0 发布\nKIND（Kubernetes In Docker）是我很喜欢，也是一直在参与的一个开源项目。\n在我之前的文章中有过多次介绍，可以参考\n我基本上每天都会用到它，非常的方便。\n距离上个大版本，v0.11 已经过了近十个月，我们来看看这个新版本带来哪些值得关注的特性吧：\n目前 v0.12.0 默认使用的 Kubernetes 版本为 v1.23.4 版本。如果升级 KIND 的话，会重新拉取最新的镜像，镜像托管在 Docker Hub 上，\n可能会比较耗时，建议确保网络顺畅。\n在 v0.12.0 中专门优化了对多架构的支持，默认的所有已发布镜像都包含了 amd64 和 arm64 的支持。\n在镜像中也对相关组件都做了升级：\ncontainerd v1.5.10\ncrictl 1.23.0\nCNI plugin v1.1.0\n此外，也修复了 Docker + cgroup2 + rootless 环境下的支持，和 WSL2 环境下的支持。建议大家进行升级。\n更多详细信息请参考其 ReleaseNote\nDocker v20.10.13 发布\n本周 Docker 发布了 v20.10.13 版本，是的，你没有看错，现在发布的版本还是在给 v20.10 打 patch 。\n实际上当前 Docker 仓库中最新的代码比 v20.10 已经多了很多功能特性，只不过尚未达到发布一个全新的大版本的目标，所以一直没有发布新的大版本。\n这个版本中主要是进行了一些 bugfix 和打包相关的变更。其中包括：\n将 buildx 升级到了 v0.8.0 版本。\n#43165 修复了当使用 local 日志驱动时，如果迅速产生大量日志，可能会产生 OO…",
           "link": "https://moelove.info/2022/03/12/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-v3.8-OCI-%E6%94%AF%E6%8C%81%E6%AD%A3%E5%BC%8F-GADocker-%E6%96%B0%E7%89%88%E6%9C%AC%E4%BF%AE%E5%A4%8D%E5%A4%9A%E4%B8%AA%E4%B8%A5%E9%87%8D-bug/",
           "publishedOn": "2022-03-11T18:34:36.000Z",
-          "wordCount": 380,
+          "wordCount": 387,
           "title": "K8S 生态周报| Helm v3.8 OCI 支持正式 GA，Docker 新版本修复多个严重 bug",
           "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
         },
@@ -104,7 +114,7 @@
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nKubernetes ingress-nginx v1.1.2 发布\n就在今天 Kubernetes ingress-nginx 项目发布了 v1.1.2 版本。\n我是这个版本的 release manager 。\n距离上个版本发布有将近两个月了，我们来看看这个版本中值得关注的一些变更。\n在 #8221 中，我们对 ingress-nginx 的 Admission controller 的逻辑做了一些调整，\n主要是可以用来修正 自 v1.0 版本后，如果 Kubernetes 集群中同时运行多个 ingress-nginx 的话，在创建 Ingress 资源的时候，可能导致每个 ingres-nginx 的 Admission 都会去进行检查的问题。\n而该问题最大的影响是，如果创建的 Ingress 配置相同的话，则会被直接拒绝掉。\n在 #8253 中则是为 ingress-nginx 增加了一个 ssl_certificate_info 的 metric， 直接公开当前被加载的证书的信息。\n这个功能的最大的好处就是可以避免 Ingress controller Pod 加载了旧证书，进而导致客户端连接失败的问题。\n此外 #8256 是为了修正在 nginx.ingress.kubernetes.io/auth-url 中传递无效 URL 的问题，\n建议升级 。\n此外还有一些小的 bugfix 和优化，更多详细信息请参考 ReleaseNote 。\n在这次发布过程中还有一些比较有趣的事情，\n本次发布过程从时间线看，从我开始发布流程，到最后完成发布，共持续了一周的时间，由几个人异步协作完成。\n这跟往常差别还是比较大的，往常我们可能会约某个时间，同时在线一…",
           "link": "https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/",
           "publishedOn": "2022-03-06T15:39:51.000Z",
-          "wordCount": 284,
+          "wordCount": 286,
           "title": "K8S 生态周报| Knative 进入 CNCF 孵化，K8S ingress-nginx 解决多实例问题",
           "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
         },
@@ -114,7 +124,7 @@
           "description": "大家好，我是张晋涛。\n在之前的 『K8S生态周报』 和 《搞懂 Kubernetes 准入控制（Admission Controller)》 等文章中，我曾提到过 Kyverno 这个云原生策略引擎项目，很多小伙伴在后台私信我说对这个项目比较感兴趣。这篇文章我们专门来聊聊 Kyverno 吧。\nKyverno 当前是一个 CNCF sandbox 级别的项目。\n\n本文的大纲如下，小伙伴们可自行跳跃到感兴趣的部分查阅。\n\nKubernetes 的策略\n我们称 Kyverno 是云原生策略引擎，那么 Kubernetes 中的策略是什么呢？\n对于 Kubernetes 中的策略，大家可能比较熟悉的是 PodSecurityPolicy。 不过 PodSecurityPolicy 自 Kubernetes v1.21 起已弃用，并将在 v1.25 中删除（当前版本是 v1.23 ）。当前建议大家迁移到 Kubernetes 新增的替换方案 Pod Security Admission 或者类似本文中介绍的 Kyverno 等这种第三方策略插件。\n其实无论是 PodSecurityPolicy 还是它的替代方案 Pod Security Admission ，甚至包括 Kyverno 等，它们都是构筑在 Kubernetes 的 Admission 机制之上的。\n首先，我们主要从两个角度来理解为什么我们需要准入控制器（Admission Controller）：\n从安全的角度\n比如，为避免攻击。需要对Kubernetes 集群中部署的镜像来源判定；\n比如，避免 Pod 使用 root 用户，或者尽量不开启特权容器等；\n从治理的角度\n比如，通过 admission controller 校验服务是否拥有必须的 label；\n比如，避免出现资源超卖等；\n下图，是 kube-apiser…",
           "link": "https://moelove.info/2022/03/02/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AD%96%E7%95%A5%E5%BC%95%E6%93%8E-Kyverno-%E4%B8%8A/",
           "publishedOn": "2022-03-02T13:39:12.000Z",
-          "wordCount": 478,
+          "wordCount": 479,
           "title": "云原生策略引擎 Kyverno （上）",
           "imageUrl": "https://s2.loli.net/2022/03/03/KUYpoEOH9SFIdL3.png"
         },
@@ -124,7 +134,7 @@
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\ncontainerd v1.6.0 正式发布\ncontainerd v1.6 在本周也正式发布了，这是 containerd 的第 7 个大版本。距离上一个大的正式版 v1.5.0 已经过了将近 9 个月的时间（v1.5.0 是 2021 年 5 月发布的），关于 containerd v1.5.0 的主要变更，可参考我去年写的 K8S 生态周报| containerd v1.5.0-rc.0 发布。我们一起来看看 containerd v1.6.0 中有哪些值得关注的变更吧！\nRuntime\n#5744 在 containerd 的 metrics 接口中增加了 runtime 的 label;\n#6375 将 runc 的依赖升级到了 v1.1.0 版本；\n#5871 增加了 shim plugin 的支持，重构了 shim v2 来加载和注册 plugin;\nCRI\n#5619 当前会同时支持 CRI v1 和 v1alpha2 ；\n#6113 实现了新的 Kubernetes CRI pod sandbox stats API，这其实是为了遵守 Kubernetes 中 CRI 的变更。其根本原因实际上是在 Kubernetes 中希望能够增强 CRI 的能力，减少对 cAdvisor 的依赖。更深层次的则是由于 cAdvisor 仅支持 Linux 容器，和一般的容器运行时，无法支持类似 Kata Containers 这类 VM 运行时，以及不支持 Windows 容器。由此其实我们也可以看出来 Kubernetes & containerd 的一些目标，做的更通用，更标准化；\n#6111 添加了 sandbox 和 container 延迟…",
           "link": "https://moelove.info/2022/02/20/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-containerd-v1.6-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
           "publishedOn": "2022-02-20T12:55:03.000Z",
-          "wordCount": 294,
+          "wordCount": 296,
           "title": "K8S 生态周报| containerd v1.6 正式发布，带来众多新特性",
           "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
         }
@@ -179,16 +189,6 @@
           "publishedOn": "2022-02-27T03:25:33.000Z",
           "wordCount": 236,
           "title": "周刊（第7期）：一个C系程序员的Rust初体验",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.codedump.info/post/20220220-weekly-6/",
-          "author": null,
-          "description": "引言：从2021年9月份开始要探索生产级btree存储引擎的实现，到2022年2月整理完毕发布《sqlite 3.36 btree实现解析》的系列文章，我花费了小半年的时间，本期会聊聊整个过程下来我的一些想法。\n《sqlite 3.36 btree实现解析》番外篇\n时间回到2021年9月份。彼时，因为工作的关系，要研究一下生产级btree存储引擎的实现，在此之前我大体对btree、b+tree的数据结构和算法有个了解，见：\nB树、B+树索引算法原理（上） - codedump的网络日志\nB树、B+树索引算法原理（下） - codedump的网络日志\n但是，一个生产级的产品，对比教科书的示范型代码，还是有很大的区别的，具体来说，我当时不明白以下这些生产级存储引擎的问题如何解决：\n如何存储变长的数据？\n如何存储数据大小超过一个物理页面的数据？\n如何利用被回收的空间？\n如何处理崩溃恢复？\n读写并发如何处理？\n…\n为了解答这些疑问，先后去翻阅InnodDB、WiredTiger、sqlite的文档，但是这些项目代码量都太大了，以我当时的程度，无法马上找到很具体的解答。\n事情的突破在从网上查找文章时看到的这一篇文章：How Database B-Tree Indexing Works - DZone Database，这是一篇解释btree工作原理的文章，这篇文章同时还列出了一个项目：madushadhanushka/simple-sqlite: Code reading for sqlite backend，这个项目的作者，将sqlite2.5版本中btree的实现，单独抽取出来形成了一个独立的KV库，可以编译通过使用。\n看到这个项目的时候，我的感觉就是如获至宝，因为虽然只有几千行的代码量，但是解答了很多上面提到的疑问，“麻雀虽小五脏俱全”，我花了几天的时间整体阅读了解了原理，这个…",
-          "link": "https://www.codedump.info/post/20220220-weekly-6/",
-          "publishedOn": "2022-02-20T02:53:41.000Z",
-          "wordCount": 413,
-          "title": "周刊（第6期）：《sqlite 3.36 btree实现解析》番外篇",
           "imageUrl": null
         }
       ]
