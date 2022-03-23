@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-03-22T00:33:29.527Z</id>
+    <id>urn:2022-03-23T00:37:55.765Z</id>
     <title>osmos::feed</title>
-    <updated>2022-03-22T00:33:29.527Z</updated>
+    <updated>2022-03-23T00:37:55.765Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -311,26 +311,6 @@ Build 一个最小的 Redis Docker Image
 使用 mtr 检查网络问题，以及注意事项]]></summary>
         <author>
             <name>laixintao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[K8S 生态周报| containerd v1.6 正式发布，带来众多新特性]]></title>
-        <id>https://moelove.info/2022/02/20/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-containerd-v1.6-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/</id>
-        <link href="https://moelove.info/2022/02/20/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-containerd-v1.6-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-        <updated>2022-02-20T12:55:03.000Z</updated>
-        <summary type="html"><![CDATA[「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
-containerd v1.6.0 正式发布
-containerd v1.6 在本周也正式发布了，这是 containerd 的第 7 个大版本。距离上一个大的正式版 v1.5.0 已经过了将近 9 个月的时间（v1.5.0 是 2021 年 5 月发布的），关于 containerd v1.5.0 的主要变更，可参考我去年写的 K8S 生态周报| containerd v1.5.0-rc.0 发布。我们一起来看看 containerd v1.6.0 中有哪些值得关注的变更吧！
-Runtime
-#5744 在 containerd 的 metrics 接口中增加了 runtime 的 label;
-#6375 将 runc 的依赖升级到了 v1.1.0 版本；
-#5871 增加了 shim plugin 的支持，重构了 shim v2 来加载和注册 plugin;
-CRI
-#5619 当前会同时支持 CRI v1 和 v1alpha2 ；
-#6113 实现了新的 Kubernetes CRI pod sandbox stats API，这其实是为了遵守 Kubernetes 中 CRI 的变更。其根本原因实际上是在 Kubernetes 中希望能够增强 CRI 的能力，减少对 cAdvisor 的依赖。更深层次的则是由于 cAdvisor 仅支持 Linux 容器，和一般的容器运行时，无法支持类似 Kata Containers 这类 VM 运行时，以及不支持 Windows 容器。由此其实我们也可以看出来 Kubernetes & containerd 的一些目标，做的更通用，更标准化；
-#6111 添加了 sandbox 和 container 延迟…]]></summary>
-        <author>
-            <name>zhangjintao9020@gmail.com (张晋涛)</name>
         </author>
     </entry>
 </feed>
