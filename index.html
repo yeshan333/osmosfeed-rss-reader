@@ -22,6 +22,66 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-03-24 datetime="2022-03-24T16:01:32.000Z">2022-03-24</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-03-24 datetime="2022-03-24T16:01:32.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >MoeLove</button>
+                  <a class="source-heading__link" href="https://moelove.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://moelove.info/2022/03/25/%E4%BC%81%E4%B8%9A%E7%BA%A7%E4%BA%91%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E4%BA%A4%E4%BB%98%E5%8F%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97-Helm-%E5%9F%BA%E7%A1%80-%E4%B8%80/"
+                        open
+                      >
+                        <summary class="article-expander__title">企业级云原生应用交付及管理系列 - Helm 基础 (一)</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://moelove.info/2022/03/25/%E4%BC%81%E4%B8%9A%E7%BA%A7%E4%BA%91%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E4%BA%A4%E4%BB%98%E5%8F%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97-Helm-%E5%9F%BA%E7%A1%80-%E4%B8%80/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://cdn.nlark.com/yuque/0/2022/png/10359851/1648103928214-fc9e56ca-86ac-4466-ba41-543a305eca07.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>大家好，我是张晋涛。
+在 Kubernetes 中，当我们要部署一个应用时，往往会涉及一个或多个部署资源。我们如果使用 YAML 文件来对这些资源的依赖及关联关系进行组织、配置，这往往十分复杂繁琐并且可移植性较差。
+Helm 这个 Kubernetes 环境中的包管理器可以帮助我们更快速便捷的来实现资源的组织和部署。
+
+本期的主要内容将围绕 Helm 来进行展开。欢迎小伙伴们留言讨论 （觉得内容还不错，就请点赞点在看及转发，谢谢）。
+Helm 的诞生及发展
+Helm 1
+最早期的 Helm 是一个内部黑客马拉松项目，旨在帮助独立开发人员创建 Kubernetes 资源包并将其部署至集群当中。它是于 2015 年在 Deis 创建，后被微软收购 。在同年的11月9日由 CNCF 主办的 KubeCon 上，正式推出（现在称之为 Helm Classic），这是 Helm 的第一个公开版本。
+Helm 2
+2016 年 1 月，Helm Classic 与名为 Kubernetes Deployment Manager 的 GCS 工具合并成 Helm，并移至 Kubernetes下。之后，Helm 加入了 CNCF，成为顶级项目，并已成功毕业。
+在 Helm 2 开发周期中，引入了一个服务端组件 Tiller。Tiller 可以让多个操作者在同一组发布中进行交互，在共享集群中的团队协作发挥了一定的作用。但是，基于 Kubernetes 1.6 的安全策略，在将 Tiller 安装到多租户集群时，DevOps 和 SRE 必须学习额外的操作步骤。此外，由于 Tiller 是一个服务端组件，在安全性上有很严重的缺陷，所有能访问 Tiller 的用户都具备了相同的权限。
+这就引出了：如何化繁为简，即不能陷入在安全控制的繁复上；又不能扩大非预期的权限授予。
+在 Helm 2 中，默认…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;2
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-03-20 datetime="2022-03-20T16:01:32.000Z">2022-03-20</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-03-20 datetime="2022-03-20T16:01:32.000Z"></time>
           </button>
@@ -797,8 +857,8 @@ Build 一个最小的 Redis Docker Image
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/2037389320">
-        <time id="build-timestamp" datetime="2022-03-25T00:31:39.061Z">2022-03-25T00:31:39.061Z</time>
+      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/2042905760">
+        <time id="build-timestamp" datetime="2022-03-26T00:33:39.025Z">2022-03-26T00:33:39.025Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a>
     </footer>

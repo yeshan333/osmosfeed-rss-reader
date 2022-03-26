@@ -89,12 +89,22 @@
       "siteUrl": "https://moelove.info/",
       "articles": [
         {
+          "id": "https://moelove.info/2022/03/25/%E4%BC%81%E4%B8%9A%E7%BA%A7%E4%BA%91%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E4%BA%A4%E4%BB%98%E5%8F%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97-Helm-%E5%9F%BA%E7%A1%80-%E4%B8%80/",
+          "author": "zhangjintao9020@gmail.com (张晋涛)",
+          "description": "大家好，我是张晋涛。\n在 Kubernetes 中，当我们要部署一个应用时，往往会涉及一个或多个部署资源。我们如果使用 YAML 文件来对这些资源的依赖及关联关系进行组织、配置，这往往十分复杂繁琐并且可移植性较差。\nHelm 这个 Kubernetes 环境中的包管理器可以帮助我们更快速便捷的来实现资源的组织和部署。\n\n本期的主要内容将围绕 Helm 来进行展开。欢迎小伙伴们留言讨论 （觉得内容还不错，就请点赞点在看及转发，谢谢）。\nHelm 的诞生及发展\nHelm 1\n最早期的 Helm 是一个内部黑客马拉松项目，旨在帮助独立开发人员创建 Kubernetes 资源包并将其部署至集群当中。它是于 2015 年在 Deis 创建，后被微软收购 。在同年的11月9日由 CNCF 主办的 KubeCon 上，正式推出（现在称之为 Helm Classic），这是 Helm 的第一个公开版本。\nHelm 2\n2016 年 1 月，Helm Classic 与名为 Kubernetes Deployment Manager 的 GCS 工具合并成 Helm，并移至 Kubernetes下。之后，Helm 加入了 CNCF，成为顶级项目，并已成功毕业。\n在 Helm 2 开发周期中，引入了一个服务端组件 Tiller。Tiller 可以让多个操作者在同一组发布中进行交互，在共享集群中的团队协作发挥了一定的作用。但是，基于 Kubernetes 1.6 的安全策略，在将 Tiller 安装到多租户集群时，DevOps 和 SRE 必须学习额外的操作步骤。此外，由于 Tiller 是一个服务端组件，在安全性上有很严重的缺陷，所有能访问 Tiller 的用户都具备了相同的权限。\n这就引出了：如何化繁为简，即不能陷入在安全控制的繁复上；又不能扩大非预期的权限授予。\n在 Helm 2 中，默认…",
+          "link": "https://moelove.info/2022/03/25/%E4%BC%81%E4%B8%9A%E7%BA%A7%E4%BA%91%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E4%BA%A4%E4%BB%98%E5%8F%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97-Helm-%E5%9F%BA%E7%A1%80-%E4%B8%80/",
+          "publishedOn": "2022-03-24T16:01:32.000Z",
+          "wordCount": 701,
+          "title": "企业级云原生应用交付及管理系列 - Helm 基础 (一)",
+          "imageUrl": "https://cdn.nlark.com/yuque/0/2022/png/10359851/1648103928214-fc9e56ca-86ac-4466-ba41-543a305eca07.png"
+        },
+        {
           "id": "https://moelove.info/2022/03/21/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Argo-Workflows-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
           "author": "zhangjintao9020@gmail.com (张晋涛)",
           "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nTrivy 新版本发布\n本周 Trivy 相继发布了 v0.24.3 和 v0.24.4 版本。最需要关注的变更是如下两个：\n#1791 更新了 hcl2json 的版本，以便于修正 hcl2json 在处理无效 HCL 配置时的发生的 panic;\n#1852 修正了一个自 v0.24.3 开始引入的 bug, 如果不提供镜像的 tag，在 v0.24.3 中将会报错，现在会遵循 Docker 的相关行为，如果不提供 tag 则默认使用 latest ；\n更多详情请参考其 ReleaseNote\nArgo Workflows v3.3 正式发布\nArgo Workflows 是一个 Kubernetes 上的通用 Workflow 引擎，近期发布的 v3.3 是它的一个特性版本。这里我主要列几个我所关注的变更：\nPlugin template 允许开发者使用任何语言对 workflow 进行扩展，这是一个非常棒的特性。在之前，如果我们想在 Workflow 中执行一些通知，或者做一些报告，那么我可能需要添加一个新的步骤。这样会让整个流程变长。而且，假如我需要上一步的执行结果或输出，那么我还需要单独的处理参数传递等事情，很繁琐。但是，v3.3 中增加的这个 Plugin template 能力，就让事情变得很简单了。比如我可以使用如下配置进行消息通知：\napiVersion: argoproj.io/v1alpha1\nkind: Workflow\nmetadata:\n generateName: plugin-example-\nspec:\n entrypoint: main\n templates:\n - name: main\n plugin:\n webh…",
           "link": "https://moelove.info/2022/03/21/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Argo-Workflows-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
           "publishedOn": "2022-03-20T16:01:32.000Z",
-          "wordCount": 310,
+          "wordCount": 315,
           "title": "K8S 生态周报| Argo Workflows 新版本发布，带来众多新特性",
           "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
         },
@@ -124,7 +134,7 @@
           "description": "大家好，我是张晋涛。\n在之前的 『K8S生态周报』 和 《搞懂 Kubernetes 准入控制（Admission Controller)》 等文章中，我曾提到过 Kyverno 这个云原生策略引擎项目，很多小伙伴在后台私信我说对这个项目比较感兴趣。这篇文章我们专门来聊聊 Kyverno 吧。\nKyverno 当前是一个 CNCF sandbox 级别的项目。\n\n本文的大纲如下，小伙伴们可自行跳跃到感兴趣的部分查阅。\n\nKubernetes 的策略\n我们称 Kyverno 是云原生策略引擎，那么 Kubernetes 中的策略是什么呢？\n对于 Kubernetes 中的策略，大家可能比较熟悉的是 PodSecurityPolicy。 不过 PodSecurityPolicy 自 Kubernetes v1.21 起已弃用，并将在 v1.25 中删除（当前版本是 v1.23 ）。当前建议大家迁移到 Kubernetes 新增的替换方案 Pod Security Admission 或者类似本文中介绍的 Kyverno 等这种第三方策略插件。\n其实无论是 PodSecurityPolicy 还是它的替代方案 Pod Security Admission ，甚至包括 Kyverno 等，它们都是构筑在 Kubernetes 的 Admission 机制之上的。\n首先，我们主要从两个角度来理解为什么我们需要准入控制器（Admission Controller）：\n从安全的角度\n比如，为避免攻击。需要对Kubernetes 集群中部署的镜像来源判定；\n比如，避免 Pod 使用 root 用户，或者尽量不开启特权容器等；\n从治理的角度\n比如，通过 admission controller 校验服务是否拥有必须的 label；\n比如，避免出现资源超卖等；\n下图，是 kube-apiser…",
           "link": "https://moelove.info/2022/03/02/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AD%96%E7%95%A5%E5%BC%95%E6%93%8E-Kyverno-%E4%B8%8A/",
           "publishedOn": "2022-03-02T13:39:12.000Z",
-          "wordCount": 479,
+          "wordCount": 478,
           "title": "云原生策略引擎 Kyverno （上）",
           "imageUrl": "https://s2.loli.net/2022/03/03/KUYpoEOH9SFIdL3.png"
         }
