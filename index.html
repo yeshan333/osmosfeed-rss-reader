@@ -22,6 +22,70 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-03-27 datetime="2022-03-27T07:06:38.000Z">2022-03-27</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-03-27 datetime="2022-03-27T07:06:38.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >codedump的网络日志 on codedump的网络日志</button>
+                  <a class="source-heading__link" href="https://www.codedump.info/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.codedump.info/post/20220327-weekly-11/"
+                        open
+                      >
+                        <summary class="article-expander__title">周刊（第11期）：mmap适用于存储引擎吗？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.codedump.info/post/20220327-weekly-11/">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>引言：本期聊一聊mmap技术在存储引擎中的应用。
+mmap适用于存储引擎吗？
+想写这篇文章，主要源于两篇文章（论文）中的对mmap在存储引擎中使用的两种截然不同的观点讨论：
+反方（mmap不应该用于存储引擎）：Are You Sure You Want to Use MMAP in Your Database Management System? (CIDR 2022)
+正方（mmap可以用于存储引擎）：re: Are You Sure You Want to Use MMAP in Your Database Management System? - Ayende @ Rahien
+由于刚好看过这两种方式的btree存储引擎：sqlite的btree实现以及boltdb，所以可以结合我的认知来聊一聊这个问题。这两个存储引擎的实现都已经整理成了系列博客，这两个系列的第一篇分别是：
+sqlite3.36版本 btree实现（零）- 起步及概述 - codedump的网络日志
+boltdb 1.3.0实现分析（一） - codedump的网络日志
+先来看看一个存储引擎实现时的大体分层，以sqlite为例分为三层：
+
+
+
+自下而上，这三个层次分别是：
+os层：封装系统级API实现文件的读写等操作。
+页面管理层：提供以页面为单位的读、写、加载、缓存等操作。
+btree实现：btree以物理页面为单位向下一层的页面管理层来读写页面，而物理页面内部的逻辑组织（比如父子关系），以及页面内的数据组织（比如一个页面中管理的数据）由这一层负责。
+可以这样来简单区别理解“页面管理”模块和btree模块的功能：
+页面管理：顾名思义，页面管理模块的最基本单位是”页面“，页面的读、写、缓存、落盘、恢复、回滚等，都由页面模块负责。上一层依赖页面管理模块的btree模块，不需要关心一个页面何时缓存、何时落…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
             <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-03-24 datetime="2022-03-24T16:01:32.000Z">2022-03-24</time>
             <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-03-24 datetime="2022-03-24T16:01:32.000Z"></time>
           </button>
@@ -298,7 +362,7 @@ Firefox Setup
 近况
 java问答：终极父类（六）——等待/唤醒和接口
 玩了一下 Github 个人首页的 Profile （使用 Action 自动更新）</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -798,67 +862,10 @@ C系语言发展到今天，已经有不少可以用于内存问题检测的利�
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-02-25 datetime="2022-02-25T16:24:42.000Z">2022-02-25</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-02-25 datetime="2022-02-25T16:24:42.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >卡瓦邦噶！</button>
-                  <a class="source-heading__link" href="https://www.kawabangga.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.kawabangga.com/?p&#x3D;4626"
-                        open
-                      >
-                        <summary class="article-expander__title">2021 年年鉴</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.kawabangga.com/posts/4626">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>今年没有在跨年的时候及时写完年终总结，是因为那天还在西安隔离。2021 年一整年依然是疫情肆虐，下半年在新加坡 […]
-Continue reading...
-The post 2021 年年鉴 first appeared on 卡瓦邦噶！.
-
-相关文章:
-
-我在新加坡一个月的生活费明细
-为什么 Cloudflare 提供免费的服务？
-Build 一个最小的 Redis Docker Image
-《Prometheus Up &amp; Running》阅读
-使用 mtr 检查网络问题，以及注意事项</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/2046194122">
-        <time id="build-timestamp" datetime="2022-03-27T00:37:52.155Z">2022-03-27T00:37:52.155Z</time>
+      <a class="footer-link" href="https://github.com/yeshan333/osmosfeed-rss-reader/actions/runs/2049470708">
+        <time id="build-timestamp" datetime="2022-03-28T00:33:10.385Z">2022-03-28T00:33:10.385Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.14.4</a>
     </footer>
