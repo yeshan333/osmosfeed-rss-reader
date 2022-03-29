@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-03-28T00:33:10.436Z</id>
+    <id>urn:2022-03-29T00:38:21.547Z</id>
     <title>osmos::feed</title>
-    <updated>2022-03-28T00:33:10.436Z</updated>
+    <updated>2022-03-29T00:38:21.547Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[K8S 生态周报| Docker，containerd 全版本漏洞公布，请及时更新]]></title>
+        <id>https://moelove.info/2022/03/27/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Dockercontainerd-%E5%85%A8%E7%89%88%E6%9C%AC%E6%BC%8F%E6%B4%9E%E5%85%AC%E5%B8%83%E8%AF%B7%E5%8F%8A%E6%97%B6%E6%9B%B4%E6%96%B0/</id>
+        <link href="https://moelove.info/2022/03/27/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Dockercontainerd-%E5%85%A8%E7%89%88%E6%9C%AC%E6%BC%8F%E6%B4%9E%E5%85%AC%E5%B8%83%E8%AF%B7%E5%8F%8A%E6%97%B6%E6%9B%B4%E6%96%B0/"/>
+        <updated>2022-03-27T13:59:33.000Z</updated>
+        <summary type="html"><![CDATA[「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。
+CVE-2022-24769
+近期在 Docker 中发现了一个 影响所有版本的安全漏洞 CVE-2022-24769，该漏洞已经在 Docker 最新的版本
+v20.10.14 中修复。
+这个漏洞主要是由于错误的设置了非空的 Linux 进程的 Inheritable capabilities 集合。导致在 execve(2) 期间，可能会造成提权。
+我在《Kubernetes 安全原理与实践》 中 Linux 的权限和能力模型中，
+曾介绍过相关内容。
+Linux 中的 capabilities 可以作为每个线程的属性存在，也可以作用在可执行文件上。
+如果用作线程属性存在，我们称之为 线程 capability 集合；如果用作可执行文件的扩展属性上，则称之为 文件 capability 集合。
+其中的线程 capability 集合主要包含以下五类：
+Permitted
+Inheritable
+Effective
+Bounding
+Ambient
+本次漏洞受影响的就是 Inheritable 集合。 它主要定义了一组跨 execve(2) 系统调用时可继承的 capability 集合。
+但是它的影响是会将 Inheritable 集合中的 capability 应用于新线程的 Permitted 集合中，而非直接设置成新线程的 Effective 集合。
+另一方面，文件 capability 集合则主要包含以下三类：
+Permitted
+Inheritable
+Effective
+其中 Inheritable 集合的作用是它定义的 capability 会与线程的 Inheritable 取交集，
+然后添加到 execve(2) 产生的线程 Perm…]]></summary>
+        <author>
+            <name>zhangjintao9020@gmail.com (张晋涛)</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[周刊（第11期）：mmap适用于存储引擎吗？]]></title>
         <id>https://www.codedump.info/post/20220327-weekly-11/</id>
@@ -309,37 +341,6 @@ Kubernetes 的策略
 下图，是 kube-apiser…]]></summary>
         <author>
             <name>zhangjintao9020@gmail.com (张晋涛)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[周刊（第7期）：一个C系程序员的Rust初体验]]></title>
-        <id>https://www.codedump.info/post/20220227-weekly-7/</id>
-        <link href="https://www.codedump.info/post/20220227-weekly-7/"/>
-        <updated>2022-02-27T03:25:33.000Z</updated>
-        <summary type="html"><![CDATA[引言：在工作里使用Rust已经有两个多月的时间了，谈谈我做为一名多年的C系（C、C++）程序员，对Rust的初体验。
-一个C系程序员的Rust初体验
-最近由于工作的原因，使用上了Rust语言，在此之前我有多年的C、C++编码经验（以下将C、C++简称C系语言）。
-使用C系语言编码时，最经常面对的问题就是内存问题，诸如：
-野指针（Wild Pointer）：使用了不可知的指针变量，如已经被释放、未初始化、随机，等等。
-内存地址由于访问越界等原因被覆盖（overflow），这不但是可能出错的问题，还有可能成为程序的内存漏洞被利用。
-内存分配后未回收。
-连Chrome的报告都指出，Chrome中大约70%的安全漏洞都是内存问题，见：Memory safety。（不仅如此，微软的文章也显示在微软的产品中70%的安全漏洞也是内存问题，见：Microsoft: 70 percent of all security bugs are memory safety issues | ZDNet）
-C系语言发展到今天，已经有不少可以用于内存问题检测的利器了，其中最好用的莫过于AddressSanitizer，它的原理是在编译时给程序加上一些信息，一旦发生内存越界访问、野指针等错误都会自动检测出来。
-但是即便有这些工具，内存问题也不好解决，其核心的原因在于：这些问题绝大部分都是运行时（Runtime）问题，即要在程序跑到特定场景的时候才会暴露出来，诸如上面提到的AddressSanitizer就是这样。
-都知道解决问题的第一步是能复现问题，而如果一个问题是运行时问题，这就意味着：复现问题可能会是一件很麻烦的事情，有时候还可能到生产环境去复现。
-以我之前经历的一个Bug来看这类工作的复杂度，见线上存储服务崩溃问题分析记录 - codedump的网络日志，这是一个很典型的发生在生产环境上由于内存错误…]]></summary>
-        <author>
-            <name>codedump的网络日志 on codedump的网络日志</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[profiling & Flame Graphs]]></title>
-        <id>https://yeshan333.github.io/2022/02/26/profiling-flame-graph/</id>
-        <link href="https://yeshan333.github.io/2022/02/26/profiling-flame-graph/"/>
-        <updated>2022-02-26T22:54:38.000Z</updated>
-        <summary type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"]]></summary>
-        <author>
-            <name>ShanSan</name>
         </author>
     </entry>
 </feed>
