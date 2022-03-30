@@ -7,178 +7,123 @@
       "articles": []
     },
     {
-      "title": "ShanSan",
-      "feedUrl": "https://shansan.top/rss2",
-      "siteUrl": "https://yeshan333.github.io/",
-      "articles": []
-    },
-    {
-      "title": "酷 壳 – CoolShell",
-      "feedUrl": "https://coolshell.cn/feed",
-      "siteUrl": "https://coolshell.cn",
-      "articles": []
-    },
-    {
-      "title": "面向信仰编程",
-      "feedUrl": "https://draveness.me/feed.xml",
-      "siteUrl": "https://draveness.me/",
+      "title": "让小产品的独立变现更简单 - ezindie.com",
+      "feedUrl": "https://www.ezindie.com/feed/rss.xml",
+      "siteUrl": "https://www.ezindie.com/weekly",
       "articles": [
         {
-          "id": "https://draveness.me//kuberentes-federation",
+          "id": "https://www.ezindie.com/weekly/issue-47",
           "author": null,
-          "description": "",
-          "link": "https://draveness.me//kuberentes-federation",
-          "publishedOn": "2022-03-19T00:00:00.000Z",
-          "wordCount": 569,
-          "title": "Kubernetes、集群联邦和资源分发",
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。Tailwind CSS 从副业产品到2百万美元的故事",
+          "link": "https://www.ezindie.com/weekly/issue-47",
+          "publishedOn": "2022-03-24T00:00:00.000Z",
+          "wordCount": 179,
+          "title": "独立开发变现周刊（第47期） : Tailwind CSS 从副业产品到2百万美元的故事",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.ezindie.com/weekly/issue-46",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。通过“Chrome 即服务”每月赚取4000美元",
+          "link": "https://www.ezindie.com/weekly/issue-46",
+          "publishedOn": "2022-03-17T00:00:00.000Z",
+          "wordCount": 177,
+          "title": "独立开发变现周刊（第46期） : 通过“Chrome 即服务”每月赚取4000美元",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.ezindie.com/weekly/issue-45",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。通过卖Notion模板，11个月在网上赚了6万美元",
+          "link": "https://www.ezindie.com/weekly/issue-45",
+          "publishedOn": "2022-03-10T00:00:00.000Z",
+          "wordCount": 147,
+          "title": "独立开发变现周刊（第45期） : 通过卖Notion模板，11个月在网上赚了6万美元",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.ezindie.com/weekly/issue-44",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。12岁的小男孩在9个小时内NFT卖了40万美元!",
+          "link": "https://www.ezindie.com/weekly/issue-44",
+          "publishedOn": "2022-03-04T00:00:00.000Z",
+          "wordCount": 94,
+          "title": "独立开发变现周刊（第44期） : 12岁的小男孩在9个小时内NFT卖了40万美元!",
           "imageUrl": null
         }
       ]
     },
     {
-      "title": "卡瓦邦噶！",
-      "feedUrl": "https://www.kawabangga.com/feed",
-      "siteUrl": "https://www.kawabangga.com",
+      "title": "混沌周刊",
+      "feedUrl": "https://weekly.love/feed/atom/",
+      "siteUrl": "https://weekly.love",
       "articles": [
         {
-          "id": "https://www.kawabangga.com/?p=4663",
-          "author": "laixintao",
-          "description": "最近用了 @yiran 转载的一个 pocket 的隐藏功能，发现太好用了。在博客上单独再分享一下。 TL;D […]\nContinue reading...\nThe post 分享一下“稍后阅读”的 random 功能 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\nSRE&Devops 每周分享 Issue #1 Opening\nFirefox Setup\n近况\njava问答：终极父类（六）——等待/唤醒和接口\n玩了一下 Github 个人首页的 Profile （使用 Action 自动更新）",
-          "link": "https://www.kawabangga.com/posts/4663",
-          "publishedOn": "2022-03-18T16:28:45.000Z",
-          "wordCount": 471,
-          "title": "分享一下“稍后阅读”的 random 功能",
+          "id": "https://weekly.love/issue-30/",
+          "author": null,
+          "description": "建立信任需要很久，摧毁信任一次就够。",
+          "link": "https://weekly.love/issue-30/",
+          "publishedOn": "2022-03-17T15:05:44.000Z",
+          "wordCount": 144,
+          "title": "混沌周刊 #30 &#124; 信任无价",
           "imageUrl": null
         },
         {
-          "id": "https://www.kawabangga.com/?p=4649",
-          "author": "laixintao",
-          "description": "最近在跨机房做一个部署，因为机房之间暂时没有专线，所以流量需要经过公网。对于经过公网的流量，我们一般需要做以下 […]\nContinue reading...\nThe post 用 Nginx 在公网上搭建加密数据通道 first appeared on 卡瓦邦噶！.\n\n相关文章:\n\n部署 Django 项目背后的原理：为什么需要 Nginx 和 Gunicron这些东西？\nNginx if 指令工作原理\n使用 ngx_lua （openresty）正确读取 HTTP 请求 body\n单页应用的登陆验证方式\n如何杀死一个进程？",
-          "link": "https://www.kawabangga.com/posts/4649",
-          "publishedOn": "2022-03-16T11:10:28.000Z",
-          "wordCount": 2093,
-          "title": "用 Nginx 在公网上搭建加密数据通道",
+          "id": "https://weekly.love/issue-29/",
+          "author": null,
+          "description": "让世界来找到你，还是你来找到世界？",
+          "link": "https://weekly.love/issue-29/",
+          "publishedOn": "2022-03-06T16:04:02.000Z",
+          "wordCount": 94,
+          "title": "混沌周刊 #29 &#124; Find the world",
           "imageUrl": null
         }
       ]
     },
     {
-      "title": "MoeLove",
-      "feedUrl": "https://moelove.info/index.xml",
-      "siteUrl": "https://moelove.info/",
+      "title": "Release notes from iOS-Weekly",
+      "feedUrl": "https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom",
+      "siteUrl": "https://github.com/SwiftOldDriver/iOS-Weekly/releases",
       "articles": [
         {
-          "id": "https://moelove.info/2022/03/27/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Dockercontainerd-%E5%85%A8%E7%89%88%E6%9C%AC%E6%BC%8F%E6%B4%9E%E5%85%AC%E5%B8%83%E8%AF%B7%E5%8F%8A%E6%97%B6%E6%9B%B4%E6%96%B0/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nCVE-2022-24769\n近期在 Docker 中发现了一个 影响所有版本的安全漏洞 CVE-2022-24769，该漏洞已经在 Docker 最新的版本\nv20.10.14 中修复。\n这个漏洞主要是由于错误的设置了非空的 Linux 进程的 Inheritable capabilities 集合。导致在 execve(2) 期间，可能会造成提权。\n我在《Kubernetes 安全原理与实践》 中 Linux 的权限和能力模型中，\n曾介绍过相关内容。\nLinux 中的 capabilities 可以作为每个线程的属性存在，也可以作用在可执行文件上。\n如果用作线程属性存在，我们称之为 线程 capability 集合；如果用作可执行文件的扩展属性上，则称之为 文件 capability 集合。\n其中的线程 capability 集合主要包含以下五类：\nPermitted\nInheritable\nEffective\nBounding\nAmbient\n本次漏洞受影响的就是 Inheritable 集合。 它主要定义了一组跨 execve(2) 系统调用时可继承的 capability 集合。\n但是它的影响是会将 Inheritable 集合中的 capability 应用于新线程的 Permitted 集合中，而非直接设置成新线程的 Effective 集合。\n另一方面，文件 capability 集合则主要包含以下三类：\nPermitted\nInheritable\nEffective\n其中 Inheritable 集合的作用是它定义的 capability 会与线程的 Inheritable 取交集，\n然后添加到 execve(2) 产生的线程 Perm…",
-          "link": "https://moelove.info/2022/03/27/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Dockercontainerd-%E5%85%A8%E7%89%88%E6%9C%AC%E6%BC%8F%E6%B4%9E%E5%85%AC%E5%B8%83%E8%AF%B7%E5%8F%8A%E6%97%B6%E6%9B%B4%E6%96%B0/",
-          "publishedOn": "2022-03-27T13:59:33.000Z",
-          "wordCount": 355,
-          "title": "K8S 生态周报| Docker，containerd 全版本漏洞公布，请及时更新",
-          "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
-        },
-        {
-          "id": "https://moelove.info/2022/03/25/%E4%BC%81%E4%B8%9A%E7%BA%A7%E4%BA%91%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E4%BA%A4%E4%BB%98%E5%8F%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97-Helm-%E5%9F%BA%E7%A1%80-%E4%B8%80/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "大家好，我是张晋涛。\n在 Kubernetes 中，当我们要部署一个应用时，往往会涉及一个或多个部署资源。我们如果使用 YAML 文件来对这些资源的依赖及关联关系进行组织、配置，这往往十分复杂繁琐并且可移植性较差。\nHelm 这个 Kubernetes 环境中的包管理器可以帮助我们更快速便捷的来实现资源的组织和部署。\n\n本期的主要内容将围绕 Helm 来进行展开。欢迎小伙伴们留言讨论 （觉得内容还不错，就请点赞点在看及转发，谢谢）。\nHelm 的诞生及发展\nHelm 1\n最早期的 Helm 是一个内部黑客马拉松项目，旨在帮助独立开发人员创建 Kubernetes 资源包并将其部署至集群当中。它是于 2015 年在 Deis 创建，后被微软收购 。在同年的11月9日由 CNCF 主办的 KubeCon 上，正式推出（现在称之为 Helm Classic），这是 Helm 的第一个公开版本。\nHelm 2\n2016 年 1 月，Helm Classic 与名为 Kubernetes Deployment Manager 的 GCS 工具合并成 Helm，并移至 Kubernetes下。之后，Helm 加入了 CNCF，成为顶级项目，并已成功毕业。\n在 Helm 2 开发周期中，引入了一个服务端组件 Tiller。Tiller 可以让多个操作者在同一组发布中进行交互，在共享集群中的团队协作发挥了一定的作用。但是，基于 Kubernetes 1.6 的安全策略，在将 Tiller 安装到多租户集群时，DevOps 和 SRE 必须学习额外的操作步骤。此外，由于 Tiller 是一个服务端组件，在安全性上有很严重的缺陷，所有能访问 Tiller 的用户都具备了相同的权限。\n这就引出了：如何化繁为简，即不能陷入在安全控制的繁复上；又不能扩大非预期的权限授予。\n在 Helm 2 中，默认…",
-          "link": "https://moelove.info/2022/03/25/%E4%BC%81%E4%B8%9A%E7%BA%A7%E4%BA%91%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E4%BA%A4%E4%BB%98%E5%8F%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E5%88%97-Helm-%E5%9F%BA%E7%A1%80-%E4%B8%80/",
-          "publishedOn": "2022-03-24T16:01:32.000Z",
-          "wordCount": 705,
-          "title": "企业级云原生应用交付及管理系列 - Helm 基础 (一)",
-          "imageUrl": "https://cdn.nlark.com/yuque/0/2022/png/10359851/1648103928214-fc9e56ca-86ac-4466-ba41-543a305eca07.png"
-        },
-        {
-          "id": "https://moelove.info/2022/03/21/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Argo-Workflows-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nTrivy 新版本发布\n本周 Trivy 相继发布了 v0.24.3 和 v0.24.4 版本。最需要关注的变更是如下两个：\n#1791 更新了 hcl2json 的版本，以便于修正 hcl2json 在处理无效 HCL 配置时的发生的 panic;\n#1852 修正了一个自 v0.24.3 开始引入的 bug, 如果不提供镜像的 tag，在 v0.24.3 中将会报错，现在会遵循 Docker 的相关行为，如果不提供 tag 则默认使用 latest ；\n更多详情请参考其 ReleaseNote\nArgo Workflows v3.3 正式发布\nArgo Workflows 是一个 Kubernetes 上的通用 Workflow 引擎，近期发布的 v3.3 是它的一个特性版本。这里我主要列几个我所关注的变更：\nPlugin template 允许开发者使用任何语言对 workflow 进行扩展，这是一个非常棒的特性。在之前，如果我们想在 Workflow 中执行一些通知，或者做一些报告，那么我可能需要添加一个新的步骤。这样会让整个流程变长。而且，假如我需要上一步的执行结果或输出，那么我还需要单独的处理参数传递等事情，很繁琐。但是，v3.3 中增加的这个 Plugin template 能力，就让事情变得很简单了。比如我可以使用如下配置进行消息通知：\napiVersion: argoproj.io/v1alpha1\nkind: Workflow\nmetadata:\n generateName: plugin-example-\nspec:\n entrypoint: main\n templates:\n - name: main\n plugin:\n webh…",
-          "link": "https://moelove.info/2022/03/21/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Argo-Workflows-%E6%96%B0%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E5%B8%A6%E6%9D%A5%E4%BC%97%E5%A4%9A%E6%96%B0%E7%89%B9%E6%80%A7/",
-          "publishedOn": "2022-03-20T16:01:32.000Z",
-          "wordCount": 315,
-          "title": "K8S 生态周报| Argo Workflows 新版本发布，带来众多新特性",
-          "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
-        },
-        {
-          "id": "https://moelove.info/2022/03/12/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-v3.8-OCI-%E6%94%AF%E6%8C%81%E6%AD%A3%E5%BC%8F-GADocker-%E6%96%B0%E7%89%88%E6%9C%AC%E4%BF%AE%E5%A4%8D%E5%A4%9A%E4%B8%AA%E4%B8%A5%E9%87%8D-bug/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nKIND v0.12.0 发布\nKIND（Kubernetes In Docker）是我很喜欢，也是一直在参与的一个开源项目。\n在我之前的文章中有过多次介绍，可以参考\n我基本上每天都会用到它，非常的方便。\n距离上个大版本，v0.11 已经过了近十个月，我们来看看这个新版本带来哪些值得关注的特性吧：\n目前 v0.12.0 默认使用的 Kubernetes 版本为 v1.23.4 版本。如果升级 KIND 的话，会重新拉取最新的镜像，镜像托管在 Docker Hub 上，\n可能会比较耗时，建议确保网络顺畅。\n在 v0.12.0 中专门优化了对多架构的支持，默认的所有已发布镜像都包含了 amd64 和 arm64 的支持。\n在镜像中也对相关组件都做了升级：\ncontainerd v1.5.10\ncrictl 1.23.0\nCNI plugin v1.1.0\n此外，也修复了 Docker + cgroup2 + rootless 环境下的支持，和 WSL2 环境下的支持。建议大家进行升级。\n更多详细信息请参考其 ReleaseNote\nDocker v20.10.13 发布\n本周 Docker 发布了 v20.10.13 版本，是的，你没有看错，现在发布的版本还是在给 v20.10 打 patch 。\n实际上当前 Docker 仓库中最新的代码比 v20.10 已经多了很多功能特性，只不过尚未达到发布一个全新的大版本的目标，所以一直没有发布新的大版本。\n这个版本中主要是进行了一些 bugfix 和打包相关的变更。其中包括：\n将 buildx 升级到了 v0.8.0 版本。\n#43165 修复了当使用 local 日志驱动时，如果迅速产生大量日志，可能会产生 OO…",
-          "link": "https://moelove.info/2022/03/12/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Helm-v3.8-OCI-%E6%94%AF%E6%8C%81%E6%AD%A3%E5%BC%8F-GADocker-%E6%96%B0%E7%89%88%E6%9C%AC%E4%BF%AE%E5%A4%8D%E5%A4%9A%E4%B8%AA%E4%B8%A5%E9%87%8D-bug/",
-          "publishedOn": "2022-03-11T18:34:36.000Z",
-          "wordCount": 387,
-          "title": "K8S 生态周报| Helm v3.8 OCI 支持正式 GA，Docker 新版本修复多个严重 bug",
-          "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
-        },
-        {
-          "id": "https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "「K8S 生态周报」内容主要包含我所接触到的 K8S 生态相关的每周值得推荐的一些信息。欢迎订阅知乎专栏「k8s生态」。\nKubernetes ingress-nginx v1.1.2 发布\n就在今天 Kubernetes ingress-nginx 项目发布了 v1.1.2 版本。\n我是这个版本的 release manager 。\n距离上个版本发布有将近两个月了，我们来看看这个版本中值得关注的一些变更。\n在 #8221 中，我们对 ingress-nginx 的 Admission controller 的逻辑做了一些调整，\n主要是可以用来修正 自 v1.0 版本后，如果 Kubernetes 集群中同时运行多个 ingress-nginx 的话，在创建 Ingress 资源的时候，可能导致每个 ingres-nginx 的 Admission 都会去进行检查的问题。\n而该问题最大的影响是，如果创建的 Ingress 配置相同的话，则会被直接拒绝掉。\n在 #8253 中则是为 ingress-nginx 增加了一个 ssl_certificate_info 的 metric， 直接公开当前被加载的证书的信息。\n这个功能的最大的好处就是可以避免 Ingress controller Pod 加载了旧证书，进而导致客户端连接失败的问题。\n此外 #8256 是为了修正在 nginx.ingress.kubernetes.io/auth-url 中传递无效 URL 的问题，\n建议升级 。\n此外还有一些小的 bugfix 和优化，更多详细信息请参考 ReleaseNote 。\n在这次发布过程中还有一些比较有趣的事情，\n本次发布过程从时间线看，从我开始发布流程，到最后完成发布，共持续了一周的时间，由几个人异步协作完成。\n这跟往常差别还是比较大的，往常我们可能会约某个时间，同时在线一…",
-          "link": "https://moelove.info/2022/03/06/K8S-%E7%94%9F%E6%80%81%E5%91%A8%E6%8A%A5-Knative-%E8%BF%9B%E5%85%A5-CNCF-%E5%AD%B5%E5%8C%96K8S-ingress-nginx-%E8%A7%A3%E5%86%B3%E5%A4%9A%E5%AE%9E%E4%BE%8B%E9%97%AE%E9%A2%98/",
-          "publishedOn": "2022-03-06T15:39:51.000Z",
-          "wordCount": 286,
-          "title": "K8S 生态周报| Knative 进入 CNCF 孵化，K8S ingress-nginx 解决多实例问题",
-          "imageUrl": "https://gitee.com/tlrr/awesome/raw/master/2020-9-9/1599632564572-mp-qrcode.png"
-        },
-        {
-          "id": "https://moelove.info/2022/03/02/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AD%96%E7%95%A5%E5%BC%95%E6%93%8E-Kyverno-%E4%B8%8A/",
-          "author": "zhangjintao9020@gmail.com (张晋涛)",
-          "description": "大家好，我是张晋涛。\n在之前的 『K8S生态周报』 和 《搞懂 Kubernetes 准入控制（Admission Controller)》 等文章中，我曾提到过 Kyverno 这个云原生策略引擎项目，很多小伙伴在后台私信我说对这个项目比较感兴趣。这篇文章我们专门来聊聊 Kyverno 吧。\nKyverno 当前是一个 CNCF sandbox 级别的项目。\n\n本文的大纲如下，小伙伴们可自行跳跃到感兴趣的部分查阅。\n\nKubernetes 的策略\n我们称 Kyverno 是云原生策略引擎，那么 Kubernetes 中的策略是什么呢？\n对于 Kubernetes 中的策略，大家可能比较熟悉的是 PodSecurityPolicy。 不过 PodSecurityPolicy 自 Kubernetes v1.21 起已弃用，并将在 v1.25 中删除（当前版本是 v1.23 ）。当前建议大家迁移到 Kubernetes 新增的替换方案 Pod Security Admission 或者类似本文中介绍的 Kyverno 等这种第三方策略插件。\n其实无论是 PodSecurityPolicy 还是它的替代方案 Pod Security Admission ，甚至包括 Kyverno 等，它们都是构筑在 Kubernetes 的 Admission 机制之上的。\n首先，我们主要从两个角度来理解为什么我们需要准入控制器（Admission Controller）：\n从安全的角度\n比如，为避免攻击。需要对Kubernetes 集群中部署的镜像来源判定；\n比如，避免 Pod 使用 root 用户，或者尽量不开启特权容器等；\n从治理的角度\n比如，通过 admission controller 校验服务是否拥有必须的 label；\n比如，避免出现资源超卖等；\n下图，是 kube-apiser…",
-          "link": "https://moelove.info/2022/03/02/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%AD%96%E7%95%A5%E5%BC%95%E6%93%8E-Kyverno-%E4%B8%8A/",
-          "publishedOn": "2022-03-02T13:39:12.000Z",
-          "wordCount": 478,
-          "title": "云原生策略引擎 Kyverno （上）",
-          "imageUrl": "https://s2.loli.net/2022/03/03/KUYpoEOH9SFIdL3.png"
-        }
-      ]
-    },
-    {
-      "title": "CJ Ting's Blog",
-      "feedUrl": "https://cjting.me/index.xml",
-      "siteUrl": "https://cjting.me/",
-      "articles": []
-    },
-    {
-      "title": "codedump的网络日志 on codedump的网络日志",
-      "feedUrl": "https://www.codedump.info/index.xml",
-      "siteUrl": "https://www.codedump.info/",
-      "articles": [
-        {
-          "id": "https://www.codedump.info/post/20220327-weekly-11/",
+          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23197",
           "author": null,
-          "description": "引言：本期聊一聊mmap技术在存储引擎中的应用。\nmmap适用于存储引擎吗？\n想写这篇文章，主要源于两篇文章（论文）中的对mmap在存储引擎中使用的两种截然不同的观点讨论：\n反方（mmap不应该用于存储引擎）：Are You Sure You Want to Use MMAP in Your Database Management System? (CIDR 2022)\n正方（mmap可以用于存储引擎）：re: Are You Sure You Want to Use MMAP in Your Database Management System? - Ayende @ Rahien\n由于刚好看过这两种方式的btree存储引擎：sqlite的btree实现以及boltdb，所以可以结合我的认知来聊一聊这个问题。这两个存储引擎的实现都已经整理成了系列博客，这两个系列的第一篇分别是：\nsqlite3.36版本 btree实现（零）- 起步及概述 - codedump的网络日志\nboltdb 1.3.0实现分析（一） - codedump的网络日志\n先来看看一个存储引擎实现时的大体分层，以sqlite为例分为三层：\n\n\n\n自下而上，这三个层次分别是：\nos层：封装系统级API实现文件的读写等操作。\n页面管理层：提供以页面为单位的读、写、加载、缓存等操作。\nbtree实现：btree以物理页面为单位向下一层的页面管理层来读写页面，而物理页面内部的逻辑组织（比如父子关系），以及页面内的数据组织（比如一个页面中管理的数据）由这一层负责。\n可以这样来简单区别理解“页面管理”模块和btree模块的功能：\n页面管理：顾名思义，页面管理模块的最基本单位是”页面“，页面的读、写、缓存、落盘、恢复、回滚等，都由页面模块负责。上一层依赖页面管理模块的btree模块，不需要关心一个页面何时缓存、何时落…",
-          "link": "https://www.codedump.info/post/20220327-weekly-11/",
-          "publishedOn": "2022-03-27T07:06:38.000Z",
-          "wordCount": 255,
-          "title": "周刊（第11期）：mmap适用于存储引擎吗？",
-          "imageUrl": null
+          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\nSwift bugs are moving to GitHub Issues and we need your help!\n@J_Knight_：Swift 的 issue 管理将要从 JIRA 转移到 Github，计划全部迁移过程在今年的4月28日结束。在这之前，已经在 JIRA 上建立的 issue 会被完全复制到 Github 的 issue 列表中，作为一个新的 issue。以后 JIRA 也不再支持新的 issue 的建立，而且 bugs.swift.org 网址也会重定向到 Github issue 的地址。想了解详细迁移步骤的读者可以了解一下。\n Developer - 设计开发加速器\n🌟 🐕 在苹果加速器活动做的 SwiftUI 开发分享\n戴铭老师受 Apple 加速器 SwiftUI 活动的邀请在 3 月 25 日做了一次关于 SwiftUI 的分享，分享内容包括但不限于macOS 如何解决多栏问题、Toolbar、文件夹嵌套结构、文本和代码编辑器、Grid、Vision、SwiftUI 组件和 UIKit 组件对比等内容。\n新手推荐\n🌟 🐕 Abstract types and methods in Swift\n@ChengzhiHuang：本文介绍了 Swift 中一种实现虚类的方案。单独使用 Class 或者单独使用 Protocol 都会有各自的不足，因此作者选择：\n方法定义在 Protocol 中（包含 associatedtype ），成员变量定义在 Class 中，再使用 typealias 将 Protocol 与 Class 组合成一个类型进行使…",
+          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23197",
+          "publishedOn": "2022-03-28T04:00:24.000Z",
+          "wordCount": 673,
+          "title": "老司机 iOS 周报 #197 | 2022-03-28",
+          "imageUrl": "https://opengraph.githubassets.com/ccbd20c4a7728caa4203c02d0653ce20d1979b84f2d9c25fc986b97945be0aa9/SwiftOldDriver/iOS-Weekly/releases/tag/%23197"
         },
         {
-          "id": "https://www.codedump.info/post/20220319-weekly-10/",
+          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23196",
           "author": null,
-          "description": "引言：本期聊一聊《掌控习惯》这本书里提到的养成习惯的方法论。我读下来一个最深的感受是：越不需要“坚持”就能做下去的事情，才越能长久做下去。\n“忘记目标，专注于体系”\n“忘记目标，专注于体系（Forget About Setting Goals, Focus on the system Instead）”是出自《Atomic Habits》（中文名《掌控习惯 》）一书的一句话，个人认为这是本书最重要的一个观点。\n要做成一件事情，只是依靠简单的设定目标，是远远不够的，更重要的是建立一套体系，促进事情的良性循环，最终让事情发生；反之，如果一件不好的事情，经常重蹈覆辙，其根本原因也是从未改变导致这种状况一再发生的体系。如果没有建立一套体系，所做的一切只是治标不治本。\n这里说的“体系”，在作者的话语中就是“习惯”，作者列出了培养良好习惯的四个步骤（提示、渴求、反应和奖励）：\n1、提示：让它显而易见。\n\n\n\n2、渴求：让它有吸引力。\n\n\n\n3、反应：让它简便易行。\n\n\n\n4、奖励：让它令人愉悦。\n\n\n\n作者将这四个步骤，总结在习惯循环（habit-loop）里，如下图：\n这四个步骤缺一不可，任何一个环节做的不够的话，就难以形成习惯：\n消除提示，习惯形成循环永远也不会开始。\n降低渴求，就不会有足够的动力去行动。\n让行动变得困难，将无法付诸实施。\n如果奖励不能满足欲望，那么未来就没有理由再这样做了。\n没有前三步，就不会有任何行为发生。没有这四个步骤，任何一种行为都不会得以重复。\n1、提示：让它显而易见\n在日常行为中，“原动力经常被高估，而环境的作用往往被低估”，比如经常会认为树立一个远大的目标，坚持做下去就好；而现实的情况是，行为是环境中人的函数：\nB（行为）=f（函数）[P（人），E（环境）]\n即有怎样的行为，除了和人有关系之外，还和环境有重要的关系。\n环境函数中，常见的两个提示是时间和…",
-          "link": "https://www.codedump.info/post/20220319-weekly-10/",
-          "publishedOn": "2022-03-19T05:50:46.000Z",
-          "wordCount": 221,
-          "title": "周刊（第10期）：“忘记目标，专注于体系”",
-          "imageUrl": null
+          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\n4 月 25 日开始，提交到 App Store 的 app 都必须使用 Xcode 13 构建\n从 2022 年 4 月 25 日开始，所有提交到 App Store 的 iOS、iPadOS 和 watchOS app 都必须使用 Xcode 13 构建。Xcode 13 已包含 iOS 15、iPadOS 15 和 watchOS 8 的 SDK。\n Developer - 设计开发加速器\n使用 SwiftUI 打造卓越体验\n2022 年 3 月 24 日- 25 日(报名截止 2022 年 3 月 23 日）\n欢迎参加为期两天的 SwiftUI 活动！通过本次活动，您将全方位了解 SwiftUI，包括 SwiftUI 的工作原理和控件使用，数据模型和视图的关联，容器布局和高阶渲染，以及使用 SwiftUI 打造多平台 app。此外，我们还邀请到社区内活跃开发者，来分享他们的 SwiftUI 实战经验。加入我们开启 SwiftUI 之旅！\n\n文章\n🐕 Tips for getting the most out of DocC\n@四娘：文档工具 DocC 发布了已经快要一年，这段时间里加上了 static hosting，C/Objective-C 的支持以及 SPM 插件等功能，依托它来构建内部文档工具是一个不错的选择，也是一个顺便梳理项目内部代码的机会。\n本文作者提供了一个渐进式接入 DocC 的步骤建议：\n给 class/struct/enum 等类型添加注释文档\n给公开的函数和属性添加注释文档\n添加 documentation catalog 和 overview\n给主要的类型…",
+          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23196",
+          "publishedOn": "2022-03-26T15:12:02.000Z",
+          "wordCount": 671,
+          "title": "老司机 iOS 周报 #196 | 2022-03-21",
+          "imageUrl": "https://opengraph.githubassets.com/7f6d504ff84e6caacaf2ae281f46463030e60ecc717d89f9463cf45ce7d123ef/SwiftOldDriver/iOS-Weekly/releases/tag/%23196"
         },
         {
-          "id": "https://www.codedump.info/post/20220313-weekly-9/",
+          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23195",
           "author": null,
-          "description": "引言：在之前的周刊（第7期）：一个C系程序员的Rust初体验中，简单提到过Mozilla rr这款调试工具，由于这个工具并不是太为人所知，所以本文对该工具做一个简介。\nMozilla rr使用简介\nrr是由Mozilla出品的一款调试工具，用官网的话来说：\nrr aspires to be your primary C/C++ debugging tool for Linux, replacing — well, enhancing — gdb. You record a failure once, then debug the recording, deterministically, as many times as you want. The same execution is replayed every time.\n即它的特点是：可以记录下来程序运行时的上下文环境，包括线程、堆栈、寄存器等等，这样的好处有两个：\n“deterministically”：很多问题问题的产生，都与特定的环境相关，如：\n\n\n线程调度执行的顺序，先执行A线程再B线程，以及反之，可能得到的是不同的结果。\n环境参数，如输入不同的参数，尤其一些边界条件的触发就跟输入不同的参数有关。\n\nreplay：记录下来程序执行的环境之后，rr除了支持gdb方式的调试之后，还能利用环境来不停的重放程序，甚至反向来执行程序。\n以下对rr的使用做一些简单的介绍。\ndeterministically\n以下面一个最简单的多线程程序来解释何为deterministically：\n#include <pthread.h>\n#include <stdio.h>\n\nvoid * doPrint(void *arg)\n{\n    return NULL;\n}\n\nint main() {\n    pthread_t pid;\n …",
-          "link": "https://www.codedump.info/post/20220313-weekly-9/",
-          "publishedOn": "2022-03-13T03:20:59.000Z",
-          "wordCount": 597,
-          "title": "周刊（第9期）：Mozilla rr使用简介",
-          "imageUrl": null
+          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\nT 技术沙龙移动端技术实践（上海场）圆满结束\n2022 年 2 月 26 日，由老司机技术周报与 T 技术沙龙联合主办的移动端技术实践（上海场）在上海圆满落幕。此次技术沙龙邀请到了来自澳洲 REA Group 的 Jake Lin、“开源实验室”博主张涛、前阿里技术专家王宇分别以《MVI 模式在 Jetpack Compose 上的应用》、《基于 C++ 的 Android 真协程设计》以及《自制渲染引擎解决客户端复杂 UI 组件的实现》为主题进行硬核分享与实践探讨。\n Developer - 设计开发加速器\n使用 SwiftUI 打造卓越体验\n2022 年 3 月 24 日- 25 日(报名截止 2022 年 3 月 23 日）\n欢迎参加为期两天的 SwiftUI 活动！通过本次活动，您将全方位了解 SwiftUI，包括 SwiftUI 的工作原理和控件使用，数据模型和视图的关联，容器布局和高阶渲染，以及使用 SwiftUI 打造多平台 app。此外，我们还邀请到社区内活跃开发者，来分享他们的 SwiftUI 实战经验。加入我们开启 SwiftUI 之旅！\n\n新手推荐\n🐎 What’s new in Swift 5.6?\n@Smallfly：Swift 5.6 引入了一波新的特性，本文通过示例重点介绍了几个比较有意思的，并预测在不远的将来 Swift 6 可能会带来一系列破坏性 API。\n🐎 Easier Code Review With Pre-Commit Hooks\n@ChengzhiHuang：本文介绍了 git 的 hooks 能力，并举例介绍了适合在 pre-commit …",
+          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23195",
+          "publishedOn": "2022-03-14T07:59:29.000Z",
+          "wordCount": 600,
+          "title": "老司机 iOS 周报 #195 | 2022-03-14",
+          "imageUrl": "https://opengraph.githubassets.com/16ec47c7b0cbcae6d97eb3ab5e43a6e222102d2472cbcaf8f100878d77a4c53a/SwiftOldDriver/iOS-Weekly/releases/tag/%23195"
         },
         {
-          "id": "https://www.codedump.info/post/20220304-weekly-8/",
+          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23194",
           "author": null,
-          "description": "引言：写过不少技术文章，以及给不少技术思路手绘示例配图之后，在这方面有了一些心得，本文权当个人的一些的总结，抛砖引玉。\n技术配图的一些心得\n我觉得我们理工科出身的，对于可以量化的事情，总是很容易根据量化差异来做出判断，比如一个程序性能优化之后，能比优化之前快出多少，都能有一个量化的数字来说明。\n但是对于那些不能量化的东西，就很难说出具体好在哪里了。\n本文主题要讨论的“技术配图”就属于这种很难量化的领域，很难有一个标准来量化说明两幅图之间差别在哪里。我也是画了很多图，以及看了别人的很多配图之后，才慢慢有一些心得，本文权当个人的一些的总结，抛砖引玉。\n本文并不是一个画图工具的对比说明，尽管现在各种绘图工具已经很多，也各有自己的优缺点以及个人喜好，但是在这里并不讨论具体工具的使用，会把更多的文字放在配图的一些注意事项上。但是，也总有人问我文章的配图使用什么工具做的，在这里再回答一次：OmniGraffle，一款目前仅有Mac版本的工具软件。\n一图胜千言\n在开始交代具体的配图注意事项之前，有必要先说说配图的重要性。\n绘图，某种程度也是辅助自己思考某个技术点的手段之一，以我个人的体会来说，有时候讲不清楚一个技术点的时候，就手绘图出来，比朴素的文字更容易说明问题。其中的原因，有可能是：图片可以有多维的信息，而文字通常只有一维，遇到文字表达能力不太好的人，这仅有的一维能力可能还不好发挥出来。\n所以，在交代技术细节、沟通交流的时候，尽量多画图。反向的，图画多了，也自然慢慢会找到感觉，如何更好的通过图示表达思路。\n顺便一提，还有比朴素的文字表达更差的技术沟通方式，就是简单粗暴的贴一大段代码上去。这种做法，其实更多时候是没有对作者的思路有太多个人的整理，想偷懒的方式，最后回头再看写过的文字，可能连自己都看不懂了。\n个人的一个体会：如果产出某些输出的时候，能假设自己未来就是这些输出的读者、维护者…",
-          "link": "https://www.codedump.info/post/20220304-weekly-8/",
-          "publishedOn": "2022-03-04T14:10:11.000Z",
-          "wordCount": 249,
-          "title": "周刊（第8期）：技术配图的一些心得",
-          "imageUrl": null
+          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\nApple Park 传送门下周开启\nApple Park 传送门定时开启，北京时间 3 月 9 日凌晨 2 点，欢迎准时来 Apple 官网看 Apple 特别活动直播，还有同步中文字幕可以开启。\n Developer - 设计开发加速器\n探索物理空间音频引擎和游戏手柄\n2022 年 3 月 10 日(报名截止 2022 年 3 月 9 日）\n探索几何感知音频是如何帮助您的 app 构建复杂、互动和沉浸的音频场景。了解 Apple 的空间音频 API —— 物理音频空间化引擎（PHASE），以及它是如何使声音始终与您的体验保持一致 —— 帮助您在开发过程中创建空间声景和场景，而不是等到后期制作。我们还将向您展示虚拟和实体游戏手柄的最新改进，以及如何在您的 app 中支持手柄的分享功能。\n\n文章\n🌟 🐕 音视频工程示例专栏\n第二篇 iOS 音频编码：采集音频数据并编码存储为 AAC 文件\n第三篇 iOS 音频封装：采集编码音频数据并封装存储为 M4A 文件\n@JonyFang: 本 Demo 包含的主要内容有：\n实现一个音频采集模块\n实现一个音频编码模块\n串联音频采集和编码模块，将采集到的音频数据输入给 AAC 编码模块进行编码和存储\n详尽的代码注释，有助于理解代码逻辑和原理\n🐕 探索 iOS 编码对包大小的影响\n@Smallfly：本文介绍了比较极致和新颖的包大小优化技术，文章从二进制、汇编指令层面分析 Objective-C 代码对包大小的影响。主要从三个方面进行了讲述：\n二进制层面分析 OC 代码对包大小的影响\n编码上优化包大小的 tips\n总结各种 tips 的收益\n🐎 Pu…",
+          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23194",
+          "publishedOn": "2022-03-11T03:52:37.000Z",
+          "wordCount": 606,
+          "title": "老司机 iOS 周报 #194 | 2022-03-07",
+          "imageUrl": "https://opengraph.githubassets.com/65e56afe1e5211985682ca7fcee5f1a671853c8a462f66a1e0ed2c826d410a9f/SwiftOldDriver/iOS-Weekly/releases/tag/%23194"
         }
       ]
     }
