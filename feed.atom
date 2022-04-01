@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-03-31T00:34:29.341Z</id>
+    <id>urn:2022-04-01T00:38:49.496Z</id>
     <title>osmos::feed</title>
-    <updated>2022-03-31T00:34:29.341Z</updated>
+    <updated>2022-04-01T00:38:49.497Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[独立开发变现周刊（第48期） : 疫情下的转变，将新产品做到月收入2.3万美金]]></title>
+        <id>https://www.ezindie.com/weekly/issue-48</id>
+        <link href="https://www.ezindie.com/weekly/issue-48"/>
+        <updated>2022-03-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。疫情下的转变，将新产品做到月收入2.3万美金]]></summary>
+        <author>
+            <name>让小产品的独立变现更简单 - ezindie.com</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[老司机 iOS 周报 #197 | 2022-03-28]]></title>
         <id>https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23197</id>

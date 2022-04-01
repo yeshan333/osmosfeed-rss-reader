@@ -12,12 +12,22 @@
       "siteUrl": "https://www.ezindie.com/weekly",
       "articles": [
         {
+          "id": "https://www.ezindie.com/weekly/issue-48",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。疫情下的转变，将新产品做到月收入2.3万美金",
+          "link": "https://www.ezindie.com/weekly/issue-48",
+          "publishedOn": "2022-03-31T00:00:00.000Z",
+          "wordCount": 86,
+          "title": "独立开发变现周刊（第48期） : 疫情下的转变，将新产品做到月收入2.3万美金",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.ezindie.com/weekly/issue-47",
           "author": null,
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。Tailwind CSS 从副业产品到2百万美元的故事",
           "link": "https://www.ezindie.com/weekly/issue-47",
           "publishedOn": "2022-03-24T00:00:00.000Z",
-          "wordCount": 179,
+          "wordCount": 175,
           "title": "独立开发变现周刊（第47期） : Tailwind CSS 从副业产品到2百万美元的故事",
           "imageUrl": null
         },
@@ -27,7 +37,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。通过“Chrome 即服务”每月赚取4000美元",
           "link": "https://www.ezindie.com/weekly/issue-46",
           "publishedOn": "2022-03-17T00:00:00.000Z",
-          "wordCount": 177,
+          "wordCount": 175,
           "title": "独立开发变现周刊（第46期） : 通过“Chrome 即服务”每月赚取4000美元",
           "imageUrl": null
         },
