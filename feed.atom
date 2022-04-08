@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-04-07T00:37:08.817Z</id>
+    <id>urn:2022-04-08T00:38:20.178Z</id>
     <title>osmos::feed</title>
-    <updated>2022-04-07T00:37:08.817Z</updated>
+    <updated>2022-04-08T00:38:20.178Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[独立开发变现周刊（第49期） : 如何在18个月内做7个小产品？]]></title>
+        <id>https://www.ezindie.com/weekly/issue-49</id>
+        <link href="https://www.ezindie.com/weekly/issue-49"/>
+        <updated>2022-04-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。如何在18个月内做7个小产品？]]></summary>
+        <author>
+            <name>让小产品的独立变现更简单 - ezindie.com</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[混沌周刊 #31 &#124; 小心打牌]]></title>
         <id>https://weekly.love/issue-31/</id>
