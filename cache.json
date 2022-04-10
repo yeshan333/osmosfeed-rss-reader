@@ -91,7 +91,7 @@
           "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\nSwift bugs are moving to GitHub Issues and we need your help!\n@J_Knight_：Swift 的 issue 管理将要从 JIRA 转移到 Github，计划全部迁移过程在今年的4月28日结束。在这之前，已经在 JIRA 上建立的 issue 会被完全复制到 Github 的 issue 列表中，作为一个新的 issue。以后 JIRA 也不再支持新的 issue 的建立，而且 bugs.swift.org 网址也会重定向到 Github issue 的地址。想了解详细迁移步骤的读者可以了解一下。\n Developer - 设计开发加速器\n🌟 🐕 在苹果加速器活动做的 SwiftUI 开发分享\n戴铭老师受 Apple 加速器 SwiftUI 活动的邀请在 3 月 25 日做了一次关于 SwiftUI 的分享，分享内容包括但不限于macOS 如何解决多栏问题、Toolbar、文件夹嵌套结构、文本和代码编辑器、Grid、Vision、SwiftUI 组件和 UIKit 组件对比等内容。\n新手推荐\n🌟 🐕 Abstract types and methods in Swift\n@ChengzhiHuang：本文介绍了 Swift 中一种实现虚类的方案。单独使用 Class 或者单独使用 Protocol 都会有各自的不足，因此作者选择：\n方法定义在 Protocol 中（包含 associatedtype ），成员变量定义在 Class 中，再使用 typealias 将 Protocol 与 Class 组合成一个类型进行使…",
           "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23197",
           "publishedOn": "2022-03-28T04:00:24.000Z",
-          "wordCount": 673,
+          "wordCount": 681,
           "title": "老司机 iOS 周报 #197 | 2022-03-28",
           "imageUrl": "https://opengraph.githubassets.com/ccbd20c4a7728caa4203c02d0653ce20d1979b84f2d9c25fc986b97945be0aa9/SwiftOldDriver/iOS-Weekly/releases/tag/%23197"
         },
@@ -114,16 +114,6 @@
           "wordCount": 600,
           "title": "老司机 iOS 周报 #195 | 2022-03-14",
           "imageUrl": "https://opengraph.githubassets.com/16ec47c7b0cbcae6d97eb3ab5e43a6e222102d2472cbcaf8f100878d77a4c53a/SwiftOldDriver/iOS-Weekly/releases/tag/%23195"
-        },
-        {
-          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23194",
-          "author": null,
-          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\nApple Park 传送门下周开启\nApple Park 传送门定时开启，北京时间 3 月 9 日凌晨 2 点，欢迎准时来 Apple 官网看 Apple 特别活动直播，还有同步中文字幕可以开启。\n Developer - 设计开发加速器\n探索物理空间音频引擎和游戏手柄\n2022 年 3 月 10 日(报名截止 2022 年 3 月 9 日）\n探索几何感知音频是如何帮助您的 app 构建复杂、互动和沉浸的音频场景。了解 Apple 的空间音频 API —— 物理音频空间化引擎（PHASE），以及它是如何使声音始终与您的体验保持一致 —— 帮助您在开发过程中创建空间声景和场景，而不是等到后期制作。我们还将向您展示虚拟和实体游戏手柄的最新改进，以及如何在您的 app 中支持手柄的分享功能。\n\n文章\n🌟 🐕 音视频工程示例专栏\n第二篇 iOS 音频编码：采集音频数据并编码存储为 AAC 文件\n第三篇 iOS 音频封装：采集编码音频数据并封装存储为 M4A 文件\n@JonyFang: 本 Demo 包含的主要内容有：\n实现一个音频采集模块\n实现一个音频编码模块\n串联音频采集和编码模块，将采集到的音频数据输入给 AAC 编码模块进行编码和存储\n详尽的代码注释，有助于理解代码逻辑和原理\n🐕 探索 iOS 编码对包大小的影响\n@Smallfly：本文介绍了比较极致和新颖的包大小优化技术，文章从二进制、汇编指令层面分析 Objective-C 代码对包大小的影响。主要从三个方面进行了讲述：\n二进制层面分析 OC 代码对包大小的影响\n编码上优化包大小的 tips\n总结各种 tips 的收益\n🐎 Pu…",
-          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23194",
-          "publishedOn": "2022-03-11T03:52:37.000Z",
-          "wordCount": 606,
-          "title": "老司机 iOS 周报 #194 | 2022-03-07",
-          "imageUrl": "https://opengraph.githubassets.com/65e56afe1e5211985682ca7fcee5f1a671853c8a462f66a1e0ed2c826d410a9f/SwiftOldDriver/iOS-Weekly/releases/tag/%23194"
         }
       ]
     }
