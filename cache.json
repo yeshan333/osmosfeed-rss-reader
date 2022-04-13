@@ -86,12 +86,22 @@
       "siteUrl": "https://github.com/SwiftOldDriver/iOS-Weekly/releases",
       "articles": [
         {
+          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23198",
+          "author": null,
+          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\nCall to Code\n苹果将在今年 6 月 6 日举办一年一度的 WWDC 全球开发者大会，今年的大会主题是「Call to Code（召唤编码侠）」，依旧采用在线形式举行，会给大家带来各种最新技术的展示。今年，老司机依旧会牵头组织 「WWDC 内参」活动，想参与的可以添加 iTDriverr 了解细节。\n“阅读器”app 分发的更新\n去年，Apple 宣布了 2022 年初在 App Store 上将进行的更新，该更新将允许“阅读器”app 的开发者在 app 中提供一个指向其网站的链接，以便用户创建或管理帐户。从今天开始，《App Store 审核指南》中的准则 3.1.3(a) 将会更新，阐明阅读器 app 的开发者现在可以申请外部链接的帐户授权。此授权将允许阅读器 app 链接到开发者拥有或维护的网站，以便用户在 app 外创建或管理其帐户。阅读器 app 指的是提供以下一种或多种数字内容类型 — 杂志、报纸、图书、音频、音乐或视频 — 作为其主要功能的 app。\n Developer - 设计开发加速器\n降低 App 的卡顿率\n2022 年 4 月 12 日（报名截止 4 月 11 日）\nApp 性能留给用户的第一印象往往难以改变。本讲座详细讲解导致 app 卡顿的一些反面典型，和避免这些卡顿的最佳实践。讲座重点讨论 Grand Central Dispatch 多线程技术，以便减少卡顿。并指导开发者适时采用异步编程，以便提高性能。\n\n新手推荐\n🐎 Introduction to Xcode Frame Debug - A Sherlock Holmes Adventure\n…",
+          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23198",
+          "publishedOn": "2022-04-12T05:47:32.000Z",
+          "wordCount": 854,
+          "title": "老司机 iOS 周报 #198 | 2022-04-11",
+          "imageUrl": "https://opengraph.githubassets.com/a0b465c055fbd2d11757e4739d51191b9aa754e9d0fe1534283bd68176646216/SwiftOldDriver/iOS-Weekly/releases/tag/%23198"
+        },
+        {
           "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23197",
           "author": null,
           "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\nSwift bugs are moving to GitHub Issues and we need your help!\n@J_Knight_：Swift 的 issue 管理将要从 JIRA 转移到 Github，计划全部迁移过程在今年的4月28日结束。在这之前，已经在 JIRA 上建立的 issue 会被完全复制到 Github 的 issue 列表中，作为一个新的 issue。以后 JIRA 也不再支持新的 issue 的建立，而且 bugs.swift.org 网址也会重定向到 Github issue 的地址。想了解详细迁移步骤的读者可以了解一下。\n Developer - 设计开发加速器\n🌟 🐕 在苹果加速器活动做的 SwiftUI 开发分享\n戴铭老师受 Apple 加速器 SwiftUI 活动的邀请在 3 月 25 日做了一次关于 SwiftUI 的分享，分享内容包括但不限于macOS 如何解决多栏问题、Toolbar、文件夹嵌套结构、文本和代码编辑器、Grid、Vision、SwiftUI 组件和 UIKit 组件对比等内容。\n新手推荐\n🌟 🐕 Abstract types and methods in Swift\n@ChengzhiHuang：本文介绍了 Swift 中一种实现虚类的方案。单独使用 Class 或者单独使用 Protocol 都会有各自的不足，因此作者选择：\n方法定义在 Protocol 中（包含 associatedtype ），成员变量定义在 Class 中，再使用 typealias 将 Protocol 与 Class 组合成一个类型进行使…",
           "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23197",
           "publishedOn": "2022-03-28T04:00:24.000Z",
-          "wordCount": 681,
+          "wordCount": 679,
           "title": "老司机 iOS 周报 #197 | 2022-03-28",
           "imageUrl": "https://opengraph.githubassets.com/ccbd20c4a7728caa4203c02d0653ce20d1979b84f2d9c25fc986b97945be0aa9/SwiftOldDriver/iOS-Weekly/releases/tag/%23197"
         },
@@ -104,16 +114,6 @@
           "wordCount": 671,
           "title": "老司机 iOS 周报 #196 | 2022-03-21",
           "imageUrl": "https://opengraph.githubassets.com/7f6d504ff84e6caacaf2ae281f46463030e60ecc717d89f9463cf45ce7d123ef/SwiftOldDriver/iOS-Weekly/releases/tag/%23196"
-        },
-        {
-          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23195",
-          "author": null,
-          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\nT 技术沙龙移动端技术实践（上海场）圆满结束\n2022 年 2 月 26 日，由老司机技术周报与 T 技术沙龙联合主办的移动端技术实践（上海场）在上海圆满落幕。此次技术沙龙邀请到了来自澳洲 REA Group 的 Jake Lin、“开源实验室”博主张涛、前阿里技术专家王宇分别以《MVI 模式在 Jetpack Compose 上的应用》、《基于 C++ 的 Android 真协程设计》以及《自制渲染引擎解决客户端复杂 UI 组件的实现》为主题进行硬核分享与实践探讨。\n Developer - 设计开发加速器\n使用 SwiftUI 打造卓越体验\n2022 年 3 月 24 日- 25 日(报名截止 2022 年 3 月 23 日）\n欢迎参加为期两天的 SwiftUI 活动！通过本次活动，您将全方位了解 SwiftUI，包括 SwiftUI 的工作原理和控件使用，数据模型和视图的关联，容器布局和高阶渲染，以及使用 SwiftUI 打造多平台 app。此外，我们还邀请到社区内活跃开发者，来分享他们的 SwiftUI 实战经验。加入我们开启 SwiftUI 之旅！\n\n新手推荐\n🐎 What’s new in Swift 5.6?\n@Smallfly：Swift 5.6 引入了一波新的特性，本文通过示例重点介绍了几个比较有意思的，并预测在不远的将来 Swift 6 可能会带来一系列破坏性 API。\n🐎 Easier Code Review With Pre-Commit Hooks\n@ChengzhiHuang：本文介绍了 git 的 hooks 能力，并举例介绍了适合在 pre-commit …",
-          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23195",
-          "publishedOn": "2022-03-14T07:59:29.000Z",
-          "wordCount": 600,
-          "title": "老司机 iOS 周报 #195 | 2022-03-14",
-          "imageUrl": "https://opengraph.githubassets.com/16ec47c7b0cbcae6d97eb3ab5e43a6e222102d2472cbcaf8f100878d77a4c53a/SwiftOldDriver/iOS-Weekly/releases/tag/%23195"
         }
       ]
     }
