@@ -17,7 +17,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。写在周刊第50期，各自努力，顶峰相见",
           "link": "https://www.ezindie.com/weekly/issue-50",
           "publishedOn": "2022-04-14T00:00:00.000Z",
-          "wordCount": 89,
+          "wordCount": 84,
           "title": "独立开发变现周刊（第50期） : 写在周刊第50期，各自努力，顶峰相见",
           "imageUrl": null
         },
@@ -27,7 +27,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。如何在18个月内做7个小产品？",
           "link": "https://www.ezindie.com/weekly/issue-49",
           "publishedOn": "2022-04-07T00:00:00.000Z",
-          "wordCount": 115,
+          "wordCount": 113,
           "title": "独立开发变现周刊（第49期） : 如何在18个月内做7个小产品？",
           "imageUrl": null
         },
@@ -49,16 +49,6 @@
           "publishedOn": "2022-03-24T00:00:00.000Z",
           "wordCount": 175,
           "title": "独立开发变现周刊（第47期） : Tailwind CSS 从副业产品到2百万美元的故事",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.ezindie.com/weekly/issue-46",
-          "author": null,
-          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。通过“Chrome 即服务”每月赚取4000美元",
-          "link": "https://www.ezindie.com/weekly/issue-46",
-          "publishedOn": "2022-03-17T00:00:00.000Z",
-          "wordCount": 175,
-          "title": "独立开发变现周刊（第46期） : 通过“Chrome 即服务”每月赚取4000美元",
           "imageUrl": null
         }
       ]
