@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-04-16T00:36:03.305Z</id>
+    <id>urn:2022-04-17T00:37:59.744Z</id>
     <title>osmos::feed</title>
-    <updated>2022-04-16T00:36:03.305Z</updated>
+    <updated>2022-04-17T00:37:59.744Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -122,16 +122,6 @@ Swift bugs are moving to GitHub Issues and we need your help!
         <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。Tailwind CSS 从副业产品到2百万美元的故事]]></summary>
         <author>
             <name>让小产品的独立变现更简单 - ezindie.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[混沌周刊 #30 &#124; 信任无价]]></title>
-        <id>https://weekly.love/issue-30/</id>
-        <link href="https://weekly.love/issue-30/"/>
-        <updated>2022-03-17T15:05:44.000Z</updated>
-        <summary type="html"><![CDATA[建立信任需要很久，摧毁信任一次就够。]]></summary>
-        <author>
-            <name>混沌周刊</name>
         </author>
     </entry>
 </feed>
