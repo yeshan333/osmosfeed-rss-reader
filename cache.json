@@ -59,6 +59,16 @@
       "siteUrl": "https://weekly.love",
       "articles": [
         {
+          "id": "https://weekly.love/issue-32/",
+          "author": null,
+          "description": "资本主义的世界，利润就是规则。",
+          "link": "https://weekly.love/issue-32/",
+          "publishedOn": "2022-04-17T17:30:49.000Z",
+          "wordCount": 81,
+          "title": "混沌周刊 #32 &#124; 皆为利来",
+          "imageUrl": null
+        },
+        {
           "id": "https://weekly.love/issue-31/",
           "author": null,
           "description": "编程语言和开源社区，都离不开历史的行程。",
