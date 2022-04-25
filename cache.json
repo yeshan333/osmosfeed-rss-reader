@@ -86,12 +86,22 @@
       "siteUrl": "https://github.com/SwiftOldDriver/iOS-Weekly/releases",
       "articles": [
         {
+          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23199",
+          "author": null,
+          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n Developer - 设计开发加速器\n“订阅优惠”的工程实践\n2022 年 4 月 21 日（报名截止 4 月 20 日）\n学习如何通过 StoreKit 技术的接入向您的用户提供自动续期订阅产品的推介促销优惠、促销优惠和优惠代码。允许新用户或现有用户在特定时限内免费获取或以折扣价购买自动续期订阅。\n加快您的测试过程\n2022 年 4 月 19 日（报名截止 4 月 18 日）\n探索如何进行自动化测试，进一步有效处理测试结果。改进您的测试套件以加快反馈循环，进而更快地得到修复。了解如何利用 Test Plan 测试计划、xcodebuild 命令行工具及相关 API 来消除永无止境和表现不佳的测试。我们将研究 XCTest 中的测试超时和执行时间余量，检查设备并行化，并详细介绍用于平衡性能和明确故障定位的推荐实践。\n\n新手推荐\n🐕 Design Patterns 的实战应用记录\n@老驴：2016年的时候最火的文章莫过于一些设计模式类的分享。当时各种 MVP，MVC 等等的讨论火爆整个移动开发圈。只不过这几年，很难再见到有这类的文章了。这篇文章是作者自荐，记录的是作者完成一个对其他第三方库的封装的过程。对于刚接触移动开发的同学，可以再学习一下设计模式和其中的思路。\n对于大家刚接触这类的同学们，还是想再强调下，天下没有最好的设计模式，只有最适合当前项目的设计模式。千万不要陷入为了模式而模式的陷阱中去，过度设计也不可取。\n推荐人：zhgchgli0718\n文章\n🌟 🐢 Lookin 原理及 5 个开发难点\n@Damonwong:Lookin 是一款可以查看与修改 iOS App 里的 UI 对…",
+          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23199",
+          "publishedOn": "2022-04-24T16:56:23.000Z",
+          "wordCount": 794,
+          "title": "老司机 iOS 周报 #199 | 2022-04-18",
+          "imageUrl": "https://opengraph.githubassets.com/d4b24ff7988cd5812468c67e4fda3c5568901716b832075c6d883357b584a2ed/SwiftOldDriver/iOS-Weekly/releases/tag/%23199"
+        },
+        {
           "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23198",
           "author": null,
           "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\nCall to Code\n苹果将在今年 6 月 6 日举办一年一度的 WWDC 全球开发者大会，今年的大会主题是「Call to Code（召唤编码侠）」，依旧采用在线形式举行，会给大家带来各种最新技术的展示。今年，老司机依旧会牵头组织 「WWDC 内参」活动，想参与的可以添加 iTDriverr 了解细节。\n“阅读器”app 分发的更新\n去年，Apple 宣布了 2022 年初在 App Store 上将进行的更新，该更新将允许“阅读器”app 的开发者在 app 中提供一个指向其网站的链接，以便用户创建或管理帐户。从今天开始，《App Store 审核指南》中的准则 3.1.3(a) 将会更新，阐明阅读器 app 的开发者现在可以申请外部链接的帐户授权。此授权将允许阅读器 app 链接到开发者拥有或维护的网站，以便用户在 app 外创建或管理其帐户。阅读器 app 指的是提供以下一种或多种数字内容类型 — 杂志、报纸、图书、音频、音乐或视频 — 作为其主要功能的 app。\n Developer - 设计开发加速器\n降低 App 的卡顿率\n2022 年 4 月 12 日（报名截止 4 月 11 日）\nApp 性能留给用户的第一印象往往难以改变。本讲座详细讲解导致 app 卡顿的一些反面典型，和避免这些卡顿的最佳实践。讲座重点讨论 Grand Central Dispatch 多线程技术，以便减少卡顿。并指导开发者适时采用异步编程，以便提高性能。\n\n新手推荐\n🐎 Introduction to Xcode Frame Debug - A Sherlock Holmes Adventure\n…",
           "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23198",
           "publishedOn": "2022-04-12T05:47:32.000Z",
-          "wordCount": 862,
+          "wordCount": 860,
           "title": "老司机 iOS 周报 #198 | 2022-04-11",
           "imageUrl": "https://opengraph.githubassets.com/a0b465c055fbd2d11757e4739d51191b9aa754e9d0fe1534283bd68176646216/SwiftOldDriver/iOS-Weekly/releases/tag/%23198"
         },
