@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-04-25T00:34:39.381Z</id>
+    <id>urn:2022-04-26T00:40:37.612Z</id>
     <title>osmos::feed</title>
-    <updated>2022-04-25T00:34:39.381Z</updated>
+    <updated>2022-04-26T00:40:37.612Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -130,32 +130,6 @@ Swift bugs are moving to GitHub Issues and we need your help!
 🌟 🐕 Abstract types and methods in Swift
 @ChengzhiHuang：本文介绍了 Swift 中一种实现虚类的方案。单独使用 Class 或者单独使用 Protocol 都会有各自的不足，因此作者选择：
 方法定义在 Protocol 中（包含 associatedtype ），成员变量定义在 Class 中，再使用 typealias 将 Protocol 与 Class 组合成一个类型进行使…]]></summary>
-        <author>
-            <name>Release notes from iOS-Weekly</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[老司机 iOS 周报 #196 | 2022-03-21]]></title>
-        <id>https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23196</id>
-        <link href="https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23196"/>
-        <updated>2022-03-26T15:12:02.000Z</updated>
-        <summary type="html"><![CDATA[你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。
-新闻
-4 月 25 日开始，提交到 App Store 的 app 都必须使用 Xcode 13 构建
-从 2022 年 4 月 25 日开始，所有提交到 App Store 的 iOS、iPadOS 和 watchOS app 都必须使用 Xcode 13 构建。Xcode 13 已包含 iOS 15、iPadOS 15 和 watchOS 8 的 SDK。
- Developer - 设计开发加速器
-使用 SwiftUI 打造卓越体验
-2022 年 3 月 24 日- 25 日(报名截止 2022 年 3 月 23 日）
-欢迎参加为期两天的 SwiftUI 活动！通过本次活动，您将全方位了解 SwiftUI，包括 SwiftUI 的工作原理和控件使用，数据模型和视图的关联，容器布局和高阶渲染，以及使用 SwiftUI 打造多平台 app。此外，我们还邀请到社区内活跃开发者，来分享他们的 SwiftUI 实战经验。加入我们开启 SwiftUI 之旅！
-
-文章
-🐕 Tips for getting the most out of DocC
-@四娘：文档工具 DocC 发布了已经快要一年，这段时间里加上了 static hosting，C/Objective-C 的支持以及 SPM 插件等功能，依托它来构建内部文档工具是一个不错的选择，也是一个顺便梳理项目内部代码的机会。
-本文作者提供了一个渐进式接入 DocC 的步骤建议：
-给 class/struct/enum 等类型添加注释文档
-给公开的函数和属性添加注释文档
-添加 documentation catalog 和 overview
-给主要的类型…]]></summary>
         <author>
             <name>Release notes from iOS-Weekly</name>
         </author>

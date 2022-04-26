@@ -114,16 +114,6 @@
           "wordCount": 679,
           "title": "老司机 iOS 周报 #197 | 2022-03-28",
           "imageUrl": "https://opengraph.githubassets.com/ccbd20c4a7728caa4203c02d0653ce20d1979b84f2d9c25fc986b97945be0aa9/SwiftOldDriver/iOS-Weekly/releases/tag/%23197"
-        },
-        {
-          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23196",
-          "author": null,
-          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\n4 月 25 日开始，提交到 App Store 的 app 都必须使用 Xcode 13 构建\n从 2022 年 4 月 25 日开始，所有提交到 App Store 的 iOS、iPadOS 和 watchOS app 都必须使用 Xcode 13 构建。Xcode 13 已包含 iOS 15、iPadOS 15 和 watchOS 8 的 SDK。\n Developer - 设计开发加速器\n使用 SwiftUI 打造卓越体验\n2022 年 3 月 24 日- 25 日(报名截止 2022 年 3 月 23 日）\n欢迎参加为期两天的 SwiftUI 活动！通过本次活动，您将全方位了解 SwiftUI，包括 SwiftUI 的工作原理和控件使用，数据模型和视图的关联，容器布局和高阶渲染，以及使用 SwiftUI 打造多平台 app。此外，我们还邀请到社区内活跃开发者，来分享他们的 SwiftUI 实战经验。加入我们开启 SwiftUI 之旅！\n\n文章\n🐕 Tips for getting the most out of DocC\n@四娘：文档工具 DocC 发布了已经快要一年，这段时间里加上了 static hosting，C/Objective-C 的支持以及 SPM 插件等功能，依托它来构建内部文档工具是一个不错的选择，也是一个顺便梳理项目内部代码的机会。\n本文作者提供了一个渐进式接入 DocC 的步骤建议：\n给 class/struct/enum 等类型添加注释文档\n给公开的函数和属性添加注释文档\n添加 documentation catalog 和 overview\n给主要的类型…",
-          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23196",
-          "publishedOn": "2022-03-26T15:12:02.000Z",
-          "wordCount": 671,
-          "title": "老司机 iOS 周报 #196 | 2022-03-21",
-          "imageUrl": "https://opengraph.githubassets.com/7f6d504ff84e6caacaf2ae281f46463030e60ecc717d89f9463cf45ce7d123ef/SwiftOldDriver/iOS-Weekly/releases/tag/%23196"
         }
       ]
     }
