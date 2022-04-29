@@ -12,12 +12,22 @@
       "siteUrl": "https://www.ezindie.com/weekly",
       "articles": [
         {
+          "id": "https://www.ezindie.com/weekly/issue-52",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。在Shopify上开发一个月收入2万美元的APP",
+          "link": "https://www.ezindie.com/weekly/issue-52",
+          "publishedOn": "2022-04-28T00:00:00.000Z",
+          "wordCount": 123,
+          "title": "独立开发变现周刊（第52期） : 在Shopify上开发一个月收入2万美元的APP",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.ezindie.com/weekly/issue-51",
           "author": null,
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。辞去普通程序员工作，独立开发产品年收入20万美金",
           "link": "https://www.ezindie.com/weekly/issue-51",
           "publishedOn": "2022-04-22T00:00:00.000Z",
-          "wordCount": 92,
+          "wordCount": 93,
           "title": "独立开发变现周刊（第51期） : 辞去普通程序员工作，独立开发产品年收入20万美金",
           "imageUrl": null
         },
