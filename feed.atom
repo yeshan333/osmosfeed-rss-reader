@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-04-29T00:39:20.744Z</id>
+    <id>urn:2022-04-30T00:43:29.788Z</id>
     <title>osmos::feed</title>
-    <updated>2022-04-29T00:39:20.744Z</updated>
+    <updated>2022-04-30T00:43:29.788Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -141,16 +141,6 @@ App 性能留给用户的第一印象往往难以改变。本讲座详细讲解�
         <summary type="html"><![CDATA[编程语言和开源社区，都离不开历史的行程。]]></summary>
         <author>
             <name>混沌周刊</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[独立开发变现周刊（第48期） : 疫情下的转变，将新产品做到月收入2.3万美金]]></title>
-        <id>https://www.ezindie.com/weekly/issue-48</id>
-        <link href="https://www.ezindie.com/weekly/issue-48"/>
-        <updated>2022-03-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。疫情下的转变，将新产品做到月收入2.3万美金]]></summary>
-        <author>
-            <name>让小产品的独立变现更简单 - ezindie.com</name>
         </author>
     </entry>
 </feed>
