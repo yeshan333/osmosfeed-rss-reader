@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-05-04T00:40:34.558Z</id>
+    <id>urn:2022-05-05T00:40:12.968Z</id>
     <title>osmos::feed</title>
-    <updated>2022-05-04T00:40:34.558Z</updated>
+    <updated>2022-05-05T00:40:12.968Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[混沌周刊 #33 &#124; 回到互联网]]></title>
+        <id>https://weekly.love/issue-33/</id>
+        <link href="https://weekly.love/issue-33/"/>
+        <updated>2022-05-04T13:30:05.000Z</updated>
+        <summary type="html"><![CDATA[历史是一个轮回，互联网也是。]]></summary>
+        <author>
+            <name>混沌周刊</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[独立开发变现周刊（第52期） : 在Shopify上开发一个月收入2万美元的APP]]></title>
         <id>https://www.ezindie.com/weekly/issue-52</id>
@@ -131,16 +141,6 @@ App 性能留给用户的第一印象往往难以改变。本讲座详细讲解�
         <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。如何在18个月内做7个小产品？]]></summary>
         <author>
             <name>让小产品的独立变现更简单 - ezindie.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[混沌周刊 #31 &#124; 小心打牌]]></title>
-        <id>https://weekly.love/issue-31/</id>
-        <link href="https://weekly.love/issue-31/"/>
-        <updated>2022-04-05T08:30:53.000Z</updated>
-        <summary type="html"><![CDATA[编程语言和开源社区，都离不开历史的行程。]]></summary>
-        <author>
-            <name>混沌周刊</name>
         </author>
     </entry>
 </feed>
