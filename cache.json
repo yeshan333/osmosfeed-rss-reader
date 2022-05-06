@@ -12,12 +12,22 @@
       "siteUrl": "https://www.ezindie.com/weekly",
       "articles": [
         {
+          "id": "https://www.ezindie.com/weekly/issue-53",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。“失败的推文”促使我开发了一个年收入49万美元的增长工具",
+          "link": "https://www.ezindie.com/weekly/issue-53",
+          "publishedOn": "2022-05-05T00:00:00.000Z",
+          "wordCount": 143,
+          "title": "独立开发变现周刊（第53期） : “失败的推文”促使我开发了一个年收入49万美元的增长工具",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.ezindie.com/weekly/issue-52",
           "author": null,
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。在Shopify上开发一个月收入2万美元的APP",
           "link": "https://www.ezindie.com/weekly/issue-52",
           "publishedOn": "2022-04-28T00:00:00.000Z",
-          "wordCount": 123,
+          "wordCount": 124,
           "title": "独立开发变现周刊（第52期） : 在Shopify上开发一个月收入2万美元的APP",
           "imageUrl": null
         },
