@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-05-09T00:39:57.573Z</id>
+    <id>urn:2022-05-10T00:39:45.952Z</id>
     <title>osmos::feed</title>
-    <updated>2022-05-09T00:39:57.573Z</updated>
+    <updated>2022-05-10T00:39:45.952Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[老司机 iOS 周报 #201 | 2022-05.09]]></title>
+        <id>https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23201</id>
+        <link href="https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23201"/>
+        <updated>2022-05-09T03:52:20.000Z</updated>
+        <summary type="html"><![CDATA[你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。
+新闻
+阐明 App Store 改善流程的标准和新的限期延长
+过去几年，苹果为了保证贯彻在安全和隐私方面的最新改革，陆续下架了 280 万个 App。同时还强调了，在过去三年内从未更新且未达到最低下载量 (即该 App 在连续 12 个月内完全没有或只有极低的下载量) 时，其开发者将会收到电子邮件，告知该 App 已被识别并可能从 App Store 中被移除。具体细节请参照：App Store 改善的支持页面
+SSWG 2021 Annual Update
+Swift 服务端工作组发布了 2021 年的工作总结：
+Swift Concurrency：社区的各个 HTTP 框架的客户端现在都已经添加了 async/await 接口
+工具链：
+
+发布了 RPM/Deb 包
+发布了 Swift for VSCode 插件
+发布了 Setup Swift 的 GitHub Action
+加强了对于 ARM Linux 的支持
+文档：工作组为旗下的项目补充了大量的文档
+生态：
+
+SwiftMetrics，gRPC Swift 项目完成了孵化
+SwiftStatsdClient，SwiftPrometheus，MongoSwift，Swift Service Lifecycle，Soto for AWS 陆续进入孵化阶段
+以及 2022 年的目标：
+继续扩大生态圈
+继续加强 Concurrency 的支持
+拓展工具链
+缩短编译构建时间
+提升 Swift 服务端的使用率
+ Developer - 设计开发加速器
+电商购物类 App 专场：为你的电商购物 App 提升体验
+2022 年 5 月 10 日至 11…]]></summary>
+        <author>
+            <name>Release notes from iOS-Weekly</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[独立开发变现周刊（第53期） : “失败的推文”促使我开发了一个年收入49万美元的增长工具]]></title>
         <id>https://www.ezindie.com/weekly/issue-53</id>

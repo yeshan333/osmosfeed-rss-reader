@@ -86,12 +86,22 @@
       "siteUrl": "https://github.com/SwiftOldDriver/iOS-Weekly/releases",
       "articles": [
         {
+          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23201",
+          "author": null,
+          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\n阐明 App Store 改善流程的标准和新的限期延长\n过去几年，苹果为了保证贯彻在安全和隐私方面的最新改革，陆续下架了 280 万个 App。同时还强调了，在过去三年内从未更新且未达到最低下载量 (即该 App 在连续 12 个月内完全没有或只有极低的下载量) 时，其开发者将会收到电子邮件，告知该 App 已被识别并可能从 App Store 中被移除。具体细节请参照：App Store 改善的支持页面\nSSWG 2021 Annual Update\nSwift 服务端工作组发布了 2021 年的工作总结：\nSwift Concurrency：社区的各个 HTTP 框架的客户端现在都已经添加了 async/await 接口\n工具链：\n\n发布了 RPM/Deb 包\n发布了 Swift for VSCode 插件\n发布了 Setup Swift 的 GitHub Action\n加强了对于 ARM Linux 的支持\n文档：工作组为旗下的项目补充了大量的文档\n生态：\n\nSwiftMetrics，gRPC Swift 项目完成了孵化\nSwiftStatsdClient，SwiftPrometheus，MongoSwift，Swift Service Lifecycle，Soto for AWS 陆续进入孵化阶段\n以及 2022 年的目标：\n继续扩大生态圈\n继续加强 Concurrency 的支持\n拓展工具链\n缩短编译构建时间\n提升 Swift 服务端的使用率\n Developer - 设计开发加速器\n电商购物类 App 专场：为你的电商购物 App 提升体验\n2022 年 5 月 10 日至 11…",
+          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23201",
+          "publishedOn": "2022-05-09T03:52:20.000Z",
+          "wordCount": 692,
+          "title": "老司机 iOS 周报 #201 | 2022-05.09",
+          "imageUrl": "https://opengraph.githubassets.com/7aebc220f265d331aa8b855afcefcd2e3600d4b9ee7b45e4a9e4a03eb0a0fbb7/SwiftOldDriver/iOS-Weekly/releases/tag/%23201"
+        },
+        {
           "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23200",
           "author": null,
           "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n Developer - 开发者活动\n4 月 23 号的「快手技术沙龙·iOS 技术专场」PPT 已经公开，可以通过「老司机技术公众号」发送「PPT」获取。文字整理和视频回放稍后放出。\n「T Chat ｜ 我在大厂做研发」系列直播首发\n作为开发者，在我们的职业生涯中，可能会无数次问自己或者被问到这两个问题：\n一线大厂的研发团队在做什么？\n研发专家们在关注什么？\n年初做调查问卷的时候发现，有很多人有同样的困扰。所以老司机技术周报决定联合 T 技术沙龙发起「T Chat ｜ 我在大厂做研发」系列直播计划，邀请一线互联网大厂的研发专家，采用在线直播的方式，分享他们团队 or 个人的研发实践经验，尝试回答这两个问题。\nT 技术沙龙移动端技术实践（上海场）文字稿整理完毕\n基于 C++ 的 Android 协程设计 - 张涛\n自制渲染引擎及在客户端应用 - 王宇\nMVI 范式在 Jetpack Compose 上的应用\n新手推荐\n🐕 iOS | 图解iOS签名背后的原理\n@ChengzhiHuang：作者带领读者实操申请证书的全流程，并介绍了 iOS 开发证书的申请、验证、加签等过程的原理。适合新手一读。\n本篇收录由该文作者 @doubleLLL3 自荐。\n文章\n🌟 🐕 系统困境与软件复杂度，为什么我们的系统会如此复杂\n@xuyafei：作者读《A Philosophy of Software Design》有感，有兴趣可以阅读原文。\n软件的复杂性有多种表现形式，可能是因为领域模型的边界模糊，而使看似简单的变更需要多处修改代码；可能是因为设计者在各种模式中迷失，使项目脱离现状而过度工程化；可能是因为代码…",
           "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23200",
           "publishedOn": "2022-04-26T08:16:40.000Z",
-          "wordCount": 581,
+          "wordCount": 579,
           "title": "老司机 iOS 周报 #200 | 2022-04-25",
           "imageUrl": "https://opengraph.githubassets.com/4677759bad6e978f76b401108a3033deda191edde6dc62e381145a751cfc99b8/SwiftOldDriver/iOS-Weekly/releases/tag/%23200"
         },
