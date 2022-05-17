@@ -59,6 +59,16 @@
       "siteUrl": "https://weekly.love",
       "articles": [
         {
+          "id": "https://weekly.love/issue-34/",
+          "author": null,
+          "description": "加密未必意味着安全，至少指财产安全。",
+          "link": "https://weekly.love/issue-34/",
+          "publishedOn": "2022-05-16T16:57:24.000Z",
+          "wordCount": 98,
+          "title": "混沌周刊 #34 &#124; 安全加密",
+          "imageUrl": null
+        },
+        {
           "id": "https://weekly.love/issue-33/",
           "author": null,
           "description": "历史是一个轮回，互联网也是。",
