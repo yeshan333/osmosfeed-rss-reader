@@ -64,7 +64,7 @@
           "description": "加密未必意味着安全，至少指财产安全。",
           "link": "https://weekly.love/issue-34/",
           "publishedOn": "2022-05-16T16:57:24.000Z",
-          "wordCount": 98,
+          "wordCount": 116,
           "title": "混沌周刊 #34 &#124; 安全加密",
           "imageUrl": null
         },
@@ -77,16 +77,6 @@
           "wordCount": 118,
           "title": "混沌周刊 #33 &#124; 回到互联网",
           "imageUrl": null
-        },
-        {
-          "id": "https://weekly.love/issue-32/",
-          "author": null,
-          "description": "资本主义的世界，利润就是规则。",
-          "link": "https://weekly.love/issue-32/",
-          "publishedOn": "2022-04-17T17:30:49.000Z",
-          "wordCount": 99,
-          "title": "混沌周刊 #32 &#124; 皆为利来",
-          "imageUrl": null
         }
       ]
     },
@@ -96,12 +86,22 @@
       "siteUrl": "https://github.com/SwiftOldDriver/iOS-Weekly/releases",
       "articles": [
         {
+          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23202",
+          "author": null,
+          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\n🌟 🐢 Flutter 3.0 发布\n@CrazyCoderShi: 前两天的 Google I/O 上 Flutter 3.0 已经发布，主要包括 Flutter 对 macOS 和 Linux 正式版支持、进一步的性能改进、手机端和 Web 端相关的更新等等。此外还有关于减少对旧版本 Windows 的支持，以及一些 breaking changes 列表。国内外的相关技术咨询上有诸多讲解，这里小编就简单为大家汇总一下，方便同学们阅读学习:\n中文版讲解\n英文原版\nDart 2.17 新特性\n Developer - 设计开发加速器\n通过服务器处理 App 内购买和提供用户支持\n2022 年 5 月 17 日（报名截止 5 月 16 日）\n了解如何使用 App Store 服务器 API 和 App Store 服务器通知处理 App 内购买，为您的客户提供支持和退款处理。报名预计开放时间：5月12日\n音频类 App 专场：为你的音频类 App 提升体验\n2022 年 5 月 25 日至 26 日（报名截止 5 月 24 日）\n欢迎参加为期两天的音频类 App 专场活动！通过本次活动，您将全方位了解 Apple 的相关技术针对在“音频”领域不同使用场景如音乐、K 歌、有声书以及播客类场景中的最佳实施性等，包括物理音频空间化引擎工作原理和使用，音频识别和分类的智能构建等，以及如何利用 watchOS 打造更好的音频类 watchOS App 等等。期待您的加入和我们一起探索音频领域的空间！\n\n文章\n🐕 西瓜视频 iOS Voice Over 无障碍适配实践\n@ChengzhiHuang…",
+          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23202",
+          "publishedOn": "2022-05-17T03:53:45.000Z",
+          "wordCount": 598,
+          "title": "老司机 iOS 周报 #202 | 2022-05-16",
+          "imageUrl": "https://opengraph.githubassets.com/7d3da5dd899dd44c0ffd3820f7de8b140e88a612bc1ce024f7493f8a899f69e7/SwiftOldDriver/iOS-Weekly/releases/tag/%23202"
+        },
+        {
           "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23201",
           "author": null,
           "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n新闻\n阐明 App Store 改善流程的标准和新的限期延长\n过去几年，苹果为了保证贯彻在安全和隐私方面的最新改革，陆续下架了 280 万个 App。同时还强调了，在过去三年内从未更新且未达到最低下载量 (即该 App 在连续 12 个月内完全没有或只有极低的下载量) 时，其开发者将会收到电子邮件，告知该 App 已被识别并可能从 App Store 中被移除。具体细节请参照：App Store 改善的支持页面\nSSWG 2021 Annual Update\nSwift 服务端工作组发布了 2021 年的工作总结：\nSwift Concurrency：社区的各个 HTTP 框架的客户端现在都已经添加了 async/await 接口\n工具链：\n\n发布了 RPM/Deb 包\n发布了 Swift for VSCode 插件\n发布了 Setup Swift 的 GitHub Action\n加强了对于 ARM Linux 的支持\n文档：工作组为旗下的项目补充了大量的文档\n生态：\n\nSwiftMetrics，gRPC Swift 项目完成了孵化\nSwiftStatsdClient，SwiftPrometheus，MongoSwift，Swift Service Lifecycle，Soto for AWS 陆续进入孵化阶段\n以及 2022 年的目标：\n继续扩大生态圈\n继续加强 Concurrency 的支持\n拓展工具链\n缩短编译构建时间\n提升 Swift 服务端的使用率\n Developer - 设计开发加速器\n电商购物类 App 专场：为你的电商购物 App 提升体验\n2022 年 5 月 10 日至 11…",
           "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23201",
           "publishedOn": "2022-05-09T03:52:20.000Z",
-          "wordCount": 692,
+          "wordCount": 690,
           "title": "老司机 iOS 周报 #201 | 2022-05.09",
           "imageUrl": "https://opengraph.githubassets.com/7aebc220f265d331aa8b855afcefcd2e3600d4b9ee7b45e4a9e4a03eb0a0fbb7/SwiftOldDriver/iOS-Weekly/releases/tag/%23201"
         },
