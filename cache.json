@@ -12,12 +12,22 @@
       "siteUrl": "https://www.ezindie.com/weekly",
       "articles": [
         {
+          "id": "https://www.ezindie.com/weekly/issue-55",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。构建Ruby on Rails课程平台月收入6万美金",
+          "link": "https://www.ezindie.com/weekly/issue-55",
+          "publishedOn": "2022-05-19T00:00:00.000Z",
+          "wordCount": 119,
+          "title": "独立开发变现周刊（第55期） : 构建Ruby on Rails课程平台月收入6万美金",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.ezindie.com/weekly/issue-54",
           "author": null,
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。从开始的失败中发现新想法，SaaS产品月收入5.5万美金",
           "link": "https://www.ezindie.com/weekly/issue-54",
           "publishedOn": "2022-05-13T00:00:00.000Z",
-          "wordCount": 128,
+          "wordCount": 129,
           "title": "独立开发变现周刊（第54期） : 从开始的失败中发现新想法，SaaS产品月收入5.5万美金",
           "imageUrl": null
         },
