@@ -17,7 +17,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。构建Ruby on Rails课程平台月收入6万美金",
           "link": "https://www.ezindie.com/weekly/issue-55",
           "publishedOn": "2022-05-19T00:00:00.000Z",
-          "wordCount": 119,
+          "wordCount": 122,
           "title": "独立开发变现周刊（第55期） : 构建Ruby on Rails课程平台月收入6万美金",
           "imageUrl": null
         },
@@ -27,7 +27,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。从开始的失败中发现新想法，SaaS产品月收入5.5万美金",
           "link": "https://www.ezindie.com/weekly/issue-54",
           "publishedOn": "2022-05-13T00:00:00.000Z",
-          "wordCount": 129,
+          "wordCount": 132,
           "title": "独立开发变现周刊（第54期） : 从开始的失败中发现新想法，SaaS产品月收入5.5万美金",
           "imageUrl": null
         },
@@ -37,7 +37,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。“失败的推文”促使我开发了一个年收入49万美元的增长工具",
           "link": "https://www.ezindie.com/weekly/issue-53",
           "publishedOn": "2022-05-05T00:00:00.000Z",
-          "wordCount": 144,
+          "wordCount": 147,
           "title": "独立开发变现周刊（第53期） : “失败的推文”促使我开发了一个年收入49万美元的增长工具",
           "imageUrl": null
         },
@@ -47,7 +47,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。在Shopify上开发一个月收入2万美元的APP",
           "link": "https://www.ezindie.com/weekly/issue-52",
           "publishedOn": "2022-04-28T00:00:00.000Z",
-          "wordCount": 124,
+          "wordCount": 127,
           "title": "独立开发变现周刊（第52期） : 在Shopify上开发一个月收入2万美元的APP",
           "imageUrl": null
         }
@@ -114,16 +114,6 @@
           "wordCount": 579,
           "title": "老司机 iOS 周报 #200 | 2022-04-25",
           "imageUrl": "https://opengraph.githubassets.com/4677759bad6e978f76b401108a3033deda191edde6dc62e381145a751cfc99b8/SwiftOldDriver/iOS-Weekly/releases/tag/%23200"
-        },
-        {
-          "id": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23199",
-          "author": null,
-          "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n Developer - 设计开发加速器\n“订阅优惠”的工程实践\n2022 年 4 月 21 日（报名截止 4 月 20 日）\n学习如何通过 StoreKit 技术的接入向您的用户提供自动续期订阅产品的推介促销优惠、促销优惠和优惠代码。允许新用户或现有用户在特定时限内免费获取或以折扣价购买自动续期订阅。\n加快您的测试过程\n2022 年 4 月 19 日（报名截止 4 月 18 日）\n探索如何进行自动化测试，进一步有效处理测试结果。改进您的测试套件以加快反馈循环，进而更快地得到修复。了解如何利用 Test Plan 测试计划、xcodebuild 命令行工具及相关 API 来消除永无止境和表现不佳的测试。我们将研究 XCTest 中的测试超时和执行时间余量，检查设备并行化，并详细介绍用于平衡性能和明确故障定位的推荐实践。\n\n新手推荐\n🐕 Design Patterns 的实战应用记录\n@老驴：2016年的时候最火的文章莫过于一些设计模式类的分享。当时各种 MVP，MVC 等等的讨论火爆整个移动开发圈。只不过这几年，很难再见到有这类的文章了。这篇文章是作者自荐，记录的是作者完成一个对其他第三方库的封装的过程。对于刚接触移动开发的同学，可以再学习一下设计模式和其中的思路。\n对于大家刚接触这类的同学们，还是想再强调下，天下没有最好的设计模式，只有最适合当前项目的设计模式。千万不要陷入为了模式而模式的陷阱中去，过度设计也不可取。\n推荐人：zhgchgli0718\n文章\n🌟 🐢 Lookin 原理及 5 个开发难点\n@Damonwong:Lookin 是一款可以查看与修改 iOS App 里的 UI 对…",
-          "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23199",
-          "publishedOn": "2022-04-24T16:56:23.000Z",
-          "wordCount": 800,
-          "title": "老司机 iOS 周报 #199 | 2022-04-18",
-          "imageUrl": "https://opengraph.githubassets.com/d4b24ff7988cd5812468c67e4fda3c5568901716b832075c6d883357b584a2ed/SwiftOldDriver/iOS-Weekly/releases/tag/%23199"
         }
       ]
     }
