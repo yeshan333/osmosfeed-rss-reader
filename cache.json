@@ -12,12 +12,22 @@
       "siteUrl": "https://www.ezindie.com/weekly",
       "articles": [
         {
+          "id": "https://www.ezindie.com/weekly/issue-56",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。一个基于Notion的项目管理小产品",
+          "link": "https://www.ezindie.com/weekly/issue-56",
+          "publishedOn": "2022-05-26T00:00:00.000Z",
+          "wordCount": 88,
+          "title": "独立开发变现周刊（第56期） : 一个基于Notion的项目管理小产品",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.ezindie.com/weekly/issue-55",
           "author": null,
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。构建Ruby on Rails课程平台月收入6万美金",
           "link": "https://www.ezindie.com/weekly/issue-55",
           "publishedOn": "2022-05-19T00:00:00.000Z",
-          "wordCount": 122,
+          "wordCount": 123,
           "title": "独立开发变现周刊（第55期） : 构建Ruby on Rails课程平台月收入6万美金",
           "imageUrl": null
         },
@@ -49,6 +59,43 @@
           "publishedOn": "2022-04-28T00:00:00.000Z",
           "wordCount": 127,
           "title": "独立开发变现周刊（第52期） : 在Shopify上开发一个月收入2万美元的APP",
+          "imageUrl": null
+        }
+      ]
+    },
+    {
+      "title": "混沌周刊",
+      "feedUrl": "https://weekly.love/feed/atom/",
+      "siteUrl": "https://weekly.love",
+      "articles": [
+        {
+          "id": "https://weekly.love/issue-35/",
+          "author": null,
+          "description": "你喜欢Code Review吗？",
+          "link": "https://weekly.love/issue-35/",
+          "publishedOn": "2022-05-26T17:06:29.000Z",
+          "wordCount": 120,
+          "title": "混沌周刊 #35 &#124; Code Review",
+          "imageUrl": null
+        },
+        {
+          "id": "https://weekly.love/issue-34/",
+          "author": null,
+          "description": "加密未必意味着安全，至少指财产安全。",
+          "link": "https://weekly.love/issue-34/",
+          "publishedOn": "2022-05-16T16:57:24.000Z",
+          "wordCount": 116,
+          "title": "混沌周刊 #34 &#124; 安全加密",
+          "imageUrl": null
+        },
+        {
+          "id": "https://weekly.love/issue-33/",
+          "author": null,
+          "description": "历史是一个轮回，互联网也是。",
+          "link": "https://weekly.love/issue-33/",
+          "publishedOn": "2022-05-04T13:30:05.000Z",
+          "wordCount": 118,
+          "title": "混沌周刊 #33 &#124; 回到互联网",
           "imageUrl": null
         }
       ]
