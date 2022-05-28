@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-05-27T00:41:28.092Z</id>
+    <id>urn:2022-05-28T00:41:27.389Z</id>
     <title>osmos::feed</title>
-    <updated>2022-05-27T00:41:28.092Z</updated>
+    <updated>2022-05-28T00:41:27.389Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -136,16 +136,6 @@ SwiftStatsdClient，SwiftPrometheus，MongoSwift，Swift Service Lifecycle，Sot
         <summary type="html"><![CDATA[历史是一个轮回，互联网也是。]]></summary>
         <author>
             <name>混沌周刊</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[独立开发变现周刊（第52期） : 在Shopify上开发一个月收入2万美元的APP]]></title>
-        <id>https://www.ezindie.com/weekly/issue-52</id>
-        <link href="https://www.ezindie.com/weekly/issue-52"/>
-        <updated>2022-04-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。在Shopify上开发一个月收入2万美元的APP]]></summary>
-        <author>
-            <name>让小产品的独立变现更简单 - ezindie.com</name>
         </author>
     </entry>
 </feed>
