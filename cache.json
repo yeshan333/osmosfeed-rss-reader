@@ -12,12 +12,22 @@
       "siteUrl": "https://www.ezindie.com/weekly",
       "articles": [
         {
+          "id": "https://www.ezindie.com/weekly/issue-58",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。预售CSS课程，卖出55万美元",
+          "link": "https://www.ezindie.com/weekly/issue-58",
+          "publishedOn": "2022-06-09T00:00:00.000Z",
+          "wordCount": 162,
+          "title": "独立开发变现周刊（第58期） : 预售CSS课程，卖出55万美元",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.ezindie.com/weekly/issue-57",
           "author": null,
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。开发一个免费照片编辑器，一个人每月收入10万美元",
           "link": "https://www.ezindie.com/weekly/issue-57",
           "publishedOn": "2022-06-02T00:00:00.000Z",
-          "wordCount": 101,
+          "wordCount": 103,
           "title": "独立开发变现周刊（第57期） : 开发一个免费照片编辑器，一个人每月收入10万美元",
           "imageUrl": null
         },
