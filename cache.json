@@ -4,7 +4,18 @@
       "title": "Release notes from osmosfeed",
       "feedUrl": "https://github.com/osmoscraft/osmosfeed/releases.atom",
       "siteUrl": "https://github.com/osmoscraft/osmosfeed/releases",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.15.0",
+          "author": null,
+          "description": "Added: Resolve relative URLs in item link and media\nAdded: Item thumbnail fallback to channel thumbnail\nChore: Dependency updates\nThank you: @cpwnd",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.15.0",
+          "publishedOn": "2022-06-18T19:01:33.000Z",
+          "wordCount": 280,
+          "title": "v1.15.0",
+          "imageUrl": "https://opengraph.githubassets.com/ce00272fbcf40921811c2125a0228c3b60c8a0b083dbaf2601960d034cc3be27/osmoscraft/osmosfeed/releases/tag/v1.15.0"
+        }
+      ]
     },
     {
       "title": "让小产品的独立变现更简单 - ezindie.com",
@@ -17,7 +28,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。习惯追踪应用Habitify的故事，6个月从0到每月收入2.1万美元",
           "link": "https://www.ezindie.com/weekly/issue-59",
           "publishedOn": "2022-06-16T00:00:00.000Z",
-          "wordCount": 103,
+          "wordCount": 503,
           "title": "独立开发变现周刊（第59期） : 习惯追踪应用Habitify的故事，6个月从0到每月收入2.1万美元",
           "imageUrl": null
         },
@@ -27,7 +38,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。预售CSS课程，卖出55万美元",
           "link": "https://www.ezindie.com/weekly/issue-58",
           "publishedOn": "2022-06-09T00:00:00.000Z",
-          "wordCount": 164,
+          "wordCount": 597,
           "title": "独立开发变现周刊（第58期） : 预售CSS课程，卖出55万美元",
           "imageUrl": null
         },
@@ -37,7 +48,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。开发一个免费照片编辑器，一个人每月收入10万美元",
           "link": "https://www.ezindie.com/weekly/issue-57",
           "publishedOn": "2022-06-02T00:00:00.000Z",
-          "wordCount": 103,
+          "wordCount": 510,
           "title": "独立开发变现周刊（第57期） : 开发一个免费照片编辑器，一个人每月收入10万美元",
           "imageUrl": null
         },
@@ -47,7 +58,7 @@
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。一个基于Notion的项目管理小产品",
           "link": "https://www.ezindie.com/weekly/issue-56",
           "publishedOn": "2022-05-26T00:00:00.000Z",
-          "wordCount": 92,
+          "wordCount": 499,
           "title": "独立开发变现周刊（第56期） : 一个基于Notion的项目管理小产品",
           "imageUrl": null
         }
@@ -64,7 +75,7 @@
           "description": "互联网之大，还能放下一本平静的书吗？",
           "link": "https://weekly.love/issue-36/",
           "publishedOn": "2022-06-05T17:59:40.000Z",
-          "wordCount": 98,
+          "wordCount": 464,
           "title": "混沌周刊 #36 &#124; Digital Rebellion Motivation",
           "imageUrl": null
         },
@@ -74,7 +85,7 @@
           "description": "你喜欢Code Review吗？",
           "link": "https://weekly.love/issue-35/",
           "publishedOn": "2022-05-26T17:06:29.000Z",
-          "wordCount": 120,
+          "wordCount": 486,
           "title": "混沌周刊 #35 &#124; Code Review",
           "imageUrl": null
         }
@@ -87,5 +98,5 @@
       "articles": []
     }
   ],
-  "cliVersion": "1.14.4"
+  "cliVersion": "1.15.0"
 }
