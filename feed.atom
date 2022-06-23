@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-06-22T00:45:52.534Z</id>
+    <id>urn:2022-06-23T00:37:13.347Z</id>
     <title>osmos::feed</title>
-    <updated>2022-06-22T00:45:52.534Z</updated>
-    <generator>osmosfeed 1.15.0</generator>
+    <updated>2022-06-23T00:37:13.347Z</updated>
+    <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[v1.15.1]]></title>
+        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.15.1</id>
+        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.15.1"/>
+        <updated>2022-06-22T06:05:35.000Z</updated>
+        <summary type="html"><![CDATA[Fixed: Favicon used as article image]]></summary>
+        <author>
+            <name>Release notes from osmosfeed</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[v1.15.0]]></title>
         <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.15.0</id>
