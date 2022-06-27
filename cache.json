@@ -80,6 +80,16 @@
       "siteUrl": "https://weekly.love",
       "articles": [
         {
+          "id": "https://weekly.love/issue-37/",
+          "author": null,
+          "description": "Deprecated or Beta，云时代的API排中律。",
+          "link": "https://weekly.love/issue-37/",
+          "publishedOn": "2022-06-26T17:23:40.000Z",
+          "wordCount": 481,
+          "title": "混沌周刊 #37 &#124; Just another WWDC",
+          "imageUrl": null
+        },
+        {
           "id": "https://weekly.love/issue-36/",
           "author": null,
           "description": "互联网之大，还能放下一本平静的书吗？",
