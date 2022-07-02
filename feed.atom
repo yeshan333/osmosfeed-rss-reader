@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-07-01T00:47:26.936Z</id>
+    <id>urn:2022-07-02T00:43:53.479Z</id>
     <title>osmos::feed</title>
-    <updated>2022-07-01T00:47:26.936Z</updated>
+    <updated>2022-07-02T00:43:53.479Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[独立开发变现周刊（第61期） : 我们是如何构建一个100万美元年收入开源SaaS的？]]></title>
+        <id>https://www.ezindie.com/weekly/issue-61</id>
+        <link href="https://www.ezindie.com/weekly/issue-61"/>
+        <updated>2022-07-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。我们是如何构建一个100万美元年收入开源SaaS的？]]></summary>
+        <author>
+            <name>让小产品的独立变现更简单 - ezindie.com</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[混沌周刊 #37 &#124; Just another WWDC]]></title>
         <id>https://weekly.love/issue-37/</id>
@@ -76,16 +86,6 @@ Thank you: @cpwnd]]></summary>
         <summary type="html"><![CDATA[互联网之大，还能放下一本平静的书吗？]]></summary>
         <author>
             <name>混沌周刊</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[独立开发变现周刊（第57期） : 开发一个免费照片编辑器，一个人每月收入10万美元]]></title>
-        <id>https://www.ezindie.com/weekly/issue-57</id>
-        <link href="https://www.ezindie.com/weekly/issue-57"/>
-        <updated>2022-06-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。开发一个免费照片编辑器，一个人每月收入10万美元]]></summary>
-        <author>
-            <name>让小产品的独立变现更简单 - ezindie.com</name>
         </author>
     </entry>
 </feed>
