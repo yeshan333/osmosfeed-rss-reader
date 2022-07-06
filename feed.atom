@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-07-05T00:42:44.760Z</id>
+    <id>urn:2022-07-06T00:48:04.355Z</id>
     <title>osmos::feed</title>
-    <updated>2022-07-05T00:42:44.760Z</updated>
+    <updated>2022-07-06T00:48:04.355Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -187,16 +187,6 @@ Thank you: @cpwnd]]></summary>
         <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。预售CSS课程，卖出55万美元]]></summary>
         <author>
             <name>让小产品的独立变现更简单 - ezindie.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[混沌周刊 #36 &#124; Digital Rebellion Motivation]]></title>
-        <id>https://weekly.love/issue-36/</id>
-        <link href="https://weekly.love/issue-36/"/>
-        <updated>2022-06-05T17:59:40.000Z</updated>
-        <summary type="html"><![CDATA[互联网之大，还能放下一本平静的书吗？]]></summary>
-        <author>
-            <name>混沌周刊</name>
         </author>
     </entry>
 </feed>
