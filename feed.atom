@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-07-21T00:45:32.404Z</id>
+    <id>urn:2022-07-22T00:49:59.337Z</id>
     <title>osmos::feed</title>
-    <updated>2022-07-21T00:45:32.404Z</updated>
+    <updated>2022-07-22T00:49:59.337Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -164,16 +164,6 @@ Dutter | 钉钉 Flutter 跨四端方案设计与技术实践
         <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。如何在30多个国家建立150万美元的年收入产品]]></summary>
         <author>
             <name>让小产品的独立变现更简单 - ezindie.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.15.1]]></title>
-        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.15.1</id>
-        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.15.1"/>
-        <updated>2022-06-22T06:05:35.000Z</updated>
-        <summary type="html"><![CDATA[Fixed: Favicon used as article image]]></summary>
-        <author>
-            <name>Release notes from osmosfeed</name>
         </author>
     </entry>
 </feed>
