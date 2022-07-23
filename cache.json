@@ -12,12 +12,22 @@
       "siteUrl": "https://www.ezindie.com/weekly",
       "articles": [
         {
+          "id": "https://www.ezindie.com/weekly/issue-64",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。一套图标，6天6位数收入",
+          "link": "https://www.ezindie.com/weekly/issue-64",
+          "publishedOn": "2022-07-22T00:00:00.000Z",
+          "wordCount": 532,
+          "title": "独立开发变现周刊（第64期） : 一套图标，6天6位数收入",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.ezindie.com/weekly/issue-63",
           "author": null,
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。一个爬虫类产品，4个月做到月收入3000美元",
           "link": "https://www.ezindie.com/weekly/issue-63",
           "publishedOn": "2022-07-14T00:00:00.000Z",
-          "wordCount": 560,
+          "wordCount": 562,
           "title": "独立开发变现周刊（第63期） : 一个爬虫类产品，4个月做到月收入3000美元",
           "imageUrl": null
         },
