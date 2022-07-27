@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-07-26T00:49:27.548Z</id>
+    <id>urn:2022-07-27T00:47:15.974Z</id>
     <title>osmos::feed</title>
-    <updated>2022-07-26T00:49:27.548Z</updated>
+    <updated>2022-07-27T00:47:15.974Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -154,16 +154,6 @@ Dutter | 钉钉 Flutter 跨四端方案设计与技术实践
         <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。我们是如何构建一个100万美元年收入开源SaaS的？]]></summary>
         <author>
             <name>让小产品的独立变现更简单 - ezindie.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[混沌周刊 #37 &#124; Just another WWDC]]></title>
-        <id>https://weekly.love/issue-37/</id>
-        <link href="https://weekly.love/issue-37/"/>
-        <updated>2022-06-26T17:23:40.000Z</updated>
-        <summary type="html"><![CDATA[Deprecated or Beta，云时代的API排中律。]]></summary>
-        <author>
-            <name>混沌周刊</name>
         </author>
     </entry>
 </feed>

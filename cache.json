@@ -57,18 +57,7 @@
       "title": "混沌周刊",
       "feedUrl": "https://weekly.love/feed/atom/",
       "siteUrl": "https://weekly.love",
-      "articles": [
-        {
-          "id": "https://weekly.love/issue-37/",
-          "author": null,
-          "description": "Deprecated or Beta，云时代的API排中律。",
-          "link": "https://weekly.love/issue-37/",
-          "publishedOn": "2022-06-26T17:23:40.000Z",
-          "wordCount": 481,
-          "title": "混沌周刊 #37 &#124; Just another WWDC",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     },
     {
       "title": "Release notes from iOS-Weekly",
