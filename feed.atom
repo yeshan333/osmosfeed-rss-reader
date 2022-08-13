@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-08-12T00:43:52.684Z</id>
+    <id>urn:2022-08-13T00:39:29.818Z</id>
     <title>osmos::feed</title>
-    <updated>2022-08-12T00:43:52.684Z</updated>
+    <updated>2022-08-13T00:39:29.818Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -60,16 +60,6 @@ UIKit 作为 iOS 开发过程中非常核心的一个 framework，每年的更�
         <link href="https://www.ezindie.com/weekly/issue-64"/>
         <updated>2022-07-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。一套图标，6天6位数收入]]></summary>
-        <author>
-            <name>让小产品的独立变现更简单 - ezindie.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[独立开发变现周刊（第63期） : 一个爬虫类产品，4个月做到月收入3000美元]]></title>
-        <id>https://www.ezindie.com/weekly/issue-63</id>
-        <link href="https://www.ezindie.com/weekly/issue-63"/>
-        <updated>2022-07-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。一个爬虫类产品，4个月做到月收入3000美元]]></summary>
         <author>
             <name>让小产品的独立变现更简单 - ezindie.com</name>
         </author>
