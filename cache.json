@@ -12,12 +12,22 @@
       "siteUrl": "https://www.ezindie.com/weekly",
       "articles": [
         {
+          "id": "https://www.ezindie.com/weekly/issue-68",
+          "author": null,
+          "description": "分享独立开发产品变现相关有价值的内容，每周五发布。建立了一个Reddit搜索工具，第一年就赚了6万美元",
+          "link": "https://www.ezindie.com/weekly/issue-68",
+          "publishedOn": "2022-08-19T00:00:00.000Z",
+          "wordCount": 558,
+          "title": "独立开发变现周刊（第68期） : 建立了一个Reddit搜索工具，第一年就赚了6万美元",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.ezindie.com/weekly/issue-67",
           "author": null,
           "description": "分享独立开发产品变现相关有价值的内容，每周五发布。如何建立了一个年收入42万美元的业务，将播客转化为文章",
           "link": "https://www.ezindie.com/weekly/issue-67",
           "publishedOn": "2022-08-12T00:00:00.000Z",
-          "wordCount": 512,
+          "wordCount": 514,
           "title": "独立开发变现周刊（第67期） : 如何建立了一个年收入42万美元的业务，将播客转化为文章",
           "imageUrl": null
         },
