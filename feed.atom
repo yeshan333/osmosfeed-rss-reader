@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-08-20T00:41:52.294Z</id>
+    <id>urn:2022-08-21T00:43:00.740Z</id>
     <title>osmos::feed</title>
-    <updated>2022-08-20T00:41:52.294Z</updated>
+    <updated>2022-08-21T00:43:00.740Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
@@ -105,16 +105,6 @@ UIKit 作为 iOS 开发过程中非常核心的一个 framework，每年的更�
         <link href="https://www.ezindie.com/weekly/issue-65"/>
         <updated>2022-07-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。个人爱好发展成一项36万美元/年的NFTs业务]]></summary>
-        <author>
-            <name>让小产品的独立变现更简单 - ezindie.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[独立开发变现周刊（第64期） : 一套图标，6天6位数收入]]></title>
-        <id>https://www.ezindie.com/weekly/issue-64</id>
-        <link href="https://www.ezindie.com/weekly/issue-64"/>
-        <updated>2022-07-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[分享独立开发产品变现相关有价值的内容，每周五发布。一套图标，6天6位数收入]]></summary>
         <author>
             <name>让小产品的独立变现更简单 - ezindie.com</name>
         </author>
