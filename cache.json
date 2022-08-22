@@ -57,7 +57,18 @@
       "title": "混沌周刊",
       "feedUrl": "https://weekly.love/feed/atom/",
       "siteUrl": "https://weekly.love",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://weekly.love/issue-38/",
+          "author": null,
+          "description": "碳太多也许不是好事。",
+          "link": "https://weekly.love/issue-38/",
+          "publishedOn": "2022-08-21T17:07:30.000Z",
+          "wordCount": 529,
+          "title": "混沌周刊 #38 &#124; Carbonize",
+          "imageUrl": null
+        }
+      ]
     },
     {
       "title": "Release notes from iOS-Weekly",
@@ -70,7 +81,7 @@
           "description": "你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。\n文章\n🐎 How To Boost Your iOS Code Performance:Reduce Searching In Array / Reducing Collection Type Initialisation\n@Smallfly：这两篇文章介绍了一些提高编码性能的小技巧。在遍历数组时，要警惕多层循环，多思考是否可以利用 Set/Dictionary 降低复杂度。在循环体内尽量避免创建集合类型，特别需要关注值类型的 Copy-on-write。\n🐕 货拉拉 iOS 司机端线程治理总结\n@AidenRao：文章主要介绍了货拉拉 iOS 司机端，在线程治理方面的实践。如：队列的管理和分配，高并发业务的梳理和重构，线程使用的合理性评估与改造，线程相关 crash 的排查和修复，长效机制的建立。\n🐎 Content transition in SwiftUI\n@Damien：SwiftUI 框架从第一个版本就提供了视图转换功能。每当视图被移除或添加时，可以使用特定的动画来进行呈现。但是在视图内容发生变化时，SwiftUI 框架无法应用动画转换效果， SwiftUI 框架在最新迭代中为我们带来了内容转换的新特性。它允许我们在视图内容发生变化时应用特定的过渡动画，具体怎么做呢？对 SwiftUI 感兴趣的同学不妨一读。\n🐢 Shared with You implementation and testing explained\n@享耳先森：WWDC 22 中苹果将原来仅 Apple 可用的 Shared with you 开放给所有开发者，本文详解了其工作机制和适配方式。\n🐎 Advances in Swift Package Manager's dependency access control\n@张嘉夫：在最新的 Swift 5.7 development snapshot 中 swift 可执行文件新增了一个叫做 --explicit-target-dependency-import-check 的 flag，改进了 SPM 的依赖系统，允许开发者启用或禁用一个新的构建验证步骤，以检测未在 target 的依赖列表中明确定义的 import 语句，并相应触发 warning 或 error。作者在这篇文章中实际测试了这个新的 flag。\n🐎 MachO 代码签名剖析\n@kemchenj：验证代码的正确性是计算机科学中最难的问题之一，因为不存在普遍意义的正确的算法，所以这一验证通常使用数字签名处理。大家可以通过阅读本文思考代码来源是否合法和代码是否被修改过的验证是如何实现的。\n🐎 RTC 场景下的屏幕共享优化实践\n@邦Ben：该文章和 iOS 其实并没有直接关系，主要说在飞书上共享屏幕的情况下，如果进行一个策略的优化。通过算法进行识别当前屏幕的内容，然后进行分析自动切换到不同的模式。\n清晰模式：主打清晰度，尽量保持高分辨率（如：最高 4K 原画质），带宽或性能不足的时候，只降低帧率（如：从 30fps -> 5fps），不降低分辨率。\n流畅模式：主打流畅度，尽量提升帧率（如：最高 30fps），带宽或性能不足的时候，优先降低分辨率（如：从 4K -> 720p），最后才考虑降帧率。\n手动切换是个基本的选择，但是通过自动化更佳。识别算法主要是：光流法，决策树，颜色直方图，方向统计。文章大体做了一些介绍，但是也比较属于入门概念介绍，有兴趣的同学可以了解一下。\n工具\n🐕 Device List | AppleDB\n@Barney：Device List 可以方便地查询 Model、Name、Board、Soc 之间的对应关系。\n摸鱼周报\n@摸鱼周报 #64：第 64 期摸鱼周报来了，一起来看下本期概要：\n本期话题：今年 8 月，把握与 App Store 专家会面交流的机会\n本周学习：Swift 闭包中的变量捕获\n内容推荐：程序开发文档及资源网站\n摸一下鱼：一款体感识别空气投篮模拟器 App；To-D 杂志\n关注我们\n我们是「老司机技术周报」，一个持续追求精品 iOS 内容的技术公众号，欢迎关注。\n关注有礼，关注【老司机技术周报】，回复「2021」，领取 2017/2018/2019/2020 内参\n\n同时也支持了 RSS 订阅：https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom 。\n说明\n🚧 表示需某工具，🌟 表示编辑推荐\n预计阅读时间：🐎 很快就能读完（1 - 10 mins）；🐕 中等 （10 - 20 mins）；🐢 慢（20+ mins）",
           "link": "https://github.com/SwiftOldDriver/iOS-Weekly/releases/tag/%23213",
           "publishedOn": "2022-08-15T02:52:37.000Z",
-          "wordCount": 440,
+          "wordCount": 448,
           "title": "老司机 iOS 周报 #213 | 2022-08-15",
           "imageUrl": "https://opengraph.githubassets.com/a7c5a05dc4c5b9ebb442076cad46b74f228724de816c04269440c5a2e0ffbe8d/SwiftOldDriver/iOS-Weekly/releases/tag/%23213"
         },
